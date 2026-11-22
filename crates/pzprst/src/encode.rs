@@ -846,7 +846,7 @@ fn border_bits(ca: char, d: &mut Diagnostics) -> u32 {
     }
 }
 /// `genericDecodeBinary`: five boolean values per base-32 character.
-fn decode_binary(
+pub(crate) fn generic_decode_binary(
     length: usize,
     bstr: &str,
     d: &mut Diagnostics,
@@ -890,7 +890,11 @@ fn decode_binary(
 
 /// `genericEncodeBinary`: five boolean values per base-32 character; with
 /// `skipnone` an all-false board encodes as an empty body.
-fn encode_binary(length: usize, mut get: impl FnMut(usize) -> bool, skipnone: bool) -> String {
+pub(crate) fn generic_encode_binary(
+    length: usize,
+    mut get: impl FnMut(usize) -> bool,
+    skipnone: bool,
+) -> String {
     let twi = [16u32, 8, 4, 2, 1];
     let mut cm = String::new();
     let (mut num, mut pass) = (0usize, 0u32);
@@ -917,11 +921,39 @@ fn encode_binary(length: usize, mut get: impl FnMut(usize) -> bool, skipnone: bo
     }
 }
 
+/// `decodeBinary`: `cell[prop] = val` for every cell whose bit is set; `set`
+/// receives exactly those cells.
+pub fn decode_binary(
+    b: &mut Board,
+    bstr: &str,
+    d: &mut Diagnostics,
+    mut set: impl FnMut(&mut crate::Obj),
+) -> String {
+    let n = b.cells.len();
+    let cells = &mut b.cells;
+    generic_decode_binary(n, bstr, d, |c, on| {
+        if on {
+            set(&mut cells[c]);
+        }
+    })
+}
+
+/// `encodeBinary`: one bit per cell, `get` says whether the property holds;
+/// with `skipnone` an all-false board encodes as an empty body.
+pub fn encode_binary(
+    b: &Board,
+    mut get: impl FnMut(&crate::Obj) -> bool,
+    skipnone: bool,
+) -> String {
+    let cells = &b.cells;
+    generic_encode_binary(cells.len(), |c| get(&cells[c]), skipnone)
+}
+
 /// `decodeEmpty`: cell `ques` = 7 (a shaded cell), five cells per base-32 character.
 pub fn decode_empty(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
     let n = b.cells.len();
     let cells = &mut b.cells;
-    decode_binary(n, bstr, d, |c, on| {
+    generic_decode_binary(n, bstr, d, |c, on| {
         if on {
             cells[c].ques = 7;
         }
@@ -930,7 +962,7 @@ pub fn decode_empty(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
 
 /// `encodeEmpty`: one bit per cell, set when `ques` is 7; empty when none is set.
 pub fn encode_empty(b: &Board) -> String {
-    encode_binary(b.cells.len(), |c| b.cells[c].ques == 7, true)
+    generic_encode_binary(b.cells.len(), |c| b.cells[c].ques == 7, true)
 }
 
 enum Number16 {

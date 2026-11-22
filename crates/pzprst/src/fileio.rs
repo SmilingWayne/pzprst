@@ -603,3 +603,46 @@ pub(crate) fn encode_cell_anumsub(w: &mut FileWriter, b: &Board) {
         format!("{ca} ")
     });
 }
+
+/// `decodeCellQanssub`: shading (`n`) and the four background marks (`+`, `-`,
+/// `=`, `%`).
+pub(crate) fn decode_cell_qanssub(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_cell(b, d, |cell, ca| {
+        if ca == "+" {
+            cell.qsub = 1;
+        } else if ca == "-" {
+            cell.qsub = 2;
+        } else if ca == "=" {
+            cell.qsub = 3;
+        } else if ca == "%" {
+            cell.qsub = 4;
+        } else if ca != "." {
+            cell.qans = int(ca)?;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCellQanssub`: shading first, then the four background marks, then `.`.
+pub(crate) fn encode_cell_qanssub(w: &mut FileWriter, b: &Board) {
+    w.encode_cell(b, |cell| {
+        let ca = if cell.qans != 0 {
+            cell.qans.to_string()
+        } else if cell.qsub == 1 {
+            "+".into()
+        } else if cell.qsub == 2 {
+            "-".into()
+        } else if cell.qsub == 3 {
+            "=".into()
+        } else if cell.qsub == 4 {
+            "%".into()
+        } else {
+            ".".into()
+        };
+        format!("{ca} ")
+    });
+}
