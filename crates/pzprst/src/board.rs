@@ -520,23 +520,28 @@ impl Board {
         let (nc, nr) = if t.swaps_axes() { (r, c) } else { (c, r) };
         let mut out = self.clone();
         self.genre.adjust_board_data_before(t, &mut out);
+        // The hook edited `out`; the coordinate map has to move *those* objects,
+        // not the untouched originals (pzprjs adjusts the data, then moves it).
+        let src_cells = out.cells.clone();
+        let src_borders = out.borders.clone();
+        let src_crosses = out.crosses.clone();
         out.geom = Geometry {
             cols: nc,
             rows: nr,
             ..self.geom
         };
         let map = |bx: i32, by: i32| t.map_point(bx, by, c as i32, r as i32, nc as i32, nr as i32);
-        for (i, obj) in self.cells.iter().enumerate() {
+        for (i, obj) in src_cells.iter().enumerate() {
             let (bx, by) = self.geom.cell_pos(i);
             let (x, y) = map(bx, by);
             out.cells[out.geom.cell_index(x, y).expect("cell maps to cell")] = *obj;
         }
-        for (i, obj) in self.borders.iter().enumerate() {
+        for (i, obj) in src_borders.iter().enumerate() {
             let (bx, by) = self.geom.border_pos(i);
             let (x, y) = map(bx, by);
             out.borders[out.geom.border_index(x, y).expect("border maps to border")] = *obj;
         }
-        for (i, obj) in self.crosses.iter().enumerate() {
+        for (i, obj) in src_crosses.iter().enumerate() {
             let (bx, by) = self.geom.cross_pos(i).expect("cross maps to cross");
             let (x, y) = map(bx, by);
             out.crosses[out.geom.cross_index(x, y).expect("cross maps to cross")] = *obj;
@@ -629,8 +634,7 @@ impl Board {
     /// pzprjs `bd.getDot(bx, by)`: the object under a dot-grid point, by parity.
     /// `hascross` gates the cross squares, `hasborder` the outer frame.
     pub fn dot(&self, bx: i32, by: i32) -> Option<&Obj> {
-        self.dot_group(bx, by)
-            .and_then(|g| self.obj(g, bx, by))
+        self.dot_group(bx, by).and_then(|g| self.obj(g, bx, by))
     }
     pub fn dot_mut(&mut self, bx: i32, by: i32) -> Option<&mut Obj> {
         let g = self.dot_group(bx, by)?;
@@ -653,12 +657,12 @@ impl Board {
             .chain(&self.borders)
             .chain(&self.crosses)
             .any(|o| {
-            o.anum != d.anum
-                || o.qans != d.qans
-                || o.qsub != d.qsub
-                || o.qcmp != d.qcmp
-                || o.line != d.line
-        })
+                o.anum != d.anum
+                    || o.qans != d.qans
+                    || o.qsub != d.qsub
+                    || o.qcmp != d.qcmp
+                    || o.line != d.line
+            })
     }
 
     pub fn clear_snapshot(&mut self) {
