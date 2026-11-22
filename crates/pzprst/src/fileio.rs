@@ -418,3 +418,188 @@ pub(crate) fn encode(b: &Board) -> Result<String> {
         w.data
     ))
 }
+/// `encodeBorderLineIfPresent`: write the border line layer only when some
+/// border has a line or the cross mark.
+pub(crate) fn encode_border_line_if_present(w: &mut FileWriter, b: &Board) {
+    if b.borders
+        .iter()
+        .any(|border| border.line > 0 || border.qsub == 2)
+    {
+        encode_border_line(w, b);
+    }
+}
+
+/// `decodeCellAns`: `#` shades the cell, `+` sets its background mark.
+pub(crate) fn decode_cell_ans(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_cell(b, d, |cell, ca| {
+        if ca == "#" {
+            cell.qans = 1;
+        } else if ca == "+" {
+            cell.qsub = 1;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCellAns`.
+pub(crate) fn encode_cell_ans(w: &mut FileWriter, b: &Board) {
+    w.encode_cell(b, |cell| {
+        if cell.qans == 1 {
+            "# ".into()
+        } else if cell.qsub == 1 {
+            "+ ".into()
+        } else {
+            ". ".into()
+        }
+    });
+}
+
+/// `decodeBorderAns`: `1` marks the border, `2` the border and the cross,
+/// `-1` only the cross.
+pub(crate) fn decode_border_ans(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_border(b, d, |border, ca| {
+        if ca == "2" {
+            border.qans = 1;
+            border.qsub = 1;
+        } else if ca == "1" {
+            border.qans = 1;
+        } else if ca == "-1" {
+            border.qsub = 1;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeBorderAns`.
+pub(crate) fn encode_border_ans(w: &mut FileWriter, b: &Board) {
+    w.encode_border(b, |border| {
+        if border.qans == 1 && border.qsub == 1 {
+            "2 ".into()
+        } else if border.qans == 1 {
+            "1 ".into()
+        } else if border.qsub == 1 {
+            "-1 ".into()
+        } else {
+            "0 ".into()
+        }
+    });
+}
+
+/// `decodeCellQnumAns`: cell number, `?`, shading (`#`) or sub mark (`+`).
+pub(crate) fn decode_cell_qnum_ans(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_cell(b, d, |cell, ca| {
+        if ca == "#" {
+            cell.qans = 1;
+        } else if ca == "+" {
+            cell.qsub = 1;
+        } else if ca == "-" {
+            cell.qnum = -2;
+        } else if ca != "." {
+            cell.qnum = int(ca)?;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCellQnumAns`: number / `?` first, then shading `#`, sub mark `+`, `.`.
+pub(crate) fn encode_cell_qnum_ans(w: &mut FileWriter, b: &Board) {
+    w.encode_cell(b, |cell| {
+        if cell.qnum >= 0 {
+            format!("{} ", cell.qnum)
+        } else if cell.qnum == -2 {
+            "- ".into()
+        } else if cell.qans == 1 {
+            "# ".into()
+        } else if cell.qsub == 1 {
+            "+ ".into()
+        } else {
+            ". ".into()
+        }
+    });
+}
+
+/// `decodeBorderQues`: `1` marks a wall; every other token leaves `ques` alone.
+pub(crate) fn decode_border_ques(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_border(b, d, |border, ca| {
+        if ca == "1" {
+            border.ques = 1;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeBorderQues`.
+pub(crate) fn encode_border_ques(w: &mut FileWriter, b: &Board) {
+    w.encode_border(b, |border| {
+        if border.ques == 1 {
+            "1 ".into()
+        } else {
+            "0 ".into()
+        }
+    });
+}
+
+/// `decodeCellAnumsub`: answer number, `cmp` mark and `sub` mark per cell.
+///
+/// pzprjs also splits `[...]` snum arrays here when `cell.enableSubNumberArray`
+/// is set; `Obj` has no `snum`, so such tokens are not accepted.
+pub(crate) fn decode_cell_anumsub(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_cell(b, d, |cell, ca| {
+        if ca == "c" {
+            cell.qcmp = 1;
+        } else if ca == "+" {
+            cell.qsub = 1;
+        } else if ca == "-" {
+            cell.qsub = 2;
+        } else if ca == "=" {
+            cell.qsub = 3;
+        } else if ca == "%" {
+            cell.qsub = 4;
+        } else if ca != "." {
+            cell.anum = int(ca)?;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCellAnumsub`: answer number, `cmp` mark and `sub` mark per cell.
+pub(crate) fn encode_cell_anumsub(w: &mut FileWriter, b: &Board) {
+    w.encode_cell(b, |cell| {
+        let ca = if cell.anum != -1 {
+            cell.anum.to_string()
+        } else if cell.qcmp == 1 {
+            "c".into()
+        } else if cell.qsub == 1 {
+            "+".into()
+        } else if cell.qsub == 2 {
+            "-".into()
+        } else if cell.qsub == 3 {
+            "=".into()
+        } else if cell.qsub == 4 {
+            "%".into()
+        } else {
+            ".".into()
+        };
+        format!("{ca} ")
+    });
+}
