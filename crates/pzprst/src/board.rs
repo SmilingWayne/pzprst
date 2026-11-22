@@ -169,14 +169,11 @@ impl Geometry {
         })
     }
 
-    /// pzprjs `turnflipGroup("excell", key, d)` for one composed `Transform`:
-    /// the operations are applied in `tools/gen_fixtures.js` order, with the
-    /// dimensions swapping at each turn exactly like `execadjust_main`.
-    pub fn excell_transform(&self, t: Transform, excells: &[Obj]) -> Vec<Obj> {
-        if self.hasexcell == 0 || excells.is_empty() {
-            return excells.to_vec();
-        }
-        let ops: &[Transform] = match t {
+    /// The operation sequence of a composed transform, in the order
+    /// `tools/gen_fixtures.js` composes it (pzprjs applies one board operation
+    /// at a time, so hooks and excell movement happen per operation).
+    pub fn op_sequence(t: Transform) -> &'static [Transform] {
+        match t {
             Transform::Identity => &[],
             Transform::Rot90 => &[Transform::Rot90],
             Transform::Rot180 => &[Transform::Rot90, Transform::Rot90],
@@ -185,55 +182,7 @@ impl Geometry {
             Transform::FlipY => &[Transform::FlipY],
             Transform::Transpose => &[Transform::Rot270, Transform::FlipY],
             Transform::AntiTranspose => &[Transform::Rot90, Transform::FlipY],
-        };
-        let mut cols = self.cols;
-        let mut rows = self.rows;
-        let mut cur: Vec<Obj> = excells.to_vec();
-        for &op in ops {
-            let (nc, nr) = if op.swaps_axes() {
-                (rows, cols)
-            } else {
-                (cols, rows)
-            };
-            let mut next = cur.clone();
-            let mut geom = *self;
-            geom.cols = cols;
-            geom.rows = rows;
-            let mut next_geom = *self;
-            next_geom.cols = nc;
-            next_geom.rows = nr;
-            for (i, obj) in cur.iter().enumerate() {
-                let Some((bx, by)) = geom.excell_pos(i) else {
-                    continue;
-                };
-                let new = if self.hasexcell == 1 {
-                    match op {
-                        // Turns move no excell; flips reverse only their own row/column.
-                        Transform::FlipX if by == -1 => Some(((2 * nc as i32) - bx, by)),
-                        Transform::FlipY if bx == -1 => Some((bx, (2 * nr as i32) - by)),
-                        Transform::FlipX | Transform::FlipY => Some((bx, by)),
-                        _ => None,
-                    }
-                } else {
-                    Some(match op {
-                        Transform::FlipX => ((2 * nc as i32) - bx, by),
-                        Transform::FlipY => (bx, (2 * nr as i32) - by),
-                        Transform::Rot90 => (((2 * nc as i32) - by), bx),
-                        Transform::Rot270 => (by, ((2 * nr as i32) - bx)),
-                        _ => (bx, by),
-                    })
-                };
-                if let Some((x, y)) = new {
-                    if let Some(j) = next_geom.excell_index(x, y) {
-                        next[j] = *obj;
-                    }
-                }
-            }
-            cur = next;
-            cols = nc;
-            rows = nr;
         }
-        cur
     }
 
     pub fn excell_index(&self, bx: i32, by: i32) -> Option<usize> {
@@ -648,6 +597,83 @@ impl Board {
 
     // ----- symmetries ----------------------------------------------------
 
+    /// pzprjs `turnflipGroup("excell", key, d)` over the operations of `t`.
+    ///
+    /// `hasexcell == 1` moves no excell on turns and mirrors the whole top
+    /// block on `flipx` / the whole left block on `flipy` (the `d2` region in
+    /// pzprjs `turnflipGroup`); `hasexcell == 2` maps the ring around the board.
+    /// `excellRows`/`excellCols` may depend on the board size, so they are
+    /// re-evaluated at each operation, like pzprjs `setminmax`/`setposAll`.
+    fn transform_excells(&self, t: Transform, src: &[Obj]) -> Vec<Obj> {
+        if self.geom.hasexcell == 0 {
+            return src.to_vec();
+        }
+        let (mut cols, mut rows) = (self.geom.cols, self.geom.rows);
+        let mut cur: Vec<Obj> = src.to_vec();
+        for &op in Geometry::op_sequence(t) {
+            let (nc, nr) = if op.swaps_axes() {
+                (rows, cols)
+            } else {
+                (cols, rows)
+            };
+            // pzprjs `turnflipGroup` moves no excell at all on a turn when
+            // `hasexcell == 1`: the object ids keep their values and only their
+            // positions (and the count per side) change with the new dimensions.
+            if self.geom.hasexcell == 1 && op.swaps_axes() {
+                cols = nc;
+                rows = nr;
+                continue;
+            }
+            let from_geom = Geometry {
+                cols,
+                rows,
+                excell_rows: self.genre.excell_rows(cols, rows),
+                excell_cols: self.genre.excell_cols(cols, rows),
+                ..self.geom
+            };
+            let to_geom = Geometry {
+                cols: nc,
+                rows: nr,
+                excell_rows: self.genre.excell_rows(nc, nr),
+                excell_cols: self.genre.excell_cols(nc, nr),
+                ..self.geom
+            };
+            let mut next = vec![Obj::default(); to_geom.excell_count()];
+            for (i, obj) in cur.iter().enumerate() {
+                let Some((bx, by)) = from_geom.excell_pos(i) else {
+                    continue;
+                };
+                let moved = if self.geom.hasexcell == 1 {
+                    match op {
+                        Transform::FlipX if by < 0 && bx >= 1 => Some(((2 * nc as i32) - bx, by)),
+                        Transform::FlipY if bx < 0 && by >= 1 => Some((bx, (2 * nr as i32) - by)),
+                        Transform::FlipX | Transform::FlipY => Some((bx, by)),
+                        _ => Some((bx, by)),
+                    }
+                } else {
+                    Some(match op {
+                        Transform::FlipX => ((2 * nc as i32) - bx, by),
+                        Transform::FlipY => (bx, (2 * nr as i32) - by),
+                        Transform::Rot90 => ((2 * nc as i32) - by, bx),
+                        Transform::Rot270 => (by, (2 * nr as i32) - bx),
+                        _ => (bx, by),
+                    })
+                };
+                if let Some((x, y)) = moved {
+                    if let Some(j) = to_geom.excell_index(x, y) {
+                        if let Some(slot) = next.get_mut(j) {
+                            *slot = *obj;
+                        }
+                    }
+                }
+            }
+            cur = next;
+            cols = nc;
+            rows = nr;
+        }
+        cur
+    }
+
     /// Apply a board symmetry; puzzle and snapshot move together.
     pub fn transform(&self, t: Transform) -> Board {
         let (c, r) = (self.geom.cols, self.geom.rows);
@@ -685,7 +711,9 @@ impl Board {
         // turns and only reverses the top row / left column for flips, while
         // `hasexcell == 2` maps them on the ring around the board. The
         // per-genre `adjustExCellTopLeft` hooks then redistribute the values.
-        out.excells = self.geom.excell_transform(t, &out.excells);
+        out.excells = self.transform_excells(t, &out.excells);
+        out.geom.excell_rows = out.genre.excell_rows(nc, nr);
+        out.geom.excell_cols = out.genre.excell_cols(nc, nr);
         self.genre.adjust_board_data(t, &mut out);
         out
     }
@@ -761,7 +789,10 @@ impl Board {
             Group::Cell => self.geom.cell_index(bx, by).map(|i| &self.cells[i]),
             Group::Border => self.geom.border_index(bx, by).map(|i| &self.borders[i]),
             Group::Cross => self.geom.cross_index(bx, by).map(|i| &self.crosses[i]),
-            Group::ExCell => self.geom.excell_index(bx, by).map(|i| &self.excells[i]),
+            Group::ExCell => self
+                .geom
+                .excell_index(bx, by)
+                .and_then(|i| self.excells.get(i)),
         }
     }
     pub fn obj_mut(&mut self, group: Group, bx: i32, by: i32) -> Option<&mut Obj> {
@@ -769,7 +800,10 @@ impl Board {
             Group::Cell => self.geom.cell_index(bx, by).map(|i| &mut self.cells[i]),
             Group::Border => self.geom.border_index(bx, by).map(|i| &mut self.borders[i]),
             Group::Cross => self.geom.cross_index(bx, by).map(|i| &mut self.crosses[i]),
-            Group::ExCell => self.geom.excell_index(bx, by).map(|i| &mut self.excells[i]),
+            Group::ExCell => self
+                .geom
+                .excell_index(bx, by)
+                .and_then(|i| self.excells.get_mut(i)),
         }
     }
 
@@ -778,14 +812,16 @@ impl Board {
         if let Some(i) = self.geom.cell_index(bx, by) {
             return Some(&self.cells[i]);
         }
-        self.geom.excell_index(bx, by).map(|i| &self.excells[i])
+        self.geom
+            .excell_index(bx, by)
+            .and_then(|i| self.excells.get(i))
     }
     pub fn obj_at_mut(&mut self, bx: i32, by: i32) -> Option<&mut Obj> {
         if let Some(i) = self.geom.cell_index(bx, by) {
             return Some(&mut self.cells[i]);
         }
         let i = self.geom.excell_index(bx, by)?;
-        Some(&mut self.excells[i])
+        self.excells.get_mut(i)
     }
 
     /// pzprjs `bd.getDot(bx, by)`: the object under a dot-grid point, by parity.
