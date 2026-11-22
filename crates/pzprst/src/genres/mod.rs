@@ -9,6 +9,10 @@ pub(crate) trait Genre: Sync {
     fn pid(&self) -> &'static str;
     /// pzprjs `Board.hasborder`.
     fn hasborder(&self) -> u8;
+    /// pzprjs `Board.hascross` (0 none, 1 inner crosses, 2 crosses inside the frame).
+    fn hascross(&self) -> u8 {
+        0
+    }
     /// URL pflag character and FileIO flag line ↔ pzprjs config key.
     fn rule_flags(&self) -> &'static [(char, &'static str)];
     /// `decodePzpr`; returns the unconsumed body.

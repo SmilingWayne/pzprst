@@ -36,9 +36,14 @@ fixtures are what test the new functions.
    weaken or `#[ignore]` a test, never add `#[allow(...)]` to hide a warning.
 3. No new dependencies. No git commits unless your task says so.
 4. **STOP and report BLOCKED** when any of these happens:
-   - triage says `NEEDS_INFRA` or `ERROR`;
+   - triage says `NEEDS_INFRA` or `ERROR`, unless the only infrastructure
+     triage names is `adjustBoardData`/`adjustBoardData2`/directional values:
+     pzprst now has both hooks (`Genre::adjust_board_data_before` and
+     `Genre::adjust_board_data`, plus `Obj::qnum3`/`qnum4`). See reference.md
+     § Directional content; the fixtures compare all eight transforms, so the
+     hooks are what decides;
    - the port needs a change to a read-only file (a new `Obj` property,
-     crosses, excells, rooms, directional transform hooks, …);
+     crosses, excells, rooms, array properties, piece banks, …);
    - a pzprjs URL flag changes how the body is decoded instead of setting a
      rule (look for `checkpflag` inside decode logic);
    - a common function you need is missing and your task did not list it;

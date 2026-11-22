@@ -72,7 +72,8 @@ Defined in `crates/pzprst/src/genres/mod.rs`. Fill each method from pzprjs:
 | `encode_fileio(b, w)` | `FileIO.encodeData`. Set `w.filever = N` exactly when pzprjs sets `this.filever`. |
 | `validate(b, d)` | Value checks for boards read from FileIO or state. Push `ValueOutOfRange` for values pzprjs input could never produce (outside `minnum`..`maxnum`, unknown property values). Push `LossyUrl` only when **question** data (`qnum`, `qnum2`, `ques`, `qdir`) is legal on the board but dropped by `encodePzpr` (e.g. a `?` the URL cannot store). Answer properties (`anum`, `qans`, `qsub`, `qcmp`, `line`) are never part of a URL; they must not trigger `LossyUrl`, or every solved board fails in strict mode. |
 | `symmetries()` | Leave the default unless rotating the board changes the puzzle meaning; then BLOCKED. |
-| `adjust_board_data()` | Leave the default. pzprjs overrides mean BLOCKED (triage reports them). |
+| `adjust_board_data_before(t, b)` | pzprjs `BoardExec.adjustBoardData`: adjust directional content on the pre-transform board. |
+| `adjust_board_data(t, b)` | pzprjs `BoardExec.adjustBoardData2`: the same on the transformed board. |
 
 `maxnum` may be a function of the board size (`maxnum: function() { return
 Math.max(this.board.cols, this.board.rows); }`). Compute it in `validate` from
@@ -209,6 +210,37 @@ name in backticks is a port of that function.
   `-2` only if `?` is allowed); set each rule config with
   `p.setConfig("<key>", r.rnd() < 0.3)`. Use only `r.rnd()` and `r.pick([...])`,
   never `Math.random()`.
+
+## Directional content (adjustBoardData / adjustBoardData2)
+
+Genres that store directions (`qdir`, `qnum`…`qnum4` on a compass cell, arrow
+bits, `qsub` direction marks) override one or both pzprjs `BoardExec` hooks.
+pzprst models both:
+
+- `adjust_board_data_before(t, b)` = `adjustBoardData`, called after the board is
+  cloned but **before** the coordinates move;
+- `adjust_board_data(t, b)` = `adjustBoardData2`, called **after** the transform.
+
+pzprjs calls a hook once per board *operation*, pzprst once with the composed
+`Transform`. Apply the pzprjs per-operation code in the order the fixture tool
+composes a transform (`tools/gen_fixtures.js` `TRANSFORMS`):
+
+| Transform | pzprjs operations |
+|-----------|-------------------|
+| rot90 | `turnr` |
+| rot180 | `turnr turnr` |
+| rot270 | `turnl` |
+| flipx / flipy | `flipx` / `flipy` |
+| transpose | `turnl flipy` |
+| antitranspose | `turnr flipy` |
+
+The pzprjs `key` argument is the `boardtype` bitmask for one operation; map each
+operation to its direction change and apply them in sequence. Fixtures compare
+all eight transforms in both URL and FileIO form, so a hook that is not a
+faithful group action fails immediately.
+
+`Obj` has `qnum`, `qnum2`, `qnum3`, `qnum4` (default -1), `ques`, `qdir`, `anum`,
+`qans`, `qsub`, `qcmp` and `line` — nothing else.
 
 ## Debugging a mismatch
 

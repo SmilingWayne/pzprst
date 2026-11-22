@@ -65,6 +65,7 @@ impl Obj {
 pub enum Group {
     Cell,
     Border,
+    Cross,
 }
 
 /// Board shape: `hasborder` is pzprjs's flag (0 none, 1 inner borders, 2 inner and outer).
@@ -73,6 +74,7 @@ pub(crate) struct Geometry {
     pub cols: usize,
     pub rows: usize,
     pub hasborder: u8,
+    pub hascross: u8,
 }
 
 impl Geometry {
@@ -85,6 +87,38 @@ impl Geometry {
 
     fn cell_count(&self) -> usize {
         self.cols * self.rows
+    }
+
+    /// pzprjs `estimateSize("cross")`: a `(cols + 1) x (rows + 1)` grid at the
+    /// even/even points; pzprst only allocates it when a genre uses crosses.
+    pub fn cross_count(&self) -> usize {
+        if self.hascross == 0 {
+            0
+        } else {
+            (self.cols + 1) * (self.rows + 1)
+        }
+    }
+
+    pub fn cross_index(&self, bx: i32, by: i32) -> Option<usize> {
+        if bx & 1 != 0
+            || by & 1 != 0
+            || bx < 0
+            || by < 0
+            || bx > 2 * self.c()
+            || by > 2 * self.r()
+            || self.hascross == 0
+        {
+            return None;
+        }
+        Some((by >> 1) as usize * (self.cols + 1) + (bx >> 1) as usize)
+    }
+
+    pub fn cross_pos(&self, i: usize) -> Option<(i32, i32)> {
+        if i >= self.cross_count() {
+            return None;
+        }
+        let (bx, by) = ((i % (self.cols + 1)) as i32, (i / (self.cols + 1)) as i32);
+        Some((2 * bx, 2 * by))
     }
 
     pub fn cell_index(&self, bx: i32, by: i32) -> Option<usize> {
@@ -264,6 +298,7 @@ pub struct Board {
     pub(crate) variant: Option<String>,
     pub(crate) cells: Vec<Obj>,
     pub(crate) borders: Vec<Obj>,
+    pub(crate) crosses: Vec<Obj>,
     pub(crate) diagnostics: Diagnostics,
 }
 
@@ -288,6 +323,7 @@ impl PartialEq for Board {
             && self.variant == other.variant
             && self.cells == other.cells
             && self.borders == other.borders
+            && self.crosses == other.crosses
     }
 }
 
@@ -307,6 +343,7 @@ impl Board {
             cols,
             rows,
             hasborder: genre.hasborder(),
+            hascross: genre.hascross(),
         };
         Ok(Self {
             genre,
@@ -319,6 +356,7 @@ impl Board {
             variant: None,
             cells: vec![Obj::default(); geom.cell_count()],
             borders: vec![Obj::default(); geom.border_count()],
+            crosses: vec![Obj::default(); geom.cross_count()],
             diagnostics: Diagnostics::default(),
         })
     }
@@ -498,6 +536,11 @@ impl Board {
             let (x, y) = map(bx, by);
             out.borders[out.geom.border_index(x, y).expect("border maps to border")] = *obj;
         }
+        for (i, obj) in self.crosses.iter().enumerate() {
+            let (bx, by) = self.geom.cross_pos(i).expect("cross maps to cross");
+            let (x, y) = map(bx, by);
+            out.crosses[out.geom.cross_index(x, y).expect("cross maps to cross")] = *obj;
+        }
         self.genre.adjust_board_data(t, &mut out);
         out
     }
@@ -572,19 +615,44 @@ impl Board {
         match group {
             Group::Cell => self.geom.cell_index(bx, by).map(|i| &self.cells[i]),
             Group::Border => self.geom.border_index(bx, by).map(|i| &self.borders[i]),
+            Group::Cross => self.geom.cross_index(bx, by).map(|i| &self.crosses[i]),
         }
     }
     pub fn obj_mut(&mut self, group: Group, bx: i32, by: i32) -> Option<&mut Obj> {
         match group {
             Group::Cell => self.geom.cell_index(bx, by).map(|i| &mut self.cells[i]),
             Group::Border => self.geom.border_index(bx, by).map(|i| &mut self.borders[i]),
+            Group::Cross => self.geom.cross_index(bx, by).map(|i| &mut self.crosses[i]),
+        }
+    }
+
+    /// pzprjs `bd.getDot(bx, by)`: the object under a dot-grid point, by parity.
+    /// `hascross` gates the cross squares, `hasborder` the outer frame.
+    pub fn dot(&self, bx: i32, by: i32) -> Option<&Obj> {
+        self.dot_group(bx, by)
+            .and_then(|g| self.obj(g, bx, by))
+    }
+    pub fn dot_mut(&mut self, bx: i32, by: i32) -> Option<&mut Obj> {
+        let g = self.dot_group(bx, by)?;
+        self.obj_mut(g, bx, by)
+    }
+    fn dot_group(&self, bx: i32, by: i32) -> Option<Group> {
+        match (bx & 1, by & 1) {
+            (1, 1) => Some(Group::Cell),
+            (0, 1) | (1, 0) => Some(Group::Border),
+            (0, 0) => Some(Group::Cross),
+            _ => None,
         }
     }
 
     /// Whether any answer-side property is set.
     pub fn has_snapshot(&self) -> bool {
         let d = Obj::default();
-        self.cells.iter().chain(&self.borders).any(|o| {
+        self.cells
+            .iter()
+            .chain(&self.borders)
+            .chain(&self.crosses)
+            .any(|o| {
             o.anum != d.anum
                 || o.qans != d.qans
                 || o.qsub != d.qsub
@@ -597,6 +665,7 @@ impl Board {
         self.cells
             .iter_mut()
             .chain(self.borders.iter_mut())
+            .chain(self.crosses.iter_mut())
             .for_each(Obj::clear_answer);
     }
 }
@@ -625,6 +694,7 @@ mod tests {
                     cols,
                     rows,
                     hasborder,
+                    hascross: 0,
                 };
                 let mut seen: Vec<usize> = (0..g.border_count())
                     .map(|id| {

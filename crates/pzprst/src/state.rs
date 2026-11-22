@@ -54,6 +54,12 @@ pub(crate) fn check_match(puzzle: &Board, state: &Board) -> Result<()> {
             ));
         }
     }
+    for (i, (a, b)) in puzzle.crosses.iter().zip(&state.crosses).enumerate() {
+        if a.question() != b.question() {
+            let (bx, by) = puzzle.geom.cross_pos(i).unwrap_or((0, 0));
+            return mismatch(format!("cross at ({bx}, {by})"));
+        }
+    }
     for (i, (a, b)) in puzzle.borders.iter().zip(&state.borders).enumerate() {
         if a.question() != b.question() {
             let (bx, by) = puzzle.geom.border_pos(i);
