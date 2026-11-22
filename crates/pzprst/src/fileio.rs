@@ -807,3 +807,106 @@ pub(crate) fn encode_cross_num(w: &mut FileWriter, b: &Board) {
         _ => ". ".into(),
     });
 }
+
+// ----- cell/excell ("obj") grid codecs (puzzle/FileData.js) ----------------
+
+/// pzprjs `Board.setminmax`: the `obj` rectangle `decodeCellExCell` and
+/// `encodeCellExCell` walk, `(minbx + 1, minby + 1)` to
+/// `(maxbx - 1, maxby - 1)`.
+fn obj_rect(b: &Board) -> (i32, i32, i32, i32) {
+    let (c, r) = (b.cols() as i32, b.rows() as i32);
+    let exrows = b.geom.excell_rows as i32;
+    let excols = b.geom.excell_cols as i32;
+    let (minbx, minby) = if b.geom.hasexcell > 0 {
+        (-2 * excols, -2 * exrows)
+    } else {
+        (0, 0)
+    };
+    let (maxbx, maxby) = if b.geom.hasexcell == 2 {
+        (2 * c + 2, 2 * r + 2)
+    } else {
+        (2 * c, 2 * r)
+    };
+    (minbx + 1, minby + 1, maxbx - 1, maxby - 1)
+}
+
+/// pzprjs `getObjectPos("obj", bx, by)`: a cell inside the grid, an excell
+/// outside it. Positions with no object at all (the `hasexcell` 1 top-left
+/// corner) still get the excell group, like pzprjs's frozen `emptyexcell`.
+fn obj_group(b: &Board, bx: i32, by: i32) -> Group {
+    if b.geom.cell_index(bx, by).is_some() {
+        Group::Cell
+    } else {
+        Group::ExCell
+    }
+}
+
+/// `decodeCellExCell`: one token per cell or excell of pzprjs's combined `obj`
+/// grid, in FileIO order. `func` receives the object, its group and the token.
+pub(crate) fn decode_cell_excell(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+    mut func: impl FnMut(&mut crate::Obj, Group, &str) -> std::result::Result<(), String>,
+) -> Result<()> {
+    let (sbx, sby, ebx, eby) = obj_rect(b);
+    let items = r.item_list((eby - sby) / 2 + 1);
+    let per_row = if ebx < sbx { 0 } else { (ebx - sbx) / 2 + 1 };
+    let expected = per_row.max(0) as usize * ((eby - sby) / 2 + 1).max(0) as usize;
+    match items.len().cmp(&expected) {
+        std::cmp::Ordering::Less => d.push(
+            DiagnosticCode::TruncatedBody,
+            "FileIO section has fewer values than objects",
+        ),
+        std::cmp::Ordering::Greater => d.push(
+            DiagnosticCode::TrailingData,
+            "FileIO section has more values than objects",
+        ),
+        std::cmp::Ordering::Equal => {}
+    }
+    let (mut bx, mut by) = (sbx, sby);
+    let line = r.line_no();
+    let mut null = crate::Obj::default();
+    for item in &items {
+        let group = obj_group(b, bx, by);
+        let result = match b.obj_at_mut(bx, by) {
+            Some(obj) => func(obj, group, item),
+            None => func(&mut null, group, item),
+        };
+        result.map_err(|message| Error::InvalidFileIo { line, message })?;
+        bx += 2;
+        if bx > ebx {
+            bx = sbx;
+            by += 2;
+        }
+        if by > eby {
+            break;
+        }
+    }
+    Ok(())
+}
+
+/// `encodeCellExCell`: one token per cell or excell of pzprjs's combined `obj`
+/// grid, one FileIO line per object row. `func` receives the object and its
+/// group.
+pub(crate) fn encode_cell_excell(
+    w: &mut FileWriter,
+    b: &Board,
+    mut func: impl FnMut(&crate::Obj, Group) -> String,
+) {
+    let (sbx, sby, ebx, eby) = obj_rect(b);
+    let empty = crate::Obj::default();
+    let mut by = sby;
+    while by <= eby {
+        let mut line = String::new();
+        let mut bx = sbx;
+        while bx <= ebx {
+            let group = obj_group(b, bx, by);
+            let obj = b.obj_at(bx, by).unwrap_or(&empty);
+            line.push_str(&func(obj, group));
+            bx += 2;
+        }
+        w.write_line(&line);
+        by += 2;
+    }
+}

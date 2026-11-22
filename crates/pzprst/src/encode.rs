@@ -490,6 +490,68 @@ pub fn encode_number16(b: &Board) -> String {
     cm
 }
 
+/// `decodeNumber16ExCell`: excell numbers, one hex digit, a `-`-escaped
+/// two-digit hex number or `.` for `?`; `g`–`z` skip excells. Unlike
+/// `decodeNumber16` pzprjs only accepts the short `-` escape here.
+pub fn decode_number16_excell(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
+    let chars: Vec<char> = bstr.chars().collect();
+    let n = b.excells.len();
+    let excells = &mut b.excells;
+    let (mut ec, mut i) = (0usize, 0usize);
+    while i < chars.len() {
+        let ca = chars[i];
+        let (value, used) = if ca.is_ascii_digit() || ('a'..='f').contains(&ca) {
+            (Some(ca.to_digit(16).unwrap() as i32), 1)
+        } else if ca == '-' {
+            let value = match jsnum::parse_int(&jsnum::substr(&chars, i + 1, 2), 16) {
+                Some(v) => Some(v as i32),
+                None => {
+                    // pzprjs stores JavaScript's NaN here; keep the empty default.
+                    d.push(
+                        DiagnosticCode::UnexpectedChar,
+                        format!("incomplete hex escape at offset {i} leaves excell {ec} empty"),
+                    );
+                    None
+                }
+            };
+            (value, 3)
+        } else if ca == '.' {
+            (Some(-2), 1)
+        } else {
+            if ('g'..='z').contains(&ca) {
+                ec += jsnum::digit(ca, 36).unwrap() as usize - 16;
+            } else {
+                d.push(
+                    DiagnosticCode::UnexpectedChar,
+                    format!("unexpected character {ca:?} is skipped"),
+                );
+            }
+            (None, 1)
+        };
+        if let (Some(v), Some(excell)) = (value, excells.get_mut(ec)) {
+            excell.qnum = v;
+        }
+        ec += 1;
+        i += used;
+        if ec >= n {
+            break;
+        }
+    }
+    if ec < n {
+        d.push(
+            DiagnosticCode::TruncatedBody,
+            "body ends before the last excell",
+        );
+    }
+    chars[i.min(chars.len())..].iter().collect()
+}
+
+/// `encodeNumber16ExCell`: excell qnums, with base-36 run lengths for empty
+/// excells.
+pub fn encode_number16_excell(b: &Board) -> String {
+    generic_encode_number16(b.excells.len(), |c| b.excells[c].qnum)
+}
+
 /// `decodeIce`: `ques = 6` cells, five bits per base-32 character (`decodeBinary`).
 pub fn decode_ice(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
     let chars: Vec<char> = bstr.chars().collect();
