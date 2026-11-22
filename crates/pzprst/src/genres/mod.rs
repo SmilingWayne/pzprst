@@ -25,7 +25,14 @@ pub(crate) trait Genre: Sync {
     fn symmetries(&self) -> &'static [Transform] {
         &Transform::ALL
     }
-    /// pzprjs `adjustBoardData2` for directional content.
+    /// pzprjs `BoardExec.adjustBoardData`: directional content adjusted
+    /// **before** the coordinates move (pzprjs calls it once per board
+    /// operation, so a composed transform must apply the operations in
+    /// `tools/gen_fixtures.js` order: rot90 = TURNR, transpose = TURNL+FLIPY, …).
+    fn adjust_board_data_before(&self, _t: Transform, _b: &mut Board) {}
+
+    /// pzprjs `BoardExec.adjustBoardData2`: the same, **after** the coordinates
+    /// have moved, on the transformed board.
     fn adjust_board_data(&self, _t: Transform, _b: &mut Board) {}
 }
 

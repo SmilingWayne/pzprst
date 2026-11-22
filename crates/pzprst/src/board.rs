@@ -13,6 +13,8 @@ use crate::{fileio, state, url, variety};
 pub struct Obj {
     pub qnum: i32,
     pub qnum2: i32,
+    pub qnum3: i32,
+    pub qnum4: i32,
     pub ques: i32,
     pub qdir: i32,
     pub anum: i32,
@@ -27,6 +29,8 @@ impl Default for Obj {
         Self {
             qnum: -1,
             qnum2: -1,
+            qnum3: -1,
+            qnum4: -1,
             ques: 0,
             qdir: 0,
             anum: -1,
@@ -39,9 +43,12 @@ impl Default for Obj {
 }
 
 impl Obj {
-    /// Puzzle-definition properties (what URLs encode).
-    pub fn question(&self) -> (i32, i32, i32, i32) {
-        (self.qnum, self.qnum2, self.ques, self.qdir)
+    /// Puzzle-definition properties (what URLs encode and what pzpr-trace
+    /// state matching compares): every `qnum*` slot, `ques` and `qdir`.
+    pub fn question(&self) -> (i32, i32, i32, i32, i32, i32) {
+        (
+            self.qnum, self.qnum2, self.qnum3, self.qnum4, self.ques, self.qdir,
+        )
     }
 
     pub fn clear_answer(&mut self) {
@@ -474,6 +481,7 @@ impl Board {
         let (c, r) = (self.geom.cols, self.geom.rows);
         let (nc, nr) = if t.swaps_axes() { (r, c) } else { (c, r) };
         let mut out = self.clone();
+        self.genre.adjust_board_data_before(t, &mut out);
         out.geom = Geometry {
             cols: nc,
             rows: nr,

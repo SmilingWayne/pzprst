@@ -68,13 +68,23 @@ pzpr objects addressed by pzpr's doubled coordinates `(bx, by)`:
   and odd `bx`/even `by` (horizontal border);
 - excell outside the grid (later genres).
 
-Each object carries the same property names as pzprjs (`qnum`, `ques`, `qdir`,
-`line`, `qsub`, …) with the same defaults. Codecs are line-by-line ports of
-pzprjs functions (`decode4Cell`, `genericDecodeTriple`, `decodeObj`, …), so a
-reviewer can diff them against the JS. Transforms are a port of
-`BoardExec.turnflipGroup` (pure coordinate maps) plus per-genre
-`adjust_board_data` hooks for directional content (arrows, etc.; none needed for
-the pilot).
+Each object carries the same property names as pzprjs (`qnum`, `qnum2`,
+`qnum3`, `qnum4`, `ques`, `qdir`, `line`, `qsub`, …) with the same defaults
+(`qnum*` = -1, `ques`/`qdir`/`qans`/`qsub`/`qcmp`/`line` = 0, `anum` = -1).
+Codecs are line-by-line ports of pzprjs functions (`decode4Cell`,
+`genericDecodeTriple`, `decodeObj`, …), so a reviewer can diff them against the
+JS. Transforms are a port of `BoardExec.turnflipGroup` (pure coordinate maps)
+plus the two per-genre directional hooks, mirroring pzprjs `BoardExec`:
+
+- `Genre::adjust_board_data_before` = `adjustBoardData`: runs on the
+  pre-transform content, before the coordinates move;
+- `Genre::adjust_board_data` = `adjustBoardData2`: runs on the transformed
+  board.
+
+pzprjs calls the hooks once per board *operation*, while pzprst calls them once
+with the composed `Transform`; a genre with directional values therefore applies
+the operations in `tools/gen_fixtures.js` order (rot90 = `turnr`,
+transpose = `turnl` + `flipy`, …) inside its hook.
 
 Rejected alternatives: (a) typed per-genre grids only — convenient but every
 codec and transform would be a re-derivation, which is how PuzzleKit drifted;
@@ -446,9 +456,10 @@ cd ../puzzlekit && pip install -e ".[dev]" && pytest -q   # Python surface
 
 Next: Phase 2 (`yajilin`, `easyasabc`, `battleship`, `heyawake`, `URL_PZPRFILE`).
 
-Porting backlog (`node tools/triage.js --all`, pzprjs d40aeab0, 346 pids): 2 ported,
-13 ready (all needed codecs exist), 144 need only more common codecs, 186 need
-core infrastructure (rooms, directional transforms, crosses, excells, piece
-bank, array properties), 1 cannot be introspected. Ready and codec-only genres
-are dispatched in waves (`--plan`, see `.agents/skills/pzprst-port-genre/dispatch.md`);
-infrastructure features are maintainer work and unblock the rest by feature.
+Porting backlog (`node tools/triage.js --all`, pzprjs d40aeab0, 346 pids):
+141 ported, 11 triage-ready but blocked on a missing core feature, 7 blocked on
+cross objects, 186 need core infrastructure (directional hooks, crosses, rooms,
+excells, piece bank, array properties, indicators, segments), 1 cannot be
+introspected. Ready and codec-only genres are dispatched in waves (`--plan`, see
+`.agents/skills/pzprst-port-genre/dispatch.md`); infrastructure features are
+maintainer work and unblock the rest by feature.
