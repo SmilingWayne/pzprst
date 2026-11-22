@@ -2,7 +2,7 @@
 //!
 //! Decoders return the unconsumed rest of the body, like pzprjs `outbstr`.
 
-use crate::board::Board;
+use crate::board::{Board, Group};
 use crate::error::{DiagnosticCode, Diagnostics, Error, Result};
 use crate::jsnum;
 
@@ -1142,6 +1142,220 @@ pub fn generic_encode_number16(length: usize, mut get: impl FnMut(usize) -> i32)
     }
     if count > 0 {
         cm.push_str(&jsnum::to_radix(15 + count, 36));
+    }
+    cm
+}
+
+// ----- dot-grid codecs (variety-common/Encode.js) -------------------------
+
+/// pzprjs `bd.dots` for `hasdots === 1`: `2*cols-1` by `2*rows-1` points,
+/// row-major and including cells, borders and crosses.
+fn dot_count(b: &Board) -> usize {
+    (2 * b.cols() - 1) * (2 * b.rows() - 1)
+}
+
+/// Position of flat dot index `s` in pzprjs's `hasdots === 1` dot grid.
+pub(crate) fn dot_point(b: &Board, s: usize) -> (i32, i32) {
+    let width = 2 * b.cols() - 1;
+    ((s % width) as i32 + 1, (s / width) as i32 + 1)
+}
+
+/// pzprjs `bd.getobj` by parity: the object a dot's `piece` points at.
+pub(crate) fn dot_group(bx: i32, by: i32) -> Group {
+    match (bx & 1, by & 1) {
+        (1, 1) => Group::Cell,
+        (0, 1) | (1, 0) => Group::Border,
+        _ => Group::Cross,
+    }
+}
+
+/// `getDot` for flat dot index `s`: the piece's `qnum` (pzprst's empty is -1).
+fn dot_qnum(b: &Board, s: usize) -> i32 {
+    let (bx, by) = dot_point(b, s);
+    b.dot(bx, by).map_or(-1, |dot| dot.qnum)
+}
+
+/// `decodeDot`: dot values on cells, borders and crosses; a hex digit writes
+/// `(value % 2) + 1` and skips `(value >> 1) + 1` dots, `g`–`z` skip 16–35.
+/// `set` is pzprjs `Dot.setDot` (genres may override it).
+pub fn decode_dot(
+    b: &mut Board,
+    bstr: &str,
+    d: &mut Diagnostics,
+    mut set: impl FnMut(&mut crate::Obj, Group, i32),
+) -> String {
+    let chars: Vec<char> = bstr.chars().collect();
+    let dotsmax = dot_count(b);
+    let (mut s, mut i) = (0usize, 0usize);
+    while i < chars.len() {
+        let ca = chars[i];
+        if ('0'..='f').contains(&ca) {
+            match jsnum::digit(ca, 16) {
+                Some(val) => {
+                    let (bx, by) = dot_point(b, s);
+                    let group = dot_group(bx, by);
+                    if let Some(dot) = b.obj_mut(group, bx, by) {
+                        set(dot, group, (val % 2) as i32 + 1);
+                    }
+                    s += (val >> 1) as usize + 1;
+                }
+                None => {
+                    // pzprjs's `include(ca, "0", "f")` also matches punctuation
+                    // and `A`–`Z`; `parseInt` is then NaN, which it stores as
+                    // `qnum` and advances one dot. pzprjs's own encoder treats
+                    // NaN as empty, so leaving the dot untouched matches.
+                    d.push(
+                        DiagnosticCode::UnexpectedChar,
+                        format!("unexpected character {ca:?} decodes as an empty dot"),
+                    );
+                    s += 1;
+                }
+            }
+        } else if ('g'..='z').contains(&ca) {
+            s += jsnum::digit(ca, 36).unwrap() as usize - 15;
+        } else {
+            d.push(
+                DiagnosticCode::UnexpectedChar,
+                format!("unexpected character {ca:?} is skipped"),
+            );
+        }
+        if s >= dotsmax {
+            break;
+        }
+        i += 1;
+    }
+    if s < dotsmax {
+        d.push(
+            DiagnosticCode::TruncatedBody,
+            "body ends before the last dot",
+        );
+    }
+    chars[(i + 1).min(chars.len())..].iter().collect()
+}
+
+/// `encodeDot`: dot values 1–2; a value within the next seven dots as one hex
+/// pair digit (the encoder moves to it), an isolated value as `(13 + value)`
+/// in hex, and base-36 runs of 20 blank dots.
+pub fn encode_dot(b: &Board) -> String {
+    let dotsmax = dot_count(b);
+    let mut count = 0u32;
+    let mut cm = String::new();
+    let mut s = 0usize;
+    while s < dotsmax {
+        let mut pstr = String::new();
+        let val = dot_qnum(b, s);
+        if val > 0 {
+            for i in 1..=7 {
+                if s + i < dotsmax && dot_qnum(b, s + i) > 0 {
+                    pstr = jsnum::to_radix((2 * (i as i32 - 1) + (val - 1)) as u32, 16);
+                    s += i - 1;
+                    break;
+                }
+            }
+            if pstr.is_empty() {
+                pstr = jsnum::to_radix((13 + val) as u32, 16);
+                s += 7;
+            }
+        } else {
+            count += 1;
+        }
+
+        if count == 0 {
+            cm.push_str(&pstr);
+        } else if !pstr.is_empty() || count == 20 {
+            cm.push_str(&jsnum::to_radix(count + 15, 36));
+            cm.push_str(&pstr);
+            count = 0;
+        }
+        s += 1;
+    }
+    if count > 0 {
+        cm.push_str(&jsnum::to_radix(count + 15, 36));
+    }
+    cm
+}
+
+/// `decodeCrossMark`: black dots (`qnum = 1`) on the cross grid, written as
+/// base-36 run lengths of unmarked crosses; `.` counts as a run of 36.
+pub fn decode_cross_mark(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
+    let chars: Vec<char> = bstr.chars().collect();
+    let cp: i64 = if b.geom.hascross == 2 { 1 } else { 0 };
+    let cp2 = cp * 2;
+    let rows = b.rows() as i64 - 1 + cp2;
+    let cols = b.cols() as i64 - 1 + cp2;
+    let total = (cols * rows).max(0);
+    let maxby = 2 * b.rows() as i64;
+    let mut cc: i64 = 0;
+    let mut i = 0usize;
+    let mut complete = false;
+    while i < chars.len() {
+        let ca = chars[i];
+        if ca.is_ascii_digit() || ca.is_ascii_lowercase() {
+            cc += jsnum::digit(ca, 36).unwrap() as i64;
+            // pzprjs gives no cross for these coordinates: `cc % 0` is NaN and
+            // `cc / 0` is Infinity, which both coerce to 0 in the shifts.
+            let (bx, by) = if cols == 0 {
+                (0, 2)
+            } else {
+                ((cc % cols + 1 - cp) << 1, (cc / cols + 1 - cp) << 1)
+            };
+            if by > maxby - 2 * (1 - cp) {
+                i += 1;
+                complete = true;
+                break;
+            }
+            if let Some(cross) = b.dot_mut(bx as i32, by as i32) {
+                cross.qnum = 1;
+            }
+        } else if ca == '.' {
+            cc += 35;
+        }
+        cc += 1;
+        if cc >= total {
+            i += 1;
+            complete = true;
+            break;
+        }
+        i += 1;
+    }
+    if !complete && cc < total {
+        d.push(
+            DiagnosticCode::TruncatedBody,
+            "body ends before the last cross",
+        );
+    }
+    chars[i.min(chars.len())..].iter().collect()
+}
+
+/// `encodeCrossMark`: black dots (`qnum = 1`) on the cross grid as base-36
+/// run lengths of unmarked crosses; `.` for a run of 36.
+pub fn encode_cross_mark(b: &Board) -> String {
+    let cp: i64 = if b.geom.hascross == 2 { 1 } else { 0 };
+    let cp2 = cp * 2;
+    let rows = b.rows() as i64 - 1 + cp2;
+    let cols = b.cols() as i64 - 1 + cp2;
+    let mut cm = String::new();
+    let mut count = 0u32;
+    if cols > 0 && rows > 0 {
+        for c in 0..cols * rows {
+            let bx = (c % cols + 1 - cp) << 1;
+            let by = (c / cols + 1 - cp) << 1;
+            if b.dot(bx as i32, by as i32)
+                .is_some_and(|cross| cross.qnum == 1)
+            {
+                cm.push_str(&jsnum::to_radix(count, 36));
+                count = 0;
+            } else {
+                count += 1;
+                if count == 36 {
+                    cm.push('.');
+                    count = 0;
+                }
+            }
+        }
+    }
+    if count > 0 || cm.is_empty() {
+        cm.push_str(&jsnum::to_radix(count, 36));
     }
     cm
 }

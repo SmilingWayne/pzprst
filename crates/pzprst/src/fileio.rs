@@ -132,6 +132,26 @@ impl FileReader {
         self.decode_obj(b, Group::Cell, (1, 1, 2 * c - 1, 2 * r - 1), d, func)
     }
 
+    /// `decodeCross`: `decodeObj` over the cross grid, or over the inner
+    /// crosses when `is_inset`.
+    pub fn decode_cross(
+        &mut self,
+        b: &mut Board,
+        d: &mut Diagnostics,
+        is_inset: bool,
+        func: impl FnMut(&mut crate::Obj, &str) -> std::result::Result<(), String>,
+    ) -> Result<()> {
+        let inset = if is_inset { 2 } else { 0 };
+        let (c, r) = (b.cols() as i32, b.rows() as i32);
+        self.decode_obj(
+            b,
+            Group::Cross,
+            (inset, inset, 2 * c - inset, 2 * r - inset),
+            d,
+            func,
+        )
+    }
+
     /// `decodeBorder`: `decodeObj` over borders in FileIO order.
     pub fn decode_border(
         &mut self,
@@ -203,6 +223,24 @@ impl FileWriter {
     pub fn encode_cell(&mut self, b: &Board, mut func: impl FnMut(&crate::Obj) -> String) {
         let (c, r) = (b.cols() as i32, b.rows() as i32);
         self.encode_obj(b, Group::Cell, (1, 1, 2 * c - 1, 2 * r - 1), &mut func);
+    }
+
+    /// `encodeCross`: `encodeObj` over the cross grid, or over the inner
+    /// crosses when `is_inset`.
+    pub fn encode_cross(
+        &mut self,
+        b: &Board,
+        is_inset: bool,
+        mut func: impl FnMut(&crate::Obj) -> String,
+    ) {
+        let inset = if is_inset { 2 } else { 0 };
+        let (c, r) = (b.cols() as i32, b.rows() as i32);
+        self.encode_obj(
+            b,
+            Group::Cross,
+            (inset, inset, 2 * c - inset, 2 * r - inset),
+            &mut func,
+        );
     }
 
     /// `encodeBorder`.
@@ -644,5 +682,102 @@ pub(crate) fn encode_cell_qanssub(w: &mut FileWriter, b: &Board) {
             ".".into()
         };
         format!("{ca} ")
+    });
+}
+
+// ----- dot-grid codecs (variety-common/FileData.js) ------------------------
+
+/// `decodeDotFile`: `2*rows-1` dot-grid lines (`1`–`9`, `-` for `?`, `X` for
+/// `ques` 7) concatenated like pzprjs. `set` is pzprjs `Dot.setDot`.
+pub(crate) fn decode_dot_file(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+    mut set: impl FnMut(&mut crate::Obj, Group, i32),
+) -> Result<()> {
+    let (cols, rows) = (b.cols(), b.rows());
+    let dotsmax = (2 * cols - 1) * (2 * rows - 1);
+    let mut data = String::new();
+    for _ in 0..2 * rows - 1 {
+        match r.read_line() {
+            Some(line) => data.push_str(line),
+            None => d.push(
+                DiagnosticCode::TruncatedBody,
+                "FileIO ends before the last dot line",
+            ),
+        }
+    }
+    let chars: Vec<char> = data.chars().collect();
+    if chars.len() > dotsmax {
+        d.push(
+            DiagnosticCode::TrailingData,
+            "dot data has more characters than dots",
+        );
+    }
+    for (s, &ca) in chars.iter().take(dotsmax).enumerate() {
+        let (bx, by) = crate::encode::dot_point(b, s);
+        let group = crate::encode::dot_group(bx, by);
+        if let Some(num) = ca.to_digit(10) {
+            if (1..=9).contains(&num) {
+                if let Some(dot) = b.obj_mut(group, bx, by) {
+                    set(dot, group, num as i32);
+                }
+            }
+        } else if ca == '-' {
+            if let Some(dot) = b.obj_mut(group, bx, by) {
+                set(dot, group, -2);
+            }
+        } else if ca == 'X' {
+            if let Some(dot) = b.obj_mut(group, bx, by) {
+                dot.ques = 7;
+            }
+        }
+    }
+    Ok(())
+}
+
+/// `encodeDotFile`: `2*rows-1` lines of `2*cols-1` dot characters; a `?` dot
+/// is `-`, a piece with `ques` 7 is `X` (unless it has a number in 1–9).
+pub(crate) fn encode_dot_file(w: &mut FileWriter, b: &Board) {
+    let (cols, rows) = (b.cols(), b.rows());
+    for by in 1..=2 * rows - 1 {
+        let mut data = String::new();
+        for bx in 1..=2 * cols - 1 {
+            let ca = match b.dot(bx as i32, by as i32) {
+                Some(dot) if (1..=9).contains(&dot.qnum) => {
+                    char::from_digit(dot.qnum as u32, 10).unwrap()
+                }
+                Some(dot) if dot.ques == 7 => 'X',
+                Some(dot) if dot.qnum == -2 => '-',
+                _ => '.',
+            };
+            data.push(ca);
+        }
+        w.write_line(&data);
+    }
+}
+
+/// `decodeCrossNum`.
+pub(crate) fn decode_cross_num(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_cross(b, d, false, |cross, ca| {
+        if ca == "-" {
+            cross.qnum = -2;
+        } else if ca != "." {
+            cross.qnum = int(ca)?;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCrossNum`.
+pub(crate) fn encode_cross_num(w: &mut FileWriter, b: &Board) {
+    w.encode_cross(b, false, |cross| match cross.qnum {
+        n if n >= 0 => format!("{n} "),
+        -2 => "- ".into(),
+        _ => ". ".into(),
     });
 }
