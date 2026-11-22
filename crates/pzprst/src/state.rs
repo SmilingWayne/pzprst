@@ -60,6 +60,12 @@ pub(crate) fn check_match(puzzle: &Board, state: &Board) -> Result<()> {
             return mismatch(format!("cross at ({bx}, {by})"));
         }
     }
+    for (i, (a, b)) in puzzle.excells.iter().zip(&state.excells).enumerate() {
+        if a.question() != b.question() {
+            let (bx, by) = puzzle.geom.excell_pos(i).unwrap_or((0, 0));
+            return mismatch(format!("excell at ({bx}, {by})"));
+        }
+    }
     for (i, (a, b)) in puzzle.borders.iter().zip(&state.borders).enumerate() {
         if a.question() != b.question() {
             let (bx, by) = puzzle.geom.border_pos(i);

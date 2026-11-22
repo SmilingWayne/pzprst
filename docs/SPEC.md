@@ -66,7 +66,11 @@ pzpr objects addressed by pzpr's doubled coordinates `(bx, by)`:
 - cell `(2c+1, 2r+1)`; cross `(2c, 2r)`;
 - border with even `bx`/odd `by` (vertical border, separates left/right cells)
   and odd `bx`/even `by` (horizontal border);
-- excell outside the grid (later genres).
+- excell outside the grid: pzprjs `Board.hasexcell` 1 puts `cols*excellRows`
+  cells above and `rows*excellCols` left (plus an optional top-left one when
+  `emptyexcell.ques == 51`), 2 puts a row on each side; `Board::obj_at` mirrors
+  pzprjs `getObjectPos("obj", …)`, and `Group::ExCell` addresses them directly.
+  Crosses are a `(cols+1) x (rows+1)` grid gated on `Board.hascross`.
 
 Each object carries the same property names as pzprjs (`qnum`, `qnum2`,
 `qnum3`, `qnum4`, `ques`, `qdir`, `line`, `qsub`, …) with the same defaults

@@ -66,6 +66,7 @@ pub enum Group {
     Cell,
     Border,
     Cross,
+    ExCell,
 }
 
 /// Board shape: `hasborder` is pzprjs's flag (0 none, 1 inner borders, 2 inner and outer).
@@ -75,6 +76,13 @@ pub(crate) struct Geometry {
     pub rows: usize,
     pub hasborder: u8,
     pub hascross: u8,
+    /// pzprjs `Board.hasexcell` (0 none, 1 above/left, 2 all four sides).
+    pub hasexcell: u8,
+    /// pzprjs `Board.excellRows` / `excellCols` (default 1 each).
+    pub excell_rows: usize,
+    pub excell_cols: usize,
+    /// pzprjs `hasexcell === 1`'s extra top-left excell (`emptyexcell.ques` 51).
+    pub excell_corner: bool,
 }
 
 impl Geometry {
@@ -111,6 +119,58 @@ impl Geometry {
             return None;
         }
         Some((by >> 1) as usize * (self.cols + 1) + (bx >> 1) as usize)
+    }
+
+    /// pzprjs `estimateSize("excell")`.
+    pub fn excell_count(&self) -> usize {
+        match self.hasexcell {
+            0 => 0,
+            1 => {
+                self.cols * self.excell_rows
+                    + self.rows * self.excell_cols
+                    + usize::from(self.excell_corner)
+            }
+            _ => 2 * (self.cols * self.excell_rows + self.rows * self.excell_cols),
+        }
+    }
+
+    /// pzprjs `setposExCells`: the object's `(bx, by)` for excell id `i`.
+    pub fn excell_pos(&self, i: usize) -> Option<(i32, i32)> {
+        if i >= self.excell_count() {
+            return None;
+        }
+        let exrows = self.excell_rows as i32;
+        let excols = self.excell_cols as i32;
+        let qc = (self.cols as i32) * exrows;
+        let qr = (self.rows as i32) * excols;
+        let i = i as i32;
+        Some(match self.hasexcell {
+            1 => {
+                if i < qc {
+                    ((i / exrows) * 2 + 1, (i % exrows) * -2 - 1)
+                } else if i < qc + qr {
+                    let j = i - qc;
+                    ((j % excols) * -2 - 1, (j / excols) * 2 + 1)
+                } else {
+                    (-1, -1)
+                }
+            }
+            _ => {
+                if i < qc {
+                    (i * 2 + 1, -1)
+                } else if i < 2 * qc {
+                    ((i - qc) * 2 + 1, 2 * qr + 1)
+                } else if i < 2 * qc + qr {
+                    (-1, (i - 2 * qc) * 2 + 1)
+                } else {
+                    (2 * qc + 1, (i - 2 * qc - qr) * 2 + 1)
+                }
+            }
+        })
+    }
+
+    pub fn excell_index(&self, bx: i32, by: i32) -> Option<usize> {
+        (0..self.excell_count()).find(|&i| self.excell_pos(i) == Some((bx, by)))
     }
 
     pub fn cross_pos(&self, i: usize) -> Option<(i32, i32)> {
@@ -299,6 +359,7 @@ pub struct Board {
     pub(crate) cells: Vec<Obj>,
     pub(crate) borders: Vec<Obj>,
     pub(crate) crosses: Vec<Obj>,
+    pub(crate) excells: Vec<Obj>,
     pub(crate) diagnostics: Diagnostics,
 }
 
@@ -324,6 +385,7 @@ impl PartialEq for Board {
             && self.cells == other.cells
             && self.borders == other.borders
             && self.crosses == other.crosses
+            && self.excells == other.excells
     }
 }
 
@@ -344,6 +406,10 @@ impl Board {
             rows,
             hasborder: genre.hasborder(),
             hascross: genre.hascross(),
+            hasexcell: genre.hasexcell(),
+            excell_rows: genre.excell_rows(cols, rows),
+            excell_cols: genre.excell_cols(cols, rows),
+            excell_corner: genre.excell_corner(),
         };
         Ok(Self {
             genre,
@@ -357,6 +423,7 @@ impl Board {
             cells: vec![Obj::default(); geom.cell_count()],
             borders: vec![Obj::default(); geom.border_count()],
             crosses: vec![Obj::default(); geom.cross_count()],
+            excells: vec![Obj::default(); geom.excell_count()],
             diagnostics: Diagnostics::default(),
         })
     }
@@ -546,6 +613,12 @@ impl Board {
             let (x, y) = map(bx, by);
             out.crosses[out.geom.cross_index(x, y).expect("cross maps to cross")] = *obj;
         }
+        let src_excells = out.excells.clone();
+        for (i, obj) in src_excells.iter().enumerate() {
+            let (bx, by) = self.geom.excell_pos(i).expect("excell maps to excell");
+            let (x, y) = map(bx, by);
+            out.excells[out.geom.excell_index(x, y).expect("excell maps to excell")] = *obj;
+        }
         self.genre.adjust_board_data(t, &mut out);
         out
     }
@@ -621,6 +694,7 @@ impl Board {
             Group::Cell => self.geom.cell_index(bx, by).map(|i| &self.cells[i]),
             Group::Border => self.geom.border_index(bx, by).map(|i| &self.borders[i]),
             Group::Cross => self.geom.cross_index(bx, by).map(|i| &self.crosses[i]),
+            Group::ExCell => self.geom.excell_index(bx, by).map(|i| &self.excells[i]),
         }
     }
     pub fn obj_mut(&mut self, group: Group, bx: i32, by: i32) -> Option<&mut Obj> {
@@ -628,7 +702,23 @@ impl Board {
             Group::Cell => self.geom.cell_index(bx, by).map(|i| &mut self.cells[i]),
             Group::Border => self.geom.border_index(bx, by).map(|i| &mut self.borders[i]),
             Group::Cross => self.geom.cross_index(bx, by).map(|i| &mut self.crosses[i]),
+            Group::ExCell => self.geom.excell_index(bx, by).map(|i| &mut self.excells[i]),
         }
+    }
+
+    /// pzprjs `getObjectPos("obj", bx, by)`: cell or excell at a doubled point.
+    pub fn obj_at(&self, bx: i32, by: i32) -> Option<&Obj> {
+        if let Some(i) = self.geom.cell_index(bx, by) {
+            return Some(&self.cells[i]);
+        }
+        self.geom.excell_index(bx, by).map(|i| &self.excells[i])
+    }
+    pub fn obj_at_mut(&mut self, bx: i32, by: i32) -> Option<&mut Obj> {
+        if let Some(i) = self.geom.cell_index(bx, by) {
+            return Some(&mut self.cells[i]);
+        }
+        let i = self.geom.excell_index(bx, by)?;
+        Some(&mut self.excells[i])
     }
 
     /// pzprjs `bd.getDot(bx, by)`: the object under a dot-grid point, by parity.
@@ -656,6 +746,7 @@ impl Board {
             .iter()
             .chain(&self.borders)
             .chain(&self.crosses)
+            .chain(&self.excells)
             .any(|o| {
                 o.anum != d.anum
                     || o.qans != d.qans
@@ -670,6 +761,7 @@ impl Board {
             .iter_mut()
             .chain(self.borders.iter_mut())
             .chain(self.crosses.iter_mut())
+            .chain(self.excells.iter_mut())
             .for_each(Obj::clear_answer);
     }
 }
@@ -699,6 +791,10 @@ mod tests {
                     rows,
                     hasborder,
                     hascross: 0,
+                    hasexcell: 0,
+                    excell_rows: 1,
+                    excell_cols: 1,
+                    excell_corner: false,
                 };
                 let mut seen: Vec<usize> = (0..g.border_count())
                     .map(|id| {

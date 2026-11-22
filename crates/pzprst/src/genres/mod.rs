@@ -13,6 +13,22 @@ pub(crate) trait Genre: Sync {
     fn hascross(&self) -> u8 {
         0
     }
+    /// pzprjs `Board.hasexcell` (0 none, 1 above/left, 2 all four sides).
+    fn hasexcell(&self) -> u8 {
+        0
+    }
+    /// pzprjs `Board.excellRows`.
+    fn excell_rows(&self, _cols: usize, _rows: usize) -> usize {
+        1
+    }
+    /// pzprjs `Board.excellCols`.
+    fn excell_cols(&self, _cols: usize, _rows: usize) -> usize {
+        1
+    }
+    /// `hasexcell === 1`'s extra top-left excell (pzprjs `emptyexcell.ques == 51`).
+    fn excell_corner(&self) -> bool {
+        false
+    }
     /// URL pflag character and FileIO flag line ↔ pzprjs config key.
     fn rule_flags(&self) -> &'static [(char, &'static str)];
     /// `decodePzpr`; returns the unconsumed body.
