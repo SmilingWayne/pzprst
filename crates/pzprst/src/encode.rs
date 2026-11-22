@@ -574,6 +574,18 @@ mod number10or16 {
         while i < chars.len() && c < length {
             let ca = chars[i];
             match read_number16(&chars, i) {
+                // pzprjs `readNumber16` uses -1 as its "no number" sentinel.
+                (ReadNumber16::Value(-1), _) => {
+                    if ('g'..='z').contains(&ca) {
+                        c += jsnum::digit(ca, 36).unwrap() as usize - 15;
+                    } else {
+                        d.push(
+                            DiagnosticCode::UnexpectedChar,
+                            format!("unexpected character {ca:?} is skipped"),
+                        );
+                    }
+                    i += 1;
+                }
                 (ReadNumber16::Value(val), used) => {
                     set(c, val);
                     i += used;
@@ -1017,6 +1029,20 @@ pub fn generic_decode_number16(
     while i < chars.len() && c < length {
         let ca = chars[i];
         match generic_read_number16(&chars, i) {
+            // `readNumber16` reports -1 for "no number", so an escape that
+            // parses to -1 (e.g. `--1`) falls into pzprjs's skip branch and
+            // consumes its first character only.
+            Number16::Value(-1, _) => {
+                if ('g'..='z').contains(&ca) {
+                    c += jsnum::digit(ca, 36).unwrap() as usize - 15;
+                } else {
+                    d.push(
+                        DiagnosticCode::UnexpectedChar,
+                        format!("unexpected character {ca:?} is skipped"),
+                    );
+                }
+                i += 1;
+            }
             Number16::Value(val, used) => {
                 set(c, val);
                 i += used;
