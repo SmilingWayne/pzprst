@@ -161,6 +161,23 @@ pub fn encode_triple(length: usize, mut get: impl FnMut(usize) -> i32) -> Result
     Ok(cm)
 }
 
+/// `genericDecodeThree`: `genericDecodeTriple` over every cell; `set` receives
+/// the cell index and a 1 or 2 (zero values are skipped).
+pub fn decode_three(
+    length: usize,
+    bstr: &str,
+    d: &mut Diagnostics,
+    set: impl FnMut(usize, i32),
+) -> String {
+    decode_triple(length, bstr, d, set)
+}
+
+/// `genericEncodeThree`: `genericEncodeTriple` over every cell; `get` returns
+/// the value for a cell index and must be 0–2.
+pub fn encode_three(length: usize, get: impl FnMut(usize) -> i32) -> Result<String> {
+    encode_triple(length, get)
+}
+
 /// `decodeCircle`: cell qnum 1/2.
 pub fn decode_circle(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
     let n = b.cells.len();
