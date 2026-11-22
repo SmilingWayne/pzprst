@@ -290,6 +290,32 @@ pub(crate) fn encode_cell_qnum(w: &mut FileWriter, b: &Board) {
     });
 }
 
+/// `decodeCellQnumb`: a clue number whose `?` is `5` (the number is drawn on a
+/// dark background); `.` is empty.
+pub(crate) fn decode_cell_qnumb(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    r.decode_cell(b, d, |cell, ca| {
+        if ca == "5" {
+            cell.qnum = -2;
+        } else if ca != "." {
+            cell.qnum = int(ca)?;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCellQnumb`: a clue number whose `?` is `5`; `.` is empty.
+pub(crate) fn encode_cell_qnumb(w: &mut FileWriter, b: &Board) {
+    w.encode_cell(b, |cell| match cell.qnum {
+        n if n >= 0 => format!("{n} "),
+        -2 => "5 ".into(),
+        _ => ". ".into(),
+    });
+}
+
 /// `decodeCellQsub`.
 pub(crate) fn decode_cell_qsub(
     r: &mut FileReader,

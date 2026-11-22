@@ -169,6 +169,73 @@ impl Geometry {
         })
     }
 
+    /// pzprjs `turnflipGroup("excell", key, d)` for one composed `Transform`:
+    /// the operations are applied in `tools/gen_fixtures.js` order, with the
+    /// dimensions swapping at each turn exactly like `execadjust_main`.
+    pub fn excell_transform(&self, t: Transform, excells: &[Obj]) -> Vec<Obj> {
+        if self.hasexcell == 0 || excells.is_empty() {
+            return excells.to_vec();
+        }
+        let ops: &[Transform] = match t {
+            Transform::Identity => &[],
+            Transform::Rot90 => &[Transform::Rot90],
+            Transform::Rot180 => &[Transform::Rot90, Transform::Rot90],
+            Transform::Rot270 => &[Transform::Rot270],
+            Transform::FlipX => &[Transform::FlipX],
+            Transform::FlipY => &[Transform::FlipY],
+            Transform::Transpose => &[Transform::Rot270, Transform::FlipY],
+            Transform::AntiTranspose => &[Transform::Rot90, Transform::FlipY],
+        };
+        let mut cols = self.cols;
+        let mut rows = self.rows;
+        let mut cur: Vec<Obj> = excells.to_vec();
+        for &op in ops {
+            let (nc, nr) = if op.swaps_axes() {
+                (rows, cols)
+            } else {
+                (cols, rows)
+            };
+            let mut next = cur.clone();
+            let mut geom = *self;
+            geom.cols = cols;
+            geom.rows = rows;
+            let mut next_geom = *self;
+            next_geom.cols = nc;
+            next_geom.rows = nr;
+            for (i, obj) in cur.iter().enumerate() {
+                let Some((bx, by)) = geom.excell_pos(i) else {
+                    continue;
+                };
+                let new = if self.hasexcell == 1 {
+                    match op {
+                        // Turns move no excell; flips reverse only their own row/column.
+                        Transform::FlipX if by == -1 => Some(((2 * nc as i32) - bx, by)),
+                        Transform::FlipY if bx == -1 => Some((bx, (2 * nr as i32) - by)),
+                        Transform::FlipX | Transform::FlipY => Some((bx, by)),
+                        _ => None,
+                    }
+                } else {
+                    Some(match op {
+                        Transform::FlipX => ((2 * nc as i32) - bx, by),
+                        Transform::FlipY => (bx, (2 * nr as i32) - by),
+                        Transform::Rot90 => (((2 * nc as i32) - by), bx),
+                        Transform::Rot270 => (by, ((2 * nr as i32) - bx)),
+                        _ => (bx, by),
+                    })
+                };
+                if let Some((x, y)) = new {
+                    if let Some(j) = next_geom.excell_index(x, y) {
+                        next[j] = *obj;
+                    }
+                }
+            }
+            cur = next;
+            cols = nc;
+            rows = nr;
+        }
+        cur
+    }
+
     pub fn excell_index(&self, bx: i32, by: i32) -> Option<usize> {
         (0..self.excell_count()).find(|&i| self.excell_pos(i) == Some((bx, by)))
     }
@@ -613,12 +680,12 @@ impl Board {
             let (x, y) = map(bx, by);
             out.crosses[out.geom.cross_index(x, y).expect("cross maps to cross")] = *obj;
         }
-        let src_excells = out.excells.clone();
-        for (i, obj) in src_excells.iter().enumerate() {
-            let (bx, by) = self.geom.excell_pos(i).expect("excell maps to excell");
-            let (x, y) = map(bx, by);
-            out.excells[out.geom.excell_index(x, y).expect("excell maps to excell")] = *obj;
-        }
+        // pzprjs `BoardExec.turnflipGroup("excell", …)` does not move excells by
+        // the generic coordinate map: `hasexcell == 1` leaves them in place for
+        // turns and only reverses the top row / left column for flips, while
+        // `hasexcell == 2` maps them on the ring around the board. The
+        // per-genre `adjustExCellTopLeft` hooks then redistribute the values.
+        out.excells = self.geom.excell_transform(t, &out.excells);
         self.genre.adjust_board_data(t, &mut out);
         out
     }
