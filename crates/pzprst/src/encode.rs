@@ -552,6 +552,37 @@ pub fn encode_number16_excell(b: &Board) -> String {
     generic_encode_number16(b.excells.len(), |c| b.excells[c].qnum)
 }
 
+/// `encodeNumber16ExCellFlushed`: `encodeNumber16ExCell` after
+/// `Board.genericFlush` slides the numbers of every column of the top excell
+/// block and every row of the left one together, so the URL carries no gap
+/// between a column's or row's clues.
+pub fn encode_number16_excell_flushed(b: &Board) -> String {
+    let mut nums: Vec<i32> = b.excells.iter().map(|excell| excell.qnum).collect();
+    let cols = b.cols();
+    let rows = b.rows();
+    let exrows = b.genre.excell_rows(cols, rows);
+    let excols = b.genre.excell_cols(cols, rows);
+    let qc = cols * exrows;
+    let qr = rows * excols;
+    let mut dest = 0usize;
+    for id in 0..qc + qr {
+        if nums[id] != -1 {
+            if id + 1 != dest {
+                nums[dest] = nums[id];
+            }
+            dest += 1;
+        }
+        if (id < qc && id % exrows == exrows - 1) || (id >= qc && (id - qc) % excols == excols - 1)
+        {
+            if dest <= id {
+                nums[dest..=id].fill(-1);
+            }
+            dest = id + 1;
+        }
+    }
+    generic_encode_number16(nums.len(), |c| nums[c])
+}
+
 /// `decodeIce`: `ques = 6` cells, five bits per base-32 character (`decodeBinary`).
 pub fn decode_ice(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
     let chars: Vec<char> = bstr.chars().collect();
