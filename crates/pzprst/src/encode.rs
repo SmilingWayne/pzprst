@@ -86,6 +86,118 @@ pub fn encode_4cell(b: &Board) -> String {
     cm
 }
 
+/// `decode4Cross`: cross numbers 0–4 with run-length blanks.
+pub fn decode_4cross(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
+    let chars: Vec<char> = bstr.chars().collect();
+    let n = b.crosses.len();
+    let mut c = 0usize;
+    let mut i = 0usize;
+    while i < chars.len() {
+        let ca = chars[i];
+        match ca {
+            '0'..='4' => b.crosses[c].qnum = ca as i32 - '0' as i32,
+            '5'..='9' => {
+                b.crosses[c].qnum = ca as i32 - '5' as i32;
+                c += 1;
+            }
+            'a'..='e' => {
+                b.crosses[c].qnum = ca as i32 - 'a' as i32;
+                c += 2;
+            }
+            'g'..='z' => c += jsnum::digit(ca, 36).unwrap() as usize - 16,
+            '.' => b.crosses[c].qnum = -2,
+            _ => d.push(
+                DiagnosticCode::UnexpectedChar,
+                format!("unexpected character {ca:?} skips one cross"),
+            ),
+        }
+        c += 1;
+        if c >= n {
+            break;
+        }
+        i += 1;
+    }
+    if c < n {
+        d.push(
+            DiagnosticCode::TruncatedBody,
+            "body ends before the last cross",
+        );
+    }
+    chars.iter().skip(i + 1).collect()
+}
+
+/// `encode4Cross`: cross numbers as base-16 escapes with base-36 blanks.
+pub fn encode_4cross(b: &Board) -> String {
+    let crosses = &b.crosses;
+    let mut count = 0u32;
+    let mut cm = String::new();
+    let mut c = 0usize;
+    while c < crosses.len() {
+        let mut pstr = String::new();
+        let qn = crosses[c].qnum;
+        if qn >= 0 {
+            if c + 1 < crosses.len() && crosses[c + 1].qnum != -1 {
+                pstr = jsnum::to_radix(qn as u32, 16);
+            } else if c + 2 < crosses.len() && crosses[c + 2].qnum != -1 {
+                pstr = jsnum::to_radix(5 + qn as u32, 16);
+                c += 1;
+            } else {
+                pstr = jsnum::to_radix(10 + qn as u32, 16);
+                c += 2;
+            }
+        } else if qn == -2 {
+            pstr = ".".into();
+        } else {
+            count += 1;
+        }
+
+        if count == 0 {
+            cm.push_str(&pstr);
+        } else if !pstr.is_empty() || count == 20 {
+            cm.push_str(&jsnum::to_radix(count + 15, 36));
+            cm.push_str(&pstr);
+            count = 0;
+        }
+        c += 1;
+    }
+    if count > 0 {
+        cm.push_str(&jsnum::to_radix(count + 15, 36));
+    }
+    cm
+}
+
+/// `decodecross_old`: the old URL cross format, one `0`–`4` per cross point
+/// in cross order; every other character consumes a cross without a value.
+pub fn decode_cross_old(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
+    let chars: Vec<char> = bstr.chars().collect();
+    let n = b.crosses.len();
+    let mut c = 0usize;
+    let mut i = 0usize;
+    while i < chars.len() {
+        let ca = chars[i];
+        if ('0'..='4').contains(&ca) {
+            b.crosses[c].qnum = ca as i32 - '0' as i32;
+        } else {
+            d.push(
+                DiagnosticCode::UnexpectedChar,
+                format!("unexpected character {ca:?} skips one cross"),
+            );
+        }
+        c += 1;
+        i += 1;
+        if c >= n {
+            break;
+        }
+    }
+    if c < n {
+        d.push(
+            DiagnosticCode::TruncatedBody,
+            "body ends before the last cross",
+        );
+    }
+    chars.iter().skip(i).collect()
+}
+
 /// `genericDecodeTriple`: three base-3 values per base-27 character.
 pub fn decode_triple(
     length: usize,
