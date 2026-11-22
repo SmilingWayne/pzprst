@@ -1,6 +1,6 @@
-//! Byte-for-byte parity with pinned pzprjs, using fixtures from tools/gen_fixtures.js.
-//! Every supported genre needs a committed fixtures/<pid>.jsonl; fixtures/full/<pid>.jsonl
-//! runs too when generated. `PZPRST_GENRE=<pid>` limits the run to one genre.
+//! Properties over committed inputs, plus opt-in parity with pinned pzprjs-trace.
+//! Run `node tools/check_parity.js [pid...]` to generate and compare reference
+//! outputs. `PZPRST_GENRE=<pid>` limits local property tests to one genre.
 
 use std::path::{Path, PathBuf};
 
@@ -62,7 +62,16 @@ fn open(r: &Record) -> Board {
 }
 
 fn parity(pid: &str) {
-    let records = load(pid);
+    let dir = std::env::var_os("PZPRST_REFERENCE_DIR")
+        .map(PathBuf::from)
+        .expect("run `node tools/check_parity.js` to generate pzprjs-trace reference outputs");
+    let file = format!("{pid}.jsonl");
+    let mut records = read(&dir.join(&file));
+    let full = dir.join("full").join(&file);
+    if full.exists() {
+        records.extend(read(&full));
+    }
+    assert!(!records.is_empty(), "{pid}: reference contains no records");
     let mut failures = Vec::new();
     let mut check = |id: &str, what: String, got: String, want: &Value| {
         if want.as_str() != Some(got.as_str()) {
@@ -121,13 +130,26 @@ fn parity(pid: &str) {
 
 fn genres() -> Vec<&'static str> {
     let only = std::env::var("PZPRST_GENRE").ok();
-    supported()
-        .into_iter()
-        .filter(|pid| only.as_deref().map_or(true, |o| o == *pid))
-        .collect()
+    let available = supported();
+    if let Some(only) = only {
+        let names: Vec<_> = only.split(',').collect();
+        for name in &names {
+            assert!(
+                available.contains(name),
+                "unknown or unsupported test genre: {name}"
+            );
+        }
+        available
+            .into_iter()
+            .filter(|pid| names.contains(pid))
+            .collect()
+    } else {
+        available
+    }
 }
 
 #[test]
+#[ignore = "requires pinned pzprjs-trace; run node tools/check_parity.js"]
 fn every_genre_matches_pzprjs() {
     for pid in genres() {
         parity(pid);

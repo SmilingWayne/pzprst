@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/pzprst", "crates/pzprst-cli"]
+members = ["crates/pzprst", "crates/pzprst-cli", "crates/pzprst-conformance"]
 resolver = "2"
 
 [workspace.package]

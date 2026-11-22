@@ -9,8 +9,8 @@ description: Use when assigned a pzprjs puzzle genre (a pid such as lither or nu
 
 pzprst must produce **byte-identical** URLs and FileIO to the pinned pzprjs
 (`../pzprjs`) for every input and every board symmetry. You do not decide what
-correct output is: pzprjs does. The generated fixtures are the judge, and a
-genre is done only when they pass.
+correct output is: pzprjs does. The generated reference comparison is the
+judge, and a genre is done only when it passes.
 
 Port the pzprjs code line by line. Do not simplify, "clean up" or re-design it.
 Same branch order, same edge cases, same defaults.
@@ -86,13 +86,14 @@ Run everything from the `pzprst/` repo root. Create one todo per step.
    with the same backtick doc-comment marker.
 5. **Write `tools/genres/<pid>.js`.** Start from a copy of
    `tools/genres/mashu.js`; see [reference.md § Fixture config](reference.md#fixture-config).
-6. **Generate fixtures.** `node tools/gen_fixtures.js <pid>` must print
+6. **Generate compact input fixtures.** `node tools/gen_fixtures.js <pid>` must print
    `0 pzprjs errors`. If pzprjs rejects one of your inputs, that input is
    invalid: fix or delete the input, not the output.
 7. **Test the genre.**
 
    ```bash
    PZPRST_GENRE=<pid> cargo test -q --test fixtures
+   node tools/check_parity.js <pid>
    ```
 
    On failure, follow [reference.md § Debugging a mismatch](reference.md#debugging-a-mismatch).

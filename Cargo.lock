@@ -50,7 +50,6 @@ version = "0.1.0"
 dependencies = [
  "base64",
  "miniz_oxide",
- "serde_json",
 ]
 
 [[package]]
@@ -58,6 +57,14 @@ name = "pzprst-cli"
 version = "0.1.0"
 dependencies = [
  "pzprst",
+]
+
+[[package]]
+name = "pzprst-conformance"
+version = "0.1.0"
+dependencies = [
+ "pzprst",
+ "serde_json",
 ]
 
 [[package]]

@@ -71,6 +71,7 @@ git status --short          # only the allowed files (see SKILL.md hard rule 1)
 node tools/gen_fixtures.js <pid> && git diff --exit-code fixtures/   # fixtures are generated, not hand-edited
 cargo fmt --all --check
 cargo test -q
+node tools/check_parity.js <pid>
 cargo clippy --workspace --all-targets -q
 node tools/triage.js <pid>  # PORTED
 ```
@@ -89,9 +90,10 @@ infrastructure backlog, and delete the worktree.
 1. Commit each accepted worktree on its branch (`git add -A && git commit`).
 2. Merge carriers first, then genre tasks. Conflicts can only be in
    `encode.rs` / `fileio.rs` and are append-only: keep both sides.
-3. After the wave: `cargo test -q`, `cargo clippy …`, optionally
-   `node tools/gen_fixtures.js --full <pids…>` and `cargo test -q` again for the
-   larger random sets, and `node tools/parity.js --bin <pzprst> <pids…>`.
+3. After the wave: `cargo test -q`, `node tools/check_parity.js` and `cargo clippy …`;
+   optionally generate larger inputs with `node tools/gen_fixtures.js --full <pids…>`
+   and compare them with `node tools/check_parity.js --full <pids…>`, plus
+   `node tools/parity.js --bin <pzprst> <pids…>` for dataset URLs.
 4. `git worktree remove ../pzprst-<pid>` for each merged task.
 5. `node tools/triage.js --plan` for the next wave.
 

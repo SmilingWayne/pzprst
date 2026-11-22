@@ -9,10 +9,12 @@ acceptance criterion for everything.
 
 ```text
 crates/pzprst/src/        library; genres/<pid>.rs is one genre (auto-registered by build.rs)
-crates/pzprst/tests/      behaviour tests + fixture parity (PZPRST_GENRE=<pid> to filter)
+crates/pzprst/tests/      standalone crate behavior tests
+crates/pzprst-conformance/ repository-only corpus properties and reference parity
 crates/pzprst-cli/        `pzprst canon|dedupe|fileio|state` for scripts and parity runs
 tools/genres/<pid>.js     fixture inputs per genre
-tools/gen_fixtures.js     writes fixtures/<pid>.jsonl from pzprjs (never edit fixtures by hand)
+tools/gen_fixtures.js     writes compact fixtures/<pid>.jsonl (never edit fixtures by hand)
+tools/check_parity.js     generates temporary outputs and compares with pinned pzprjs-trace
 tools/triage.js           what a genre needs; --plan for parallel waves
 tools/pzprjs.js           pzprjs output for one input, same arguments as the CLI
 tools/parity.js           dataset-wide comparison against pzprjs
@@ -24,6 +26,7 @@ tools/parity.js           dataset-wide comparison against pzprjs
 cargo test -q
 cargo clippy --workspace --all-targets -q
 node tools/gen_fixtures.js <pid>
+node tools/check_parity.js <pid> # requires clean, built pinned pzprjs-trace
 node tools/triage.js <pid> | --all | --plan
 ```
 

@@ -1,23 +1,22 @@
 #!/usr/bin/env node
-// Generate golden fixtures from the pinned pzprjs build.
+// Generate compact test inputs, or temporary pzprjs reference results.
 //
 //   node tools/gen_fixtures.js [--full] [--pzprjs ../pzprjs] [--dataset ../puzzlekit-dataset] [pid...]
+//   node tools/gen_fixtures.js --reference --output <dir> [--pzprjs ../pzprjs] [pid...]
 //
 // Genres come from tools/genres/<pid>.js (all of them when no pid is given):
 //   { pid, dataset: "<puzzlekit-dataset folder>" | null,
 //     urls: [hand-written URL edge cases], fileios: [hand-written FileIO texts],
 //     randomize(puzzle, r) }   // fill a blank board; r.rnd() in [0,1), r.pick(array)
 //
-// Writes the committed set fixtures/<pid>.jsonl (edge cases + 30 random boards up to 6x5).
-// --full also writes fixtures/full/<pid>.jsonl (120 random boards up to 12x9 + 60 dataset
-// URLs), which is gitignored; tests use it when present. Each line:
-//   {id, kind: "url"|"fileio", input, canonical, fileio, transforms: {name: {url, fileio}}}
-// or {id, kind, input, error} when pzprjs throws (the generator exits non-zero then).
+// Committed fixtures contain only {id, kind, input}. --reference reads those
+// exact inputs and writes the full pzprjs outputs to a separate temporary dir.
+// --full additionally generates or compares the optional gitignored full corpus.
 "use strict";
 
 const fs = require("fs");
 const path = require("path");
-const { execSync } = require("child_process");
+const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
 const args = process.argv.slice(2);
@@ -28,8 +27,25 @@ function arg(name, dflt) {
 const PZPRJS = path.resolve(arg("--pzprjs", process.env.PZPRJS || path.join(ROOT, "../pzprjs")));
 const DATASET = path.resolve(arg("--dataset", path.join(ROOT, "../puzzlekit-dataset")));
 const FULL = args.includes("--full");
+const REFERENCE = args.includes("--reference");
+const output = arg("--output", null);
+if (REFERENCE && !output) {
+	throw Error("--reference requires --output <temporary directory>");
+}
+if (!REFERENCE && output) {
+	throw Error("--output is only valid with --reference");
+}
 const pzpr = require(path.join(PZPRJS, "dist/js/pzpr.js"));
-const COMMIT = execSync("git rev-parse HEAD", { cwd: PZPRJS }).toString().trim();
+const COMMIT = execFileSync("git", ["rev-parse", "HEAD"], { cwd: PZPRJS }).toString().trim();
+const versionTable = fs.readFileSync(path.join(ROOT, "crates/pzprst/src/variety_table.rs"), "utf8");
+const pinned = versionTable.match(/PZPRJS_COMMIT:\s*&str\s*=\s*"([0-9a-f]+)"/);
+if (!pinned || COMMIT !== pinned[1]) {
+	throw Error(`pzprjs-trace checkout ${COMMIT} does not match pinned ${pinned && pinned[1]}`);
+}
+const changed = execFileSync("git", ["status", "--porcelain", "--untracked-files=no", "--", "src", "src-ui"], { cwd: PZPRJS }).toString();
+if (changed.trim()) {
+	throw Error("pzprjs-trace source has uncommitted changes; build the clean pinned checkout");
+}
 
 const TRANSFORMS = {
 	identity: [],
@@ -114,7 +130,7 @@ function write(dir, pid, lines) {
 }
 
 const genreDir = path.join(__dirname, "genres");
-const wanted = args.filter((a, i) => !a.startsWith("--") && !["--pzprjs", "--dataset"].includes(args[i - 1]));
+const wanted = args.filter((a, i) => !a.startsWith("--") && !["--pzprjs", "--dataset", "--output"].includes(args[i - 1]));
 const pids = wanted.length
 	? wanted
 	: fs.readdirSync(genreDir).filter((f) => f.endsWith(".js")).map((f) => f.slice(0, -3)).sort();
@@ -125,11 +141,30 @@ for (const pid of pids) {
 	if (g.pid !== pid) {
 		throw Error("tools/genres/" + pid + ".js declares pid " + JSON.stringify(g.pid));
 	}
+	if (REFERENCE) {
+		for (const subdir of FULL ? ["", "full"] : [""]) {
+			const inputFile = path.join(ROOT, "fixtures", subdir, pid + ".jsonl");
+			if (!fs.existsSync(inputFile)) {
+				throw Error(`missing test inputs: ${inputFile}`);
+			}
+			const inputLines = fs.readFileSync(inputFile, "utf8").trimEnd().split("\n").map(JSON.parse);
+			if (inputLines.shift().header.pzprjs_commit !== COMMIT) {
+				throw Error(`test inputs do not match the pinned pzprjs-trace: ${inputFile}`);
+			}
+			const records = inputLines.map(({ id, kind, input }) => record(id, kind, input));
+			failures += write(path.join(path.resolve(output), subdir), pid, records);
+		}
+		continue;
+	}
 	const rnd = mulberry32(pid.length * 7919 + 17);
 	const r = { rnd, pick: (arr) => arr[Math.floor(rnd() * arr.length)] };
 	let lines = [];
 	let n = 0;
-	const push = (kind, input) => lines.push(record(pid + "-" + n++, kind, input));
+	const push = (kind, input) => {
+		const result = record(pid + "-" + n++, kind, input);
+		// Keep errors so generation fails visibly; commit only compact inputs.
+		lines.push(result.error ? result : { id: result.id, kind, input });
+	};
 	const pushRandom = (count, maxCols, maxRows) => {
 		for (let i = 0; i < count; i++) {
 			const cols = 1 + Math.floor(rnd() * maxCols);
