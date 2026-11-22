@@ -674,6 +674,12 @@ impl Board {
         cur
     }
 
+    /// pzprjs `turnflipGroup("excell", …)` for a genre-local copy of the excell
+    /// values (a genre hook that has to replay the movement itself).
+    pub fn move_excells(&self, t: Transform, src: &[Obj]) -> Vec<Obj> {
+        self.transform_excells(t, src)
+    }
+
     /// Apply a board symmetry; puzzle and snapshot move together.
     pub fn transform(&self, t: Transform) -> Board {
         let (c, r) = (self.geom.cols, self.geom.rows);

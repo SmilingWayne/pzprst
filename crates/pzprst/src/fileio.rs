@@ -910,3 +910,97 @@ pub(crate) fn encode_cell_excell(
         by += 2;
     }
 }
+
+// ----- kakuro `[＼]` cell/excell layer (variety-common/FileData.js) ---------
+
+/// `decodeCellQnum51`: one token per cell or excell of the combined `obj`
+/// grid. A cell token is `qnum,qnum2` (and makes the cell a `[＼]`); the top
+/// excell stores `qnum2`, the left one `qnum`, and the top-left corner is
+/// ignored. `.` leaves the object alone.
+pub(crate) fn decode_cell_qnum51(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    let (sbx, sby, ebx, eby) = obj_rect(b);
+    // pzprjs's frozen `emptyexcell` receives tokens for positions with no
+    // object (the `hasexcell` 2 ring corners); they are ignored.
+    let mut real = Vec::new();
+    let mut by = sby;
+    while by <= eby {
+        let mut bx = sbx;
+        while bx <= ebx {
+            real.push(b.obj_at(bx, by).is_some());
+            bx += 2;
+        }
+        by += 2;
+    }
+    let mut pos = (sbx, sby);
+    let mut idx = 0usize;
+    decode_cell_excell(r, b, d, |obj, group, ca| {
+        let (bx, by) = pos;
+        pos = if bx + 2 > ebx {
+            (sbx, by + 2)
+        } else {
+            (bx + 2, by)
+        };
+        let is_real = real.get(idx).copied().unwrap_or(false);
+        idx += 1;
+        if ca == "." || !is_real {
+            return Ok(());
+        }
+        if group == Group::Cell {
+            let mut parts = ca.split(',');
+            let qnum = int(parts.next().unwrap_or(""))?;
+            let qnum2 = match parts.next() {
+                Some(token) => int(token)?,
+                None => return Err(format!("expected \"qnum,qnum2\", found {ca:?}")),
+            };
+            // pzprjs `Cell.set51cell` clears the four direction numbers.
+            obj.ques = 51;
+            obj.qnum = qnum;
+            obj.qnum2 = qnum2;
+            obj.qnum3 = -1;
+            obj.qnum4 = -1;
+            obj.anum = -1;
+        } else if bx != -1 && by == -1 {
+            obj.qnum2 = int(ca)?;
+        } else if bx == -1 && by != -1 {
+            obj.qnum = int(ca)?;
+        }
+        Ok(())
+    })
+}
+
+/// `encodeCellQnum51`: one token per cell or excell of the combined `obj`
+/// grid. A `[＼]` cell writes `qnum,qnum2`, any other cell `.`, the top-left
+/// corner `0`, the top excell its `qnum2` and the left one its `qnum`.
+pub(crate) fn encode_cell_qnum51(w: &mut FileWriter, b: &Board) {
+    let (sbx, sby, ebx, _eby) = obj_rect(b);
+    let mut pos = (sbx, sby);
+    encode_cell_excell(w, b, |obj, group| {
+        let (bx, by) = pos;
+        pos = if bx + 2 > ebx {
+            (sbx, by + 2)
+        } else {
+            (bx + 2, by)
+        };
+        if group == Group::Cell {
+            if obj.ques == 51 {
+                format!("{},{} ", obj.qnum, obj.qnum2)
+            } else {
+                ". ".into()
+            }
+        } else if b.obj_at(bx, by).is_none() {
+            // The frozen `emptyexcell` has null coordinates, so pzprjs's
+            // `by === -1` test fails and its default `qnum` (-1) is written.
+            "-1 ".into()
+        } else if bx == -1 && by == -1 {
+            "0 ".into()
+        } else if by == -1 {
+            format!("{} ", obj.qnum2)
+        } else {
+            format!("{} ", obj.qnum)
+        }
+    });
+}
