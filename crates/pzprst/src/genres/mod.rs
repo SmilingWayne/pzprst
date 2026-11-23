@@ -42,6 +42,8 @@ pub(crate) trait Genre: Sync {
     fn room_clues(&self) -> bool {
         false
     }
+    /// Initialize puzzle-specific default board objects after allocation.
+    fn init_board(&self, _b: &mut Board) {}
     /// `decodePzpr`; returns the unconsumed body.
     fn decode_url(&self, b: &mut Board, body: &str, d: &mut Diagnostics) -> String;
     fn decode_url_with_flags(

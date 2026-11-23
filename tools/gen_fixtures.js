@@ -16,6 +16,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const zlib = require("zlib");
 const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -62,6 +63,11 @@ function body(puzzle) {
 	return puzzle.getURL(pzpr.parser.URL_PZPRV3).split("?").slice(1).join("?");
 }
 
+// pzpr-trace state is raw-DEFLATE FileIO encoded as unpadded base64url.
+function state(fileio) {
+	return zlib.deflateRawSync(Buffer.from(fileio, "utf8")).toString("base64url");
+}
+
 function open(input) {
 	const p = new pzpr.Puzzle();
 	p.open(input);
@@ -72,13 +78,14 @@ function record(id, kind, input) {
 	try {
 		const p = open(input);
 		const fileio = p.getFileData();
-		const out = { id, kind, input, canonical: body(p), fileio, transforms: {} };
+		const out = { id, kind, input, canonical: body(p), fileio, state: state(fileio), transforms: {} };
 		for (const [name, ops] of Object.entries(TRANSFORMS)) {
 			const q = open(fileio);
 			for (const op of ops) {
 				q.board.operate(op);
 			}
-			out.transforms[name] = { url: body(q), fileio: q.getFileData() };
+			const transformedFileio = q.getFileData();
+			out.transforms[name] = { url: body(q), fileio: transformedFileio, state: state(transformedFileio) };
 		}
 		return out;
 	} catch (e) {
@@ -168,7 +175,7 @@ for (const pid of pids) {
 	const pushRandom = (count, maxCols, maxRows) => {
 		for (let i = 0; i < count; i++) {
 			const cols = 1 + Math.floor(rnd() * maxCols);
-			const rows = 1 + Math.floor(rnd() * maxRows);
+			const rows = g.square ? cols : 1 + Math.floor(rnd() * maxRows);
 			const p = open(pid + "/" + cols + "/" + rows);
 			g.randomize(p, r);
 			const fileio = p.getFileData();

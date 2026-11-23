@@ -75,6 +75,11 @@ pzpr objects addressed by pzpr's doubled coordinates `(bx, by)`:
   ordering follows the pzprjs cell scan; a room's top cell is its leftmost,
   then topmost cell. Numbered-room genres relocate their clue to that cell
   after a symmetry. Legacy FileIO room-id grids are converted to borders.
+- Sudoku initializes its standard box borders from the column count (including
+  the special 3-by-2 boxes on a 6-column board). Its pzpr FileIO header stores
+  only the column count; reading it creates a square board, as in pzprjs.
+  Consequently a rectangular Sudoku URL cannot round-trip its dimensions through
+  FileIO or state, even though pzprjs accepts such URLs.
 
 Each object carries the same property names as pzprjs (`qnum`, `qnum2`,
 `qnum3`, `qnum4`, `ques`, `qdir`, `line`, `qsub`, …) with the same defaults

@@ -1,9 +1,25 @@
 //! Spec examples, diagnostics, intentional divergences, states and trace URLs.
 
-use pzprst::{canonical_url, Board, DiagnosticCode, Error, Options, Transform};
+use pzprst::{canonical_url, Board, DiagnosticCode, Error, Group, Options, Transform};
 
 fn opts() -> Options {
     Options::default()
+}
+
+#[test]
+fn sudoku_box_geometry_and_file_header() {
+    let b = Board::new("sudoku", 6, 6).unwrap();
+    assert_eq!(b.obj(Group::Border, 6, 1).unwrap().ques, 1);
+    assert_eq!(b.obj(Group::Border, 4, 1).unwrap().ques, 0);
+    assert_eq!(b.obj(Group::Border, 1, 4).unwrap().ques, 1);
+    assert!(b.obj(Group::Cross, 0, 0).is_some());
+    assert!(b.to_fileio().unwrap().starts_with("pzprv3\nsudoku\n6\n"));
+
+    // The reference writes only cols, even for a rectangular URL. Its FileIO
+    // parser then constructs a square board from that single dimension.
+    let rectangular = Board::from_url("sudoku/6/4/", &opts()).unwrap();
+    let restored = Board::from_fileio(&rectangular.to_fileio().unwrap(), &opts()).unwrap();
+    assert_eq!((restored.cols(), restored.rows()), (6, 6));
 }
 
 fn strict() -> Options {

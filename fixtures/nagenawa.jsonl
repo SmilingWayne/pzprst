@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"nagenawa","generator":"tools/gen_fixtures.js"}}
+{"id":"nagenawa-0","kind":"url","input":"https://puzz.link/p?nagenawa/8/8/aikl79aqislg03vh047v904g3421456504045500"}
+{"id":"nagenawa-1","kind":"url","input":"https://puzz.link/p?nagenawa/10/10/l9ail5ib4m9d2qllba0007fo07ho1vcf000016146145552262316"}
+{"id":"nagenawa-2","kind":"url","input":"nagenawa/4/4/"}
+{"id":"nagenawa-3","kind":"url","input":"nagenawa/1/1/"}
+{"id":"nagenawa-4","kind":"url","input":"nagenawa/1/5/"}
+{"id":"nagenawa-5","kind":"url","input":"nagenawa/5/1/"}
+{"id":"nagenawa-6","kind":"fileio","input":"pzprv3/nagenawa/2/2/2/0 0 /1 1 /1 . /2 . /1 /-1 /0 1 /0 1 /1 0 /"}
+{"id":"nagenawa-7","kind":"fileio","input":"pzprv3\nnagenawa\n5\n1\n1\n0 \n0 \n0 \n0 \n0 \n0 \n. \n. \n. \n. \n\n\n\n\n\n1 \n-1 \n1 \n0 \n1 \n0 \n0 \n0 \n0 \n"}
+{"id":"nagenawa-8","kind":"url","input":"nagenawa/1/5/00"}
+{"id":"nagenawa-9","kind":"fileio","input":"pzprv3\nnagenawa\n4\n2\n3\n0 0 \n1 1 \n1 2 \n2 2 \n. . \n1 . \n. . \n- . \n0 \n1 \n0 \n0 \n-1 0 \n1 1 \n0 1 \n0 0 \n0 0 \n0 0 \n0 1 \n"}
+{"id":"nagenawa-10","kind":"url","input":"nagenawa/2/4/4r0g1./"}
+{"id":"nagenawa-11","kind":"fileio","input":"pzprv3\nnagenawa\n2\n5\n2\n0 1 1 1 1 \n1 1 1 1 1 \n1 . . . . \n. . . . . \n0 0 -1 -1 \n0 -1 0 0 \n0 0 0 1 1 \n0 0 0 0 0 \n1 0 0 0 1 \n"}
+{"id":"nagenawa-12","kind":"url","input":"nagenawa/5/2/g0g1g"}
+{"id":"nagenawa-13","kind":"fileio","input":"pzprv3\nnagenawa\n1\n6\n4\n0 1 1 2 3 3 \n. 2 . - 1 . \n0 0 1 0 0 \n1 1 0 0 0 1 \n"}
+{"id":"nagenawa-14","kind":"url","input":"nagenawa/6/1/mg2.1"}
+{"id":"nagenawa-15","kind":"fileio","input":"pzprv3\nnagenawa\n3\n6\n1\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 . . . . . \n. . . . . . \n. . . . . . \n1 0 0 0 1 \n1 0 0 1 0 \n1 -1 0 0 0 \n1 0 -1 -1 0 0 \n-1 0 -1 0 1 -1 \n0 0 0 0 1 0 \n0 0 0 0 0 0 \n1 1 1 0 0 0 \n"}
+{"id":"nagenawa-16","kind":"url","input":"nagenawa/6/3/0000000"}
+{"id":"nagenawa-17","kind":"fileio","input":"pzprv3\nnagenawa\n5\n2\n1\n0 0 \n0 0 \n0 0 \n0 0 \n0 0 \n2 . \n. . \n. . \n. . \n. . \n0 \n0 \n-1 \n0 \n1 \n-1 1 \n0 0 \n-1 0 \n0 0 \n1 1 \n1 1 \n0 0 \n0 0 \n0 0 \n"}
+{"id":"nagenawa-18","kind":"url","input":"nagenawa/2/5/0002"}
+{"id":"nagenawa-19","kind":"fileio","input":"pzprv3\nnagenawa\n2\n4\n3\n0 0 0 1 \n0 0 2 2 \n. . . . \n. . . . \n1 0 -1 \n0 1 0 \n0 0 0 1 \n0 0 0 0 \n0 0 0 0 \n"}
+{"id":"nagenawa-20","kind":"url","input":"nagenawa/4/2/506i"}
+{"id":"nagenawa-21","kind":"fileio","input":"pzprv3\nnagenawa\n1\n5\n4\n0 1 2 2 3 \n2 . 2 . . \n0 -1 1 -1 \n0 0 0 0 0 \n"}
+{"id":"nagenawa-22","kind":"url","input":"nagenawa/5/1/q2g2g"}
+{"id":"nagenawa-23","kind":"fileio","input":"pzprv3\nnagenawa\n5\n3\n3\n0 0 0 \n1 1 1 \n1 1 1 \n1 1 1 \n1 1 2 \n0 . . \n1 . . \n. . . \n. . . \n. . - \n-1 0 \n0 0 \n1 1 \n0 0 \n0 0 \n0 -1 0 \n0 0 -1 \n0 1 0 \n0 1 0 \n1 0 0 \n0 0 0 \n0 0 0 \n0 0 1 \n1 0 0 \n"}
+{"id":"nagenawa-24","kind":"url","input":"nagenawa/3/5/01s0801./"}
+{"id":"nagenawa-25","kind":"fileio","input":"pzprv3\nnagenawa\n3\n6\n3\n0 1 1 1 1 2 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n. . . . . 0 \n- . . . . . \n. . . . . . \n0 1 0 1 0 \n-1 -1 1 0 1 \n0 0 1 1 1 \n0 -1 1 0 0 0 \n1 0 0 -1 -1 0 \n0 0 0 0 1 0 \n0 0 0 0 0 1 \n0 0 0 0 1 0 \n"}
+{"id":"nagenawa-26","kind":"url","input":"nagenawa/6/3/h00gg0g.0"}
+{"id":"nagenawa-27","kind":"fileio","input":"pzprv3\nnagenawa\n3\n5\n4\n0 1 1 1 1 \n0 1 1 1 2 \n1 1 1 1 3 \n0 . . . . \n. . . . . \n0 . . . . \n0 0 1 0 \n1 0 0 0 \n0 0 1 0 \n0 -1 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 1 0 0 \n0 0 1 0 0 \n"}
+{"id":"nagenawa-28","kind":"url","input":"nagenawa/5/3/h481h00h"}
+{"id":"nagenawa-29","kind":"fileio","input":"pzprv3\nnagenawa\n1\n2\n1\n0 0 \n. . \n0 \n0 0 \n"}
+{"id":"nagenawa-30","kind":"url","input":"nagenawa/2/1/0g"}
+{"id":"nagenawa-31","kind":"fileio","input":"pzprv3\nnagenawa\n5\n3\n4\n0 0 1 \n0 0 0 \n0 0 0 \n2 3 3 \n2 3 3 \n. . . \n. . . \n. . . \n2 0 . \n. . . \n0 0 \n0 1 \n0 1 \n-1 0 \n0 1 \n0 -1 1 \n-1 1 0 \n0 0 1 \n-1 -1 -1 \n0 1 1 \n1 0 1 \n1 0 0 \n0 0 0 \n1 0 0 \n"}
+{"id":"nagenawa-32","kind":"url","input":"nagenawa/3/5/8a4e0h20"}
+{"id":"nagenawa-33","kind":"fileio","input":"pzprv3\nnagenawa\n1\n2\n1\n0 0 \n. . \n1 \n0 1 \n"}
+{"id":"nagenawa-34","kind":"url","input":"nagenawa/2/1/0g"}
+{"id":"nagenawa-35","kind":"fileio","input":"pzprv3\nnagenawa\n5\n6\n4\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n1 0 0 0 0 0 \n0 0 0 0 0 0 \n0 2 3 0 0 0 \n2 . . . . . \n. . . . . . \n0 . . . . . \n. . . . . . \n. 2 0 . . . \n1 0 0 0 0 \n1 0 -1 -1 -1 \n0 1 1 0 0 \n0 0 0 1 0 \n1 0 1 1 -1 \n0 0 0 0 0 0 \n1 -1 0 -1 0 1 \n1 0 0 1 0 0 \n0 0 -1 0 1 0 \n0 0 0 1 0 0 \n1 0 0 1 1 0 \n0 0 0 0 0 1 \n0 0 0 0 0 1 \n1 0 0 0 0 0 \n"}
+{"id":"nagenawa-36","kind":"url","input":"nagenawa/6/5/00g0s0841g2020"}
+{"id":"nagenawa-37","kind":"fileio","input":"pzprv3\nnagenawa\n5\n6\n3\n0 1 1 1 1 1 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n2 1 1 1 1 1 \n2 . . . . . \n0 . . . . . \n. . . . . . \n. . . . . . \n2 . . . . . \n0 -1 -1 0 0 \n0 0 0 -1 0 \n0 1 0 0 0 \n1 0 1 1 1 \n-1 0 1 0 -1 \n-1 0 1 -1 1 0 \n1 0 0 0 0 -1 \n1 0 -1 1 0 1 \n1 0 0 0 0 -1 \n1 0 0 0 0 0 \n0 0 0 0 1 0 \n0 0 1 1 0 0 \n0 0 0 0 0 0 \n0 0 0 0 1 0 \n"}
+{"id":"nagenawa-38","kind":"url","input":"nagenawa/6/5/g000gg0020202"}
+{"id":"nagenawa-39","kind":"fileio","input":"pzprv3\nnagenawa\n4\n4\n1\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n1 . . . \n. . . . \n. . . . \n. . . . \n0 1 -1 \n1 0 0 \n1 0 0 \n-1 0 -1 \n0 1 0 1 \n0 0 0 0 \n1 -1 0 -1 \n0 0 1 0 \n0 0 1 0 \n0 1 1 1 \n0 0 0 0 \n"}
+{"id":"nagenawa-40","kind":"url","input":"nagenawa/4/4/0000001"}
+{"id":"nagenawa-41","kind":"fileio","input":"pzprv3\nnagenawa\n3\n6\n3\n0 0 0 0 0 0 \n1 0 0 0 0 0 \n0 0 0 0 2 2 \n2 . . . . . \n. . . . . . \n. . . . - . \n0 -1 -1 0 -1 \n0 0 0 0 1 \n1 0 1 0 -1 \n1 0 1 0 0 0 \n0 -1 0 -1 0 -1 \n1 0 0 0 0 0 \n0 0 1 0 0 1 \n1 0 0 1 1 0 \n"}
+{"id":"nagenawa-42","kind":"url","input":"nagenawa/6/3/0g2g8o2g./"}
+{"id":"nagenawa-43","kind":"fileio","input":"pzprv3\nnagenawa\n5\n6\n2\n0 0 0 0 0 0 \n1 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 . . . . . \n- . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n-1 0 0 0 1 \n0 1 0 0 0 \n0 0 0 0 1 \n-1 0 0 0 -1 \n0 1 0 0 -1 \n0 1 0 1 0 0 \n0 -1 0 0 0 0 \n0 0 -1 0 0 0 \n0 0 0 0 0 -1 \n0 0 0 1 0 1 \n0 0 0 0 0 0 \n0 0 0 1 1 0 \n0 0 0 0 0 0 \n0 0 0 0 0 1 \n"}
+{"id":"nagenawa-44","kind":"url","input":"nagenawa/6/5/0g000g80000./"}
+{"id":"nagenawa-45","kind":"fileio","input":"pzprv3\nnagenawa\n1\n1\n1\n0 \n. \n\n0 \n"}
+{"id":"nagenawa-46","kind":"url","input":"nagenawa/1/1/g"}
+{"id":"nagenawa-47","kind":"fileio","input":"pzprv3\nnagenawa\n1\n2\n1\n0 0 \n- . \n0 \n0 0 \n"}
+{"id":"nagenawa-48","kind":"url","input":"nagenawa/2/1/0./"}
+{"id":"nagenawa-49","kind":"fileio","input":"pzprv3\nnagenawa\n3\n1\n3\n0 \n1 \n2 \n. \n1 \n0 \n\n\n\n0 \n0 \n1 \n0 \n1 \n"}
+{"id":"nagenawa-50","kind":"url","input":"nagenawa/1/3/og10"}
+{"id":"nagenawa-51","kind":"fileio","input":"pzprv3\nnagenawa\n1\n3\n1\n0 0 0 \n. . . \n0 0 \n0 1 0 \n"}
+{"id":"nagenawa-52","kind":"url","input":"nagenawa/3/1/0g"}
+{"id":"nagenawa-53","kind":"fileio","input":"pzprv3\nnagenawa\n1\n3\n1\n0 0 0 \n1 . . \n0 -1 \n0 0 0 \n"}
+{"id":"nagenawa-54","kind":"url","input":"nagenawa/3/1/01"}
+{"id":"nagenawa-55","kind":"fileio","input":"pzprv3\nnagenawa\n5\n5\n1\n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n2 . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n0 0 -1 0 \n0 1 -1 0 \n0 -1 -1 0 \n0 1 -1 -1 \n1 0 0 0 \n0 0 0 0 1 \n1 0 0 0 -1 \n0 0 0 1 0 \n0 -1 0 0 0 \n0 1 0 0 0 \n0 1 0 0 0 \n0 0 0 0 0 \n0 0 0 1 0 \n0 0 0 0 0 \n"}
+{"id":"nagenawa-56","kind":"url","input":"nagenawa/5/5/000000002"}
+{"id":"nagenawa-57","kind":"fileio","input":"pzprv3\nnagenawa\n3\n5\n4\n0 0 1 2 2 \n0 0 1 1 1 \n0 0 3 1 1 \n. . 0 - . \n. . . . . \n. . . . . \n1 1 0 0 \n0 -1 0 0 \n0 0 1 0 \n0 0 0 0 1 \n0 -1 0 1 0 \n1 1 1 0 0 \n0 0 1 0 0 \n0 0 0 1 0 \n"}
+{"id":"nagenawa-58","kind":"url","input":"nagenawa/5/3/chg34g0.g"}
+{"id":"nagenawa-59","kind":"fileio","input":"pzprv3\nnagenawa\n1\n1\n1\n0 \n. \n\n1 \n"}
+{"id":"nagenawa-60","kind":"url","input":"nagenawa/1/1/g"}
+{"id":"nagenawa-61","kind":"fileio","input":"pzprv3\nnagenawa\n4\n5\n3\n0 0 0 1 2 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n1 . . - 2 \n. . . . . \n. . . . . \n. . . . . \n-1 1 1 0 \n0 -1 0 0 \n0 0 1 -1 \n0 1 0 1 \n0 -1 0 0 0 \n0 0 0 1 0 \n0 1 -1 0 1 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 1 0 \n0 0 0 1 0 \n"}
+{"id":"nagenawa-62","kind":"url","input":"nagenawa/5/4/60003001.2"}
+{"id":"nagenawa-63","kind":"fileio","input":"pzprv3\nnagenawa\n3\n2\n2\n0 1 \n0 0 \n0 0 \n. 0 \n. . \n. . \n-1 \n-1 \n0 \n0 1 \n0 0 \n0 0 \n0 1 \n0 1 \n"}
+{"id":"nagenawa-64","kind":"url","input":"nagenawa/2/3/g8g0"}
+{"id":"nagenawa-65","kind":"fileio","input":"pzprv3\nnagenawa\n1\n2\n1\n0 0 \n2 . \n0 \n0 0 \n"}
+{"id":"nagenawa-66","kind":"url","input":"nagenawa/2/1/02"}

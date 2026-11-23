@@ -466,7 +466,11 @@ pub(crate) fn decode(text: &str, d: &mut Diagnostics) -> Result<Board> {
         ))),
     };
     let rows = dim(lines.pop_front())?;
-    let cols = dim(lines.pop_front())?;
+    let cols = if pid == "sudoku" {
+        rows
+    } else {
+        dim(lines.pop_front())?
+    };
 
     let mut body = Vec::new();
     for line in lines.iter() {
@@ -527,13 +531,12 @@ pub(crate) fn encode(b: &Board) -> Result<String> {
     } else {
         format!("pzprv3.{}", w.filever)
     };
-    Ok(format!(
-        "{header}\n{}\n{}\n{}\n{}",
-        b.pid(),
-        b.rows(),
-        b.cols(),
-        w.data
-    ))
+    let size = if b.pid() == "sudoku" {
+        format!("{}", b.cols())
+    } else {
+        format!("{}\n{}", b.rows(), b.cols())
+    };
+    Ok(format!("{header}\n{}\n{size}\n{}", b.pid(), w.data))
 }
 /// `encodeBorderLineIfPresent`: write the border line layer only when some
 /// border has a line or the cross mark.

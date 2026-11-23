@@ -431,7 +431,7 @@ impl Board {
             excell_cols: genre.excell_cols(cols, rows),
             excell_corner: genre.excell_corner(),
         };
-        Ok(Self {
+        let mut board = Self {
             genre,
             geom,
             rules: genre
@@ -445,7 +445,9 @@ impl Board {
             crosses: vec![Obj::default(); geom.cross_count()],
             excells: vec![Obj::default(); geom.excell_count()],
             diagnostics: Diagnostics::default(),
-        })
+        };
+        genre.init_board(&mut board);
+        Ok(board)
     }
 
     // ----- parsing -------------------------------------------------------

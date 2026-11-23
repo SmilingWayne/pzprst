@@ -97,6 +97,14 @@ fn parity(pid: &str) {
             b.to_fileio().unwrap(),
             &r.value["fileio"],
         );
+        let reference_state = r.value["state"].as_str().expect("reference state");
+        let imported = Board::from_state(reference_state, &Options::default()).unwrap();
+        check(
+            &r.id,
+            "reference state".into(),
+            imported.to_fileio().unwrap(),
+            &r.value["fileio"],
+        );
         for t in Transform::ALL {
             let want = &r.value["transforms"][t.name()];
             let tb = b.transform(t);
@@ -110,6 +118,17 @@ fn parity(pid: &str) {
                 &r.id,
                 format!("{t} fileio"),
                 tb.to_fileio().unwrap(),
+                &want["fileio"],
+            );
+            let imported = Board::from_state(
+                want["state"].as_str().expect("reference state"),
+                &Options::default(),
+            )
+            .unwrap();
+            check(
+                &r.id,
+                format!("{t} reference state"),
+                imported.to_fileio().unwrap(),
                 &want["fileio"],
             );
         }

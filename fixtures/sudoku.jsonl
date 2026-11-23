@@ -1,0 +1,72 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"sudoku","generator":"tools/gen_fixtures.js"}}
+{"id":"sudoku-0","kind":"url","input":"https://puzz.link/p?sudoku/9/9/g23h6g7g1h45i8n15l4h7h6h9h4l32n3i87h6g6g1h95g"}
+{"id":"sudoku-1","kind":"url","input":"https://puzz.link/p?sudoku/9/9/k13m27h476h39h825zg841h29h538h18m96k"}
+{"id":"sudoku-2","kind":"url","input":"https://puzz.link/p?sudoku/9/9/p87i65g1h6g7h42h5g8h3g34i12p3m2g7h5h3i24g95h"}
+{"id":"sudoku-3","kind":"url","input":"sudoku/9/9/1g2g3g4g5g6g7g8g9"}
+{"id":"sudoku-4","kind":"url","input":"sudoku/6/6/1j2j3j4j5j6"}
+{"id":"sudoku-5","kind":"url","input":"sudoku/4/4/1g2g3g4"}
+{"id":"sudoku-6","kind":"url","input":"sudoku/1/1/."}
+{"id":"sudoku-7","kind":"url","input":"sudoku/4/4/"}
+{"id":"sudoku-8","kind":"url","input":"sudoku/4/4/-10g+100"}
+{"id":"sudoku-9","kind":"fileio","input":"pzprv3/sudoku/2/1 . /. 2 /.[1,,3,] 2 /+ - /"}
+{"id":"sudoku-10","kind":"fileio","input":"pzprv3/sudoku/1/- /.[,,,4] /"}
+{"id":"sudoku-11","kind":"fileio","input":"pzprv3\nsudoku\n6\n. . 3 . . . \n. . 4 . . . \n1 . . . . . \n. 5 3 . 4 . \n. . . 2 . . \n2 3 . . . 5 \n. . . . . . \n2 5 . . . 3 \n. .[1,,2,] .[1,,2,] .[1,,2,] . .[1,,2,] \n. . . . 1 . \n4 . .[1,,2,] . 5 6 \n.[1,,2,] .[1,,2,] . .[1,,2,] . 3 \n"}
+{"id":"sudoku-12","kind":"url","input":"sudoku/6/6/h3k4i1l53g4j2h23i5"}
+{"id":"sudoku-13","kind":"fileio","input":"pzprv3\nsudoku\n2\n. . \n2 . \n. 1 \n1 1 \n"}
+{"id":"sudoku-14","kind":"url","input":"sudoku/2/2/h2g"}
+{"id":"sudoku-15","kind":"fileio","input":"pzprv3\nsudoku\n4\n. 3 4 3 \n. 1 . . \n. 3 . . \n. . 2 1 \n. . . .[1,,2,] \n.[1,,2,] . . . \n. 3 .[1,,2,] . \n.[1,,2,] 3 . .[1,,2,] \n"}
+{"id":"sudoku-16","kind":"url","input":"sudoku/4/4/g343g1i3j21"}
+{"id":"sudoku-17","kind":"fileio","input":"pzprv3\nsudoku\n6\n2 . 6 . . . \n4 . . . 6 . \n4 3 . 5 . . \n3 . 6 . . . \n. . 6 . . . \n5 1 . . . . \n. .[1,,2,] .[1,,2,] . . . \n1 . . .[1,,2,] . . \n1 . .[1,,2,] . . 2 \n. . .[1,,2,] . . .[1,,2,] \n. .[1,,2,] . .[1,,2,] .[1,,2,] . \n. . . . . 5 \n"}
+{"id":"sudoku-18","kind":"url","input":"sudoku/6/6/2g6i4i6g43g5h3g6k6i51j"}
+{"id":"sudoku-19","kind":"fileio","input":"pzprv3\nsudoku\n1\n. \n1 \n"}
+{"id":"sudoku-20","kind":"url","input":"sudoku/1/1/g"}
+{"id":"sudoku-21","kind":"fileio","input":"pzprv3\nsudoku\n1\n. \n. \n"}
+{"id":"sudoku-22","kind":"url","input":"sudoku/1/1/g"}
+{"id":"sudoku-23","kind":"fileio","input":"pzprv3\nsudoku\n6\n. 6 . . . . \n. . . . . 5 \n. . 3 5 . . \n. 1 . 3 . 5 \n2 2 . 6 2 . \n5 . 6 . 1 4 \n.[1,,2,] . . . .[1,,2,] . \n. . . . .[1,,2,] .[1,,2,] \n. . .[1,,2,] . 3 . \n. .[1,,2,] .[1,,2,] . . 6 \n.[1,,2,] . 4 . .[1,,2,] .[1,,2,] \n. .[1,,2,] .[1,,2,] . . . \n"}
+{"id":"sudoku-24","kind":"url","input":"sudoku/6/6/g6o5h35i1g3g522g62g5g6g14"}
+{"id":"sudoku-25","kind":"fileio","input":"pzprv3\nsudoku\n1\n1 \n. \n"}
+{"id":"sudoku-26","kind":"url","input":"sudoku/1/1/1"}
+{"id":"sudoku-27","kind":"fileio","input":"pzprv3\nsudoku\n4\n. . 4 2 \n. 4 . . \n. 3 . . \n. 3 . . \n. . 3 .[1,,2,] \n. . . .[1,,2,] \n. 4 .[1,,2,] 4 \n. 1 1 . \n"}
+{"id":"sudoku-28","kind":"url","input":"sudoku/4/4/h42g4i3i3h"}
+{"id":"sudoku-29","kind":"fileio","input":"pzprv3\nsudoku\n3\n. . 3 \n. . 2 \n. 2 . \n. .[1,,2,] 3 \n. 1 .[1,,2,] \n3 . . \n"}
+{"id":"sudoku-30","kind":"url","input":"sudoku/3/3/h3h2g2g"}
+{"id":"sudoku-31","kind":"fileio","input":"pzprv3\nsudoku\n6\n. 4 . . 3 . \n6 6 . 5 2 . \n5 1 1 2 . . \n. 3 . . 1 . \n. . . 6 . . \n4 . 4 5 3 . \n3 . . . 5 .[1,,2,] \n.[1,,2,] . . 1 . 1 \n. .[1,,2,] . . 2 . \n.[1,,2,] .[1,,2,] . . . . \n. 4 . .[1,,2,] . . \n. . 5 . . . \n"}
+{"id":"sudoku-32","kind":"url","input":"sudoku/6/6/g4h3g66g52g5112i3h1j6h4g453g"}
+{"id":"sudoku-33","kind":"fileio","input":"pzprv3\nsudoku\n1\n1 \n. \n"}
+{"id":"sudoku-34","kind":"url","input":"sudoku/1/1/1"}
+{"id":"sudoku-35","kind":"fileio","input":"pzprv3\nsudoku\n3\n1 1 . \n2 . 2 \n. . 1 \n. .[1,,2,] .[1,,2,] \n. .[1,,2,] 2 \n. . .[1,,2,] \n"}
+{"id":"sudoku-36","kind":"url","input":"sudoku/3/3/11g2g2h1"}
+{"id":"sudoku-37","kind":"fileio","input":"pzprv3\nsudoku\n6\n3 1 . 5 . 6 \n. 2 . . . 2 \n1 3 . . 5 5 \n6 . 4 2 . . \n. 4 1 5 3 . \n2 2 . 2 . . \n.[1,,2,] . .[1,,2,] . . . \n4 . .[1,,2,] .[1,,2,] . .[1,,2,] \n.[1,,2,] 2 . .[1,,2,] .[1,,2,] . \n. .[1,,2,] .[1,,2,] . .[1,,2,] . \n.[1,,2,] 5 . . . . \n1 . . .[1,,2,] .[1,,2,] 6 \n"}
+{"id":"sudoku-38","kind":"url","input":"sudoku/6/6/31g5g6g2i213h556g42i4153g22g2h"}
+{"id":"sudoku-39","kind":"fileio","input":"pzprv3\nsudoku\n4\n. . . 1 \n. . 2 3 \n3 . . . \n1 . . . \n. . . . \n. . . .[1,,2,] \n. . 2 .[1,,2,] \n.[1,,2,] 1 . .[1,,2,] \n"}
+{"id":"sudoku-40","kind":"url","input":"sudoku/4/4/i1h233i1i"}
+{"id":"sudoku-41","kind":"fileio","input":"pzprv3\nsudoku\n2\n1 . \n2 1 \n.[1,,2,] .[1,,2,] \n.[1,,2,] . \n"}
+{"id":"sudoku-42","kind":"url","input":"sudoku/2/2/1g21"}
+{"id":"sudoku-43","kind":"fileio","input":"pzprv3\nsudoku\n2\n. 1 \n. . \n. . \n.[1,,2,] .[1,,2,] \n"}
+{"id":"sudoku-44","kind":"url","input":"sudoku/2/2/g1h"}
+{"id":"sudoku-45","kind":"fileio","input":"pzprv3\nsudoku\n3\n. 3 . \n. 3 3 \n. . 3 \n. 3 . \n. .[1,,2,] . \n. . . \n"}
+{"id":"sudoku-46","kind":"url","input":"sudoku/3/3/g3h33h3"}
+{"id":"sudoku-47","kind":"fileio","input":"pzprv3\nsudoku\n4\n2 . . . \n. 2 . 1 \n2 . . . \n. . 1 . \n3 .[1,,2,] .[1,,2,] .[1,,2,] \n. .[1,,2,] .[1,,2,] . \n. . .[1,,2,] . \n1 .[1,,2,] 3 . \n"}
+{"id":"sudoku-48","kind":"url","input":"sudoku/4/4/2j2g12k1g"}
+{"id":"sudoku-49","kind":"fileio","input":"pzprv3\nsudoku\n6\n4 . . . 1 . \n. . . 4 . . \n6 . . 3 4 . \n. . 4 . . 4 \n. 6 . . . . \n. . 4 6 4 . \n6 .[1,,2,] . . . 5 \n.[1,,2,] . .[1,,2,] . . . \n.[1,,2,] . . . 3 . \n. .[1,,2,] . . 4 . \n.[1,,2,] . . .[1,,2,] 2 . \n. . . .[1,,2,] . . \n"}
+{"id":"sudoku-50","kind":"url","input":"sudoku/6/6/4i1j4h6h34i4h4g6l464g"}
+{"id":"sudoku-51","kind":"fileio","input":"pzprv3\nsudoku\n4\n2 . 1 . \n2 3 . 1 \n. . . . \n4 . . . \n1 .[1,,2,] .[1,,2,] .[1,,2,] \n. . . .[1,,2,] \n4 . .[1,,2,] .[1,,2,] \n. 2 3 2 \n"}
+{"id":"sudoku-52","kind":"url","input":"sudoku/4/4/2g1g23g1j4i"}
+{"id":"sudoku-53","kind":"fileio","input":"pzprv3\nsudoku\n3\n1 . 2 \n. . . \n. . . \n. . 1 \n1 .[1,,2,] . \n.[1,,2,] . . \n"}
+{"id":"sudoku-54","kind":"url","input":"sudoku/3/3/1g2l"}
+{"id":"sudoku-55","kind":"fileio","input":"pzprv3\nsudoku\n4\n2 . . . \n. . 2 . \n2 . 1 . \n. 1 . . \n. . . .[1,,2,] \n. .[1,,2,] .[1,,2,] . \n.[1,,2,] .[1,,2,] . 3 \n. 1 3 . \n"}
+{"id":"sudoku-56","kind":"url","input":"sudoku/4/4/2k2g2g1h1h"}
+{"id":"sudoku-57","kind":"fileio","input":"pzprv3\nsudoku\n3\n. . 3 \n. 1 3 \n. . 2 \n2 .[1,,2,] . \n. . 1 \n. . . \n"}
+{"id":"sudoku-58","kind":"url","input":"sudoku/3/3/h3g13h2"}
+{"id":"sudoku-59","kind":"fileio","input":"pzprv3\nsudoku\n1\n. \n. \n"}
+{"id":"sudoku-60","kind":"url","input":"sudoku/1/1/g"}
+{"id":"sudoku-61","kind":"fileio","input":"pzprv3\nsudoku\n2\n2 1 \n. . \n1 . \n.[1,,2,] .[1,,2,] \n"}
+{"id":"sudoku-62","kind":"url","input":"sudoku/2/2/21h"}
+{"id":"sudoku-63","kind":"fileio","input":"pzprv3\nsudoku\n6\n. 1 . . 3 . \n6 2 6 . 2 3 \n. . 3 . . . \n3 . . . . . \n6 . . 6 . . \n. 5 3 . 6 . \n. . . .[1,,2,] 5 .[1,,2,] \n. . .[1,,2,] 1 . . \n. . . 6 . . \n.[1,,2,] 3 .[1,,2,] . . .[1,,2,] \n. 1 .[1,,2,] .[1,,2,] .[1,,2,] . \n. .[1,,2,] 6 5 4 . \n"}
+{"id":"sudoku-64","kind":"url","input":"sudoku/6/6/g1h3g626g23h3i3k6h6i53g6g"}
+{"id":"sudoku-65","kind":"fileio","input":"pzprv3\nsudoku\n4\n4 . 2 . \n. . 1 . \n. . . . \n. 1 3 . \n. .[1,,2,] 2 1 \n.[1,,2,] .[1,,2,] . .[1,,2,] \n1 1 . 3 \n. .[1,,2,] . .[1,,2,] \n"}
+{"id":"sudoku-66","kind":"url","input":"sudoku/4/4/4g2i1l13g"}
+{"id":"sudoku-67","kind":"fileio","input":"pzprv3\nsudoku\n4\n. 2 . . \n2 4 . . \n. 1 . . \n. . . 1 \n. .[1,,2,] . . \n. . . .[1,,2,] \n.[1,,2,] .[1,,2,] .[1,,2,] . \n. .[1,,2,] .[1,,2,] 1 \n"}
+{"id":"sudoku-68","kind":"url","input":"sudoku/4/4/g2h24i1k1"}
+{"id":"sudoku-69","kind":"fileio","input":"pzprv3\nsudoku\n3\n. . . \n. . 1 \n. 2 3 \n. . .[1,,2,] \n. . . \n. .[1,,2,] . \n"}
+{"id":"sudoku-70","kind":"url","input":"sudoku/3/3/k1g23"}

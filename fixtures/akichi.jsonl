@@ -1,0 +1,70 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"akichi","generator":"tools/gen_fixtures.js"}}
+{"id":"akichi-0","kind":"url","input":"https://puzz.link/p?akichi/5/6/248h2u0uu033333"}
+{"id":"akichi-1","kind":"url","input":"https://puzz.link/p?akichi/11/10/aaaaaaaaaaaaaa28282800336ec00001of3oe3ou3g44g343443344h"}
+{"id":"akichi-2","kind":"url","input":"akichi/4/4/"}
+{"id":"akichi-3","kind":"url","input":"akichi/1/1/"}
+{"id":"akichi-4","kind":"url","input":"akichi/1/5/"}
+{"id":"akichi-5","kind":"url","input":"akichi/5/1/"}
+{"id":"akichi-6","kind":"url","input":"akichi/x/2/2/001"}
+{"id":"akichi-7","kind":"fileio","input":"pzprv3/akichi/2/3/3/0 0 1 /2 2 1 /2 . 1 /. . . /# . + /. # . /"}
+{"id":"akichi-8","kind":"fileio","input":"pzprv3.1/akichi/2/2/x/0 /0 /0 0 /. 2 /. . /. . /. . /"}
+{"id":"akichi-9","kind":"fileio","input":"pzprv3.1\nakichi\n3\n6\n0 0 1 0 1 \n0 0 0 0 0 \n1 0 1 0 0 \n0 0 0 1 1 0 \n1 0 1 0 1 0 \n1 . . . . . \n. . . . . . \n2 . . . . . \n. . . . # . \n# # . . . . \n# . . # . . \n-1 0 0 0 0 \n0 -1 0 0 0 \n1 0 0 0 -1 \n0 0 0 0 0 0 \n1 0 -1 1 0 0 \n"}
+{"id":"akichi-10","kind":"url","input":"akichi/6/3/50k3ag1g2"}
+{"id":"akichi-11","kind":"fileio","input":"pzprv3.1\nakichi\n3\n3\nx\n0 0 \n0 0 \n0 0 \n1 1 1 \n0 0 0 \n. . . \n1 . . \n. . . \n. # . \n+ + + \n# + . \n0 1 \n0 0 \n0 0 \n0 1 0 \n0 0 -1 \n"}
+{"id":"akichi-12","kind":"url","input":"akichi/x/3/3/00s0g1"}
+{"id":"akichi-13","kind":"fileio","input":"pzprv3.1\nakichi\n1\n5\nx\n1 0 1 0 \n2 . . - . \n# . # # . \n1 0 0 0 \n"}
+{"id":"akichi-14","kind":"url","input":"akichi/x/5/1/k2g./"}
+{"id":"akichi-15","kind":"fileio","input":"pzprv3.1\nakichi\n4\n3\nx\n0 0 \n0 1 \n0 0 \n0 1 \n0 0 1 \n0 0 1 \n1 1 1 \n0 . . \n. . 1 \n. . . \n0 . 0 \n. . . \n. . . \n# . # \n. . . \n1 0 \n0 0 \n0 0 \n-1 0 \n-1 0 1 \n0 0 0 \n-1 1 0 \n"}
+{"id":"akichi-16","kind":"url","input":"akichi/x/3/4/244u0100"}
+{"id":"akichi-17","kind":"fileio","input":"pzprv3.1\nakichi\n5\n1\nx\n\n\n\n\n\n1 \n1 \n0 \n0 \n0 \n. \n. \n. \n. \n. \n. \n+ \n. \n. \n"}
+{"id":"akichi-18","kind":"url","input":"akichi/x/1/5/o0h"}
+{"id":"akichi-19","kind":"fileio","input":"pzprv3.1\nakichi\n3\n3\n1 0 \n1 1 \n0 0 \n0 0 0 \n0 0 0 \n. . . \n. . . \n. . . \n+ . . \n. . + \n. + . \n-1 1 \n0 0 \n0 0 \n0 0 -1 \n0 0 0 \n"}
+{"id":"akichi-20","kind":"url","input":"akichi/3/3/m000g"}
+{"id":"akichi-21","kind":"fileio","input":"pzprv3.1\nakichi\n5\n5\nx\n0 0 1 1 \n1 1 0 0 \n0 0 0 1 \n0 0 1 0 \n0 0 0 0 \n0 0 0 1 0 \n0 0 0 0 1 \n1 0 0 0 0 \n0 1 0 0 1 \n0 . . 1 . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. # . + . \n# # . . . \n. . . . . \n. + . . # \n. # . # + \n1 0 0 0 \n0 0 0 1 \n-1 0 0 0 \n0 0 0 0 \n0 0 0 0 \n1 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 1 1 \n"}
+{"id":"akichi-22","kind":"url","input":"akichi/x/5/5/7g9021g901"}
+{"id":"akichi-23","kind":"fileio","input":"pzprv3.1\nakichi\n2\n5\nx\n0 0 0 0 \n1 0 1 0 \n0 1 1 0 0 \n0 . . . . \n. 1 . . . \n# + . + . \n. . . # # \n0 -1 0 0 \n1 0 0 0 \n0 0 -1 0 1 \n"}
+{"id":"akichi-24","kind":"url","input":"akichi/x/5/2/18c01"}
+{"id":"akichi-25","kind":"fileio","input":"pzprv3.1\nakichi\n1\n5\n1 1 1 1 \n. . 2 - 1 \n# . # . . \n"}
+{"id":"akichi-26","kind":"url","input":"akichi/5/1/uh2.1"}
+{"id":"akichi-27","kind":"fileio","input":"pzprv3.1\nakichi\n4\n2\n1 \n1 \n0 \n0 \n0 0 \n0 1 \n1 0 \n- . \n. . \n. . \n. . \n. . \n+ # \n# . \n. # \n0 \n0 \n0 \n1 \n0 0 \n0 0 \n0 0 \n"}
+{"id":"akichi-28","kind":"url","input":"akichi/2/4/o30.g"}
+{"id":"akichi-29","kind":"fileio","input":"pzprv3.1\nakichi\n2\n5\n0 0 1 0 \n1 0 1 0 \n0 1 0 0 0 \n. . . 2 . \n. . . . . \n. . . . . \n. . + . . \n0 1 0 1 \n0 0 0 0 \n0 1 0 0 0 \n"}
+{"id":"akichi-30","kind":"url","input":"akichi/5/2/588g2"}
+{"id":"akichi-31","kind":"fileio","input":"pzprv3.1\nakichi\n2\n5\n1 1 0 1 \n1 0 0 0 \n0 0 0 0 0 \n. . . . . \n. . . . . \n# . # . . \n+ . . # + \n1 0 0 -1 \n0 1 0 0 \n0 0 0 0 0 \n"}
+{"id":"akichi-32","kind":"url","input":"akichi/5/2/r00h"}
+{"id":"akichi-33","kind":"fileio","input":"pzprv3.1\nakichi\n5\n3\n1 0 \n1 0 \n0 0 \n0 0 \n1 0 \n0 0 1 \n1 1 0 \n0 0 1 \n1 0 0 \n. . . \n. . . \n. . . \n. . . \n2 . . \n+ . . \n. + # \n. # # \n+ # . \n. . # \n1 -1 \n0 0 \n0 1 \n1 0 \n1 1 \n1 0 0 \n0 0 0 \n0 0 1 \n0 0 0 \n"}
+{"id":"akichi-34","kind":"url","input":"akichi/3/5/k2730h2"}
+{"id":"akichi-35","kind":"fileio","input":"pzprv3.1\nakichi\n4\n4\n1 1 0 \n0 1 0 \n0 0 0 \n0 0 1 \n1 0 0 0 \n0 0 0 1 \n1 0 1 0 \n0 . . . \n1 . . . \n. . . . \n. . . . \n. # . . \n+ . . . \n. . . # \n. . . . \n0 0 1 \n0 1 0 \n1 0 0 \n0 1 0 \n0 0 0 0 \n0 1 -1 0 \n0 0 0 0 \n"}
+{"id":"akichi-36","kind":"url","input":"akichi/4/4/p08g6g01"}
+{"id":"akichi-37","kind":"fileio","input":"pzprv3.1\nakichi\n3\n2\nx\n1 \n1 \n1 \n1 0 \n0 1 \n. 0 \n1 . \n. - \n. . \n# # \n. # \n"}
+{"id":"akichi-38","kind":"url","input":"akichi/x/2/3/sig01./"}
+{"id":"akichi-39","kind":"fileio","input":"pzprv3.1\nakichi\n1\n1\n\n. \n. \n"}
+{"id":"akichi-40","kind":"url","input":"akichi/1/1/g"}
+{"id":"akichi-41","kind":"fileio","input":"pzprv3.1\nakichi\n3\n2\n1 \n1 \n1 \n0 0 \n0 1 \n. . \n. . \n. 1 \n. . \n. + \n. # \n0 \n0 \n0 \n0 1 \n0 0 \n"}
+{"id":"akichi-42","kind":"url","input":"akichi/2/3/s2h1"}
+{"id":"akichi-43","kind":"fileio","input":"pzprv3.1\nakichi\n2\n2\n0 \n0 \n1 0 \n0 . \n. . \n+ . \n. . \n0 \n-1 \n0 1 \n"}
+{"id":"akichi-44","kind":"url","input":"akichi/2/2/0g0"}
+{"id":"akichi-45","kind":"fileio","input":"pzprv3.1\nakichi\n1\n2\n1 \n. - \n# # \n"}
+{"id":"akichi-46","kind":"url","input":"akichi/2/1/gg./"}
+{"id":"akichi-47","kind":"fileio","input":"pzprv3.1\nakichi\n5\n6\n0 1 1 0 0 \n1 1 0 1 0 \n1 0 0 0 0 \n1 1 1 0 1 \n1 1 1 0 1 \n0 0 1 0 1 0 \n0 0 1 1 0 1 \n0 1 1 0 1 1 \n0 1 0 1 0 0 \n2 . 1 . . . \n. . . . . . \n. . . . . . \n. - - . . . \n. . . . . . \n# # # + . . \n. . . # # . \n# . . + . # \n. . . + . . \n. . . . . # \n1 0 0 0 -1 \n0 0 0 0 -1 \n0 0 0 1 0 \n0 0 1 0 -1 \n0 0 0 0 0 \n1 0 0 0 1 1 \n-1 0 1 0 -1 1 \n0 0 0 0 0 1 \n-1 0 1 0 1 0 \n"}
+{"id":"akichi-48","kind":"url","input":"akichi/6/5/cqgtt53bd821..h"}
+{"id":"akichi-49","kind":"fileio","input":"pzprv3.1\nakichi\n1\n5\nx\n0 0 1 1 \n. . . 1 0 \n+ . . . # \n"}
+{"id":"akichi-50","kind":"url","input":"akichi/x/5/1/6g10"}
+{"id":"akichi-51","kind":"fileio","input":"pzprv3.1\nakichi\n1\n5\n0 1 0 0 \n2 . 1 . . \n# . # . . \n"}
+{"id":"akichi-52","kind":"url","input":"akichi/5/1/821"}
+{"id":"akichi-53","kind":"fileio","input":"pzprv3.1\nakichi\n2\n3\n0 1 \n1 0 \n0 0 0 \n2 . . \n. . . \n. . . \n+ + . \n0 0 \n0 -1 \n0 -1 0 \n"}
+{"id":"akichi-54","kind":"url","input":"akichi/3/2/c02"}
+{"id":"akichi-55","kind":"fileio","input":"pzprv3.1\nakichi\n5\n6\nx\n0 0 1 0 1 \n1 0 1 0 1 \n0 1 1 0 1 \n1 1 1 1 1 \n1 1 0 0 0 \n0 0 0 0 1 0 \n0 0 0 1 1 0 \n0 1 1 1 1 0 \n0 1 0 0 1 0 \n. . . 2 . . \n. . . . . . \n. . . - . . \n. . - . 1 . \n. 1 . . . . \n. . . . + # \n. . . # . . \n. # . . . . \n. # # . + . \n. . . . + . \n1 0 0 1 0 \n0 0 0 0 0 \n-1 0 0 0 -1 \n0 1 0 0 0 \n0 0 0 0 0 \n0 -1 1 0 0 0 \n0 0 0 0 1 0 \n-1 0 -1 0 0 0 \n1 0 0 0 0 0 \n"}
+{"id":"akichi-56","kind":"url","input":"akichi/x/6/5/5ldvo11jp4g2..g11"}
+{"id":"akichi-57","kind":"fileio","input":"pzprv3.1\nakichi\n4\n6\n1 1 0 1 1 \n0 0 0 0 0 \n0 0 1 0 1 \n0 1 0 1 0 \n0 1 1 0 1 0 \n0 1 0 0 1 0 \n1 1 0 0 1 1 \n. 1 . . . . \n. . . . . . \n. . . . . . \n1 . . . 2 . \n# # . . . # \n. . . . . . \n# # . # . # \n. . . . . . \n1 0 0 -1 0 \n0 0 0 0 1 \n0 0 1 0 0 \n1 0 0 -1 -1 \n0 0 0 0 0 -1 \n0 1 0 0 -1 -1 \n0 0 1 0 0 0 \n"}
+{"id":"akichi-58","kind":"url","input":"akichi/6/4/r05ad4mcg1g12"}
+{"id":"akichi-59","kind":"fileio","input":"pzprv3.1\nakichi\n4\n6\nx\n0 1 0 0 0 \n0 0 1 0 0 \n0 0 0 0 0 \n0 0 0 0 1 \n0 0 0 0 0 1 \n1 0 0 1 0 0 \n0 1 0 1 1 0 \n2 . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n# + # . . . \n# . . + . + \n# # # . # . \n. . . + . # \n0 0 0 0 1 \n0 0 0 0 0 \n0 1 0 -1 0 \n1 0 1 0 0 \n0 0 0 0 0 -1 \n0 0 0 1 0 0 \n0 -1 1 0 1 1 \n"}
+{"id":"akichi-60","kind":"url","input":"akichi/x/6/4/84010p2o2"}
+{"id":"akichi-61","kind":"fileio","input":"pzprv3.1\nakichi\n3\n2\nx\n0 \n0 \n0 \n1 0 \n0 1 \n2 . \n. . \n. . \n. . \n. # \n# + \n0 \n0 \n0 \n0 0 \n0 1 \n"}
+{"id":"akichi-62","kind":"url","input":"akichi/x/2/3/0i2"}
+{"id":"akichi-63","kind":"fileio","input":"pzprv3.1\nakichi\n2\n3\nx\n0 0 \n0 1 \n1 0 0 \n- . . \n. . . \n+ + . \n. + . \n0 1 \n0 1 \n1 0 -1 \n"}
+{"id":"akichi-64","kind":"url","input":"akichi/x/3/2/2g./"}
+{"id":"akichi-65","kind":"fileio","input":"pzprv3.1\nakichi\n2\n6\nx\n0 0 0 0 0 \n0 0 0 0 1 \n0 0 0 0 1 0 \n1 . . . . . \n. . . . . . \n. . . . . # \n. + # . # . \n0 0 0 0 0 \n0 0 0 0 0 \n0 1 1 0 0 0 \n"}
+{"id":"akichi-66","kind":"url","input":"akichi/x/6/2/01101"}
+{"id":"akichi-67","kind":"fileio","input":"pzprv3.1\nakichi\n1\n4\nx\n0 0 1 \n. . . 2 \n+ + . . \n1 0 0 \n"}
+{"id":"akichi-68","kind":"url","input":"akichi/x/4/1/4g2"}

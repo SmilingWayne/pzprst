@@ -40,6 +40,7 @@ is intentionally reported as ignored by `cargo test` and must be run separately:
 ```sh
 node tools/check_parity.js                  # all committed inputs / all genres
 node tools/check_parity.js slither mashu   # selected genres
+node tools/check_state_parity.js slither mashu # pzprjs-trace accepts Rust states
 ```
 
 For that comparison, use Node 24+ and a **clean checkout of pzprjs-trace** at
