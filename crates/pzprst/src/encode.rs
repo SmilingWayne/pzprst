@@ -1351,6 +1351,25 @@ pub fn generic_encode_number16(length: usize, mut get: impl FnMut(usize) -> i32)
     cm
 }
 
+/// `decodeRoomNumber16`: one number at the top cell of each room.
+pub(crate) fn decode_room_number16(b: &mut Board, body: &str, d: &mut Diagnostics) -> String {
+    let tops: Vec<_> = crate::rooms::components(b)
+        .iter()
+        .map(|r| crate::rooms::top(r, b.cols()))
+        .collect();
+    generic_decode_number16(tops.len(), body, d, |i, value| {
+        b.cells[tops[i]].qnum = value
+    })
+}
+
+/// `encodeRoomNumber16`.
+pub(crate) fn encode_room_number16(b: &Board) -> String {
+    let rooms = crate::rooms::components(b);
+    generic_encode_number16(rooms.len(), |i| {
+        b.cells[crate::rooms::top(&rooms[i], b.cols())].qnum
+    })
+}
+
 // ----- dot-grid codecs (variety-common/Encode.js) -------------------------
 
 /// pzprjs `bd.dots` for `hasdots === 1`: `2*cols-1` by `2*rows-1` points,

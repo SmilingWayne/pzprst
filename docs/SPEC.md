@@ -71,6 +71,10 @@ pzpr objects addressed by pzpr's doubled coordinates `(bx, by)`:
   `emptyexcell.ques == 51`), 2 puts a row on each side; `Board::obj_at` mirrors
   pzprjs `getObjectPos("obj", …)`, and `Group::ExCell` addresses them directly.
   Crosses are a `(cols+1) x (rows+1)` grid gated on `Board.hascross`.
+- Rooms are derived from connected cells separated by question borders. Their
+  ordering follows the pzprjs cell scan; a room's top cell is its leftmost,
+  then topmost cell. Numbered-room genres relocate their clue to that cell
+  after a symmetry. Legacy FileIO room-id grids are converted to borders.
 
 Each object carries the same property names as pzprjs (`qnum`, `qnum2`,
 `qnum3`, `qnum4`, `ques`, `qdir`, `line`, `qsub`, …) with the same defaults
@@ -89,6 +93,13 @@ pzprjs calls the hooks once per board *operation*, while pzprst calls them once
 with the composed `Transform`; a genre with directional values therefore applies
 the operations in `tools/gen_fixtures.js` order (rot90 = `turnr`,
 transpose = `turnl` + `flipy`, …) inside its hook.
+
+`Obj.snum` stores optional player pencil numbers for genres that enable the
+`decodeCellAnumsub` subnumber array. An empty vector denotes the default four
+unset slots. They move with their cells, participate in snapshot equality, and
+are cleared by `clear_snapshot`. Other genre-specific uses of subnumbers still
+need separate ports. `Obj` is cloneable, rather than `Copy`, because these
+arrays may have more than four entries in a FileIO input.
 
 Rejected alternatives: (a) typed per-genre grids only — convenient but every
 codec and transform would be a re-derivation, which is how PuzzleKit drifted;
@@ -464,10 +475,14 @@ cd ../puzzlekit && pip install -e ".[dev]" && pytest -q   # Python surface
 
 Next: Phase 2 (`yajilin`, `easyasabc`, `battleship`, `heyawake`, `URL_PZPRFILE`).
 
-Porting backlog (`node tools/triage.js --all`, pzprjs d40aeab0, 346 pids):
+Historical porting backlog (`node tools/triage.js --all`, pzprjs d40aeab0, 346 pids):
 141 ported, 11 triage-ready but blocked on a missing core feature, 7 blocked on
 cross objects, 186 need core infrastructure (directional hooks, crosses, rooms,
 excells, piece bank, array properties, indicators, segments), 1 cannot be
 introspected. Ready and codec-only genres are dispatched in waves (`--plan`, see
 `.agents/skills/pzprst-port-genre/dispatch.md`); infrastructure features are
 maintainer work and unblock the rest by feature.
+
+The current registry has 265 pids. Use `pzprst::supported()` for the actual
+list: the historical counts and infrastructure classifications above predate
+the room and pencil-mark ports.

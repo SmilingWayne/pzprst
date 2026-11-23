@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"hakoiri","generator":"tools/gen_fixtures.js"}}
+{"id":"hakoiri-0","kind":"url","input":"https://puzz.link/p?hakoiri/6/6/lntn7724lhg0q3f2d2a1d"}
+{"id":"hakoiri-1","kind":"url","input":"https://puzz.link/p?hakoiri/8/8/5hdbd0h54kh001sauk86jto0a3i3c1a2c1o2a2j1c2a1a2e"}
+{"id":"hakoiri-2","kind":"url","input":"https://puzz.link/p?hakoiri/8/8/51a6peqtimc00o8fqsh8iomga3b1j1e2b12c3h2e1l2a3c3"}
+{"id":"hakoiri-3","kind":"url","input":"hakoiri/4/4/"}
+{"id":"hakoiri-4","kind":"url","input":"hakoiri/1/1/"}
+{"id":"hakoiri-5","kind":"url","input":"hakoiri/1/5/"}
+{"id":"hakoiri-6","kind":"url","input":"hakoiri/5/1/"}
+{"id":"hakoiri-7","kind":"fileio","input":"pzprv3\nhakoiri\n2\n5\n2\n0 0 1 1 1 \n0 0 0 0 0 \n2 1 . 3 1 \n. 1 . . - \n1 . 2 2 + \n2 2 . 2 . \n"}
+{"id":"hakoiri-8","kind":"url","input":"hakoiri/5/2/80721a31a1b./"}
+{"id":"hakoiri-9","kind":"fileio","input":"pzprv3\nhakoiri\n4\n4\n4\n0 0 1 1 \n0 0 0 2 \n0 0 0 0 \n0 0 3 3 \n- . . . \n. - 2 2 \n0 2 . 1 \n2 . 1 1 \n. . .[1,,2,] +[,,2,] \n.[1,,2,] +[1,,2,] . .[1,,2,] \n. . . . \n. .[,,2,] +[,,2,] 2 \n"}
+{"id":"hakoiri-10","kind":"url","input":"hakoiri/4/4/8gg64o.d.2202a12a11"}
+{"id":"hakoiri-11","kind":"fileio","input":"pzprv3\nhakoiri\n3\n2\n3\n0 1 \n0 2 \n0 0 \n- 2 \n. 0 \n3 . \n. 1 \n. 1 \n1 2 \n"}
+{"id":"hakoiri-12","kind":"url","input":"hakoiri/2/3/oa.2a03a"}
+{"id":"hakoiri-13","kind":"fileio","input":"pzprv3\nhakoiri\n4\n4\n4\n0 0 1 1 \n0 0 2 3 \n0 0 0 3 \n0 0 0 3 \n1 2 . 2 \n. . 3 . \n. . 3 - \n- 3 0 0 \n. . + 1 \n+[1,,,] 1 1 . \n2 1 . .[,,2,] \n+[1,,,] . .[1,,,] .[,,2,] \n"}
+{"id":"hakoiri-14","kind":"url","input":"hakoiri/4/4/9i868012a2b3c3..300"}
+{"id":"hakoiri-15","kind":"fileio","input":"pzprv3\nhakoiri\n5\n5\n4\n0 0 0 0 1 \n0 0 0 0 2 \n0 0 0 0 0 \n0 0 0 0 0 \n3 3 0 0 0 \n- 0 . . 0 \n0 1 . 1 - \n- 3 1 3 2 \n2 . . 3 1 \n0 3 . - 3 \n1 . . . 2 \n1 . . 2 1 \n2 1 . . . \n. 2 2 . 1 \n. 1 . 1 . \n"}
+{"id":"hakoiri-16","kind":"url","input":"hakoiri/5/5/2404110o.0b001a1..31322b3103a.3"}
+{"id":"hakoiri-17","kind":"fileio","input":"pzprv3\nhakoiri\n4\n1\n1\n0 \n0 \n0 \n0 \n. \n. \n2 \n- \n+ \n2 \n. \n. \n"}
+{"id":"hakoiri-18","kind":"url","input":"hakoiri/1/4/0b2./"}
+{"id":"hakoiri-19","kind":"fileio","input":"pzprv3\nhakoiri\n1\n4\n1\n0 0 0 0 \n1 0 1 1 \n1 + . . \n"}
+{"id":"hakoiri-20","kind":"url","input":"hakoiri/4/1/01011"}
+{"id":"hakoiri-21","kind":"fileio","input":"pzprv3\nhakoiri\n5\n4\n1\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n2 1 0 1 \n. . 3 . \n. 1 . 0 \n. - 2 3 \n. 0 2 3 \n.[1,,2,] . . 1 \n. .[,,2,] 2 2 \n2 . 2 1 \n1 . .[1,,,] . \n+ . 2 . \n"}
+{"id":"hakoiri-22","kind":"url","input":"hakoiri/4/5/00000002101b3b1a0a.23a023"}
+{"id":"hakoiri-23","kind":"fileio","input":"pzprv3\nhakoiri\n1\n3\n1\n0 0 0 \n. 2 3 \n. 1 .[1,,,] \n"}
+{"id":"hakoiri-24","kind":"url","input":"hakoiri/3/1/0a23"}
+{"id":"hakoiri-25","kind":"fileio","input":"pzprv3\nhakoiri\n2\n1\n2\n0 \n1 \n. \n3 \n+ \n1 \n"}
+{"id":"hakoiri-26","kind":"url","input":"hakoiri/1/2/ga3"}
+{"id":"hakoiri-27","kind":"fileio","input":"pzprv3\nhakoiri\n1\n5\n2\n0 0 0 0 1 \n- . . . 1 \n2 +[,,2,] .[1,,,] +[1,,2,] 2 \n"}
+{"id":"hakoiri-28","kind":"url","input":"hakoiri/5/1/2.c1"}
+{"id":"hakoiri-29","kind":"fileio","input":"pzprv3\nhakoiri\n5\n1\n1\n0 \n0 \n0 \n0 \n0 \n. \n. \n0 \n- \n. \n. \n. \n. \n. \n1 \n"}
+{"id":"hakoiri-30","kind":"url","input":"hakoiri/1/5/0b0.a"}
+{"id":"hakoiri-31","kind":"fileio","input":"pzprv3\nhakoiri\n1\n4\n1\n0 0 0 0 \n. - . 3 \n2 1 1 . \n"}
+{"id":"hakoiri-32","kind":"url","input":"hakoiri/4/1/0a.a3"}
+{"id":"hakoiri-33","kind":"fileio","input":"pzprv3\nhakoiri\n5\n6\n4\n0 0 1 1 2 2 \n3 0 0 0 0 2 \n0 0 0 0 0 2 \n0 0 0 0 0 2 \n0 0 0 0 0 2 \n- 2 0 0 . 2 \n. . 2 . - . \n1 3 . . 1 . \n0 . . 1 3 3 \n. 0 3 3 0 1 \n.[1,,,] 1 1 + 1 1 \n1 1 . 2 . .[1,,2,] \n. . . .[1,,2,] 1 +[1,,2,] \n. . . +[,,2,] 1 . \n. 1 2 2 . . \n"}
+{"id":"hakoiri-34","kind":"url","input":"hakoiri/6/5/ah111n8000.200a2b2a.a13b1a0b133a03301"}
+{"id":"hakoiri-35","kind":"fileio","input":"pzprv3\nhakoiri\n2\n1\n2\n0 \n1 \n3 \n3 \n. \n1 \n"}
+{"id":"hakoiri-36","kind":"url","input":"hakoiri/1/2/g33"}
+{"id":"hakoiri-37","kind":"fileio","input":"pzprv3\nhakoiri\n5\n6\n6\n0 1 2 2 2 2 \n3 3 4 2 2 2 \n3 2 2 2 2 2 \n5 2 2 2 2 2 \n5 2 2 2 2 2 \n3 . . - 2 3 \n0 . . . 2 2 \n. . 1 . 3 0 \n0 2 2 1 3 - \n0 . 0 3 3 3 \n.[1,,,] . 1 1 2 . \n. 1 . . . 2 \n. 1 1 .[1,,2,] . . \n. 2 . . 2 2 \n1 2 1 . . .[,,2,] \n"}
+{"id":"hakoiri-38","kind":"url","input":"hakoiri/6/5/ocgggs64003b.230c22b1a3002213.0a0333"}
+{"id":"hakoiri-39","kind":"fileio","input":"pzprv3\nhakoiri\n5\n2\n2\n0 1 \n0 0 \n0 0 \n0 0 \n0 0 \n2 - \n- 2 \n3 3 \n. . \n. 1 \n. . \n+[,,2,] . \n2 + \n. 1 \n+ 2 \n"}
+{"id":"hakoiri-40","kind":"url","input":"hakoiri/2/5/g802..233c1"}
+{"id":"hakoiri-41","kind":"fileio","input":"pzprv3\nhakoiri\n2\n4\n1\n0 0 0 0 \n0 0 0 0 \n. . . . \n. 3 3 . \n. 2 . + \n. 1 1 1 \n"}
+{"id":"hakoiri-42","kind":"url","input":"hakoiri/4/2/000e33a"}
+{"id":"hakoiri-43","kind":"fileio","input":"pzprv3\nhakoiri\n2\n2\n1\n0 0 \n0 0 \n- 0 \n3 1 \n1 + \n.[1,,2,] . \n"}
+{"id":"hakoiri-44","kind":"url","input":"hakoiri/2/2/00.031"}
+{"id":"hakoiri-45","kind":"fileio","input":"pzprv3\nhakoiri\n4\n6\n3\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n1 2 0 0 0 0 \n0 . 0 0 . . \n1 . 2 2 0 1 \n. . 2 - . - \n3 . . . . . \n2 . .[1,,2,] +[1,,2,] 2 1 \n1 1 1 . . 1 \n2 . 2 .[1,,,] . . \n. 2 1 .[1,,2,] .[1,,2,] .[1,,,] \n"}
+{"id":"hakoiri-46","kind":"url","input":"hakoiri/6/4/000o00600a00b1a2201b2.a.3e"}
+{"id":"hakoiri-47","kind":"fileio","input":"pzprv3\nhakoiri\n2\n5\n2\n0 0 0 1 1 \n0 0 0 1 1 \n. . 2 2 . \n1 3 . . 0 \n.[1,,2,] 2 . . .[,,2,] \n. . + . 1 \n"}
+{"id":"hakoiri-48","kind":"url","input":"hakoiri/5/2/480b22a13b0"}
+{"id":"hakoiri-49","kind":"fileio","input":"pzprv3\nhakoiri\n1\n4\n3\n0 1 2 2 \n. . 3 . \n2 2 + + \n"}
+{"id":"hakoiri-50","kind":"url","input":"hakoiri/4/1/ob3a"}
+{"id":"hakoiri-51","kind":"fileio","input":"pzprv3\nhakoiri\n5\n5\n2\n0 0 0 0 0 \n0 0 0 0 0 \n0 1 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n. . - - 1 \n3 0 . 0 2 \n. . . 3 1 \n2 3 1 - . \n. 3 2 - . \n. 1 1 . . \n2 2 .[1,,,] . . \n2 .[,,2,] . 1 . \n. . .[1,,,] . .[,,2,] \n+ . 2 1 + \n"}
+{"id":"hakoiri-52","kind":"url","input":"hakoiri/5/5/03000880b..130a02c31231.b32.a"}
+{"id":"hakoiri-53","kind":"fileio","input":"pzprv3\nhakoiri\n1\n1\n1\n0 \n1 \n.[1,,,] \n"}
+{"id":"hakoiri-54","kind":"url","input":"hakoiri/1/1/1"}
+{"id":"hakoiri-55","kind":"fileio","input":"pzprv3\nhakoiri\n4\n6\n4\n0 1 1 1 1 1 \n2 2 1 1 1 1 \n1 2 3 1 1 1 \n1 1 1 1 1 1 \n- . 0 . . 2 \n3 2 . 1 3 . \n2 - 2 2 1 . \n2 . 3 1 2 . \n. 1 . 1 .[,,2,] . \n. 1 2 1 .[,,2,] . \n. 2 . .[1,,2,] . . \n. . . . . +[1,,,] \n"}
+{"id":"hakoiri-56","kind":"url","input":"hakoiri/6/4/g8s0oa30.a0b232a13a2.221a2a312a"}
+{"id":"hakoiri-57","kind":"fileio","input":"pzprv3\nhakoiri\n1\n1\n1\n0 \n3 \n. \n"}
+{"id":"hakoiri-58","kind":"url","input":"hakoiri/1/1/3"}
+{"id":"hakoiri-59","kind":"fileio","input":"pzprv3\nhakoiri\n2\n2\n2\n0 1 \n0 1 \n. 0 \n. . \n2 . \n.[1,,,] . \n"}
+{"id":"hakoiri-60","kind":"url","input":"hakoiri/2/2/o0a0b"}
+{"id":"hakoiri-61","kind":"fileio","input":"pzprv3\nhakoiri\n5\n6\n4\n0 0 0 0 1 1 \n0 0 0 0 1 1 \n2 1 1 1 1 1 \n2 1 1 1 1 1 \n2 3 1 1 1 1 \n2 1 1 2 . 1 \n2 . 0 - . . \n. 2 . 2 . . \n. 0 - 0 1 . \n0 . . . 2 . \n. . + 1 + . \n. . . . . 1 \n. .[1,,,] . . 1 1 \n1 . 2 + 1 . \n. 1 . + . 2 \n"}
+{"id":"hakoiri-62","kind":"url","input":"hakoiri/6/5/22ggo0f0102112a12a0.c2a2c0.01a0c2a"}
+{"id":"hakoiri-63","kind":"fileio","input":"pzprv3\nhakoiri\n1\n2\n2\n0 1 \n- - \n. 2 \n"}
+{"id":"hakoiri-64","kind":"url","input":"hakoiri/2/1/g../"}
+{"id":"hakoiri-65","kind":"fileio","input":"pzprv3\nhakoiri\n3\n5\n2\n0 1 1 1 1 \n0 1 1 1 1 \n1 1 1 1 1 \n1 3 2 . 3 \n- . 0 . - \n. . 2 0 . \n.[1,,2,] 2 2 . . \n2 . +[1,,,] 1 2 \n. + .[1,,,] +[1,,2,] 1 \n"}
+{"id":"hakoiri-66","kind":"url","input":"hakoiri/5/3/h000g132a3.a0a.b20a"}

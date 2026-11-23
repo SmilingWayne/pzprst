@@ -92,7 +92,7 @@ fn intentional_divergences() {
         Err(Error::UnsupportedUrlType(_))
     ));
     assert!(matches!(
-        Board::from_url("nurikabe/3/3/a", &opts()),
+        Board::from_url("tapa/3/3/a", &opts()),
         Err(Error::UnsupportedPuzzle(_))
     ));
     assert!(matches!(
@@ -221,6 +221,21 @@ fn snapshot_follows_transforms() {
     assert!(t.has_snapshot());
     assert_eq!(t.transform(Transform::Rot270), b);
     assert_eq!(t.to_url().unwrap(), "slither/1/2/1./");
+}
+
+#[test]
+fn pencil_marks_round_trip_and_clear() {
+    let input = "pzprv3/hakoiri/1/1/1/0/./.[1,,2,]/";
+    let mut board = Board::from_fileio(input, &opts()).unwrap();
+    assert_eq!(board.cell(0, 0).snum, vec![1, -1, 2, -1]);
+    assert!(board.has_snapshot());
+    assert_eq!(
+        Board::from_state(&board.to_state().unwrap(), &opts()).unwrap(),
+        board
+    );
+    board.clear_snapshot();
+    assert!(!board.has_snapshot());
+    assert!(board.cell(0, 0).snum.is_empty());
 }
 
 #[test]

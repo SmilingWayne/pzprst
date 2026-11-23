@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"tontonbeya","generator":"tools/gen_fixtures.js"}}
+{"id":"tontonbeya-0","kind":"url","input":"https://puzz.link/p?tontonbeya/8/8/1acn6k4hkc10o8s1dubrghs0j3c3332c1t3c1232c1j"}
+{"id":"tontonbeya-1","kind":"url","input":"https://puzz.link/p?tontonbeya/12/12/592k9ckiab52516gkl2aja9h4p000n7g63083tt040ens009otg010d3b2e2h1e3b1p3a2f3a2x1a2f3a1p3b1e2h3e3b1d"}
+{"id":"tontonbeya-2","kind":"url","input":"https://puzz.link/p?tontonbeya/8/8/10822gk51080000fg0073s001g2g3f1k2k3g23f1"}
+{"id":"tontonbeya-3","kind":"url","input":"tontonbeya/4/4/"}
+{"id":"tontonbeya-4","kind":"url","input":"tontonbeya/1/1/"}
+{"id":"tontonbeya-5","kind":"url","input":"tontonbeya/1/5/"}
+{"id":"tontonbeya-6","kind":"url","input":"tontonbeya/5/1/"}
+{"id":"tontonbeya-7","kind":"fileio","input":"pzprv3\ntontonbeya\n1\n6\n3\n0 0 1 1 1 2 \n- 0 - . . - \n.[,,2,] . 2 .[1,,2,] . .[1,,,] \n"}
+{"id":"tontonbeya-8","kind":"url","input":"tontonbeya/6/1/9.0.b./"}
+{"id":"tontonbeya-9","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n5\n3\n0 1 1 1 2 \n1 1 1 1 1 \n1 1 1 1 1 \n0 . 2 . - \n. 1 3 1 0 \n1 3 1 . . \n.[1,,2,] 1 2 . .[1,,2,] \n1 2 2 2 . \n.[1,,2,] . 1 . . \n"}
+{"id":"tontonbeya-10","kind":"url","input":"tontonbeya/5/3/i00h00a2a.a1310131b"}
+{"id":"tontonbeya-11","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n1\n2\n0 \n1 \n1 \n. \n. \n3 \n2 \n. \n2 \n"}
+{"id":"tontonbeya-12","kind":"url","input":"tontonbeya/1/3/gb3"}
+{"id":"tontonbeya-13","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n2\n1\n0 0 \n0 0 \n0 0 \n. . \n2 1 \n. 0 \n2 2 \n. .[1,,,] \n. 2 \n"}
+{"id":"tontonbeya-14","kind":"url","input":"tontonbeya/2/3/00b21a0"}
+{"id":"tontonbeya-15","kind":"fileio","input":"pzprv3\ntontonbeya\n1\n3\n1\n0 0 0 \n. . . \n. 1 1 \n"}
+{"id":"tontonbeya-16","kind":"url","input":"tontonbeya/3/1/0c"}
+{"id":"tontonbeya-17","kind":"fileio","input":"pzprv3\ntontonbeya\n5\n4\n2\n0 1 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n. 1 3 . \n2 0 1 - \n. 1 2 . \n1 . 1 1 \n. 0 3 . \n1 .[,,2,] 1 . \n+ 2 2 2 \n2 . .[1,,,] . \n2 1 . 1 \n.[,,2,] . . 2 \n"}
+{"id":"tontonbeya-18","kind":"url","input":"tontonbeya/4/5/o008000a13a201.a12a1a11a03a"}
+{"id":"tontonbeya-19","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n2\n2\n0 0 \n1 0 \n1 0 \n- - \n1 3 \n. 2 \n. .[1,,,] \n.[1,,,] . \n. . \n"}
+{"id":"tontonbeya-20","kind":"url","input":"tontonbeya/2/3/cg..13a2"}
+{"id":"tontonbeya-21","kind":"fileio","input":"pzprv3\ntontonbeya\n1\n4\n2\n0 0 1 1 \n3 . . . \n. 1 . . \n"}
+{"id":"tontonbeya-22","kind":"url","input":"tontonbeya/4/1/83c"}
+{"id":"tontonbeya-23","kind":"fileio","input":"pzprv3\ntontonbeya\n2\n5\n1\n0 0 0 0 0 \n0 0 0 0 0 \n2 . . - - \n- 3 3 2 - \n. .[1,,,] 1 2 + \n2 2 . 1 . \n"}
+{"id":"tontonbeya-24","kind":"url","input":"tontonbeya/5/2/0002b...332./"}
+{"id":"tontonbeya-25","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n2\n1\n0 0 \n0 0 \n0 0 \n0 0 \n. 2 \n- 2 \n1 . \n. . \n. . \n.[1,,2,] 1 \n.[,,2,] .[1,,,] \n2 . \n"}
+{"id":"tontonbeya-26","kind":"url","input":"tontonbeya/2/4/000a2.21c"}
+{"id":"tontonbeya-27","kind":"fileio","input":"pzprv3\ntontonbeya\n2\n3\n1\n0 0 0 \n0 0 0 \n2 . 1 \n2 . 3 \n. . + \n. . . \n"}
+{"id":"tontonbeya-28","kind":"url","input":"tontonbeya/3/2/002a12a3"}
+{"id":"tontonbeya-29","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n5\n1\n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 . 1 . 0 \n1 . 3 . 3 \n. . . . - \n. 3 0 . . \n. + .[1,,2,] . . \n1 .[,,2,] 2 .[1,,2,] .[,,2,] \n. .[1,,2,] . . 2 \n2 2 . + 2 \n"}
+{"id":"tontonbeya-30","kind":"url","input":"tontonbeya/5/4/00000000a1a01a3a3d.a30b"}
+{"id":"tontonbeya-31","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n1\n2\n0 \n0 \n1 \n1 \n3 \n1 \n- \n1 \n. \n2 \n. \n2 \n"}
+{"id":"tontonbeya-32","kind":"url","input":"tontonbeya/1/4/831.1"}
+{"id":"tontonbeya-33","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n2\n3\n0 1 \n2 1 \n1 1 \n. . \n. 1 \n. 2 \n. 2 \n1 2 \n1 . \n"}
+{"id":"tontonbeya-34","kind":"url","input":"tontonbeya/2/3/okc1a2"}
+{"id":"tontonbeya-35","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n2\n2\n0 0 \n0 0 \n0 0 \n0 1 \n2 - \n- . \n3 3 \n. 2 \n1 . \n. . \n.[,,2,] . \n. .[,,2,] \n"}
+{"id":"tontonbeya-36","kind":"url","input":"tontonbeya/2/4/20g2..a33a2"}
+{"id":"tontonbeya-37","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n6\n7\n0 1 1 2 3 3 \n1 1 1 1 1 4 \n1 1 1 1 1 1 \n1 1 1 1 5 6 \n. - 0 3 - 2 \n. . 0 . . 3 \n. . . 3 1 3 \n. 2 3 . 1 2 \n2 1 2 2 2 . \n. +[1,,2,] 2 .[1,,,] .[1,,2,] 2 \n1 + 2 . . +[1,,,] \n. 2 . . . 2 \n"}
+{"id":"tontonbeya-38","kind":"url","input":"tontonbeya/6/4/m103jg8ca.03.2b0b3c313a23a12"}
+{"id":"tontonbeya-39","kind":"fileio","input":"pzprv3\ntontonbeya\n1\n2\n2\n0 1 \n. . \n1 . \n"}
+{"id":"tontonbeya-40","kind":"url","input":"tontonbeya/2/1/gb"}
+{"id":"tontonbeya-41","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n3\n2\n0 1 1 \n1 1 1 \n1 1 1 \n. - - \n. 3 1 \n. 1 . \n2 . 1 \n. . 1 \n. . 2 \n"}
+{"id":"tontonbeya-42","kind":"url","input":"tontonbeya/3/3/g0g0a..a31a1a"}
+{"id":"tontonbeya-43","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n3\n2\n0 0 1 \n1 1 1 \n1 1 1 \n. 1 . \n3 1 . \n1 3 . \n2 1 2 \n. .[,,2,] . \n2 .[1,,2,] +[1,,2,] \n"}
+{"id":"tontonbeya-44","kind":"url","input":"tontonbeya/3/3/80o0a1a31a13a"}
+{"id":"tontonbeya-45","kind":"fileio","input":"pzprv3\ntontonbeya\n5\n6\n3\n0 0 0 0 0 1 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n2 0 0 0 0 0 \n. 3 . - 1 . \n0 . . . . 3 \n- 2 1 . - . \n2 2 0 . 2 0 \n0 . 0 . . . \n. 2 + 2 1 . \n. 1 1 + . 2 \n1 + 1 1 . . \n. 1 . 1 . . \n2 . 2 . + . \n"}
+{"id":"tontonbeya-46","kind":"url","input":"tontonbeya/6/5/1000g0g020a3a.1a0d3.21a.a220a200a0c"}
+{"id":"tontonbeya-47","kind":"fileio","input":"pzprv3\ntontonbeya\n5\n4\n3\n0 0 1 2 \n0 0 0 2 \n0 0 0 2 \n0 0 0 0 \n0 0 0 0 \n1 2 0 0 \n3 . 0 . \n1 - 1 0 \n2 - 2 . \n. 0 3 2 \n.[,,2,] . 1 2 \n. . 1 . \n2 2 1 . \n. . 1 . \n1 1 .[1,,2,] . \n"}
+{"id":"tontonbeya-48","kind":"url","input":"tontonbeya/4/5/ci0408012003a0a1.102.2b032"}
+{"id":"tontonbeya-49","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n2\n2\n0 0 \n0 0 \n0 0 \n1 1 \n. 2 \n1 - \n3 3 \n2 . \n. 2 \n1 . \n. 2 \n. . \n"}
+{"id":"tontonbeya-50","kind":"url","input":"tontonbeya/2/4/01ga21.332a"}
+{"id":"tontonbeya-51","kind":"fileio","input":"pzprv3\ntontonbeya\n2\n6\n2\n0 0 0 1 1 1 \n0 0 0 1 1 1 \n2 0 2 3 . - \n2 2 . 0 1 . \n1 . 1 . 2 .[1,,,] \n. . .[1,,,] 2 .[1,,,] . \n"}
+{"id":"tontonbeya-52","kind":"url","input":"tontonbeya/6/2/44002023a.22a01a"}
+{"id":"tontonbeya-53","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n3\n3\n0 0 1 \n0 2 1 \n0 0 0 \n0 3 0 \n2 2 0 \n- 1 0 \n+ 1 . \n2 1 2 \n. + .[,,2,] \n"}
+{"id":"tontonbeya-54","kind":"url","input":"tontonbeya/3/3/e09g030220.10"}
+{"id":"tontonbeya-55","kind":"fileio","input":"pzprv3\ntontonbeya\n5\n4\n4\n0 0 0 1 \n2 0 0 0 \n2 0 0 3 \n0 0 0 0 \n0 0 0 0 \n3 . 3 . \n. 3 . 3 \n2 3 - - \n1 . 2 . \n. 1 . . \n1 .[,,2,] +[,,2,] . \n.[,,2,] . 1 1 \n.[,,2,] 1 .[1,,2,] . \n1 + + . \n. . . .[1,,,] \n"}
+{"id":"tontonbeya-56","kind":"url","input":"tontonbeya/4/5/6a0i6803a3b3a323..1a2b1b"}
+{"id":"tontonbeya-57","kind":"fileio","input":"pzprv3\ntontonbeya\n3\n1\n1\n0 \n0 \n0 \n0 \n. \n. \n.[1,,2,] \n2 \n. \n"}
+{"id":"tontonbeya-58","kind":"url","input":"tontonbeya/1/3/00b"}
+{"id":"tontonbeya-59","kind":"fileio","input":"pzprv3\ntontonbeya\n2\n4\n1\n0 0 0 0 \n0 0 0 0 \n. . . 2 \n. . - . \n. . .[1,,2,] + \n2 2 . 2 \n"}
+{"id":"tontonbeya-60","kind":"url","input":"tontonbeya/4/2/000c2b.a"}
+{"id":"tontonbeya-61","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n- 1 3 \n. . - \n. 3 1 \n3 2 0 \n. 1 1 \n1 1 . \n1 2 + \n. + . \n"}
+{"id":"tontonbeya-62","kind":"url","input":"tontonbeya/3/4/0000.13b.a31320"}
+{"id":"tontonbeya-63","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n2\n1\n0 0 \n0 0 \n0 0 \n0 0 \n1 . \n2 2 \n2 2 \n. 3 \n. 1 \n. 2 \n. .[1,,,] \n.[,,2,] 1 \n"}
+{"id":"tontonbeya-64","kind":"url","input":"tontonbeya/2/4/0001a2222a3"}
+{"id":"tontonbeya-65","kind":"fileio","input":"pzprv3\ntontonbeya\n4\n2\n1\n0 0 \n0 0 \n0 0 \n0 0 \n- 3 \n3 - \n0 . \n. 0 \n.[1,,2,] . \n1 .[,,2,] \n+[1,,2,] +[1,,,] \n2 . \n"}
+{"id":"tontonbeya-66","kind":"url","input":"tontonbeya/2/4/000.33.0b0"}

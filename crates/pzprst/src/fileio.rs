@@ -263,6 +263,56 @@ pub(crate) fn int(token: &str) -> std::result::Result<i32, String> {
     jsnum::integer(token).ok_or_else(|| format!("expected an integer, found {token:?}"))
 }
 
+/// `decodeAreaRoom`: convert a grid of room identifiers to question borders.
+pub(crate) fn decode_area_room(
+    r: &mut FileReader,
+    b: &mut Board,
+    _d: &mut Diagnostics,
+) -> Result<()> {
+    r.read_line();
+    let ids = r.item_list(b.rows() as i32);
+    for y in 0..b.rows() {
+        for x in 0..b.cols() {
+            let i = y * b.cols() + x;
+            for (nx, ny) in [(x + 1, y), (x, y + 1)] {
+                if nx >= b.cols() || ny >= b.rows() {
+                    continue;
+                }
+                let j = ny * b.cols() + nx;
+                let wall = ids.get(i) != ids.get(j);
+                if let Some(border) =
+                    b.obj_mut(Group::Border, (x + nx + 1) as i32, (y + ny + 1) as i32)
+                {
+                    border.ques = i32::from(wall);
+                }
+            }
+        }
+    }
+    Ok(())
+}
+
+/// `encodeAreaRoom`: emit component count and row-major room identifiers.
+pub(crate) fn encode_area_room(w: &mut FileWriter, b: &Board) {
+    let rooms = crate::rooms::components(b);
+    let mut ids = vec![None; b.cells.len()];
+    for (id, room) in rooms.iter().enumerate() {
+        for &i in room {
+            ids[i] = Some(id);
+        }
+    }
+    w.write_line(&rooms.len().to_string());
+    for row in ids.chunks(b.cols()) {
+        let mut line = String::new();
+        for id in row {
+            line.push_str(&format!(
+                "{} ",
+                id.map_or_else(|| ".".to_string(), |v| v.to_string())
+            ));
+        }
+        w.write_line(&line);
+    }
+}
+
 // ----- common property codecs (variety-common/FileData.js) ---------------
 
 /// `decodeCellQnum`.
@@ -446,6 +496,9 @@ pub(crate) fn decode(text: &str, d: &mut Diagnostics) -> Result<Board> {
         filever,
     };
     genre.decode_fileio(&mut reader, &mut board, d)?;
+    if genre.room_clues() {
+        crate::rooms::normalize_clues(&mut board);
+    }
     if reader.peek_line().is_some_and(|l| l.contains("TrialData")) {
         d.push(
             DiagnosticCode::DroppedTrial,
@@ -619,16 +672,96 @@ pub(crate) fn encode_border_ques(w: &mut FileWriter, b: &Board) {
     });
 }
 
+/// `setCellSnum`: parse bracketed pencil marks.
+fn set_cell_snum<'a>(cell: &mut crate::Obj, ca: &'a str) -> std::result::Result<&'a str, String> {
+    if let Some((head, rest)) = ca.split_once('[') {
+        let values = rest.split(']').next().unwrap_or(rest);
+        let mut nums = vec![-1; 4];
+        for (i, value) in values.split(',').enumerate() {
+            if i >= nums.len() {
+                nums.resize(i + 1, -1);
+            }
+            if !value.is_empty() {
+                nums[i] = int(value)?;
+            }
+        }
+        if nums.len() != 4 || nums.iter().any(|&v| v != -1) {
+            cell.snum = nums;
+        }
+        Ok(head)
+    } else {
+        Ok(ca)
+    }
+}
+
+fn get_cell_snum(cell: &crate::Obj) -> String {
+    if cell.snum.is_empty() {
+        return String::new();
+    }
+    let text = cell
+        .snum
+        .iter()
+        .map(|v| {
+            if *v == -1 {
+                String::new()
+            } else {
+                v.to_string()
+            }
+        })
+        .collect::<Vec<_>>()
+        .join(",");
+    if text == ",,," {
+        String::new()
+    } else {
+        format!("[{text}]")
+    }
+}
+
+/// `decodeCellSnum`: optional grid of pencil marks.
+pub(crate) fn decode_cell_snum(
+    r: &mut FileReader,
+    b: &mut Board,
+    d: &mut Diagnostics,
+) -> Result<()> {
+    if r.peek_line().map_or(true, |line| line.is_empty()) {
+        return Ok(());
+    }
+    r.decode_cell(b, d, |cell, ca| {
+        set_cell_snum(cell, ca)?;
+        Ok(())
+    })
+}
+
+/// `encodeCellSnum`: omit the layer if every cell is empty.
+pub(crate) fn encode_cell_snum(w: &mut FileWriter, b: &Board) {
+    if b.cells
+        .iter()
+        .any(|cell| cell.snum.iter().any(|&v| v != -1))
+    {
+        w.encode_cell(b, |cell| {
+            let s = get_cell_snum(cell);
+            if s.is_empty() {
+                ". ".into()
+            } else {
+                format!("{s} ")
+            }
+        });
+    }
+}
+
 /// `decodeCellAnumsub`: answer number, `cmp` mark and `sub` mark per cell.
-///
-/// pzprjs also splits `[...]` snum arrays here when `cell.enableSubNumberArray`
-/// is set; `Obj` has no `snum`, so such tokens are not accepted.
 pub(crate) fn decode_cell_anumsub(
     r: &mut FileReader,
     b: &mut Board,
     d: &mut Diagnostics,
 ) -> Result<()> {
+    let has_subnumbers = b.genre.subnumbers();
     r.decode_cell(b, d, |cell, ca| {
+        let ca = if has_subnumbers {
+            set_cell_snum(cell, ca)?
+        } else {
+            ca
+        };
         if ca == "c" {
             cell.qcmp = 1;
         } else if ca == "+" {
@@ -648,8 +781,9 @@ pub(crate) fn decode_cell_anumsub(
 
 /// `encodeCellAnumsub`: answer number, `cmp` mark and `sub` mark per cell.
 pub(crate) fn encode_cell_anumsub(w: &mut FileWriter, b: &Board) {
+    let has_subnumbers = b.genre.subnumbers();
     w.encode_cell(b, |cell| {
-        let ca = if cell.anum != -1 {
+        let mut ca = if cell.anum != -1 {
             cell.anum.to_string()
         } else if cell.qcmp == 1 {
             "c".into()
@@ -664,6 +798,9 @@ pub(crate) fn encode_cell_anumsub(w: &mut FileWriter, b: &Board) {
         } else {
             ".".into()
         };
+        if has_subnumbers && cell.anum == -1 && !cell.snum.is_empty() {
+            ca.push_str(&get_cell_snum(cell));
+        }
         format!("{ca} ")
     });
 }

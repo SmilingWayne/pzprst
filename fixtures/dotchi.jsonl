@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"dotchi","generator":"tools/gen_fixtures.js"}}
+{"id":"dotchi-0","kind":"url","input":"https://puzz.link/p?dotchi/10/10/5gb0m180g102gd0q1k00000fs0vv07u000003a33k0ij6313123k46j6103c23il6j0390"}
+{"id":"dotchi-1","kind":"url","input":"https://puzz.link/p?dotchi/6/6/444444007s00933913591661"}
+{"id":"dotchi-2","kind":"url","input":"https://puzz.link/p?dotchi/8/8/518a0g420g40003vg07v0000078f99c93k9091k99923mi"}
+{"id":"dotchi-3","kind":"url","input":"dotchi/4/4/"}
+{"id":"dotchi-4","kind":"url","input":"dotchi/1/1/"}
+{"id":"dotchi-5","kind":"url","input":"dotchi/1/5/"}
+{"id":"dotchi-6","kind":"url","input":"dotchi/5/1/"}
+{"id":"dotchi-7","kind":"fileio","input":"pzprv3.2\ndotchi\n3\n6\n0 0 0 1 0 \n1 0 0 0 0 \n0 1 0 1 0 \n0 0 0 0 1 1 \n0 1 0 1 0 1 \n1 1 . 2 2 2 \n2 . . . . . \n1 . . 1 . . \n0 1 0 0 1 \n0 0 0 0 -1 \n-1 0 0 0 1 \n0 0 0 -1 0 -1 \n0 0 0 0 1 0 \n0 0 2 0 0 0 \n0 1 1 1 0 1 \n2 0 0 0 2 0 \n"}
+{"id":"dotchi-8","kind":"url","input":"dotchi/6/3/2ga1l8cqi099"}
+{"id":"dotchi-9","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n5\n0 0 1 0 \n. . . . . \n0 0 1 0 \n1 2 0 2 0 \n"}
+{"id":"dotchi-10","kind":"url","input":"dotchi/5/1/400"}
+{"id":"dotchi-11","kind":"fileio","input":"pzprv3.2\ndotchi\n2\n5\n0 1 0 1 \n0 1 0 1 \n0 0 1 0 1 \n. . . 1 . \n. . . . 1 \n-1 0 0 0 \n-1 0 0 0 \n1 0 0 -1 0 \n0 0 0 0 0 \n0 1 1 0 0 \n"}
+{"id":"dotchi-12","kind":"url","input":"dotchi/5/2/ak50909"}
+{"id":"dotchi-13","kind":"fileio","input":"pzprv3.2\ndotchi\n3\n4\n0 0 0 \n1 0 1 \n0 0 0 \n1 0 0 0 \n0 0 1 0 \n. 1 . . \n. 2 . . \n. . 2 . \n-1 -1 0 \n0 0 1 \n1 0 0 \n-1 0 0 0 \n0 -1 0 0 \n0 1 0 0 \n0 0 0 0 \n0 0 2 0 \n"}
+{"id":"dotchi-14","kind":"url","input":"dotchi/4/3/2gg83206"}
+{"id":"dotchi-15","kind":"fileio","input":"pzprv3.2\ndotchi\n4\n5\n1 1 0 0 \n0 0 1 0 \n1 0 1 1 \n1 0 0 0 \n0 0 1 1 0 \n0 0 0 0 0 \n0 1 1 1 1 \n1 2 1 2 2 \n. 2 . . . \n. . . . . \n. 2 . . . \n0 0 0 -1 \n1 0 0 0 \n0 0 1 0 \n0 -1 0 0 \n0 1 0 -1 0 \n1 1 0 0 0 \n0 0 0 0 0 \n1 0 2 1 0 \n1 0 1 0 0 \n0 0 0 2 2 \n1 2 0 0 2 \n"}
+{"id":"dotchi-16","kind":"url","input":"dotchi/5/4/oas060fgoi0060"}
+{"id":"dotchi-17","kind":"fileio","input":"pzprv3.2\ndotchi\n2\n2\n0 \n0 \n0 0 \n. . \n2 1 \n1 \n0 \n0 0 \n2 0 \n1 2 \n"}
+{"id":"dotchi-18","kind":"url","input":"dotchi/2/2/0029"}
+{"id":"dotchi-19","kind":"fileio","input":"pzprv3.2\ndotchi\n3\n4\n0 0 0 \n0 0 0 \n0 0 1 \n1 0 0 1 \n0 0 0 0 \n. 2 . . \n. . . 1 \n1 . 1 . \n-1 0 -1 \n0 0 0 \n0 1 1 \n0 1 0 0 \n1 -1 0 0 \n1 1 0 0 \n0 1 0 2 \n0 0 0 0 \n"}
+{"id":"dotchi-20","kind":"url","input":"dotchi/4/3/02i06043"}
+{"id":"dotchi-21","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n1\n\n2 \n\n0 \n"}
+{"id":"dotchi-22","kind":"url","input":"dotchi/1/1/i"}
+{"id":"dotchi-23","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n5\n0 1 0 0 \n. . . . . \n0 0 1 -1 \n1 2 0 2 0 \n"}
+{"id":"dotchi-24","kind":"url","input":"dotchi/5/1/800"}
+{"id":"dotchi-25","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n1\n\n2 \n\n0 \n"}
+{"id":"dotchi-26","kind":"url","input":"dotchi/1/1/i"}
+{"id":"dotchi-27","kind":"fileio","input":"pzprv3.2\ndotchi\n2\n2\n0 \n1 \n1 1 \n. . \n. 1 \n0 \n0 \n1 -1 \n0 2 \n0 1 \n"}
+{"id":"dotchi-28","kind":"url","input":"dotchi/2/2/8o09"}
+{"id":"dotchi-29","kind":"fileio","input":"pzprv3.2\ndotchi\n4\n5\n1 0 0 0 \n1 0 1 0 \n1 0 0 1 \n0 0 0 1 \n0 0 0 0 0 \n0 0 0 1 0 \n0 0 1 0 1 \n2 . 1 . . \n. 2 . 1 1 \n. 1 . . 2 \n. . 2 1 2 \n0 0 0 0 \n0 -1 1 1 \n0 1 0 0 \n-1 0 0 1 \n-1 1 0 0 1 \n0 1 0 -1 0 \n0 0 0 0 0 \n2 2 0 0 0 \n0 0 0 0 0 \n0 0 2 1 0 \n0 0 2 1 0 \n"}
+{"id":"dotchi-30","kind":"url","input":"dotchi/5/4/ha8g025j0ja22f"}
+{"id":"dotchi-31","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n1\n\n2 \n\n2 \n"}
+{"id":"dotchi-32","kind":"url","input":"dotchi/1/1/i"}
+{"id":"dotchi-33","kind":"fileio","input":"pzprv3.2\ndotchi\n2\n2\n0 \n1 \n0 0 \n2 . \n. 1 \n1 \n1 \n-1 1 \n0 1 \n0 0 \n"}
+{"id":"dotchi-34","kind":"url","input":"dotchi/2/2/80i9"}
+{"id":"dotchi-35","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n1\n\n1 \n\n2 \n"}
+{"id":"dotchi-36","kind":"url","input":"dotchi/1/1/9"}
+{"id":"dotchi-37","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n4\n1 0 1 \n. . 2 1 \n-1 -1 -1 \n1 1 0 0 \n"}
+{"id":"dotchi-38","kind":"url","input":"dotchi/4/1/k29"}
+{"id":"dotchi-39","kind":"fileio","input":"pzprv3.2\ndotchi\n5\n6\n0 0 0 1 1 \n0 0 1 0 0 \n0 0 0 0 1 \n1 0 0 0 0 \n0 0 1 1 0 \n1 0 0 0 0 1 \n0 0 1 0 0 0 \n0 0 0 1 0 0 \n0 0 0 0 1 0 \n. 1 . 1 2 . \n. . 1 1 2 . \n. . . . . . \n. . . . . . \n. . . . 1 . \n-1 0 0 0 0 \n0 1 1 0 1 \n0 0 0 0 0 \n0 0 1 1 0 \n1 0 -1 0 0 \n1 1 1 0 0 0 \n-1 -1 1 0 0 0 \n0 -1 0 1 0 0 \n0 0 1 0 -1 -1 \n0 0 2 1 0 1 \n0 0 0 0 0 0 \n0 0 0 0 0 1 \n0 0 0 0 0 2 \n2 2 1 0 0 0 \n"}
+{"id":"dotchi-40","kind":"url","input":"dotchi/6/5/341g6gi0g43f1f000003"}
+{"id":"dotchi-41","kind":"fileio","input":"pzprv3.2\ndotchi\n4\n5\n1 1 0 1 \n0 1 0 0 \n0 0 1 1 \n1 0 1 1 \n1 1 0 1 0 \n0 1 0 1 0 \n0 0 1 1 0 \n. 1 . . . \n. . 1 . 2 \n. . 1 2 1 \n. . . . . \n1 1 -1 0 \n0 0 0 0 \n1 1 0 1 \n0 0 -1 0 \n1 0 0 0 -1 \n0 0 0 0 0 \n0 0 1 1 -1 \n0 0 0 0 0 \n0 2 0 0 0 \n0 0 1 1 0 \n0 1 0 2 2 \n"}
+{"id":"dotchi-42","kind":"url","input":"dotchi/5/4/qgtgqa6303ig00"}
+{"id":"dotchi-43","kind":"fileio","input":"pzprv3.2\ndotchi\n4\n2\n0 \n1 \n1 \n0 \n0 1 \n1 1 \n0 1 \n1 . \n. 1 \n2 . \n1 . \n1 \n-1 \n-1 \n1 \n-1 1 \n0 0 \n1 -1 \n1 1 \n0 0 \n0 1 \n0 0 \n"}
+{"id":"dotchi-44","kind":"url","input":"dotchi/2/4/ceg9f9"}
+{"id":"dotchi-45","kind":"fileio","input":"pzprv3.2\ndotchi\n5\n6\n0 1 1 0 0 \n0 0 1 0 0 \n1 0 0 0 0 \n1 0 1 0 0 \n0 0 0 0 0 \n1 0 0 1 1 0 \n0 0 0 0 0 0 \n0 1 1 0 0 0 \n0 1 0 1 0 0 \n2 . . 1 . 2 \n. . . . 2 . \n. . . 2 . . \n. . . . . . \n2 1 . 2 1 2 \n0 1 0 0 0 \n0 1 1 0 0 \n1 -1 1 1 0 \n0 -1 0 0 -1 \n0 1 0 0 -1 \n1 0 0 0 0 0 \n0 -1 1 0 0 0 \n1 0 0 0 1 0 \n0 0 0 0 1 1 \n0 0 2 1 0 0 \n0 0 2 0 2 0 \n0 2 0 1 2 0 \n1 0 0 0 0 0 \n0 0 0 1 0 0 \n"}
+{"id":"dotchi-46","kind":"url","input":"dotchi/6/5/c4gk0j0318ib060i00ln"}
+{"id":"dotchi-47","kind":"fileio","input":"pzprv3.2\ndotchi\n4\n5\n0 0 0 1 \n1 0 0 0 \n0 0 0 0 \n1 0 1 0 \n1 0 0 0 1 \n1 0 0 0 0 \n0 0 0 1 1 \n. . . 2 2 \n2 1 . . 2 \n. 1 . . . \n. . 2 . . \n-1 0 -1 0 \n0 -1 0 0 \n1 0 1 1 \n0 0 1 1 \n1 0 -1 0 0 \n1 1 0 0 0 \n1 0 0 0 0 \n1 1 0 0 1 \n0 0 0 2 1 \n0 2 1 0 0 \n0 0 0 0 2 \n"}
+{"id":"dotchi-48","kind":"url","input":"dotchi/5/4/3050hg30q9j020"}
+{"id":"dotchi-49","kind":"fileio","input":"pzprv3.2\ndotchi\n3\n4\n0 1 0 \n0 1 0 \n0 1 1 \n0 1 1 0 \n1 0 0 0 \n. 1 . . \n2 . . 2 \n. . . 2 \n0 0 0 \n1 0 -1 \n0 0 0 \n0 0 1 0 \n0 0 0 0 \n1 0 1 2 \n1 0 0 0 \n2 2 0 1 \n"}
+{"id":"dotchi-50","kind":"url","input":"dotchi/4/3/96d03662"}
+{"id":"dotchi-51","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n2\n0 \n2 . \n0 \n1 2 \n"}
+{"id":"dotchi-52","kind":"url","input":"dotchi/2/1/0i"}
+{"id":"dotchi-53","kind":"fileio","input":"pzprv3.2\ndotchi\n3\n2\n1 \n1 \n0 \n0 1 \n1 1 \n1 . \n1 . \n. . \n-1 \n0 \n-1 \n1 1 \n1 0 \n0 0 \n1 0 \n1 0 \n"}
+{"id":"dotchi-54","kind":"url","input":"dotchi/2/3/oea0"}
+{"id":"dotchi-55","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n4\n1 0 0 \n. . 2 . \n0 0 0 \n0 0 0 0 \n"}
+{"id":"dotchi-56","kind":"url","input":"dotchi/4/1/g20"}
+{"id":"dotchi-57","kind":"fileio","input":"pzprv3.2\ndotchi\n1\n6\n0 1 1 0 1 \n2 2 2 1 . . \n0 0 1 0 0 \n1 0 0 2 0 0 \n"}
+{"id":"dotchi-58","kind":"url","input":"dotchi/6/1/dq9"}
+{"id":"dotchi-59","kind":"fileio","input":"pzprv3.2\ndotchi\n3\n2\n0 \n0 \n0 \n0 1 \n0 0 \n. 2 \n. . \n. . \n1 \n-1 \n0 \n0 0 \n0 0 \n0 0 \n0 0 \n0 1 \n"}
+{"id":"dotchi-60","kind":"url","input":"dotchi/2/3/0860"}
+{"id":"dotchi-61","kind":"fileio","input":"pzprv3.2\ndotchi\n4\n3\n1 1 \n0 0 \n1 1 \n1 0 \n0 1 0 \n0 1 0 \n1 1 1 \n. 2 . \n. . 1 \n. 1 2 \n1 . 2 \n0 -1 \n0 0 \n0 0 \n1 0 \n0 0 0 \n0 0 0 \n1 0 -1 \n0 0 0 \n0 2 0 \n0 2 1 \n0 0 1 \n"}
+{"id":"dotchi-62","kind":"url","input":"dotchi/3/4/po9e615b"}
+{"id":"dotchi-63","kind":"fileio","input":"pzprv3.2\ndotchi\n2\n2\n0 \n1 \n1 0 \n. 1 \n. . \n1 \n0 \n0 -1 \n0 2 \n0 0 \n"}
+{"id":"dotchi-64","kind":"url","input":"dotchi/2/2/8g30"}
+{"id":"dotchi-65","kind":"fileio","input":"pzprv3.2\ndotchi\n2\n4\n1 0 0 \n0 0 0 \n0 1 0 0 \n. . . . \n2 2 . 1 \n1 0 1 \n0 0 0 \n0 0 1 0 \n0 0 0 0 \n0 0 0 0 \n"}
+{"id":"dotchi-66","kind":"url","input":"dotchi/4/2/g08083"}

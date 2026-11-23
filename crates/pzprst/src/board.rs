@@ -9,7 +9,7 @@ use crate::transform::Transform;
 use crate::{fileio, state, url, variety};
 
 /// Properties shared by every pzpr board object, with pzprjs defaults.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Obj {
     pub qnum: i32,
     pub qnum2: i32,
@@ -22,6 +22,8 @@ pub struct Obj {
     pub qsub: i32,
     pub qcmp: i32,
     pub line: i32,
+    /// Pencil marks; empty represents four unset slots.
+    pub snum: Vec<i32>,
 }
 
 impl Default for Obj {
@@ -38,6 +40,7 @@ impl Default for Obj {
             qsub: 0,
             qcmp: 0,
             line: 0,
+            snum: Vec::new(),
         }
     }
 }
@@ -58,6 +61,7 @@ impl Obj {
         self.qsub = d.qsub;
         self.qcmp = d.qcmp;
         self.line = d.line;
+        self.snum.clear();
     }
 }
 
@@ -476,7 +480,8 @@ impl Board {
             return Ok(board);
         }
         for c in parts.pflag.chars() {
-            if !genre.rule_flags().iter().any(|(f, _)| *f == c) {
+            if !genre.rule_flags().iter().any(|(f, _)| *f == c) && !genre.input_flags().contains(c)
+            {
                 diags.push(
                     DiagnosticCode::UnknownFlag,
                     format!("unknown URL flag {c:?}"),
@@ -486,7 +491,7 @@ impl Board {
         for (flag, key) in genre.rule_flags() {
             board.rules.insert(key, parts.pflag.contains(*flag));
         }
-        let rest = genre.decode_url(&mut board, &parts.body, diags);
+        let rest = genre.decode_url_with_flags(&mut board, &parts.body, &parts.pflag, diags);
         if !rest.is_empty() {
             diags.push(
                 DiagnosticCode::TrailingData,
@@ -662,7 +667,7 @@ impl Board {
                 if let Some((x, y)) = moved {
                     if let Some(j) = to_geom.excell_index(x, y) {
                         if let Some(slot) = next.get_mut(j) {
-                            *slot = *obj;
+                            *slot = obj.clone();
                         }
                     }
                 }
@@ -700,17 +705,17 @@ impl Board {
         for (i, obj) in src_cells.iter().enumerate() {
             let (bx, by) = self.geom.cell_pos(i);
             let (x, y) = map(bx, by);
-            out.cells[out.geom.cell_index(x, y).expect("cell maps to cell")] = *obj;
+            out.cells[out.geom.cell_index(x, y).expect("cell maps to cell")] = obj.clone();
         }
         for (i, obj) in src_borders.iter().enumerate() {
             let (bx, by) = self.geom.border_pos(i);
             let (x, y) = map(bx, by);
-            out.borders[out.geom.border_index(x, y).expect("border maps to border")] = *obj;
+            out.borders[out.geom.border_index(x, y).expect("border maps to border")] = obj.clone();
         }
         for (i, obj) in src_crosses.iter().enumerate() {
             let (bx, by) = self.geom.cross_pos(i).expect("cross maps to cross");
             let (x, y) = map(bx, by);
-            out.crosses[out.geom.cross_index(x, y).expect("cross maps to cross")] = *obj;
+            out.crosses[out.geom.cross_index(x, y).expect("cross maps to cross")] = obj.clone();
         }
         // pzprjs `BoardExec.turnflipGroup("excell", …)` does not move excells by
         // the generic coordinate map: `hasexcell == 1` leaves them in place for
@@ -862,6 +867,7 @@ impl Board {
                     || o.qsub != d.qsub
                     || o.qcmp != d.qcmp
                     || o.line != d.line
+                    || !o.snum.is_empty()
             })
     }
 

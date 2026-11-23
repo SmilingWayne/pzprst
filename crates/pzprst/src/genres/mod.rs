@@ -31,8 +31,28 @@ pub(crate) trait Genre: Sync {
     }
     /// URL pflag character and FileIO flag line ↔ pzprjs config key.
     fn rule_flags(&self) -> &'static [(char, &'static str)];
+    /// Input-only format flags, which are consumed without becoming rules.
+    fn input_flags(&self) -> &'static str {
+        ""
+    }
+    fn subnumbers(&self) -> bool {
+        false
+    }
+    /// pzprjs room graph stores one number at each room's top cell.
+    fn room_clues(&self) -> bool {
+        false
+    }
     /// `decodePzpr`; returns the unconsumed body.
     fn decode_url(&self, b: &mut Board, body: &str, d: &mut Diagnostics) -> String;
+    fn decode_url_with_flags(
+        &self,
+        b: &mut Board,
+        body: &str,
+        _flags: &str,
+        d: &mut Diagnostics,
+    ) -> String {
+        self.decode_url(b, body, d)
+    }
     /// `encodePzpr` body (flags are written by the caller).
     fn encode_url(&self, b: &Board) -> Result<String>;
     /// `FileIO.decodeData`.

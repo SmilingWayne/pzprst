@@ -1,0 +1,69 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"country","generator":"tools/gen_fixtures.js"}}
+{"id":"country-0","kind":"url","input":"https://puzz.link/p?country/17/13/5hk2ubdeemlt591md29534ikibba5alii8k5ho8444071norg0l2hur13v7v270fe1scvik41ruvpuvhk8043g4g43i32g454h534445k3g3m"}
+{"id":"country-1","kind":"url","input":"https://puzz.link/p?country/17/13/88i729gm5sp1hcks7ai3l98qckmkai5aa2qkldaak83s0vd3k70imv0u47oso1ogbhup329pbs1u1u0001u1h34h2j44g5g35433i4g353j23g"}
+{"id":"country-2","kind":"url","input":"https://puzz.link/p?country/10/10/1cr9ejcl1i49bd2p56r86fq23he2tgevh40oi2334j4j33"}
+{"id":"country-3","kind":"url","input":"country/4/4/"}
+{"id":"country-4","kind":"url","input":"country/1/1/"}
+{"id":"country-5","kind":"url","input":"country/1/5/"}
+{"id":"country-6","kind":"url","input":"country/5/1/"}
+{"id":"country-7","kind":"fileio","input":"pzprv3.1/country/2/3/country_empty/3/0 0 1 /2 2 1 /2 . 1 /. . . /0 0 /0 0 /0 0 0 /0 0 0 /0 0 0 /"}
+{"id":"country-8","kind":"fileio","input":"pzprv3.2\ncountry\n2\n5\n\n0 1 0 0 \n0 0 0 0 \n0 0 1 1 1 \n2 . 0 . . \n. . . . . \n1 0 0 1 \n0 -1 1 0 \n0 0 0 -1 -1 \n0 2 1 1 1 \n0 2 2 2 0 \n"}
+{"id":"country-9","kind":"url","input":"country/5/2/80720"}
+{"id":"country-10","kind":"fileio","input":"pzprv3.2\ncountry\n5\n5\n\n0 1 1 0 \n0 0 0 0 \n0 1 0 1 \n0 1 0 1 \n0 0 1 0 \n0 0 1 1 0 \n1 0 1 0 0 \n1 1 0 1 1 \n1 1 0 0 0 \n0 . 1 . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n0 0 1 0 \n0 1 0 0 \n-1 0 -1 1 \n0 1 0 1 \n1 0 0 -1 \n0 0 0 -1 0 \n1 -1 0 0 0 \n-1 0 0 0 1 \n0 0 0 -1 0 \n0 2 0 0 2 \n2 0 2 0 0 \n0 0 0 1 0 \n0 0 0 0 0 \n0 1 0 0 0 \n"}
+{"id":"country-11","kind":"url","input":"country/5/5/c1ai6kro01g"}
+{"id":"country-12","kind":"fileio","input":"pzprv3.2\ncountry\n5\n6\n\n1 0 1 1 0 \n0 1 0 1 0 \n0 1 0 0 1 \n0 0 0 0 1 \n1 0 0 0 1 \n1 0 0 0 0 0 \n0 1 0 0 1 1 \n0 0 1 1 1 1 \n0 1 1 1 0 1 \n. . . . 1 . \n0 . . . . . \n. . . . . 0 \n. . . . . 0 \n. . . . . 2 \n0 0 1 0 -1 \n1 0 1 1 1 \n0 0 0 0 0 \n0 0 0 -1 1 \n-1 1 1 0 0 \n0 0 0 -1 0 0 \n1 1 -1 -1 1 1 \n-1 1 0 0 0 1 \n0 1 0 0 0 0 \n1 0 2 0 0 0 \n1 0 0 1 0 0 \n2 0 0 0 0 0 \n0 0 2 1 2 0 \n1 0 0 0 0 0 \n"}
+{"id":"country-13","kind":"url","input":"country/6/5/ma91hg4ptqg01002"}
+{"id":"country-14","kind":"fileio","input":"pzprv3.2\ncountry\n4\n1\ncountry_empty\n\n\n\n\n1 \n0 \n1 \n2 \n1 \n. \n- \n\n\n\n\n0 \n0 \n-1 \n2 \n2 \n0 \n0 \n"}
+{"id":"country-15","kind":"url","input":"country/e/1/4/k21./"}
+{"id":"country-16","kind":"fileio","input":"pzprv3.2\ncountry\n1\n6\ncountry_empty\n0 1 0 0 1 \n0 . 0 . . . \n1 0 1 1 0 \n2 0 0 0 0 0 \n"}
+{"id":"country-17","kind":"url","input":"country/e/6/1/900g"}
+{"id":"country-18","kind":"fileio","input":"pzprv3.2\ncountry\n4\n4\n\n1 0 0 \n0 0 0 \n0 0 0 \n1 1 0 \n0 0 0 1 \n0 0 1 0 \n1 0 1 0 \n. . . . \n. . . . \n. . . . \n0 . . . \n0 0 0 \n0 0 0 \n0 0 1 \n0 1 1 \n1 1 1 0 \n0 0 0 0 \n0 0 1 0 \n1 0 0 0 \n0 2 1 2 \n1 0 2 0 \n1 0 2 0 \n"}
+{"id":"country-19","kind":"url","input":"country/4/4/g1g2agg0"}
+{"id":"country-20","kind":"fileio","input":"pzprv3.2\ncountry\n5\n6\ncountry_empty\n0 0 0 0 1 \n0 0 0 0 0 \n1 1 1 0 1 \n0 0 0 0 1 \n0 0 0 1 1 \n1 0 1 0 0 1 \n0 1 0 0 1 0 \n0 0 0 0 0 0 \n1 1 0 0 0 0 \n0 . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n0 0 0 0 0 \n0 1 0 0 1 \n0 0 0 0 0 \n0 1 0 0 0 \n0 0 0 0 0 \n0 0 1 0 1 0 \n0 0 1 0 0 0 \n0 0 0 -1 1 0 \n1 -1 0 -1 0 0 \n2 2 0 0 1 2 \n0 0 0 2 0 0 \n2 1 2 0 1 1 \n0 0 1 0 0 0 \n0 2 0 0 0 2 \n"}
+{"id":"country-21","kind":"url","input":"country/e/6/5/10t13kkg300g"}
+{"id":"country-22","kind":"fileio","input":"pzprv3.2\ncountry\n1\n2\n\n1 \n- . \n0 \n0 0 \n"}
+{"id":"country-23","kind":"url","input":"country/2/1/g.g"}
+{"id":"country-24","kind":"fileio","input":"pzprv3.2\ncountry\n1\n1\n\n\n. \n\n2 \n"}
+{"id":"country-25","kind":"url","input":"country/1/1/g"}
+{"id":"country-26","kind":"fileio","input":"pzprv3.2\ncountry\n5\n6\ncountry_empty\n0 0 0 0 0 \n1 0 0 1 0 \n0 0 1 1 0 \n1 1 1 1 1 \n0 0 1 0 0 \n1 0 0 1 0 0 \n0 1 0 1 0 0 \n1 1 0 1 1 1 \n1 1 0 1 0 1 \n1 . . . . . \n. . . . . . \n. . . 0 . . \n1 . . 1 . 0 \n. . . - . . \n-1 0 -1 0 1 \n0 0 -1 0 -1 \n0 0 0 1 0 \n0 0 1 0 -1 \n0 1 0 0 0 \n1 0 0 0 0 0 \n-1 1 0 0 0 0 \n1 0 0 1 -1 1 \n0 1 -1 -1 0 1 \n0 0 1 1 0 0 \n0 0 2 0 0 0 \n2 2 0 1 1 2 \n1 1 0 1 2 2 \n2 0 1 0 0 0 \n"}
+{"id":"country-27","kind":"url","input":"country/e/6/5/0i6v4i56va101g1.0"}
+{"id":"country-28","kind":"fileio","input":"pzprv3.2\ncountry\n1\n5\n\n0 1 1 1 \n. . 1 . 0 \n-1 0 -1 1 \n1 0 2 0 0 \n"}
+{"id":"country-29","kind":"url","input":"country/5/1/eg1g0"}
+{"id":"country-30","kind":"fileio","input":"pzprv3.2\ncountry\n1\n3\n\n1 1 \n2 - 0 \n0 1 \n1 1 1 \n"}
+{"id":"country-31","kind":"url","input":"country/3/1/o2.0"}
+{"id":"country-32","kind":"fileio","input":"pzprv3.2\ncountry\n1\n5\n\n0 0 0 0 \n0 . . . . \n1 0 0 0 \n0 1 0 1 0 \n"}
+{"id":"country-33","kind":"url","input":"country/5/1/00"}
+{"id":"country-34","kind":"fileio","input":"pzprv3.2\ncountry\n5\n1\ncountry_empty\n\n\n\n\n\n1 \n0 \n1 \n0 \n2 \n. \n. \n. \n. \n\n\n\n\n\n0 \n1 \n0 \n-1 \n1 \n2 \n2 \n0 \n1 \n"}
+{"id":"country-35","kind":"url","input":"country/e/1/5/k2h"}
+{"id":"country-36","kind":"fileio","input":"pzprv3.2\ncountry\n5\n6\n\n0 0 1 1 1 \n1 0 1 0 1 \n0 1 0 1 0 \n0 0 0 0 1 \n0 0 0 1 0 \n0 0 1 1 0 0 \n1 0 1 0 1 0 \n0 0 0 0 0 0 \n0 1 0 0 0 0 \n- . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n0 0 0 0 1 \n0 0 0 0 -1 \n0 0 0 1 1 \n0 0 0 0 0 \n0 0 0 0 1 \n0 0 0 0 0 -1 \n1 -1 0 0 0 0 \n0 0 0 0 1 0 \n-1 0 0 0 0 0 \n1 2 2 0 0 0 \n2 0 1 0 0 2 \n1 0 0 0 0 0 \n0 0 2 2 0 0 \n0 0 0 2 0 0 \n"}
+{"id":"country-37","kind":"url","input":"country/6/5/7la126ag10.g"}
+{"id":"country-38","kind":"fileio","input":"pzprv3.2\ncountry\n1\n2\ncountry_empty\n0 \n0 . \n0 \n0 2 \n"}
+{"id":"country-39","kind":"url","input":"country/e/2/1/00"}
+{"id":"country-40","kind":"fileio","input":"pzprv3.2\ncountry\n5\n3\ncountry_empty\n1 0 \n1 0 \n0 0 \n0 0 \n1 0 \n0 1 0 \n1 1 0 \n0 0 0 \n1 1 1 \n2 . . \n. . . \n1 . . \n. . . \n. . . \n0 -1 \n0 0 \n0 0 \n0 0 \n0 0 \n0 1 0 \n0 0 0 \n1 0 0 \n0 0 0 \n2 1 0 \n0 0 0 \n0 0 0 \n0 0 2 \n1 2 2 \n"}
+{"id":"country-41","kind":"url","input":"country/e/3/5/k2b1o21h"}
+{"id":"country-42","kind":"fileio","input":"pzprv3.2\ncountry\n1\n3\ncountry_empty\n1 1 \n1 0 2 \n1 -1 \n1 0 0 \n"}
+{"id":"country-43","kind":"url","input":"country/e/3/1/o102"}
+{"id":"country-44","kind":"fileio","input":"pzprv3.2\ncountry\n4\n5\n\n0 0 1 1 \n0 1 1 0 \n0 1 1 1 \n0 1 0 0 \n0 0 0 0 0 \n0 1 1 0 0 \n1 0 0 0 0 \n0 . . . . \n. . . . . \n. . 1 . . \n. . . . . \n0 -1 1 1 \n1 0 0 0 \n0 0 0 0 \n0 -1 1 0 \n0 -1 -1 -1 0 \n-1 0 -1 0 0 \n0 0 0 1 1 \n2 2 2 0 1 \n0 0 2 2 2 \n0 0 0 1 1 \n1 0 0 1 0 \n"}
+{"id":"country-45","kind":"url","input":"country/5/4/6pq00cg01"}
+{"id":"country-46","kind":"fileio","input":"pzprv3.2\ncountry\n3\n6\ncountry_empty\n1 0 0 0 0 \n0 1 1 0 0 \n1 0 0 0 0 \n1 0 0 1 0 0 \n0 1 0 0 0 0 \n2 . . . . . \n. . . . . . \n. . . . . . \n0 0 0 0 -1 \n-1 -1 1 1 0 \n0 -1 0 0 0 \n-1 1 0 0 0 0 \n0 0 -1 0 1 1 \n0 0 2 1 1 1 \n0 0 2 2 2 1 \n0 0 2 1 1 0 \n"}
+{"id":"country-47","kind":"url","input":"country/e/6/3/gcgi402g"}
+{"id":"country-48","kind":"fileio","input":"pzprv3.2\ncountry\n4\n3\ncountry_empty\n0 1 \n0 1 \n1 0 \n0 1 \n0 0 0 \n0 0 0 \n0 0 0 \n. . . \n. . . \n. . . \n. . . \n-1 1 \n0 1 \n0 0 \n1 0 \n1 1 0 \n0 0 0 \n0 0 0 \n0 0 0 \n0 1 2 \n2 0 0 \n0 0 0 \n"}
+{"id":"country-49","kind":"url","input":"country/e/3/4/b400g"}
+{"id":"country-50","kind":"fileio","input":"pzprv3.2\ncountry\n4\n5\ncountry_empty\n1 0 0 1 \n1 0 1 0 \n0 0 0 1 \n0 0 0 1 \n0 0 1 0 1 \n1 1 0 0 0 \n1 0 1 0 0 \n- . . . 0 \n. . . . . \n0 . . . . \n. . . . . \n1 -1 0 1 \n1 0 0 1 \n0 -1 0 0 \n0 0 0 0 \n-1 1 0 0 1 \n1 0 0 0 0 \n0 0 0 0 0 \n0 1 2 0 2 \n2 0 0 2 0 \n0 2 0 2 0 \n0 2 1 0 0 \n"}
+{"id":"country-51","kind":"url","input":"country/e/5/4/j88g5ok.00"}
+{"id":"country-52","kind":"fileio","input":"pzprv3.2\ncountry\n4\n4\ncountry_empty\n0 1 0 \n0 0 1 \n0 1 0 \n1 0 0 \n1 0 0 0 \n1 1 1 0 \n0 0 0 1 \n. . . . \n. . . . \n. . . . \n. . . . \n0 0 1 \n0 0 -1 \n-1 0 0 \n1 0 0 \n1 0 0 -1 \n0 0 1 1 \n0 0 0 1 \n0 2 0 0 \n0 1 0 2 \n0 0 0 2 \n0 0 1 0 \n"}
+{"id":"country-53","kind":"url","input":"country/e/4/4/8l0ho8g"}
+{"id":"country-54","kind":"fileio","input":"pzprv3.2\ncountry\n1\n2\n\n1 \n- . \n1 \n0 0 \n"}
+{"id":"country-55","kind":"url","input":"country/2/1/g.g"}
+{"id":"country-56","kind":"fileio","input":"pzprv3.2\ncountry\n2\n1\n\n\n\n1 \n2 \n2 \n\n\n1 \n0 \n2 \n"}
+{"id":"country-57","kind":"url","input":"country/1/2/g22"}
+{"id":"country-58","kind":"fileio","input":"pzprv3.2\ncountry\n5\n5\ncountry_empty\n0 0 1 0 \n0 0 0 0 \n1 1 0 0 \n0 0 1 0 \n1 0 1 0 \n0 0 1 0 1 \n0 1 0 0 0 \n0 1 0 0 1 \n0 0 1 0 0 \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n0 0 0 0 \n0 1 0 0 \n1 -1 1 0 \n0 0 0 0 \n0 1 -1 0 \n0 0 1 0 1 \n1 0 0 0 1 \n1 0 0 0 0 \n1 -1 0 1 0 \n0 0 0 2 2 \n1 0 0 2 1 \n1 0 0 0 2 \n2 2 0 0 0 \n0 0 0 0 0 \n"}
+{"id":"country-59","kind":"url","input":"country/e/5/5/431a5894h"}
+{"id":"country-60","kind":"fileio","input":"pzprv3.2\ncountry\n2\n6\ncountry_empty\n1 1 0 0 0 \n0 1 0 0 0 \n1 0 0 1 0 1 \n. . . . . . \n. . . . . . \n1 -1 0 0 0 \n1 0 0 0 0 \n0 1 1 0 0 1 \n1 0 2 1 0 0 \n0 0 0 1 0 0 \n"}
+{"id":"country-61","kind":"url","input":"country/e/6/2/o8igi"}
+{"id":"country-62","kind":"fileio","input":"pzprv3.2\ncountry\n3\n4\n\n1 1 1 \n0 0 0 \n0 0 0 \n0 1 1 0 \n0 0 0 1 \n- . . . \n. . . . \n. . . . \n0 -1 0 \n1 -1 0 \n0 -1 0 \n-1 0 -1 -1 \n0 0 0 1 \n2 0 2 0 \n1 1 1 0 \n2 0 2 1 \n"}
+{"id":"country-63","kind":"url","input":"country/4/3/s0c4.h"}
+{"id":"country-64","kind":"fileio","input":"pzprv3.2\ncountry\n1\n5\ncountry_empty\n0 0 1 0 \n- . . . . \n1 0 -1 0 \n2 1 0 1 2 \n"}
+{"id":"country-65","kind":"url","input":"country/e/5/1/4.g"}
+{"id":"country-66","kind":"fileio","input":"pzprv3.2\ncountry\n3\n1\ncountry_empty\n\n\n\n0 \n1 \n. \n. \n1 \n\n\n\n0 \n-1 \n2 \n1 \n0 \n"}
+{"id":"country-67","kind":"url","input":"country/e/1/3/8g1"}

@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"aqre","generator":"tools/gen_fixtures.js"}}
+{"id":"aqre-0","kind":"url","input":"https://puzz.link/p?aqre/10/10/8po7rnr0000rtrs3j2rm1l0gl4004l10lgdr11g2300226132"}
+{"id":"aqre-1","kind":"url","input":"https://puzz.link/p?aqre/10/10/g90mqtn8c62tmbf0i1vu2c0bdktn5mq0a8fv1g11g1202h32h0g0"}
+{"id":"aqre-2","kind":"url","input":"https://puzz.link/p?aqre/18/18/aba2qqg6mi2nhodt6jfc57m8qt96l6a1828b1j6ucn7p5bspeseknpl0od86h00o00svvhe3e41s3g8r2gr3v9u0241vvvrufs3gf3soc0m1g21c3o3k3sn000s0g1g1g22g11g2g22g1g2212g1g1112233355g555355g3g3g355"}
+{"id":"aqre-3","kind":"url","input":"aqre/4/4/"}
+{"id":"aqre-4","kind":"url","input":"aqre/1/1/"}
+{"id":"aqre-5","kind":"url","input":"aqre/1/5/"}
+{"id":"aqre-6","kind":"url","input":"aqre/5/1/"}
+{"id":"aqre-7","kind":"fileio","input":"pzprv3.1\naqre\n5\n6\nb\n0 0 0 1 0 \n0 1 0 1 0 \n0 0 1 0 0 \n0 0 1 1 0 \n1 0 0 0 0 \n0 0 1 1 0 0 \n0 0 0 1 0 0 \n0 0 0 1 0 0 \n0 0 1 1 0 1 \n. . . . . . \n. . . . . . \n. . . . . . \n. . . 1 . . \n. . . . . . \n# . . + + + \n. . # . . # \n. . . # # . \n. . + + . # \n# . . + # . \n"}
+{"id":"aqre-8","kind":"url","input":"aqre/b/6/5/2a46g610gqg1"}
+{"id":"aqre-9","kind":"fileio","input":"pzprv3.1\naqre\n4\n1\n\n\n\n\n0 \n1 \n0 \n. \n. \n2 \n. \n. \n. \n. \n. \n"}
+{"id":"aqre-10","kind":"url","input":"aqre/1/4/8g2"}
+{"id":"aqre-11","kind":"fileio","input":"pzprv3.1\naqre\n3\n6\n1 0 0 0 0 \n0 0 1 0 0 \n0 0 0 0 0 \n1 0 1 0 1 1 \n0 0 0 0 0 0 \n. . . . . . \n- . . . . . \n. . . . . . \n. # . . # + \n. . . # . # \n. . . + . . \n"}
+{"id":"aqre-12","kind":"url","input":"aqre/6/3/g40lg0g./"}
+{"id":"aqre-13","kind":"fileio","input":"pzprv3.1\naqre\n3\n5\nb\n0 0 0 1 \n1 0 0 0 \n0 0 0 0 \n1 1 0 0 0 \n0 0 0 0 1 \n1 . . . . \n. . . . . \n. . . . . \n# + . . . \n+ . . . . \n. . + + . \n"}
+{"id":"aqre-14","kind":"url","input":"aqre/b/5/3/300o11"}
+{"id":"aqre-15","kind":"fileio","input":"pzprv3.1\naqre\n1\n2\nb\n1 \n1 0 \n+ . \n"}
+{"id":"aqre-16","kind":"url","input":"aqre/b/2/1/g10"}
+{"id":"aqre-17","kind":"fileio","input":"pzprv3.1\naqre\n3\n1\nb\n\n\n\n0 \n0 \n- \n. \n. \n. \n# \n. \n"}
+{"id":"aqre-18","kind":"url","input":"aqre/b/1/3/0./"}
+{"id":"aqre-19","kind":"fileio","input":"pzprv3.1\naqre\n3\n4\nb\n1 0 0 \n1 1 1 \n0 0 0 \n0 1 0 0 \n0 0 1 0 \n. . . . \n. . . . \n. . . . \n. . . . \n. # . . \n. + . + \n"}
+{"id":"aqre-20","kind":"url","input":"aqre/b/4/3/jg88g"}
+{"id":"aqre-21","kind":"fileio","input":"pzprv3.1\naqre\n2\n4\nb\n1 1 0 \n1 0 1 \n1 0 1 0 \n. 1 0 . \n1 . . . \n. . . + \n+ . # . \n"}
+{"id":"aqre-22","kind":"url","input":"aqre/b/4/2/qgkg101"}
+{"id":"aqre-23","kind":"fileio","input":"pzprv3.1\naqre\n2\n1\nb\n\n\n0 \n. \n. \n. \n. \n"}
+{"id":"aqre-24","kind":"url","input":"aqre/b/1/2/0g"}
+{"id":"aqre-25","kind":"fileio","input":"pzprv3.1\naqre\n3\n4\nb\n0 0 0 \n0 0 1 \n0 1 1 \n0 1 1 1 \n0 1 1 0 \n0 . . . \n. . . 0 \n. . 1 . \n. . . . \n+ + . # \n. . . + \n"}
+{"id":"aqre-26","kind":"url","input":"aqre/b/4/3/0meo001"}
+{"id":"aqre-27","kind":"fileio","input":"pzprv3.1\naqre\n1\n1\nb\n\n2 \n. \n"}
+{"id":"aqre-28","kind":"url","input":"aqre/b/1/1/2"}
+{"id":"aqre-29","kind":"fileio","input":"pzprv3.1\naqre\n4\n5\n0 0 0 1 \n0 0 0 0 \n0 0 0 0 \n0 1 0 1 \n0 0 0 0 1 \n0 1 0 0 0 \n1 1 0 1 1 \n- . . . . \n. . . . . \n. . . . . \n- . . . - \n. . . . . \n. # # # . \n. . # + + \n# # . . # \n"}
+{"id":"aqre-30","kind":"url","input":"aqre/5/4/202g18r.g../"}
+{"id":"aqre-31","kind":"fileio","input":"pzprv3.1\naqre\n4\n3\nb\n1 1 \n0 0 \n0 0 \n0 0 \n0 0 1 \n1 1 0 \n1 0 0 \n- . 1 \n. . . \n. . . \n. . . \n. . . \n+ . + \n. . . \n. # . \n"}
+{"id":"aqre-32","kind":"url","input":"aqre/b/3/4/o078.1"}
+{"id":"aqre-33","kind":"fileio","input":"pzprv3.1\naqre\n2\n4\n0 0 0 \n1 0 0 \n0 0 0 0 \n2 . . . \n. . . . \n. + . + \n. . # . \n"}
+{"id":"aqre-34","kind":"url","input":"aqre/4/2/2002"}
+{"id":"aqre-35","kind":"fileio","input":"pzprv3.1\naqre\n4\n1\n\n\n\n\n1 \n0 \n1 \n0 \n1 \n. \n2 \n. \n. \n. \n# \n"}
+{"id":"aqre-36","kind":"url","input":"aqre/1/4/k012"}
+{"id":"aqre-37","kind":"fileio","input":"pzprv3.1\naqre\n3\n4\n1 0 1 \n0 0 0 \n0 0 0 \n1 1 1 0 \n1 0 0 0 \n- - . . \n- . . . \n. . . . \n. . # . \n# # . . \n. # . . \n"}
+{"id":"aqre-38","kind":"url","input":"aqre/4/3/k0t0.../"}
+{"id":"aqre-39","kind":"fileio","input":"pzprv3.1\naqre\n1\n1\n\n2 \n. \n"}
+{"id":"aqre-40","kind":"url","input":"aqre/1/1/2"}
+{"id":"aqre-41","kind":"fileio","input":"pzprv3.1\naqre\n2\n5\nb\n0 0 1 0 \n0 0 0 0 \n1 0 0 0 0 \n. . . . . \n. . . . . \n# + # . . \n. . . # . \n"}
+{"id":"aqre-42","kind":"url","input":"aqre/b/5/2/40gg"}
+{"id":"aqre-43","kind":"fileio","input":"pzprv3.1\naqre\n5\n3\nb\n1 0 \n0 0 \n0 0 \n1 0 \n0 0 \n1 0 1 \n1 0 0 \n1 1 1 \n0 0 0 \n2 . . \n0 . . \n. . . \n2 . . \n. . . \n. . . \n# . . \n. . . \n. . . \n. . . \n"}
+{"id":"aqre-44","kind":"url","input":"aqre/b/3/5/g8me0202"}
+{"id":"aqre-45","kind":"fileio","input":"pzprv3.1\naqre\n2\n6\nb\n0 1 0 1 1 \n0 1 0 1 0 \n1 0 0 0 0 1 \n1 . 1 . . - \n. . . . . . \n. . # . # # \n+ . + . . # \n"}
+{"id":"aqre-46","kind":"url","input":"aqre/b/6/2/bagg11g./"}
+{"id":"aqre-47","kind":"fileio","input":"pzprv3.1\naqre\n5\n1\n\n\n\n\n\n0 \n0 \n1 \n1 \n- \n. \n. \n0 \n- \n. \n. \n. \n. \n# \n"}
+{"id":"aqre-48","kind":"url","input":"aqre/1/5/6.0./"}
+{"id":"aqre-49","kind":"fileio","input":"pzprv3.1\naqre\n3\n4\n1 0 1 \n1 0 1 \n0 1 0 \n0 1 0 0 \n0 0 0 0 \n2 . . . \n. . . . \n. . . . \n+ . . # \n. . # . \n. . + . \n"}
+{"id":"aqre-50","kind":"url","input":"aqre/4/3/mk802"}
+{"id":"aqre-51","kind":"fileio","input":"pzprv3.1\naqre\n5\n1\n\n\n\n\n\n0 \n1 \n1 \n0 \n. \n. \n2 \n. \n. \n. \n. \n. \n. \n. \n"}
+{"id":"aqre-52","kind":"url","input":"aqre/1/5/cg2g"}
+{"id":"aqre-53","kind":"fileio","input":"pzprv3.1\naqre\n1\n4\n1 1 0 \n1 1 1 . \n# . . . \n"}
+{"id":"aqre-54","kind":"url","input":"aqre/4/1/o111"}
+{"id":"aqre-55","kind":"fileio","input":"pzprv3.1\naqre\n1\n1\nb\n\n. \n# \n"}
+{"id":"aqre-56","kind":"url","input":"aqre/b/1/1/g"}
+{"id":"aqre-57","kind":"fileio","input":"pzprv3.1\naqre\n3\n5\nb\n1 0 1 0 \n0 0 1 1 \n0 0 0 1 \n1 1 0 0 0 \n0 0 0 0 1 \n. . . . . \n0 . . . . \n. . . . 1 \n# . . # + \n. . + . . \n# + # # . \n"}
+{"id":"aqre-58","kind":"url","input":"aqre/b/5/3/kc8o1g01"}
+{"id":"aqre-59","kind":"fileio","input":"pzprv3.1\naqre\n5\n1\nb\n\n\n\n\n\n0 \n1 \n0 \n0 \n2 \n. \n1 \n. \n. \n. \n. \n. \n+ \n. \n"}
+{"id":"aqre-60","kind":"url","input":"aqre/b/1/5/821"}
+{"id":"aqre-61","kind":"fileio","input":"pzprv3.1\naqre\n1\n6\n0 0 0 0 1 \n. . . . . 2 \n. + # . + # \n"}
+{"id":"aqre-62","kind":"url","input":"aqre/6/1/1g2"}
+{"id":"aqre-63","kind":"fileio","input":"pzprv3.1\naqre\n3\n1\nb\n\n\n\n1 \n0 \n. \n0 \n. \n. \n# \n. \n"}
+{"id":"aqre-64","kind":"url","input":"aqre/b/1/3/gg0"}
+{"id":"aqre-65","kind":"fileio","input":"pzprv3.1\naqre\n4\n3\n1 1 \n0 1 \n0 1 \n0 0 \n1 0 0 \n0 0 0 \n0 0 0 \n. . . \n. . . \n. . . \n. . . \n# . + \n+ . . \n. # . \n# . . \n"}
+{"id":"aqre-66","kind":"url","input":"aqre/3/4/qgg0h"}

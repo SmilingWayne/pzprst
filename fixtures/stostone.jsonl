@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"stostone","generator":"tools/gen_fixtures.js"}}
+{"id":"stostone-0","kind":"url","input":"https://puzz.link/p?stostone/9/10/8910002i98000gi200fg01u0g7o00v000h2g6"}
+{"id":"stostone-1","kind":"url","input":"https://puzz.link/p?stostone/10/10/10ecso80g10204080g2200220000vv00000099j"}
+{"id":"stostone-2","kind":"url","input":"https://puzz.link/p?stostone/10/10/1m7cuhlb56acldas4ou0u110gfc000t00f604g44g3h34334g"}
+{"id":"stostone-3","kind":"url","input":"stostone/4/4/"}
+{"id":"stostone-4","kind":"url","input":"stostone/1/1/"}
+{"id":"stostone-5","kind":"url","input":"stostone/1/5/"}
+{"id":"stostone-6","kind":"url","input":"stostone/5/1/"}
+{"id":"stostone-7","kind":"fileio","input":"pzprv3.1\nstostone\n5\n1\n\n\n\n\n\n0 \n0 \n0 \n0 \n0 \n. \n. \n. \n. \n# \n+ \n# \n. \n# \n"}
+{"id":"stostone-8","kind":"url","input":"stostone/1/5/00"}
+{"id":"stostone-9","kind":"fileio","input":"pzprv3.1\nstostone\n2\n6\n0 1 1 0 0 \n0 1 0 1 1 \n0 1 1 0 1 0 \n- . 1 . . . \n. . . . - . \n. + . # # . \n# . . . . . \n"}
+{"id":"stostone-10","kind":"url","input":"stostone/6/2/cbd0.1g./"}
+{"id":"stostone-11","kind":"fileio","input":"pzprv3.1\nstostone\n2\n5\n1 0 1 1 \n0 1 0 0 \n1 0 1 1 0 \n0 . . 1 . \n1 . 1 . . \n+ . . + + \n. + . . . \n"}
+{"id":"stostone-12","kind":"url","input":"stostone/5/2/mgm0111"}
+{"id":"stostone-13","kind":"fileio","input":"pzprv3.1\nstostone\n5\n4\n1 1 0 \n0 0 0 \n0 1 1 \n0 0 1 \n0 1 1 \n0 1 1 0 \n1 0 0 0 \n0 0 1 0 \n0 1 1 1 \n- 2 . . \n. . . . \n. . . . \n. . . . \n. . . 2 \n. . . . \n. . . # \n. . . # \n# . . . \n+ . . . \n"}
+{"id":"stostone-14","kind":"url","input":"stostone/4/5/o6bd0jg.2g2"}
+{"id":"stostone-15","kind":"fileio","input":"pzprv3.1\nstostone\n1\n2\n0 \n1 . \n# . \n"}
+{"id":"stostone-16","kind":"url","input":"stostone/2/1/01"}
+{"id":"stostone-17","kind":"fileio","input":"pzprv3.1\nstostone\n2\n1\n\n\n0 \n. \n. \n. \n. \n"}
+{"id":"stostone-18","kind":"url","input":"stostone/1/2/0g"}
+{"id":"stostone-19","kind":"fileio","input":"pzprv3.1\nstostone\n1\n3\n1 0 \n0 . . \n. # + \n"}
+{"id":"stostone-20","kind":"url","input":"stostone/3/1/g0g"}
+{"id":"stostone-21","kind":"fileio","input":"pzprv3.1\nstostone\n3\n4\n0 1 0 \n1 1 0 \n0 1 0 \n1 0 1 1 \n0 0 0 0 \n. . 0 . \n. . - . \n. . . . \n. . + . \n. # # # \n. + . + \n"}
+{"id":"stostone-22","kind":"url","input":"stostone/4/3/b4m0g0./"}
+{"id":"stostone-23","kind":"fileio","input":"pzprv3.1\nstostone\n5\n6\n0 1 1 0 1 \n0 0 0 0 1 \n0 0 0 0 0 \n1 0 1 1 1 \n0 0 1 0 0 \n0 1 1 1 1 0 \n0 0 0 0 0 0 \n0 0 0 1 0 1 \n0 0 1 1 1 1 \n. . . . . . \n. . . . . . \n. . . . . . \n. . . 0 . . \n. . . 1 . . \n# . . . . # \n. . . . + . \n. . . # # # \n. + . # . # \n. + # + . . \n"}
+{"id":"stostone-24","kind":"url","input":"stostone/6/5/d10n4f00kui0g1"}
+{"id":"stostone-25","kind":"fileio","input":"pzprv3.1\nstostone\n3\n2\n0 \n1 \n0 \n0 0 \n0 0 \n. . \n. . \n. . \n. # \n. . \n# # \n"}
+{"id":"stostone-26","kind":"url","input":"stostone/2/3/80g"}
+{"id":"stostone-27","kind":"fileio","input":"pzprv3.1\nstostone\n1\n2\n0 \n2 . \n. . \n"}
+{"id":"stostone-28","kind":"url","input":"stostone/2/1/02"}
+{"id":"stostone-29","kind":"fileio","input":"pzprv3.1\nstostone\n4\n5\n1 0 1 0 \n0 0 1 0 \n0 0 1 1 \n0 0 0 0 \n0 1 0 0 0 \n1 0 1 0 0 \n1 0 1 0 0 \n1 . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. . # # . \n+ . . + # \n. # + . . \n"}
+{"id":"stostone-30","kind":"url","input":"stostone/5/4/k8o08kk1"}
+{"id":"stostone-31","kind":"fileio","input":"pzprv3.1\nstostone\n2\n6\n0 0 1 0 0 \n0 1 0 0 0 \n0 1 1 0 1 0 \n. . . . . . \n. . 1 . . . \n# . . . # . \n# . + + # . \n"}
+{"id":"stostone-32","kind":"url","input":"stostone/6/2/48d0g1"}
+{"id":"stostone-33","kind":"fileio","input":"pzprv3.1\nstostone\n3\n1\n\n\n\n0 \n1 \n. \n. \n. \n. \n+ \n# \n"}
+{"id":"stostone-34","kind":"url","input":"stostone/1/3/8h"}
+{"id":"stostone-35","kind":"fileio","input":"pzprv3.1\nstostone\n5\n5\n0 1 0 0 \n1 1 0 0 \n0 0 0 1 \n0 0 0 0 \n0 0 1 0 \n0 0 0 1 0 \n0 0 1 0 0 \n0 1 1 1 1 \n0 0 0 1 0 \n1 . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. . # # . \n. # + . . \n# + . . # \n. # . . . \n. . # . . \n"}
+{"id":"stostone-36","kind":"url","input":"stostone/5/5/9g8224f21"}
+{"id":"stostone-37","kind":"fileio","input":"pzprv3.1\nstostone\n3\n2\n0 \n0 \n0 \n0 0 \n0 0 \n0 . \n. . \n. . \n+ . \n. . \n. . \n"}
+{"id":"stostone-38","kind":"url","input":"stostone/2/3/000"}
+{"id":"stostone-39","kind":"fileio","input":"pzprv3.1\nstostone\n5\n1\n\n\n\n\n\n0 \n1 \n0 \n1 \n1 \n. \n2 \n. \n. \n# \n. \n# \n. \n. \n"}
+{"id":"stostone-40","kind":"url","input":"stostone/1/5/a12g"}
+{"id":"stostone-41","kind":"fileio","input":"pzprv3.1\nstostone\n3\n5\n0 0 1 0 \n0 0 0 1 \n0 1 0 1 \n0 1 0 0 1 \n1 1 1 0 0 \n2 . . . . \n. . . . . \n. . . . . \n. . . . . \n# . # + . \n. # . + # \n"}
+{"id":"stostone-42","kind":"url","input":"stostone/5/3/4589s2h"}
+{"id":"stostone-43","kind":"fileio","input":"pzprv3.1\nstostone\n1\n2\n0 \n2 . \n. # \n"}
+{"id":"stostone-44","kind":"url","input":"stostone/2/1/02"}
+{"id":"stostone-45","kind":"fileio","input":"pzprv3.1\nstostone\n2\n2\n1 \n0 \n1 1 \n. 0 \n. . \n# . \n. . \n"}
+{"id":"stostone-46","kind":"url","input":"stostone/2/2/gog0g"}
+{"id":"stostone-47","kind":"fileio","input":"pzprv3.1\nstostone\n5\n6\n1 0 1 1 1 \n0 1 1 0 1 \n0 0 0 0 1 \n0 0 0 0 0 \n0 1 1 1 0 \n0 0 0 0 0 0 \n1 1 1 1 0 0 \n1 1 0 0 1 0 \n1 0 0 1 0 1 \n. . . . . . \n. . . . . . \n1 . . . . . \n. . . . . . \n. . . - . . \n. # . . + # \n. . . . . . \n. # . . . . \n# . + + + . \n# # . . . . \n"}
+{"id":"stostone-48","kind":"url","input":"stostone/6/5/nd10e0f6aag1./"}
+{"id":"stostone-49","kind":"fileio","input":"pzprv3.1\nstostone\n1\n3\n0 1 \n1 . . \n# + . \n"}
+{"id":"stostone-50","kind":"url","input":"stostone/3/1/81g"}
+{"id":"stostone-51","kind":"fileio","input":"pzprv3.1\nstostone\n4\n4\n0 0 0 \n1 1 0 \n1 0 1 \n1 0 0 \n1 0 0 0 \n0 1 0 1 \n0 0 0 0 \n. . . . \n- . . . \n. . . . \n. . . . \n. + . . \n+ # . . \n. . + . \n# . . . \n"}
+{"id":"stostone-52","kind":"url","input":"stostone/4/4/3b0gk0g./"}
+{"id":"stostone-53","kind":"fileio","input":"pzprv3.1\nstostone\n3\n4\n1 1 0 \n0 0 0 \n0 0 0 \n1 1 0 1 \n1 1 0 0 \n2 . . . \n1 . . . \n. . . . \n. # . . \n. . . . \n. # . . \n"}
+{"id":"stostone-54","kind":"url","input":"stostone/4/3/o0rg2g1"}
+{"id":"stostone-55","kind":"fileio","input":"pzprv3.1\nstostone\n1\n3\n1 0 \n- . . \n. . . \n"}
+{"id":"stostone-56","kind":"url","input":"stostone/3/1/g.g"}
+{"id":"stostone-57","kind":"fileio","input":"pzprv3.1\nstostone\n2\n1\n\n\n1 \n- \n- \n. \n+ \n"}
+{"id":"stostone-58","kind":"url","input":"stostone/1/2/g../"}
+{"id":"stostone-59","kind":"fileio","input":"pzprv3.1\nstostone\n1\n1\n\n. \n. \n"}
+{"id":"stostone-60","kind":"url","input":"stostone/1/1/g"}
+{"id":"stostone-61","kind":"fileio","input":"pzprv3.1\nstostone\n2\n1\n\n\n0 \n. \n. \n. \n. \n"}
+{"id":"stostone-62","kind":"url","input":"stostone/1/2/0g"}
+{"id":"stostone-63","kind":"fileio","input":"pzprv3.1\nstostone\n4\n6\n0 0 1 1 0 \n0 0 0 0 1 \n0 0 1 0 0 \n0 1 0 1 1 \n1 1 0 1 0 1 \n1 0 1 1 1 0 \n1 0 0 0 0 1 \n. . . 1 . . \n. . . . . . \n. . . . . . \n. . . . . . \n# . # # . . \n. . + # . + \n. . . . . . \n. # . . . + \n"}
+{"id":"stostone-64","kind":"url","input":"stostone/6/4/614bqrk4g1g"}
+{"id":"stostone-65","kind":"fileio","input":"pzprv3.1\nstostone\n3\n2\n0 \n1 \n0 \n0 0 \n0 0 \n2 . \n. . \n. . \n+ . \n. # \n. . \n"}
+{"id":"stostone-66","kind":"url","input":"stostone/2/3/802"}

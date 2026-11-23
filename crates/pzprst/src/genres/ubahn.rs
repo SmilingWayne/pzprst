@@ -192,7 +192,7 @@ fn reverse_top_row(vals: &mut [Obj], pos: &[(i32, i32)], cols: i32) {
     for (i, &(bx, by)) in pos.iter().enumerate() {
         if by < 0 {
             if let Some(j) = index(pos, 2 * cols - bx, by) {
-                vals[j] = src[i];
+                vals[j] = src[i].clone();
             }
         }
     }
@@ -204,7 +204,7 @@ fn reverse_left_col(vals: &mut [Obj], pos: &[(i32, i32)], rows: i32) {
     for (i, &(bx, by)) in pos.iter().enumerate() {
         if bx < 0 {
             if let Some(j) = index(pos, bx, 2 * rows - by) {
-                vals[j] = src[i];
+                vals[j] = src[i].clone();
             }
         }
     }
@@ -290,7 +290,7 @@ fn adjust_excells(t: Transform, b: &mut Board, preserve: bool) {
                 for (i, &(bx, by)) in pos.iter().enumerate() {
                     if by < 0 {
                         if let Some(j) = index(&pos, 2 * cols - bx, by) {
-                            next[j] = vals[i];
+                            next[j] = vals[i].clone();
                         }
                     }
                 }
@@ -299,7 +299,7 @@ fn adjust_excells(t: Transform, b: &mut Board, preserve: bool) {
                 for (i, &(bx, by)) in pos.iter().enumerate() {
                     if bx < 0 {
                         if let Some(j) = index(&pos, bx, 2 * rows - by) {
-                            next[j] = vals[i];
+                            next[j] = vals[i].clone();
                         }
                     }
                 }
@@ -381,7 +381,7 @@ fn adjust_excells(t: Transform, b: &mut Board, preserve: bool) {
     let pos = positions(cols, rows);
     for (i, &(bx, by)) in pos.iter().enumerate() {
         if let Some(j) = b.geom.excell_index(bx, by) {
-            b.excells[j] = vals[i];
+            b.excells[j] = vals[i].clone();
         }
     }
 }

@@ -17,6 +17,7 @@ mod error;
 mod fileio;
 mod genres;
 mod jsnum;
+mod rooms;
 mod state;
 mod transform;
 mod url;

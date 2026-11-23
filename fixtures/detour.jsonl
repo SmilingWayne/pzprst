@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"detour","generator":"tools/gen_fixtures.js"}}
+{"id":"detour-0","kind":"url","input":"https://puzz.link/p?detour/8/8/03thrmtors007hvdn6erfou0g10100g111010001g110110"}
+{"id":"detour-1","kind":"url","input":"https://puzz.link/p?detour/8/8/51baqm0ldaag0vg00vrv03g02310j112g1"}
+{"id":"detour-2","kind":"url","input":"https://puzz.link/p?detour/6/6/4lntl4f15kgu3456g1g2"}
+{"id":"detour-3","kind":"url","input":"detour/4/4/"}
+{"id":"detour-4","kind":"url","input":"detour/1/1/"}
+{"id":"detour-5","kind":"url","input":"detour/1/5/"}
+{"id":"detour-6","kind":"url","input":"detour/5/1/"}
+{"id":"detour-7","kind":"fileio","input":"pzprv3.2\ndetour\n3\n6\n0 0 0 1 0 \n1 0 0 0 0 \n0 1 0 1 0 \n0 0 0 0 1 1 \n0 1 0 1 0 1 \n1 . . . 1 . \n. . . . . . \n. . . . . . \n-1 0 0 0 0 \n0 1 0 1 1 \n0 0 0 0 1 \n0 0 1 0 0 1 \n0 0 0 0 -1 -1 \n2 2 2 0 1 0 \n2 0 0 0 0 2 \n1 2 0 1 0 0 \n"}
+{"id":"detour-8","kind":"url","input":"detour/6/3/2ga1l811"}
+{"id":"detour-9","kind":"fileio","input":"pzprv3.2\ndetour\n3\n6\n0 0 1 0 0 \n0 0 0 0 1 \n1 1 0 0 0 \n1 0 0 1 0 1 \n1 1 1 1 0 0 \n. . . . . . \n. . . . . . \n0 1 . . . . \n0 0 0 1 0 \n-1 0 -1 0 1 \n0 1 0 -1 0 \n0 1 0 1 0 1 \n1 0 1 -1 0 0 \n0 1 0 0 0 0 \n0 1 1 2 0 1 \n1 0 1 0 0 0 \n"}
+{"id":"detour-10","kind":"url","input":"detour/6/3/41oiv0g01"}
+{"id":"detour-11","kind":"fileio","input":"pzprv3.2\ndetour\n2\n1\n\n\n0 \n1 \n. \n\n\n0 \n0 \n0 \n"}
+{"id":"detour-12","kind":"url","input":"detour/1/2/01"}
+{"id":"detour-13","kind":"fileio","input":"pzprv3.2\ndetour\n3\n4\n0 0 0 \n1 0 1 \n0 0 0 \n1 0 0 0 \n0 0 1 0 \n. . . . \n. . . . \n. . . . \n0 1 0 \n0 0 -1 \n1 -1 1 \n0 1 -1 -1 \n0 0 0 1 \n0 2 2 0 \n2 2 2 2 \n0 2 0 0 \n"}
+{"id":"detour-14","kind":"url","input":"detour/4/3/2gg8g"}
+{"id":"detour-15","kind":"fileio","input":"pzprv3.2\ndetour\n1\n4\n0 1 1 \n- . - - \n0 0 0 \n1 1 0 0 \n"}
+{"id":"detour-16","kind":"url","input":"detour/4/1/c.../"}
+{"id":"detour-17","kind":"fileio","input":"pzprv3.2\ndetour\n4\n6\n0 0 1 0 1 \n0 1 1 1 0 \n0 0 0 0 1 \n1 0 0 0 0 \n0 0 0 1 1 1 \n1 0 0 0 0 0 \n1 0 0 1 0 0 \n- . . 0 . - \n. . . . . . \n. . . . . . \n0 . . . . . \n0 0 -1 0 0 \n0 0 0 -1 1 \n0 0 0 0 0 \n1 0 0 -1 0 \n0 0 1 0 -1 0 \n1 1 0 0 0 0 \n0 0 0 0 0 -1 \n2 1 0 1 0 1 \n0 0 0 0 0 2 \n2 1 2 0 0 2 \n0 0 0 1 0 2 \n"}
+{"id":"detour-18","kind":"url","input":"detour/6/4/5e1g3o4g.0.0"}
+{"id":"detour-19","kind":"fileio","input":"pzprv3.2\ndetour\n3\n3\n0 0 \n1 0 \n0 0 \n0 0 0 \n0 0 0 \n- . . \n. . . \n. . . \n0 0 \n0 0 \n0 0 \n0 1 1 \n0 0 -1 \n1 1 0 \n2 0 2 \n0 0 0 \n"}
+{"id":"detour-20","kind":"url","input":"detour/3/3/4000./"}
+{"id":"detour-21","kind":"fileio","input":"pzprv3.2\ndetour\n2\n2\n0 \n0 \n0 0 \n. . \n. . \n-1 \n0 \n-1 0 \n0 0 \n0 0 \n"}
+{"id":"detour-22","kind":"url","input":"detour/2/2/00g"}
+{"id":"detour-23","kind":"fileio","input":"pzprv3.2\ndetour\n3\n1\n\n\n\n1 \n0 \n2 \n. \n. \n\n\n\n-1 \n0 \n2 \n1 \n1 \n"}
+{"id":"detour-24","kind":"url","input":"detour/1/3/g2g"}
+{"id":"detour-25","kind":"fileio","input":"pzprv3.2\ndetour\n3\n2\n1 \n0 \n1 \n0 1 \n1 1 \n. . \n. . \n. 2 \n0 \n0 \n1 \n0 1 \n0 0 \n0 0 \n0 0 \n0 1 \n"}
+{"id":"detour-26","kind":"url","input":"detour/2/3/kei2"}
+{"id":"detour-27","kind":"fileio","input":"pzprv3.2\ndetour\n1\n4\n1 0 0 \n0 2 . . \n0 1 1 \n2 0 0 0 \n"}
+{"id":"detour-28","kind":"url","input":"detour/4/1/g02"}
+{"id":"detour-29","kind":"fileio","input":"pzprv3.2\ndetour\n2\n6\n1 1 0 0 1 \n0 0 0 1 1 \n1 0 0 0 0 0 \n. . . . . 2 \n1 . . . . . \n0 1 0 1 0 \n1 0 0 -1 0 \n0 0 1 0 0 0 \n1 1 2 2 2 0 \n2 2 2 0 1 0 \n"}
+{"id":"detour-30","kind":"url","input":"detour/6/2/p3g0g12"}
+{"id":"detour-31","kind":"fileio","input":"pzprv3.2\ndetour\n3\n6\n0 1 0 1 0 \n0 0 0 1 0 \n1 1 0 1 1 \n0 0 0 0 0 0 \n0 0 1 1 1 0 \n. . . . 2 . \n. . . . . . \n. . - . . . \n0 0 1 -1 1 \n0 0 1 0 1 \n0 -1 0 0 0 \n0 0 0 0 0 1 \n0 1 0 0 0 0 \n0 0 0 2 1 0 \n0 0 2 1 0 0 \n0 2 2 0 0 2 \n"}
+{"id":"detour-32","kind":"url","input":"detour/6/3/a2r03gg2.g"}
+{"id":"detour-33","kind":"fileio","input":"pzprv3.2\ndetour\n4\n2\n0 \n0 \n1 \n1 \n0 1 \n1 1 \n1 0 \n0 . \n. . \n0 . \n. . \n1 \n0 \n0 \n0 \n1 1 \n0 1 \n1 1 \n2 1 \n0 0 \n0 1 \n1 0 \n"}
+{"id":"detour-34","kind":"url","input":"detour/2/4/6f000h"}
+{"id":"detour-35","kind":"fileio","input":"pzprv3.2\ndetour\n5\n2\n0 \n0 \n0 \n0 \n1 \n1 0 \n0 1 \n0 0 \n0 0 \n1 . \n. . \n. . \n. . \n. . \n0 \n1 \n1 \n0 \n0 \n0 0 \n0 0 \n-1 -1 \n0 1 \n0 0 \n1 0 \n0 2 \n0 0 \n2 1 \n"}
+{"id":"detour-36","kind":"url","input":"detour/2/5/1i01"}
+{"id":"detour-37","kind":"fileio","input":"pzprv3.2\ndetour\n4\n4\n0 0 1 \n0 0 0 \n0 0 0 \n1 0 1 \n0 1 0 0 \n1 1 1 0 \n0 0 0 0 \n. . . . \n. . . . \n. . . . \n. . . . \n-1 0 0 \n-1 0 -1 \n-1 0 0 \n1 -1 -1 \n1 0 0 -1 \n-1 0 0 0 \n0 0 1 1 \n0 0 1 0 \n0 0 1 1 \n0 0 0 1 \n0 2 0 0 \n"}
+{"id":"detour-38","kind":"url","input":"detour/4/4/4189o0g"}
+{"id":"detour-39","kind":"fileio","input":"pzprv3.2\ndetour\n1\n4\n1 1 0 \n1 2 . . \n-1 1 0 \n0 2 0 0 \n"}
+{"id":"detour-40","kind":"url","input":"detour/4/1/o12g"}
+{"id":"detour-41","kind":"fileio","input":"pzprv3.2\ndetour\n1\n6\n0 0 0 0 1 \n0 . . . . . \n-1 -1 0 0 0 \n0 1 0 0 0 0 \n"}
+{"id":"detour-42","kind":"url","input":"detour/6/1/10g"}
+{"id":"detour-43","kind":"fileio","input":"pzprv3.2\ndetour\n2\n4\n1 0 1 \n1 1 0 \n1 1 0 1 \n. 2 . 2 \n2 1 . . \n0 1 -1 \n0 0 1 \n-1 0 -1 0 \n0 2 2 2 \n1 0 0 0 \n"}
+{"id":"detour-44","kind":"url","input":"detour/4/2/n0qg2221"}
+{"id":"detour-45","kind":"fileio","input":"pzprv3.2\ndetour\n2\n4\n1 1 1 \n0 1 0 \n0 1 0 1 \n2 - 0 . \n. . . . \n1 0 1 \n0 -1 1 \n0 -1 1 0 \n0 2 0 0 \n1 2 1 0 \n"}
+{"id":"detour-46","kind":"url","input":"detour/4/2/t0a2.0g"}
+{"id":"detour-47","kind":"fileio","input":"pzprv3.2\ndetour\n1\n3\n1 1 \n. . . \n0 0 \n0 0 2 \n"}
+{"id":"detour-48","kind":"url","input":"detour/3/1/oi"}
+{"id":"detour-49","kind":"fileio","input":"pzprv3.2\ndetour\n1\n1\n\n0 \n\n0 \n"}
+{"id":"detour-50","kind":"url","input":"detour/1/1/0"}
+{"id":"detour-51","kind":"fileio","input":"pzprv3.2\ndetour\n5\n5\n1 0 1 0 \n0 0 1 0 \n0 0 0 0 \n0 0 1 1 \n1 0 0 1 \n0 0 0 0 1 \n1 0 1 1 0 \n0 1 1 0 1 \n0 0 1 0 0 \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n0 0 1 1 \n1 0 1 0 \n1 1 0 0 \n0 0 -1 1 \n-1 -1 1 -1 \n1 0 0 1 -1 \n0 0 -1 1 1 \n0 0 -1 0 0 \n0 1 -1 0 0 \n1 2 0 2 0 \n0 0 1 2 1 \n0 1 0 1 0 \n1 1 0 0 0 \n0 2 2 0 0 \n"}
+{"id":"detour-52","kind":"url","input":"detour/5/5/k81p1md4h"}
+{"id":"detour-53","kind":"fileio","input":"pzprv3.2\ndetour\n5\n5\n0 0 0 0 \n0 0 1 1 \n0 0 0 0 \n1 0 1 0 \n0 0 1 0 \n0 1 0 1 1 \n0 1 0 1 0 \n1 1 0 1 1 \n1 1 1 1 1 \n. . . . . \n. . . 2 . \n. . . . . \n1 . . - . \n1 . . 0 . \n0 0 1 0 \n0 0 0 1 \n1 0 0 1 \n-1 1 1 0 \n0 -1 0 0 \n-1 0 1 0 0 \n-1 1 0 0 0 \n0 0 0 -1 1 \n0 0 0 1 0 \n2 1 0 0 1 \n0 2 1 0 0 \n0 0 2 1 0 \n0 0 0 2 0 \n2 0 0 2 0 \n"}
+{"id":"detour-54","kind":"url","input":"detour/5/5/0c52barvg21.10"}
+{"id":"detour-55","kind":"fileio","input":"pzprv3.2\ndetour\n5\n4\n0 0 1 \n0 0 0 \n1 0 1 \n0 0 0 \n0 0 0 \n0 0 0 1 \n1 0 0 0 \n0 0 0 0 \n1 0 1 0 \n. . . 2 \n. . . . \n. . . . \n. . . . \n. . . . \n0 0 1 \n-1 0 0 \n0 0 0 \n0 0 -1 \n1 0 1 \n-1 0 0 0 \n0 0 0 0 \n-1 0 1 0 \n-1 0 1 0 \n0 0 0 1 \n0 1 0 0 \n2 1 0 0 \n0 0 2 1 \n0 0 0 1 \n"}
+{"id":"detour-56","kind":"url","input":"detour/4/5/4a03050g2"}
+{"id":"detour-57","kind":"fileio","input":"pzprv3.2\ndetour\n4\n2\n0 \n1 \n1 \n0 \n0 0 \n1 0 \n0 0 \n1 . \n. . \n. . \n. . \n0 \n0 \n1 \n1 \n0 1 \n0 1 \n0 0 \n0 2 \n1 0 \n0 0 \n0 0 \n"}
+{"id":"detour-58","kind":"url","input":"detour/2/4/c401"}
+{"id":"detour-59","kind":"fileio","input":"pzprv3.2\ndetour\n5\n2\n0 \n0 \n0 \n1 \n0 \n0 1 \n0 0 \n1 1 \n0 1 \n. . \n. . \n. . \n0 . \n. . \n0 \n0 \n0 \n1 \n0 \n1 -1 \n0 1 \n1 0 \n-1 1 \n0 2 \n0 2 \n1 0 \n1 0 \n1 2 \n"}
+{"id":"detour-60","kind":"url","input":"detour/2/5/29kg0g"}
+{"id":"detour-61","kind":"fileio","input":"pzprv3.2\ndetour\n4\n4\n0 1 0 \n0 0 0 \n0 0 0 \n0 0 0 \n0 1 0 0 \n0 0 0 1 \n1 0 0 1 \n0 . . . \n. . . . \n. . . . \n. . . . \n0 0 -1 \n0 -1 -1 \n0 0 1 \n-1 1 0 \n0 0 1 0 \n0 -1 0 -1 \n1 1 1 0 \n0 0 1 0 \n1 0 0 0 \n0 2 0 0 \n0 2 0 1 \n"}
+{"id":"detour-62","kind":"url","input":"detour/4/4/8008680"}
+{"id":"detour-63","kind":"fileio","input":"pzprv3.2\ndetour\n2\n4\n0 1 1 \n1 0 1 \n0 1 1 0 \n. . 2 2 \n. 2 . . \n0 1 0 \n0 0 1 \n0 0 0 -1 \n0 2 0 0 \n0 0 0 0 \n"}
+{"id":"detour-64","kind":"url","input":"detour/4/2/egcg222"}
+{"id":"detour-65","kind":"fileio","input":"pzprv3.2\ndetour\n3\n3\n1 0 \n0 1 \n0 0 \n0 0 1 \n1 1 0 \n0 . . \n. . . \n1 . . \n0 0 \n0 1 \n-1 0 \n1 0 0 \n0 -1 -1 \n2 0 0 \n0 0 1 \n2 0 2 \n"}
+{"id":"detour-66","kind":"url","input":"detour/3/3/i07001"}

@@ -1,0 +1,69 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"paintarea","generator":"tools/gen_fixtures.js"}}
+{"id":"paintarea-0","kind":"url","input":"https://puzz.link/p?paintarea/10/10/dndvuuvfnvuvbtrvvvfurrfvnrttuvvvvtrab2b1g2i2q3c2d1k3a1a2j2b1h1a1e1b"}
+{"id":"paintarea-1","kind":"url","input":"https://puzz.link/p?paintarea/10/10/ftvrlvvuvttvvvvruvtr7vvrvuvvvvvupvnla2a3b1p1c2g2c1b2m1d1f2f1c1t"}
+{"id":"paintarea-2","kind":"url","input":"https://puzz.link/p?paintarea/10/10/vvrvqmvnvnnvqvfvtrrrvvvrfmvfdvuntuuvc2g1f2u2a2a1d1f2c2a2d2c2b1d1h1g1c"}
+{"id":"paintarea-3","kind":"url","input":"paintarea/4/4/"}
+{"id":"paintarea-4","kind":"url","input":"paintarea/1/1/"}
+{"id":"paintarea-5","kind":"url","input":"paintarea/1/5/"}
+{"id":"paintarea-6","kind":"url","input":"paintarea/5/1/"}
+{"id":"paintarea-7","kind":"fileio","input":"pzprv3/paintarea/2/3/3/0 0 1 /2 2 1 /2 . 1 /. . . /# . + /. # . /"}
+{"id":"paintarea-8","kind":"fileio","input":"pzprv3\npaintarea\n5\n5\n3\n0 0 0 1 1 \n2 0 0 1 1 \n1 1 1 1 1 \n1 1 1 1 1 \n1 1 1 1 1 \n2 . - . 1 \n- - . - - \n- . . 2 0 \n1 - . 1 . \n0 . - . 1 \n. . . . # \n+ + . . # \n. # # . . \n+ . + + + \n. + . . . \n"}
+{"id":"paintarea-9","kind":"url","input":"paintarea/5/5/5800gs002a.a1..a...b201.a1a0a.a1"}
+{"id":"paintarea-10","kind":"fileio","input":"pzprv3\npaintarea\n3\n2\n2\n0 0 \n1 0 \n1 1 \n0 2 \n. - \n. 2 \n. . \n. . \n# . \n"}
+{"id":"paintarea-11","kind":"url","input":"paintarea/2/3/8i02a.a2"}
+{"id":"paintarea-12","kind":"fileio","input":"pzprv3\npaintarea\n3\n1\n2\n0 \n0 \n1 \n. \n0 \n. \n. \n. \n+ \n"}
+{"id":"paintarea-13","kind":"url","input":"paintarea/1/3/8a0a"}
+{"id":"paintarea-14","kind":"fileio","input":"pzprv3\npaintarea\n1\n1\n1\n0 \n. \n. \n"}
+{"id":"paintarea-15","kind":"url","input":"paintarea/1/1/a"}
+{"id":"paintarea-16","kind":"fileio","input":"pzprv3\npaintarea\n2\n4\n1\n0 0 0 0 \n0 0 0 0 \n. . . 0 \n. 1 1 2 \n. . . # \n+ . . . \n"}
+{"id":"paintarea-17","kind":"url","input":"paintarea/4/2/000c0a112"}
+{"id":"paintarea-18","kind":"fileio","input":"pzprv3\npaintarea\n3\n2\n2\n0 0 \n0 0 \n1 0 \n1 . \n2 1 \n- . \n. . \n. # \n. . \n"}
+{"id":"paintarea-19","kind":"url","input":"paintarea/2/3/441a21.a"}
+{"id":"paintarea-20","kind":"fileio","input":"pzprv3\npaintarea\n4\n4\n7\n0 1 2 3 \n0 3 3 3 \n4 5 3 3 \n6 6 3 3 \n2 2 2 . \n2 . . 3 \n- 0 1 . \n. 3 . - \n. + . . \n# # . . \n. . . + \n. . # # \n"}
+{"id":"paintarea-21","kind":"url","input":"paintarea/4/4/ucgdj0222a2b3.01b3a./"}
+{"id":"paintarea-22","kind":"fileio","input":"pzprv3\npaintarea\n1\n5\n3\n0 1 1 1 2 \n0 . . 0 2 \n# . . # . \n"}
+{"id":"paintarea-23","kind":"url","input":"paintarea/5/1/i0b02"}
+{"id":"paintarea-24","kind":"fileio","input":"pzprv3\npaintarea\n2\n2\n2\n0 0 \n0 1 \n3 3 \n2 0 \n. . \n. # \n"}
+{"id":"paintarea-25","kind":"url","input":"paintarea/2/2/883320"}
+{"id":"paintarea-26","kind":"fileio","input":"pzprv3\npaintarea\n5\n6\n3\n0 1 1 1 1 1 \n1 1 1 1 1 1 \n2 1 1 1 1 1 \n2 1 1 1 1 1 \n1 1 1 1 1 1 \n. - . - . 1 \n- 3 . . 3 . \n1 2 . . 0 . \n. 2 . . - 0 \n2 0 . . . 2 \n# + + . . # \n. . . . . . \n. # # . . . \n# . . . + . \n. + . + . . \n"}
+{"id":"paintarea-27","kind":"url","input":"paintarea/6/5/g0gg0g8020a.a.a1.3b3a12b0b2b.020c2"}
+{"id":"paintarea-28","kind":"fileio","input":"pzprv3\npaintarea\n3\n5\n4\n0 0 0 0 0 \n0 0 0 0 1 \n2 0 0 3 1 \n. 2 0 . . \n3 0 0 . . \n0 - 3 1 . \n. . # . . \n. . . . . \n# . . # . \n"}
+{"id":"paintarea-29","kind":"url","input":"paintarea/5/3/06o1ia20b300b0.31a"}
+{"id":"paintarea-30","kind":"fileio","input":"pzprv3\npaintarea\n5\n1\n2\n0 \n0 \n0 \n0 \n1 \n. \n. \n- \n2 \n- \n+ \n# \n. \n. \n+ \n"}
+{"id":"paintarea-31","kind":"url","input":"paintarea/1/5/2b.2./"}
+{"id":"paintarea-32","kind":"fileio","input":"pzprv3\npaintarea\n5\n6\n3\n0 0 1 1 1 1 \n0 0 1 1 1 1 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 2 \n. . 2 1 0 - \n. 0 . . . . \n3 3 . 1 0 3 \n- . 2 2 . 2 \n2 0 2 2 1 . \n# # # . . . \n+ # . . . . \n. . + . . . \n# . # . . . \n. . # # + # \n"}
+{"id":"paintarea-33","kind":"url","input":"paintarea/6/5/8800103o02b210.a0d33a103.a22a220221a"}
+{"id":"paintarea-34","kind":"fileio","input":"pzprv3\npaintarea\n4\n6\n6\n0 1 1 1 1 1 \n2 1 1 1 1 1 \n3 1 1 1 1 1 \n4 5 1 1 1 1 \n. 2 0 . 1 3 \n. . 3 3 3 0 \n1 . 0 . 2 - \n2 . 3 2 3 1 \n. . . . . . \n. . . # . . \n. . . . . # \n# . # . . + \n"}
+{"id":"paintarea-35","kind":"url","input":"paintarea/6/4/gggog860a20a13b33301a0a2.2a3231"}
+{"id":"paintarea-36","kind":"fileio","input":"pzprv3\npaintarea\n4\n6\n3\n0 0 0 0 0 0 \n0 0 0 0 0 1 \n2 0 0 0 0 0 \n2 0 0 0 0 0 \n3 - . . 2 . \n. 1 3 2 . 1 \n. 0 3 3 . 3 \n. 2 . 1 2 1 \n. . . # . . \n# . . . . + \n. . . # # + \n. . . . . . \n"}
+{"id":"paintarea-37","kind":"url","input":"paintarea/6/4/01gg0o803.b2b132a1a033a3a2a121"}
+{"id":"paintarea-38","kind":"fileio","input":"pzprv3\npaintarea\n4\n1\n2\n0 \n0 \n1 \n1 \n2 \n1 \n. \n2 \n# \n. \n. \n. \n"}
+{"id":"paintarea-39","kind":"url","input":"paintarea/1/4/821a2"}
+{"id":"paintarea-40","kind":"fileio","input":"pzprv3\npaintarea\n5\n1\n1\n0 \n0 \n0 \n0 \n0 \n. \n0 \n- \n0 \n. \n# \n. \n. \n+ \n# \n"}
+{"id":"paintarea-41","kind":"url","input":"paintarea/1/5/0a0.0a"}
+{"id":"paintarea-42","kind":"fileio","input":"pzprv3\npaintarea\n4\n3\n2\n0 0 0 \n0 0 0 \n0 0 0 \n0 0 1 \n1 - - \n. . 3 \n- 0 0 \n0 . 3 \n. + . \n. # . \n# . # \n. # . \n"}
+{"id":"paintarea-43","kind":"url","input":"paintarea/3/4/04021..b3.000a3"}
+{"id":"paintarea-44","kind":"fileio","input":"pzprv3\npaintarea\n4\n5\n1\n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n2 . 3 3 . \n2 . - 3 1 \n. 3 . - . \n. - . 0 - \n. + # # . \n. . + . . \n. # . . + \n. # . + . \n"}
+{"id":"paintarea-45","kind":"url","input":"paintarea/5/4/00000002a33a2a.31a3a.b.a0./"}
+{"id":"paintarea-46","kind":"fileio","input":"pzprv3\npaintarea\n1\n1\n1\n0 \n2 \n. \n"}
+{"id":"paintarea-47","kind":"url","input":"paintarea/1/1/2"}
+{"id":"paintarea-48","kind":"fileio","input":"pzprv3\npaintarea\n3\n4\n2\n0 0 0 0 \n1 0 0 0 \n1 0 0 0 \n0 3 3 . \n0 3 . . \n. 3 . 3 \n+ . . . \n+ . . . \n# + + . \n"}
+{"id":"paintarea-49","kind":"url","input":"paintarea/4/3/28g0033a03c3a3"}
+{"id":"paintarea-50","kind":"fileio","input":"pzprv3\npaintarea\n2\n1\n1\n0 \n0 \n0 \n2 \n. \n. \n"}
+{"id":"paintarea-51","kind":"url","input":"paintarea/1/2/002"}
+{"id":"paintarea-52","kind":"fileio","input":"pzprv3\npaintarea\n2\n6\n4\n0 0 0 0 1 1 \n2 0 0 0 0 3 \n. 1 . . . . \n1 - 2 1 3 2 \n# . . # . . \n# . # . . . \n"}
+{"id":"paintarea-53","kind":"url","input":"paintarea/6/2/2hhga1d1.2132"}
+{"id":"paintarea-54","kind":"fileio","input":"pzprv3\npaintarea\n4\n3\n2\n0 0 0 \n0 0 0 \n0 0 0 \n1 0 0 \n. 1 - \n1 - . \n- 1 . \n1 - . \n# . . \n. . # \n. . . \n+ # # \n"}
+{"id":"paintarea-55","kind":"url","input":"paintarea/3/4/0808a1.1.a.1a1.a"}
+{"id":"paintarea-56","kind":"fileio","input":"pzprv3\npaintarea\n2\n4\n1\n0 0 0 0 \n0 0 0 0 \n. . . 1 \n1 3 . 1 \n. . + . \n# # + # \n"}
+{"id":"paintarea-57","kind":"url","input":"paintarea/4/2/000c113a1"}
+{"id":"paintarea-58","kind":"fileio","input":"pzprv3\npaintarea\n4\n2\n3\n0 1 \n0 1 \n0 1 \n0 2 \n3 1 \n0 . \n- . \n. 2 \n. . \n. . \n# . \n# . \n"}
+{"id":"paintarea-59","kind":"url","input":"paintarea/2/4/u0g310a.b2"}
+{"id":"paintarea-60","kind":"fileio","input":"pzprv3\npaintarea\n3\n1\n2\n0 \n0 \n1 \n0 \n. \n1 \n. \n. \n# \n"}
+{"id":"paintarea-61","kind":"url","input":"paintarea/1/3/80a1"}
+{"id":"paintarea-62","kind":"fileio","input":"pzprv3\npaintarea\n2\n3\n1\n0 0 0 \n0 0 0 \n. . 0 \n. 2 . \n. . + \n. . + \n"}
+{"id":"paintarea-63","kind":"url","input":"paintarea/3/2/00b0a2a"}
+{"id":"paintarea-64","kind":"fileio","input":"pzprv3\npaintarea\n1\n1\n1\n0 \n. \n. \n"}
+{"id":"paintarea-65","kind":"url","input":"paintarea/1/1/a"}
+{"id":"paintarea-66","kind":"fileio","input":"pzprv3\npaintarea\n2\n4\n2\n0 1 1 1 \n0 1 1 1 \n. . 2 - \n0 3 - - \n. . . # \n. # + + \n"}
+{"id":"paintarea-67","kind":"url","input":"paintarea/4/2/i00b2.03../"}

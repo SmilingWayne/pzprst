@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"moonsun","generator":"tools/gen_fixtures.js"}}
+{"id":"moonsun-0","kind":"url","input":"https://puzz.link/p?moonsun/10/10/4g90i152a4k98i142800003vs000vg0f00000632a66fi00i3f9i77000k6b20092f9a00"}
+{"id":"moonsun-1","kind":"url","input":"https://puzz.link/p?moonsun/10/10/29m243a445c2p8ih448o60co3774s07o001s0j0932036006360212b300b06l0l019000"}
+{"id":"moonsun-2","kind":"url","input":"https://puzz.link/p?moonsun/10/10/38a94lfh3364hh16302440r9ek100uq0481n56090j10906160k0131662020590i05209"}
+{"id":"moonsun-3","kind":"url","input":"moonsun/4/4/"}
+{"id":"moonsun-4","kind":"url","input":"moonsun/1/1/"}
+{"id":"moonsun-5","kind":"url","input":"moonsun/1/5/"}
+{"id":"moonsun-6","kind":"url","input":"moonsun/5/1/"}
+{"id":"moonsun-7","kind":"fileio","input":"pzprv3.2\nmoonsun\n2\n5\n0 1 0 0 \n0 0 0 0 \n0 0 1 1 1 \n2 1 . 2 1 \n. 1 . . . \n0 0 0 -1 \n-1 0 -1 0 \n0 0 0 0 0 \n2 2 0 1 2 \n2 0 0 2 0 \n"}
+{"id":"moonsun-8","kind":"url","input":"moonsun/5/2/807ll90"}
+{"id":"moonsun-9","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n3\n0 0 \n1 0 \n1 0 \n1 0 1 \n0 0 1 \n1 2 1 \n. . 1 \n. . . \n0 0 \n-1 1 \n0 -1 \n1 1 -1 \n0 0 0 \n0 1 0 \n1 1 0 \n1 1 0 \n"}
+{"id":"moonsun-10","kind":"url","input":"moonsun/3/3/50kgg10"}
+{"id":"moonsun-11","kind":"fileio","input":"pzprv3.2\nmoonsun\n2\n4\n1 0 1 \n1 0 1 \n0 1 1 0 \n. . 1 . \n2 . . . \n-1 0 0 \n0 -1 0 \n0 0 1 0 \n2 0 0 2 \n2 0 2 0 \n"}
+{"id":"moonsun-12","kind":"url","input":"moonsun/4/2/mgc160"}
+{"id":"moonsun-13","kind":"fileio","input":"pzprv3.2\nmoonsun\n5\n1\n\n\n\n\n\n0 \n0 \n0 \n0 \n. \n. \n. \n. \n1 \n\n\n\n\n\n-1 \n1 \n-1 \n1 \n0 \n0 \n0 \n1 \n0 \n"}
+{"id":"moonsun-14","kind":"url","input":"moonsun/1/5/003"}
+{"id":"moonsun-15","kind":"fileio","input":"pzprv3.2\nmoonsun\n1\n2\n0 \n2 . \n0 \n0 0 \n"}
+{"id":"moonsun-16","kind":"url","input":"moonsun/2/1/0i"}
+{"id":"moonsun-17","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n4\n1 0 1 \n0 0 1 \n0 0 1 \n0 0 0 \n0 1 1 0 \n0 0 1 1 \n0 0 0 0 \n1 2 . 2 \n. . . 1 \n2 . . . \n. 1 . . \n-1 0 1 \n-1 0 0 \n0 0 0 \n0 0 1 \n0 -1 1 0 \n1 1 1 0 \n0 0 0 0 \n0 1 2 0 \n0 0 0 0 \n0 1 1 0 \n2 0 2 1 \n"}
+{"id":"moonsun-18","kind":"url","input":"moonsun/4/4/ki0cc0fi5030"}
+{"id":"moonsun-19","kind":"fileio","input":"pzprv3.2\nmoonsun\n1\n1\n\n. \n\n0 \n"}
+{"id":"moonsun-20","kind":"url","input":"moonsun/1/1/0"}
+{"id":"moonsun-21","kind":"fileio","input":"pzprv3.2\nmoonsun\n1\n1\n\n. \n\n0 \n"}
+{"id":"moonsun-22","kind":"url","input":"moonsun/1/1/0"}
+{"id":"moonsun-23","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n4\n0 1 0 \n1 0 0 \n0 0 0 \n0 1 0 \n1 1 1 0 \n1 1 0 1 \n0 0 1 1 \n. . . . \n. 2 1 2 \n. 1 . . \n. . . . \n0 1 0 \n-1 0 0 \n0 0 0 \n-1 1 0 \n0 0 0 0 \n1 0 1 0 \n0 1 0 0 \n0 0 0 0 \n0 2 0 2 \n0 0 0 0 \n0 1 1 0 \n"}
+{"id":"moonsun-24","kind":"url","input":"moonsun/4/4/a0gtko02f900"}
+{"id":"moonsun-25","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n5\n0 0 0 0 \n0 0 1 1 \n0 0 0 0 \n1 0 0 1 0 \n1 0 1 0 1 \n. . . . . \n2 2 1 . . \n. . . . . \n1 0 0 0 \n0 0 0 0 \n1 0 0 0 \n0 0 -1 0 0 \n0 0 0 0 0 \n0 1 0 2 0 \n2 2 2 0 0 \n1 0 1 1 0 \n"}
+{"id":"moonsun-26","kind":"url","input":"moonsun/5/3/0c0il02l00"}
+{"id":"moonsun-27","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n4\n1 1 1 \n0 1 0 \n0 0 0 \n1 0 0 \n0 1 1 1 \n0 1 0 0 \n1 0 1 0 \n1 . . . \n2 1 . 1 \n1 . . . \n. 1 . . \n1 0 0 \n0 0 0 \n0 1 0 \n0 1 0 \n0 0 0 0 \n0 1 0 0 \n0 0 0 0 \n2 0 2 2 \n0 0 0 2 \n2 2 0 0 \n2 2 1 0 \n"}
+{"id":"moonsun-28","kind":"url","input":"moonsun/4/4/t10eig974030"}
+{"id":"moonsun-29","kind":"fileio","input":"pzprv3.2\nmoonsun\n2\n4\n1 0 1 \n1 0 1 \n0 0 0 0 \n2 . . 1 \n2 . . . \n0 0 1 \n0 0 0 \n1 0 0 -1 \n0 1 0 0 \n0 0 2 0 \n"}
+{"id":"moonsun-30","kind":"url","input":"moonsun/4/2/mg0if0"}
+{"id":"moonsun-31","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n2\n0 \n1 \n1 \n1 1 \n1 0 \n1 . \n. . \n. . \n0 \n0 \n0 \n0 0 \n0 0 \n1 1 \n0 0 \n0 0 \n"}
+{"id":"moonsun-32","kind":"url","input":"moonsun/2/3/cs90"}
+{"id":"moonsun-33","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n6\n0 1 1 0 1 \n1 1 1 1 0 \n0 1 0 0 1 \n0 0 1 0 0 0 \n1 0 1 0 0 1 \n. . . . . . \n. 2 . 1 . 2 \n1 1 . 1 . 1 \n-1 0 -1 0 1 \n0 0 -1 0 -1 \n0 0 0 1 0 \n0 0 1 0 -1 0 \n1 0 0 0 1 0 \n0 2 0 1 0 0 \n1 0 0 0 0 1 \n0 0 0 0 0 0 \n"}
+{"id":"moonsun-34","kind":"url","input":"moonsun/6/3/du94a8006bca"}
+{"id":"moonsun-35","kind":"fileio","input":"pzprv3.2\nmoonsun\n2\n2\n0 \n1 \n1 1 \n. 1 \n1 . \n1 \n0 \n0 0 \n0 0 \n0 2 \n"}
+{"id":"moonsun-36","kind":"url","input":"moonsun/2/2/8o40"}
+{"id":"moonsun-37","kind":"fileio","input":"pzprv3.2\nmoonsun\n1\n6\n0 0 0 0 0 \n. 1 2 2 2 . \n0 1 0 -1 0 \n0 0 0 0 0 0 \n"}
+{"id":"moonsun-38","kind":"url","input":"moonsun/6/1/05o"}
+{"id":"moonsun-39","kind":"fileio","input":"pzprv3.2\nmoonsun\n2\n5\n0 1 0 1 \n1 0 0 0 \n0 1 1 0 1 \n. . 2 . 1 \n2 . 1 1 1 \n0 0 1 0 \n0 0 0 0 \n1 0 0 0 0 \n0 1 0 1 0 \n0 2 0 0 0 \n"}
+{"id":"moonsun-40","kind":"url","input":"moonsun/5/2/b0d2549"}
+{"id":"moonsun-41","kind":"fileio","input":"pzprv3.2\nmoonsun\n5\n5\n1 1 0 1 \n0 1 1 0 \n0 0 0 0 \n0 0 0 0 \n1 1 1 1 \n0 1 0 1 0 \n1 0 1 0 0 \n0 0 0 1 0 \n0 0 1 0 0 \n1 . . 2 1 \n. . . 2 . \n1 1 . 2 1 \n1 1 1 . 2 \n2 . 1 . . \n0 0 0 0 \n1 0 0 0 \n0 -1 0 0 \n0 1 1 0 \n0 0 0 0 \n0 0 0 0 1 \n0 0 0 0 0 \n-1 1 -1 0 0 \n0 0 0 0 0 \n1 0 0 0 2 \n2 0 2 0 2 \n1 2 2 0 0 \n0 2 0 1 0 \n0 2 1 0 0 \n"}
+{"id":"moonsun-42","kind":"url","input":"moonsun/5/5/qo0fak249l247d830"}
+{"id":"moonsun-43","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n4\n1 1 0 \n0 0 1 \n1 0 1 \n1 0 1 1 \n1 1 0 0 \n1 . . 2 \n. 2 . 2 \n. 1 2 1 \n0 0 -1 \n0 0 -1 \n0 1 -1 \n0 0 0 0 \n1 1 1 0 \n2 0 0 1 \n0 2 0 0 \n2 1 1 2 \n"}
+{"id":"moonsun-44","kind":"url","input":"moonsun/4/3/oqng9k6g"}
+{"id":"moonsun-45","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n3\n1 0 \n0 0 \n0 1 \n0 0 0 \n0 0 1 \n2 1 . \n. . . \n. . . \n1 0 \n0 0 \n0 0 \n0 1 1 \n1 0 0 \n2 0 0 \n0 1 0 \n0 1 1 \n"}
+{"id":"moonsun-46","kind":"url","input":"moonsun/3/3/gg0gl00"}
+{"id":"moonsun-47","kind":"fileio","input":"pzprv3.2\nmoonsun\n5\n5\n1 1 0 1 \n1 0 0 1 \n1 1 0 1 \n0 0 0 0 \n0 0 0 0 \n1 1 0 0 1 \n0 0 0 0 0 \n0 0 1 1 1 \n1 0 0 0 0 \n2 1 . . . \n. . . . . \n. 2 . 2 . \n2 . 1 1 1 \n. . 2 2 2 \n0 -1 0 0 \n0 0 0 0 \n-1 1 -1 0 \n0 0 -1 1 \n0 -1 0 0 \n-1 0 0 0 0 \n0 1 1 0 0 \n1 0 0 0 0 \n1 0 0 -1 0 \n2 0 0 1 1 \n0 0 2 0 2 \n1 2 2 0 0 \n0 0 0 2 2 \n0 1 2 2 0 \n"}
+{"id":"moonsun-48","kind":"url","input":"moonsun/5/5/r780p07gl0026jc8i"}
+{"id":"moonsun-49","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n1\n\n\n\n\n0 \n0 \n0 \n1 \n2 \n. \n1 \n\n\n\n\n1 \n1 \n1 \n0 \n0 \n2 \n1 \n"}
+{"id":"moonsun-50","kind":"url","input":"moonsun/1/4/0f9"}
+{"id":"moonsun-51","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n5\n1 1 0 0 \n0 0 0 0 \n0 0 0 1 \n0 0 0 1 \n0 1 1 0 0 \n1 0 0 0 0 \n0 0 0 0 0 \n. . . . . \n1 . . 1 . \n. . . . . \n1 1 1 . . \n0 -1 0 0 \n0 0 1 1 \n0 -1 1 0 \n0 1 0 0 \n1 1 0 -1 0 \n0 0 0 1 0 \n0 0 1 0 0 \n0 0 0 0 0 \n1 1 0 0 2 \n0 2 2 0 1 \n0 0 0 0 0 \n"}
+{"id":"moonsun-52","kind":"url","input":"moonsun/5/4/o08gcg001100d0"}
+{"id":"moonsun-53","kind":"fileio","input":"pzprv3.2\nmoonsun\n3\n1\n\n\n\n0 \n1 \n1 \n. \n2 \n\n\n\n0 \n0 \n2 \n0 \n0 \n"}
+{"id":"moonsun-54","kind":"url","input":"moonsun/1/3/8b"}
+{"id":"moonsun-55","kind":"fileio","input":"pzprv3.2\nmoonsun\n1\n2\n0 \n. . \n1 \n1 1 \n"}
+{"id":"moonsun-56","kind":"url","input":"moonsun/2/1/00"}
+{"id":"moonsun-57","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n6\n0 0 0 0 0 \n0 0 0 0 1 \n0 0 0 1 0 \n0 0 0 1 0 \n1 0 0 0 1 1 \n0 0 0 1 0 0 \n0 1 0 1 0 1 \n. . . 1 1 . \n. . . 2 . 1 \n2 . . 2 1 . \n1 2 . . . 1 \n1 0 0 1 0 \n0 -1 0 0 1 \n1 0 0 0 1 \n0 1 0 1 -1 \n1 0 -1 0 0 0 \n0 0 1 0 0 0 \n1 1 -1 0 1 1 \n2 0 0 0 0 0 \n2 2 0 2 0 2 \n1 2 2 2 0 1 \n2 2 0 2 0 0 \n"}
+{"id":"moonsun-58","kind":"url","input":"moonsun/6/4/0122hh2k0c0jilf1"}
+{"id":"moonsun-59","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n5\n0 0 1 0 \n1 0 1 0 \n0 0 1 0 \n1 0 1 0 \n0 0 0 1 0 \n0 1 0 0 1 \n0 0 1 1 0 \n. 1 2 . . \n1 2 . . . \n2 1 1 2 1 \n. . . 2 1 \n0 1 0 1 \n1 0 0 0 \n1 1 0 0 \n0 0 1 -1 \n0 1 0 1 0 \n0 -1 0 0 0 \n-1 0 0 0 0 \n0 0 0 2 2 \n2 0 0 0 0 \n0 0 0 0 2 \n0 0 0 1 0 \n"}
+{"id":"moonsun-60","kind":"url","input":"moonsun/5/4/58l029651i7g0l"}
+{"id":"moonsun-61","kind":"fileio","input":"pzprv3.2\nmoonsun\n4\n5\n1 0 0 0 \n1 0 0 1 \n0 1 1 1 \n1 1 1 0 \n0 0 1 0 0 \n0 0 0 1 1 \n0 0 1 1 0 \n. 2 1 . . \n. . . 1 . \n. . . . . \n. . 1 . 1 \n0 0 0 1 \n-1 0 0 0 \n0 -1 0 1 \n1 0 -1 0 \n1 -1 0 0 -1 \n0 -1 0 -1 -1 \n0 0 0 1 0 \n2 0 2 0 1 \n1 1 0 2 0 \n2 1 1 0 1 \n2 0 1 0 0 \n"}
+{"id":"moonsun-62","kind":"url","input":"moonsun/5/4/h5v04367010013"}
+{"id":"moonsun-63","kind":"fileio","input":"pzprv3.2\nmoonsun\n5\n1\n\n\n\n\n\n1 \n0 \n0 \n0 \n1 \n. \n1 \n2 \n. \n\n\n\n\n\n0 \n0 \n1 \n1 \n1 \n0 \n0 \n0 \n2 \n"}
+{"id":"moonsun-64","kind":"url","input":"moonsun/1/5/gai"}
+{"id":"moonsun-65","kind":"fileio","input":"pzprv3.2\nmoonsun\n2\n5\n0 0 1 1 \n1 0 1 0 \n1 0 0 0 0 \n. . . 1 . \n. . 1 2 . \n-1 0 0 -1 \n1 0 0 1 \n0 0 0 1 0 \n0 2 0 0 0 \n0 0 1 0 0 \n"}
+{"id":"moonsun-66","kind":"url","input":"moonsun/5/2/78g0950"}

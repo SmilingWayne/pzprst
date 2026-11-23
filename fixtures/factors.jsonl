@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"factors","generator":"tools/gen_fixtures.js"}}
+{"id":"factors-0","kind":"url","input":"https://puzz.link/p?factors/9/9/qrf7rml5bev7mqo7nkqvrnvevqpff0c-15-2476-28-e1c-10-1886-3f-14-15+1e0-36-10-48c-23e-124-51-60a4-367-7878-12-36-10-23"}
+{"id":"factors-1","kind":"url","input":"https://puzz.link/p?factors/9/9/bifreur6rrmviegecv7n6nvb7f7pjg+700-18-36fa-2a-1b-48-3f6-28-1e2c+240-1c-2d2-389-30-23e-18-286-30+2f4-5a-48e-14-36"}
+{"id":"factors-2","kind":"url","input":"https://puzz.link/p?factors/9/9/mqrerfiqfmrmqr8dhfp5vltft4vkdg8-146-2af+480+237-18-23-18-69-124-1bc-30-10-28-15-12-28-8c+2374+288-10-2a-158-30f-12-28"}
+{"id":"factors-3","kind":"url","input":"factors/4/4/"}
+{"id":"factors-4","kind":"url","input":"factors/1/1/"}
+{"id":"factors-5","kind":"url","input":"factors/1/5/"}
+{"id":"factors-6","kind":"url","input":"factors/5/1/"}
+{"id":"factors-7","kind":"fileio","input":"pzprv3\nfactors\n2\n5\n0 1 0 0 \n0 0 0 0 \n0 0 1 1 1 \n2 . 0 . . \n. . . . . \n. 1 . .[,,2,] . \n.[1,,,] 2 1 1 1 \n"}
+{"id":"factors-8","kind":"url","input":"factors/5/2/80720"}
+{"id":"factors-9","kind":"fileio","input":"pzprv3\nfactors\n5\n3\n0 0 \n1 0 \n0 0 \n1 1 \n0 0 \n0 0 0 \n0 1 0 \n1 0 1 \n0 1 0 \n2 . . \n. . . \n. . . \n. . . \n. . . \n1 2 1 \n.[1,,,] . 1 \n2 . . \n1 2 . \n. 1 . \n"}
+{"id":"factors-10","kind":"url","input":"factors/3/5/4c1ag2g"}
+{"id":"factors-11","kind":"fileio","input":"pzprv3\nfactors\n1\n5\n0 0 1 0 \n. . . . . \n2 . .[1,,,] . . \n"}
+{"id":"factors-12","kind":"url","input":"factors/5/1/4h"}
+{"id":"factors-13","kind":"fileio","input":"pzprv3\nfactors\n3\n2\n1 \n1 \n0 \n0 0 \n1 0 \n0 . \n. . \n0 . \n. 2 \n.[1,,2,] . \n.[1,,2,] . \n"}
+{"id":"factors-14","kind":"url","input":"factors/2/3/o400"}
+{"id":"factors-15","kind":"fileio","input":"pzprv3\nfactors\n3\n3\n1 0 \n0 0 \n1 1 \n1 1 0 \n1 0 0 \n. . . \n. . . \n. . . \n2 2 . \n.[1,,2,] . . \n2 . 2 \n"}
+{"id":"factors-16","kind":"url","input":"factors/3/3/hgq0i"}
+{"id":"factors-17","kind":"fileio","input":"pzprv3\nfactors\n5\n1\n\n\n\n\n\n0 \n0 \n0 \n1 \n. \n. \n. \n. \n0 \n. \n. \n1 \n1 \n2 \n"}
+{"id":"factors-18","kind":"url","input":"factors/1/5/2g0"}
+{"id":"factors-19","kind":"fileio","input":"pzprv3\nfactors\n4\n4\n0 1 0 \n0 1 1 \n0 0 1 \n1 1 1 \n0 1 1 1 \n0 1 1 0 \n0 0 0 0 \n1 . 1 . \n. . . 1 \n. . . . \n. . . . \n.[1,,,] .[1,,,] . . \n1 2 . . \n1 1 . . \n1 . . . \n"}
+{"id":"factors-20","kind":"url","input":"factors/4/4/9joeo011g1"}
+{"id":"factors-21","kind":"fileio","input":"pzprv3\nfactors\n1\n3\n0 1 \n0 . 1 \n. 2 1 \n"}
+{"id":"factors-22","kind":"url","input":"factors/3/1/801"}
+{"id":"factors-23","kind":"fileio","input":"pzprv3\nfactors\n5\n1\n\n\n\n\n\n1 \n1 \n1 \n0 \n. \n. \n0 \n. \n. \n. \n.[1,,,] \n.[,,2,] \n1 \n2 \n"}
+{"id":"factors-24","kind":"url","input":"factors/1/5/sh0g"}
+{"id":"factors-25","kind":"fileio","input":"pzprv3\nfactors\n4\n3\n1 1 \n1 0 \n1 1 \n0 1 \n0 1 0 \n0 0 0 \n0 1 1 \n2 2 . \n. - . \n. . . \n. . - \n2 . . \n.[1,,2,] . . \n. . .[1,,2,] \n1 . . \n"}
+{"id":"factors-26","kind":"url","input":"factors/3/4/tk8622../"}
+{"id":"factors-27","kind":"fileio","input":"pzprv3\nfactors\n4\n6\n0 0 0 1 1 \n0 0 0 0 1 \n0 0 1 0 1 \n0 1 0 1 0 \n0 0 0 0 0 0 \n0 0 1 0 1 1 \n1 1 1 0 0 0 \n0 . . . . 2 \n. . . . . . \n. . . . . . \n0 . . . . . \n.[1,,2,] 1 . . 2 1 \n2 1 . . . . \n2 2 . 1 . 1 \n. 1 . . 1 2 \n"}
+{"id":"factors-28","kind":"url","input":"factors/6/4/315a02v0020"}
+{"id":"factors-29","kind":"fileio","input":"pzprv3\nfactors\n1\n6\n0 0 0 1 1 \n. . . . 2 . \n2 2 . . 1 . \n"}
+{"id":"factors-30","kind":"url","input":"factors/6/1/3g2g"}
+{"id":"factors-31","kind":"fileio","input":"pzprv3\nfactors\n5\n3\n0 0 \n0 0 \n1 1 \n0 0 \n0 0 \n0 1 0 \n0 0 0 \n0 0 1 \n0 0 1 \n1 . . \n. . . \n. . . \n. . . \n. . . \n2 . 1 \n2 . 1 \n. . 2 \n. 2 . \n. 2 2 \n"}
+{"id":"factors-32","kind":"url","input":"factors/3/5/1g8281"}
+{"id":"factors-33","kind":"fileio","input":"pzprv3\nfactors\n3\n1\n\n\n\n0 \n0 \n1 \n. \n. \n. \n.[1,,,] \n. \n"}
+{"id":"factors-34","kind":"url","input":"factors/1/3/01"}
+{"id":"factors-35","kind":"fileio","input":"pzprv3\nfactors\n3\n2\n0 \n0 \n0 \n0 1 \n0 0 \n2 . \n. . \n. . \n. . \n.[1,,2,] 2 \n. 1 \n"}
+{"id":"factors-36","kind":"url","input":"factors/2/3/082"}
+{"id":"factors-37","kind":"fileio","input":"pzprv3\nfactors\n1\n2\n0 \n- . \n.[1,,2,] .[1,,2,] \n"}
+{"id":"factors-38","kind":"url","input":"factors/2/1/0./"}
+{"id":"factors-39","kind":"fileio","input":"pzprv3\nfactors\n1\n2\n1 \n- . \n1 1 \n"}
+{"id":"factors-40","kind":"url","input":"factors/2/1/g.g"}
+{"id":"factors-41","kind":"fileio","input":"pzprv3\nfactors\n3\n1\n\n\n\n1 \n1 \n. \n2 \n1 \n2 \n2 \n. \n"}
+{"id":"factors-42","kind":"url","input":"factors/1/3/og21"}
+{"id":"factors-43","kind":"fileio","input":"pzprv3\nfactors\n4\n6\n0 1 0 0 1 \n0 0 0 1 1 \n0 1 1 1 1 \n1 0 0 1 0 \n0 1 0 0 1 0 \n0 0 1 0 1 0 \n0 1 1 0 1 1 \n. . . . . . \n. . . . . . \n. . 2 . . . \n. . . . 1 . \n. 1 1 . . . \n. . 1 . . 2 \n.[,,2,] .[1,,,] .[1,,2,] 2 . . \n. .[1,,,] . . . . \n"}
+{"id":"factors-44","kind":"url","input":"factors/6/4/93fi92jci2g1"}
+{"id":"factors-45","kind":"fileio","input":"pzprv3\nfactors\n1\n4\n1 1 1 \n1 0 0 . \n. 2 . . \n"}
+{"id":"factors-46","kind":"url","input":"factors/4/1/s100g"}
+{"id":"factors-47","kind":"fileio","input":"pzprv3\nfactors\n1\n6\n0 0 0 0 0 \n. . . . . . \n1 2 2 2 . . \n"}
+{"id":"factors-48","kind":"url","input":"factors/6/1/0g"}
+{"id":"factors-49","kind":"fileio","input":"pzprv3\nfactors\n4\n2\n1 \n0 \n1 \n1 \n1 1 \n0 1 \n0 1 \n2 . \n. . \n. 2 \n. 1 \n. . \n.[1,,,] 1 \n2 . \n1 1 \n"}
+{"id":"factors-50","kind":"url","input":"factors/2/4/mqg2h21"}
+{"id":"factors-51","kind":"fileio","input":"pzprv3\nfactors\n4\n5\n1 0 0 0 \n0 0 1 0 \n0 0 0 0 \n0 1 0 1 \n1 0 1 0 1 \n0 0 1 1 0 \n1 0 1 1 0 \n2 . . . . \n2 . . . . \n. . . . . \n. . - . . \n1 2 2 . . \n. 1 . . . \n. 1 1 . . \n2 1 . 1 1 \n"}
+{"id":"factors-52","kind":"url","input":"factors/5/4/g82gl6m22./"}
+{"id":"factors-53","kind":"fileio","input":"pzprv3\nfactors\n1\n2\n0 \n1 . \n. . \n"}
+{"id":"factors-54","kind":"url","input":"factors/2/1/01"}
+{"id":"factors-55","kind":"fileio","input":"pzprv3\nfactors\n4\n2\n0 \n0 \n0 \n0 \n0 0 \n0 1 \n0 0 \n0 . \n. . \n. . \n. . \n1 .[1,,2,] \n. . \n. .[1,,2,] \n1 .[1,,2,] \n"}
+{"id":"factors-56","kind":"url","input":"factors/2/4/0200"}
+{"id":"factors-57","kind":"fileio","input":"pzprv3\nfactors\n3\n3\n0 0 \n0 0 \n0 1 \n0 0 0 \n0 0 1 \n. . . \n. . . \n. . . \n. 2 2 \n. . . \n. 2 . \n"}
+{"id":"factors-58","kind":"url","input":"factors/3/3/0g0gh"}
+{"id":"factors-59","kind":"fileio","input":"pzprv3\nfactors\n5\n3\n0 0 \n0 1 \n1 0 \n0 1 \n0 1 \n1 0 0 \n1 1 0 \n0 1 1 \n0 0 0 \n. . . \n. . . \n. . . \n. . 0 \n. . . \n.[1,,,] .[,,2,] . \n.[1,,,] 2 . \n. 2 1 \n. . 2 \n. .[,,2,] 2 \n"}
+{"id":"factors-60","kind":"url","input":"factors/3/5/35j60h0"}
+{"id":"factors-61","kind":"fileio","input":"pzprv3\nfactors\n1\n4\n1 1 0 \n1 . . . \n1 . . 2 \n"}
+{"id":"factors-62","kind":"url","input":"factors/4/1/o1h"}
+{"id":"factors-63","kind":"fileio","input":"pzprv3\nfactors\n4\n5\n0 0 0 1 \n0 0 0 0 \n1 0 0 0 \n0 0 1 0 \n0 0 0 0 0 \n0 0 1 1 0 \n0 0 0 0 0 \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n.[1,,2,] 2 . . .[1,,2,] \n1 2 . . 1 \n. . . 2 . \n1 1 .[1,,2,] . . \n"}
+{"id":"factors-64","kind":"url","input":"factors/5/4/2210060g"}
+{"id":"factors-65","kind":"fileio","input":"pzprv3\nfactors\n3\n4\n0 0 1 \n1 1 1 \n0 0 0 \n0 0 0 0 \n0 1 1 0 \n- . . . \n. . . . \n. . . . \n.[,,2,] . . . \n1 1 .[1,,2,] 2 \n2 . . 2 \n"}
+{"id":"factors-66","kind":"url","input":"factors/4/3/7g0o./"}
