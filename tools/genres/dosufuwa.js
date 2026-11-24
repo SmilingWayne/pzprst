@@ -1,0 +1,2 @@
+"use strict";
+module.exports={pid:"dosufuwa",dataset:null,urls:["https://puzz.link/p?dosufuwa/10/10/chf5jq4tc6vhlo9spmtf94rlfvabnitmsuel2bcb14641bcb", "https://puzz.link/p?dosufuwa/5/5/111gfnqt", "https://puzz.link/p?dosufuwa/4/4/3rgu8g6", "dosufuwa/4/4/", "dosufuwa/1/1/", "dosufuwa/1/5/", "dosufuwa/5/1/"],fileios:[],randomize(p,r){p.board.border.each(e=>e.setQues(r.rnd()<0.3?1:0));p.board.cell.each(c=>{if(r.rnd()<0.25)c.ques=1;else{const x=r.rnd();if(x<0.2)c.qans=1;else if(x<0.4)c.qans=2;else if(x<0.5)c.qsub=1;}});}};

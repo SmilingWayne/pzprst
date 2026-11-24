@@ -1,0 +1,68 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"heyablock","generator":"tools/gen_fixtures.js"}}
+{"id":"heyablock-0","kind":"url","input":"https://puzz.link/p?heyablock/8/8/aikl59aaikl06f637j1jpgpgi102222i22i0"}
+{"id":"heyablock-1","kind":"url","input":"https://puzz.link/p?heyablock/8/8/04j5rd8a8l60e4610vo169q0342213612"}
+{"id":"heyablock-2","kind":"url","input":"https://puzz.link/p?heyablock/10/10/11amldaqlh3265caggfu00f000vv00f600fu552233g352g541"}
+{"id":"heyablock-3","kind":"url","input":"heyablock/4/4/"}
+{"id":"heyablock-4","kind":"url","input":"heyablock/1/1/"}
+{"id":"heyablock-5","kind":"url","input":"heyablock/1/5/"}
+{"id":"heyablock-6","kind":"url","input":"heyablock/5/1/"}
+{"id":"heyablock-7","kind":"fileio","input":"pzprv3.1\nheyablock\n5\n5\n0 0 1 1 \n1 0 1 0 \n0 1 0 0 \n0 0 0 0 \n0 0 0 0 \n1 0 0 0 0 \n1 1 1 1 0 \n1 0 0 0 0 \n1 1 0 1 0 \n2 . . . . \n- . . . . \n. . . . . \n. . . . . \n. . . . . \n+ . . . # \n. . . . # \n. . . . + \n. # . + . \n# . . . . \n"}
+{"id":"heyablock-8","kind":"url","input":"heyablock/5/5/7900gugq2g./"}
+{"id":"heyablock-9","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n3\n1 1 \n2 1 . \n. # # \n"}
+{"id":"heyablock-10","kind":"url","input":"heyablock/3/1/o21g"}
+{"id":"heyablock-11","kind":"fileio","input":"pzprv3.1\nheyablock\n5\n5\n1 0 1 1 \n1 0 1 0 \n0 0 1 0 \n0 1 0 1 \n0 0 1 0 \n0 1 0 1 0 \n0 0 0 0 1 \n0 1 0 0 1 \n1 0 1 0 0 \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n# # . . + \n. . . . . \n# . . # . \n+ # # . + \n. . . . . \n"}
+{"id":"heyablock-12","kind":"url","input":"heyablock/5/5/n8iia19kh"}
+{"id":"heyablock-13","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n3\n1 0 \n- - . \n# . . \n"}
+{"id":"heyablock-14","kind":"url","input":"heyablock/3/1/g../"}
+{"id":"heyablock-15","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n5\n0 0 1 0 \n0 . . . . \n. . . # . \n"}
+{"id":"heyablock-16","kind":"url","input":"heyablock/5/1/40g"}
+{"id":"heyablock-17","kind":"fileio","input":"pzprv3.1\nheyablock\n3\n6\n1 0 0 0 0 \n1 1 1 1 0 \n1 1 1 0 0 \n1 0 0 1 1 0 \n1 1 0 0 1 1 \n. 1 . . . . \n2 . . 1 . . \n2 . . . . . \n. # + . . . \n. + + . + . \n. + . . # # \n"}
+{"id":"heyablock-18","kind":"url","input":"heyablock/6/3/gusjcog1212g"}
+{"id":"heyablock-19","kind":"fileio","input":"pzprv3.1\nheyablock\n5\n4\n0 0 0 \n1 0 0 \n1 1 0 \n1 1 0 \n0 1 0 \n1 1 0 0 \n1 0 0 1 \n0 1 0 0 \n1 0 1 0 \n2 . . . \n2 . . . \n0 . . . \n. . . . \n0 . . . \n. . # . \n. # . . \n# . . . \n# . # + \n+ . . . \n"}
+{"id":"heyablock-20","kind":"url","input":"heyablock/4/5/2dip5502200"}
+{"id":"heyablock-21","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n2\n0 \n0 \n1 0 \n2 . \n. . \n. . \n. # \n"}
+{"id":"heyablock-22","kind":"url","input":"heyablock/2/2/0g2"}
+{"id":"heyablock-23","kind":"fileio","input":"pzprv3.1\nheyablock\n3\n3\n0 0 \n0 1 \n0 1 \n1 0 1 \n0 0 0 \n0 . . \n. . . \n. . . \n. + # \n. . # \n. + . \n"}
+{"id":"heyablock-24","kind":"url","input":"heyablock/3/3/2gk00g"}
+{"id":"heyablock-25","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n1\n\n\n1 \n0 \n- \n. \n# \n"}
+{"id":"heyablock-26","kind":"url","input":"heyablock/1/2/g0./"}
+{"id":"heyablock-27","kind":"fileio","input":"pzprv3.1\nheyablock\n5\n2\n1 \n0 \n0 \n1 \n1 \n0 1 \n1 0 \n1 1 \n0 0 \n2 0 \n. . \n. . \n. . \n. . \n+ . \n# + \n+ . \n. # \n. . \n"}
+{"id":"heyablock-28","kind":"url","input":"heyablock/2/5/jdg20h"}
+{"id":"heyablock-29","kind":"fileio","input":"pzprv3.1\nheyablock\n3\n4\n0 0 0 \n1 1 0 \n0 0 1 \n0 0 0 1 \n0 0 1 0 \n. . . . \n. . . . \n. . . . \n. . . . \n. . . . \n. . . # \n"}
+{"id":"heyablock-30","kind":"url","input":"heyablock/4/3/3228g"}
+{"id":"heyablock-31","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n2\n1 \n. 2 \n+ . \n"}
+{"id":"heyablock-32","kind":"url","input":"heyablock/2/1/gg2"}
+{"id":"heyablock-33","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n6\n1 0 0 1 0 \n. 2 . . 0 . \n+ . . . . + \n"}
+{"id":"heyablock-34","kind":"url","input":"heyablock/6/1/ig20"}
+{"id":"heyablock-35","kind":"fileio","input":"pzprv3.1\nheyablock\n4\n3\n0 0 \n0 1 \n0 0 \n1 0 \n0 0 0 \n0 0 0 \n1 0 0 \n. . . \n. . . \n. . . \n1 . . \n# . . \n. . # \n+ # . \n. . + \n"}
+{"id":"heyablock-36","kind":"url","input":"heyablock/3/4/2808g1"}
+{"id":"heyablock-37","kind":"fileio","input":"pzprv3.1\nheyablock\n5\n1\n\n\n\n\n\n0 \n1 \n0 \n0 \n1 \n. \n. \n. \n. \n. \n. \n. \n+ \n# \n"}
+{"id":"heyablock-38","kind":"url","input":"heyablock/1/5/81g"}
+{"id":"heyablock-39","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n5\n0 0 0 0 \n0 1 0 1 \n1 0 0 1 0 \n0 . . . . \n. . . . . \n. # . . . \n. . + . . \n"}
+{"id":"heyablock-40","kind":"url","input":"heyablock/5/2/0ki0"}
+{"id":"heyablock-41","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n2\n1 \n1 \n0 0 \n1 - \n. . \n+ . \n. . \n"}
+{"id":"heyablock-42","kind":"url","input":"heyablock/2/2/o01./"}
+{"id":"heyablock-43","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n6\n0 1 1 1 0 \n0 0 0 1 0 \n1 0 1 1 0 0 \n. . 1 0 2 . \n. . . . . . \n. + . . + . \n. . . . . # \n"}
+{"id":"heyablock-44","kind":"url","input":"heyablock/6/2/e2m0g102"}
+{"id":"heyablock-45","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n1\n\n. \n. \n"}
+{"id":"heyablock-46","kind":"url","input":"heyablock/1/1/g"}
+{"id":"heyablock-47","kind":"fileio","input":"pzprv3.1\nheyablock\n4\n3\n1 1 \n0 0 \n0 0 \n0 0 \n1 0 0 \n0 1 0 \n1 0 0 \n0 . . \n0 . . \n. . . \n. . . \n. # # \n+ # . \n. + . \n. # . \n"}
+{"id":"heyablock-48","kind":"url","input":"heyablock/3/4/o0h800"}
+{"id":"heyablock-49","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n1\n\n1 \n# \n"}
+{"id":"heyablock-50","kind":"url","input":"heyablock/1/1/1"}
+{"id":"heyablock-51","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n6\n0 0 1 0 1 \n. . . 0 . 0 \n. # . . . . \n"}
+{"id":"heyablock-52","kind":"url","input":"heyablock/6/1/5g00"}
+{"id":"heyablock-53","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n2\n1 \n1 \n0 1 \n1 . \n. . \n. . \n. + \n"}
+{"id":"heyablock-54","kind":"url","input":"heyablock/2/2/o81h"}
+{"id":"heyablock-55","kind":"fileio","input":"pzprv3.1\nheyablock\n4\n1\n\n\n\n\n0 \n1 \n0 \n2 \n. \n. \n. \n# \n. \n. \n. \n"}
+{"id":"heyablock-56","kind":"url","input":"heyablock/1/4/82g"}
+{"id":"heyablock-57","kind":"fileio","input":"pzprv3.1\nheyablock\n4\n4\n1 0 1 \n0 0 0 \n1 0 0 \n0 0 0 \n0 0 0 0 \n0 0 0 0 \n1 0 0 0 \n1 . . . \n. . . . \n. . . . \n. . . . \n. . . # \n# . # . \n. + . . \n. # . . \n"}
+{"id":"heyablock-58","kind":"url","input":"heyablock/4/4/k800201"}
+{"id":"heyablock-59","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n4\n0 0 1 \n1 1 0 \n0 0 0 1 \n- . . . \n. . . . \n. . . . \n. # . # \n"}
+{"id":"heyablock-60","kind":"url","input":"heyablock/4/2/702.g"}
+{"id":"heyablock-61","kind":"fileio","input":"pzprv3.1\nheyablock\n3\n2\n0 \n1 \n1 \n1 0 \n0 0 \n- . \n0 . \n. . \n. . \n. + \n# . \n"}
+{"id":"heyablock-62","kind":"url","input":"heyablock/2/3/cg.0"}
+{"id":"heyablock-63","kind":"fileio","input":"pzprv3.1\nheyablock\n1\n1\n\n1 \n. \n"}
+{"id":"heyablock-64","kind":"url","input":"heyablock/1/1/1"}
+{"id":"heyablock-65","kind":"fileio","input":"pzprv3.1\nheyablock\n2\n5\n0 1 0 0 \n0 1 0 1 \n0 1 0 0 0 \n2 . 0 . . \n. . . . . \n. # . . # \n. . . . + \n"}
+{"id":"heyablock-66","kind":"url","input":"heyablock/5/2/8k820"}

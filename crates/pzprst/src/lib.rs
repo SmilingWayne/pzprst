@@ -24,7 +24,7 @@ mod url;
 mod variety;
 mod variety_table;
 
-pub use board::{Board, DedupeKey, Group, Obj, Options, DEDUPE_POLICY};
+pub use board::{Board, DedupeKey, Group, Obj, Options, Segment, DEDUPE_POLICY};
 pub use error::{Diagnostic, DiagnosticCode, Error, Result};
 pub use genres::supported;
 pub use transform::Transform;

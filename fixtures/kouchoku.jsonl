@@ -1,0 +1,69 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"kouchoku","generator":"tools/gen_fixtures.js"}}
+{"id":"kouchoku-0","kind":"url","input":"https://puzz.link/p?kouchoku/6/6/.cb1a0b3c1a0b4.cbca1b4ca0c3.0c1"}
+{"id":"kouchoku-1","kind":"url","input":"https://puzz.link/p?kouchoku/5/5/0.2bcb0.c1ab0.0c2a3cb1b3"}
+{"id":"kouchoku-2","kind":"url","input":"https://puzz.link/p?kouchoku/16/9/9990..5amogus9990s1u1s9996o9...91.m991"}
+{"id":"kouchoku-3","kind":"url","input":"kouchoku/4/4/"}
+{"id":"kouchoku-4","kind":"url","input":"kouchoku/1/1/"}
+{"id":"kouchoku-5","kind":"url","input":"kouchoku/1/5/"}
+{"id":"kouchoku-6","kind":"url","input":"kouchoku/5/1/"}
+{"id":"kouchoku-7","kind":"fileio","input":"pzprv3/kouchoku/2/2/1 . 2 /. 3 . /- . . /2/0 0 4 4/4 0 0 4/"}
+{"id":"kouchoku-8","kind":"fileio","input":"pzprv3\nkouchoku\n5\n1\n3 1 \n. 1 \n. . \n. . \n2 . \n2 . \n3\n2 2 2 4\n2 2 2 8\n0 10 2 10\n"}
+{"id":"kouchoku-9","kind":"url","input":"kouchoku/1/5/ca0a3b0b0"}
+{"id":"kouchoku-10","kind":"fileio","input":"pzprv3\nkouchoku\n4\n1\n. . \n1 . \n. 2 \n. 2 \n. 2 \n3\n0 0 0 4\n0 2 2 8\n0 6 2 0\n"}
+{"id":"kouchoku-11","kind":"url","input":"kouchoku/1/4/1a1b0b0b"}
+{"id":"kouchoku-12","kind":"fileio","input":"pzprv3\nkouchoku\n4\n2\n. 3 . \n3 3 1 \n2 . . \n2 . . \n. . 3 \n3\n0 8 2 0\n2 6 4 0\n0 2 4 6\n"}
+{"id":"kouchoku-13","kind":"url","input":"kouchoku/2/4/0c0ccab1b3c"}
+{"id":"kouchoku-14","kind":"fileio","input":"pzprv3\nkouchoku\n4\n4\n2 2 . 3 3 \n. . 2 . 3 \n2 . 1 3 . \n. 1 . . . \n2 . . 1 1 \n3\n2 8 8 0\n4 0 4 2\n8 0 8 2\n"}
+{"id":"kouchoku-15","kind":"url","input":"kouchoku/4/4/bb0cc1b0cb0ac1a2b1aa"}
+{"id":"kouchoku-16","kind":"fileio","input":"pzprv3\nkouchoku\n3\n1\n. 3 \n. 1 \n1 2 \n. . \n3\n2 0 2 4\n0 0 0 2\n2 2 2 6\n"}
+{"id":"kouchoku-17","kind":"url","input":"kouchoku/1/3/0c0aab1"}
+{"id":"kouchoku-18","kind":"fileio","input":"pzprv3\nkouchoku\n5\n1\n. . \n1 2 \n. . \n2 . \n2 . \n2 . \n3\n0 6 2 0\n0 6 2 4\n2 2 2 4\n"}
+{"id":"kouchoku-19","kind":"url","input":"kouchoku/1/5/1ab1b0b0b0"}
+{"id":"kouchoku-20","kind":"fileio","input":"pzprv3\nkouchoku\n3\n5\n. . . 2 . . \n. . 1 . 3 . \n. . . . 1 . \n. . . 1 . 3 \n3\n4 0 4 4\n2 2 4 2\n6 2 6 4\n"}
+{"id":"kouchoku-21","kind":"url","input":"kouchoku/5/3/2b3a0c4a3a0c"}
+{"id":"kouchoku-22","kind":"fileio","input":"pzprv3\nkouchoku\n5\n2\n. 1 . \n. 3 . \n2 1 . \n1 . . \n. . . \n3 . . \n3\n2 0 2 10\n2 6 4 2\n0 2 0 10\n"}
+{"id":"kouchoku-23","kind":"url","input":"kouchoku/2/5/0a1c0ba0a4c1"}
+{"id":"kouchoku-24","kind":"fileio","input":"pzprv3\nkouchoku\n4\n6\n. . . . . 3 2 \n. . 3 . 3 3 1 \n. 2 . . . . 1 \n. 3 2 3 . . . \n. . 2 1 . 2 2 \n3\n8 4 12 2\n2 6 10 2\n10 8 12 0\n"}
+{"id":"kouchoku-25","kind":"url","input":"kouchoku/6/4/4cb1c0cca0b3a0cbc4ba0bb"}
+{"id":"kouchoku-26","kind":"fileio","input":"pzprv3\nkouchoku\n4\n1\n3 . \n. . \n. . \n. . \n1 . \n3\n0 0 2 6\n0 8 2 6\n0 6 0 8\n"}
+{"id":"kouchoku-27","kind":"url","input":"kouchoku/1/4/c6a0"}
+{"id":"kouchoku-28","kind":"fileio","input":"pzprv3\nkouchoku\n3\n1\n1 2 \n. . \n. . \n1 2 \n3\n0 0 2 0\n0 0 2 6\n0 2 0 6\n"}
+{"id":"kouchoku-29","kind":"url","input":"kouchoku/1/3/ab3ab"}
+{"id":"kouchoku-30","kind":"fileio","input":"pzprv3\nkouchoku\n5\n1\n. 3 \n. . \n. . \n1 . \n. 3 \n. 3 \n3\n0 10 2 6\n2 6 2 8\n0 2 0 10\n"}
+{"id":"kouchoku-31","kind":"url","input":"kouchoku/1/5/0c3a1c0c"}
+{"id":"kouchoku-32","kind":"fileio","input":"pzprv3\nkouchoku\n4\n1\n. . \n. . \n. . \n3 . \n1 2 \n3\n0 0 0 6\n0 4 2 2\n0 6 2 4\n"}
+{"id":"kouchoku-33","kind":"url","input":"kouchoku/1/4/5c0ab"}
+{"id":"kouchoku-34","kind":"fileio","input":"pzprv3\nkouchoku\n2\n3\n. . 3 . \n. 3 . 2 \n1 1 . . \n3\n0 4 2 4\n4 2 6 0\n2 0 6 2\n"}
+{"id":"kouchoku-35","kind":"url","input":"kouchoku/3/2/1c1c0baa1"}
+{"id":"kouchoku-36","kind":"fileio","input":"pzprv3\nkouchoku\n1\n6\n. . 2 1 2 . 1 \n1 . 1 . . . . \n3\n6 0 10 0\n10 0 12 2\n4 0 6 0\n"}
+{"id":"kouchoku-37","kind":"url","input":"kouchoku/6/1/1bab0aa0a3"}
+{"id":"kouchoku-38","kind":"fileio","input":"pzprv3\nkouchoku\n1\n5\n. 3 2 3 . 1 \n1 . 2 2 . . \n3\n4 2 8 2\n8 0 10 2\n0 0 4 0\n"}
+{"id":"kouchoku-39","kind":"url","input":"kouchoku/5/1/0cbc0aa0bb1"}
+{"id":"kouchoku-40","kind":"fileio","input":"pzprv3\nkouchoku\n1\n5\n3 . 2 . . 1 \n1 . . . 2 . \n3\n2 0 8 0\n0 0 0 2\n0 2 2 2\n"}
+{"id":"kouchoku-41","kind":"url","input":"kouchoku/5/1/c0b1aa2b0"}
+{"id":"kouchoku-42","kind":"fileio","input":"pzprv3\nkouchoku\n1\n1\n. . \n. . \n3\n0 0 2 2\n0 0 2 2\n0 2 2 2\n"}
+{"id":"kouchoku-43","kind":"url","input":"kouchoku/1/1/3"}
+{"id":"kouchoku-44","kind":"fileio","input":"pzprv3\nkouchoku\n2\n2\n2 3 1 \n2 2 . \n. 3 . \n3\n0 4 4 2\n2 0 4 4\n0 2 2 4\n"}
+{"id":"kouchoku-45","kind":"url","input":"kouchoku/2/2/bcabb1c0"}
+{"id":"kouchoku-46","kind":"fileio","input":"pzprv3\nkouchoku\n5\n5\n. 2 2 1 . 1 \n1 1 . . . . \n2 2 3 . . 1 \n2 1 . . 2 2 \n. . . 1 . . \n1 1 . 1 . 1 \n3\n4 8 6 10\n4 6 6 4\n2 6 4 0\n"}
+{"id":"kouchoku-47","kind":"url","input":"kouchoku/5/5/0bba0aaa3bbc1aba1bb2a1aa0a0a"}
+{"id":"kouchoku-48","kind":"fileio","input":"pzprv3\nkouchoku\n2\n4\n. 3 2 3 . \n. 1 1 1 . \n. 3 2 3 2 \n3\n2 0 6 4\n6 4 8 0\n0 4 4 0\n"}
+{"id":"kouchoku-49","kind":"url","input":"kouchoku/4/2/0cbc1aaa1cbcb"}
+{"id":"kouchoku-50","kind":"fileio","input":"pzprv3\nkouchoku\n5\n5\n. . 1 . 3 . \n2 . 3 . . 1 \n. . . . . . \n2 . . . 1 . \n. . . . 2 1 \n3 . . 3 1 1 \n3\n2 6 8 4\n4 10 6 0\n8 2 10 0\n"}
+{"id":"kouchoku-51","kind":"url","input":"kouchoku/5/5/1a0c0b0c1a5b2a4bac1caa"}
+{"id":"kouchoku-52","kind":"fileio","input":"pzprv3\nkouchoku\n3\n5\n. . . . . . \n3 2 3 . . . \n. 2 . . . . \n. . 1 1 1 3 \n3\n4 0 8 6\n2 2 8 4\n8 0 10 0\n"}
+{"id":"kouchoku-53","kind":"url","input":"kouchoku/5/3/5cbc3b5aaac"}
+{"id":"kouchoku-54","kind":"fileio","input":"pzprv3\nkouchoku\n2\n3\n. . . 3 \n2 2 1 . \n. 3 . 2 \n3\n6 2 6 4\n0 0 2 0\n2 4 6 0\n"}
+{"id":"kouchoku-55","kind":"url","input":"kouchoku/3/2/2cbba1c0b"}
+{"id":"kouchoku-56","kind":"fileio","input":"pzprv3\nkouchoku\n3\n4\n. 3 1 2 . \n. . . 1 . \n. . 1 1 . \n3 . . 2 . \n3\n2 2 2 4\n6 0 8 4\n4 2 8 4\n"}
+{"id":"kouchoku-57","kind":"url","input":"kouchoku/4/3/0cab3a2aa0c1b0"}
+{"id":"kouchoku-58","kind":"fileio","input":"pzprv3\nkouchoku\n3\n2\n. . . \n2 2 1 \n3 1 3 \n. . 1 \n3\n4 2 4 4\n0 6 4 0\n2 2 4 0\n"}
+{"id":"kouchoku-59","kind":"url","input":"kouchoku/2/3/2bbacac1a"}
+{"id":"kouchoku-60","kind":"fileio","input":"pzprv3\nkouchoku\n2\n2\n1 . . \n. 3 3 \n1 . . \n3\n0 0 2 2\n0 0 0 4\n0 0 4 0\n"}
+{"id":"kouchoku-61","kind":"url","input":"kouchoku/2/2/a2cca1"}
+{"id":"kouchoku-62","kind":"fileio","input":"pzprv3\nkouchoku\n3\n3\n2 . . . \n. . . . \n1 . . 1 \n. . 1 3 \n3\n4 6 6 4\n6 0 6 4\n2 0 6 6\n"}
+{"id":"kouchoku-63","kind":"url","input":"kouchoku/3/3/b6a1a1ac"}
+{"id":"kouchoku-64","kind":"fileio","input":"pzprv3\nkouchoku\n4\n4\n3 . . 3 . \n. . . . . \n3 . . . 1 \n. 1 2 . 1 \n. . . 3 3 \n3\n2 8 4 6\n6 8 8 8\n6 0 6 8\n"}
+{"id":"kouchoku-65","kind":"url","input":"kouchoku/4/4/c1c5c2a0ab0a2cc"}
+{"id":"kouchoku-66","kind":"fileio","input":"pzprv3\nkouchoku\n4\n2\n. . . \n. . 3 \n. 1 . \n. 1 1 \n2 1 2 \n3\n2 6 4 6\n2 6 4 0\n0 4 0 6\n"}
+{"id":"kouchoku-67","kind":"url","input":"kouchoku/2/4/4c0a1aabab"}

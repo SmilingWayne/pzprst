@@ -1,0 +1,69 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"nondango","generator":"tools/gen_fixtures.js"}}
+{"id":"nondango-0","kind":"url","input":"https://puzz.link/p?nondango/8/8/e6mq7rl6s44gbragndjkdu6g089jp00645p80"}
+{"id":"nondango-1","kind":"url","input":"https://puzz.link/p?nondango/8/8/j4vnaqniqq90ed0j86v8uot05qk80lgp21i00"}
+{"id":"nondango-2","kind":"url","input":"https://puzz.link/p?nondango/8/8/s14bm5atild0bjjfq7jkjeg02o280t04ggm02"}
+{"id":"nondango-3","kind":"url","input":"nondango/4/4/"}
+{"id":"nondango-4","kind":"url","input":"nondango/1/1/"}
+{"id":"nondango-5","kind":"url","input":"nondango/1/5/"}
+{"id":"nondango-6","kind":"url","input":"nondango/5/1/"}
+{"id":"nondango-7","kind":"fileio","input":"pzprv3/nondango/2/2/2/0 0 /1 1 /# % /o + /"}
+{"id":"nondango-8","kind":"fileio","input":"pzprv3\nnondango\n5\n1\n1\n0 \n0 \n0 \n0 \n0 \n+ \n# \n+ \n. \n% \n"}
+{"id":"nondango-9","kind":"url","input":"nondango/1/5/0m"}
+{"id":"nondango-10","kind":"fileio","input":"pzprv3\nnondango\n4\n2\n3\n0 0 \n1 1 \n1 2 \n2 2 \no o \no . \n+ o \no . \n"}
+{"id":"nondango-11","kind":"url","input":"nondango/2/4/4r034"}
+{"id":"nondango-12","kind":"fileio","input":"pzprv3\nnondango\n4\n6\n2\n0 0 0 0 0 1 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n% . o % # o \no o . o . % \no o o . o + \n. + o o o . \n"}
+{"id":"nondango-13","kind":"url","input":"nondango/6/4/10000g0082gn2"}
+{"id":"nondango-14","kind":"fileio","input":"pzprv3\nnondango\n1\n2\n1\n0 0 \n+ # \n"}
+{"id":"nondango-15","kind":"url","input":"nondango/2/1/0g"}
+{"id":"nondango-16","kind":"fileio","input":"pzprv3\nnondango\n4\n3\n2\n0 1 1 \n1 1 1 \n1 1 1 \n1 1 1 \n% . o \no % . \n. o o \n% o # \n"}
+{"id":"nondango-17","kind":"url","input":"nondango/3/4/g0g08o0"}
+{"id":"nondango-18","kind":"fileio","input":"pzprv3\nnondango\n5\n1\n3\n0 \n1 \n1 \n2 \n2 \n. \n# \n% \no \n. \n"}
+{"id":"nondango-19","kind":"url","input":"nondango/1/5/kh"}
+{"id":"nondango-20","kind":"fileio","input":"pzprv3\nnondango\n5\n2\n3\n0 0 \n0 0 \n1 1 \n1 1 \n2 1 \n. # \n# . \n. . \n. o \no o \n"}
+{"id":"nondango-21","kind":"url","input":"nondango/2/5/168jo"}
+{"id":"nondango-22","kind":"fileio","input":"pzprv3\nnondango\n2\n6\n5\n0 1 1 2 3 4 \n0 1 1 2 2 4 \n. % o . # o \no o o # % . \n"}
+{"id":"nondango-23","kind":"url","input":"nondango/6/2/nl10i08"}
+{"id":"nondango-24","kind":"fileio","input":"pzprv3\nnondango\n5\n4\n2\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n1 0 0 0 \n# . . . \n. . + . \no o . o \n. . + % \no % o % \n"}
+{"id":"nondango-25","kind":"url","input":"nondango/4/5/0040040fsn0"}
+{"id":"nondango-26","kind":"fileio","input":"pzprv3\nnondango\n4\n6\n4\n0 0 0 0 0 1 \n0 0 0 0 1 1 \n0 0 0 0 2 1 \n0 0 0 0 3 3 \n% o . o . o \n. . o . . . \no . o . o . \n# # . . o . \n"}
+{"id":"nondango-27","kind":"url","input":"nondango/6/4/123210gc5dqkq"}
+{"id":"nondango-28","kind":"fileio","input":"pzprv3\nnondango\n1\n1\n1\n0 \n. \n"}
+{"id":"nondango-29","kind":"url","input":"nondango/1/1/g"}
+{"id":"nondango-30","kind":"fileio","input":"pzprv3\nnondango\n2\n1\n1\n0 \n0 \n+ \no \n"}
+{"id":"nondango-31","kind":"url","input":"nondango/1/2/0g"}
+{"id":"nondango-32","kind":"fileio","input":"pzprv3\nnondango\n1\n5\n2\n0 0 1 1 1 \n. + . o . \n"}
+{"id":"nondango-33","kind":"url","input":"nondango/5/1/8t"}
+{"id":"nondango-34","kind":"fileio","input":"pzprv3\nnondango\n2\n6\n2\n0 0 0 0 0 1 \n0 0 0 0 0 0 \n. # + . . . \no . . # + % \n"}
+{"id":"nondango-35","kind":"url","input":"nondango/6/2/100gnmg"}
+{"id":"nondango-36","kind":"fileio","input":"pzprv3\nnondango\n3\n4\n3\n0 1 1 1 \n0 1 1 1 \n0 0 1 2 \no # . % \no . % % \n. # + o \n"}
+{"id":"nondango-37","kind":"url","input":"nondango/4/3/i60k4ig"}
+{"id":"nondango-38","kind":"fileio","input":"pzprv3\nnondango\n3\n4\n3\n0 0 0 1 \n0 0 0 1 \n0 0 0 2 \no . . # \no . o . \n% # . % \n"}
+{"id":"nondango-39","kind":"url","input":"nondango/4/3/4i04ckg"}
+{"id":"nondango-40","kind":"fileio","input":"pzprv3\nnondango\n4\n4\n3\n0 1 1 2 \n1 1 1 1 \n1 1 1 1 \n1 1 1 1 \no . + % \n% + o . \n. o o # \n% . . + \n"}
+{"id":"nondango-41","kind":"url","input":"nondango/4/4/k00i00cm3g"}
+{"id":"nondango-42","kind":"fileio","input":"pzprv3\nnondango\n3\n2\n3\n0 1 \n1 1 \n1 2 \n. . \no o \n. . \n"}
+{"id":"nondango-43","kind":"url","input":"nondango/2/3/kipg"}
+{"id":"nondango-44","kind":"fileio","input":"pzprv3\nnondango\n5\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n. . % \n. # o \n. . o \n. . . \no . % \n"}
+{"id":"nondango-45","kind":"url","input":"nondango/3/5/00000qdq"}
+{"id":"nondango-46","kind":"fileio","input":"pzprv3\nnondango\n3\n4\n5\n0 1 1 1 \n0 0 2 2 \n3 0 4 4 \n+ . . . \n% . o . \n. o o o \n"}
+{"id":"nondango-47","kind":"url","input":"nondango/4/3/hcfcum0"}
+{"id":"nondango-48","kind":"fileio","input":"pzprv3\nnondango\n1\n2\n2\n0 1 \no o \n"}
+{"id":"nondango-49","kind":"url","input":"nondango/2/1/g0"}
+{"id":"nondango-50","kind":"fileio","input":"pzprv3\nnondango\n2\n3\n3\n0 0 1 \n0 2 1 \n. . o \n# + % \n"}
+{"id":"nondango-51","kind":"url","input":"nondango/3/2/e8p0"}
+{"id":"nondango-52","kind":"fileio","input":"pzprv3\nnondango\n3\n4\n2\n0 0 0 1 \n0 0 0 0 \n0 0 0 0 \no % . o \n. o # . \n. . # . \n"}
+{"id":"nondango-53","kind":"url","input":"nondango/4/3/4020578"}
+{"id":"nondango-54","kind":"fileio","input":"pzprv3\nnondango\n3\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n+ . + \n# . o \n. % # \n"}
+{"id":"nondango-55","kind":"url","input":"nondango/3/3/0000t8"}
+{"id":"nondango-56","kind":"fileio","input":"pzprv3\nnondango\n1\n5\n1\n0 0 0 0 0 \n% . o o . \n"}
+{"id":"nondango-57","kind":"url","input":"nondango/5/1/09"}
+{"id":"nondango-58","kind":"fileio","input":"pzprv3\nnondango\n4\n2\n2\n0 0 \n0 1 \n0 1 \n0 1 \n. + \n+ % \n+ + \n+ + \n"}
+{"id":"nondango-59","kind":"url","input":"nondango/2/4/e80ts"}
+{"id":"nondango-60","kind":"fileio","input":"pzprv3\nnondango\n3\n6\n4\n0 0 0 0 1 1 \n0 0 0 0 1 1 \n2 0 0 0 1 3 \no % . . % . \no . . . o # \no . o . . . \n"}
+{"id":"nondango-61","kind":"url","input":"nondango/6/3/22j0886n2s"}
+{"id":"nondango-62","kind":"fileio","input":"pzprv3\nnondango\n2\n4\n2\n0 1 1 1 \n1 1 1 1 \n% . . o \n# . . + \n"}
+{"id":"nondango-63","kind":"url","input":"nondango/4/2/g0gcs"}
+{"id":"nondango-64","kind":"fileio","input":"pzprv3\nnondango\n5\n5\n1\n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n. + + . % \n. . o o o \n. . % . + \n# . . . . \n+ o o . . \n"}
+{"id":"nondango-65","kind":"url","input":"nondango/5/5/00000000uorfj"}
+{"id":"nondango-66","kind":"fileio","input":"pzprv3\nnondango\n3\n4\n2\n0 0 0 0 \n1 0 0 0 \n1 0 0 0 \n# o . + \n+ # . o \n. o # o \n"}
+{"id":"nondango-67","kind":"url","input":"nondango/4/3/28g07a0"}

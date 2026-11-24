@@ -654,7 +654,7 @@ fn encode_board_pzpr2(b: &Board, w: &mut FileWriter) {
 /// `decodeBorderArrowAns`: border line, or `-n` for a line plus cross
 /// (`qsub` 2), with an optional trailing `u`/`d`/`l`/`r` aux mark (`qsub`
 /// 11–14). Any other lowercase letter is stripped without setting a mark.
-fn decode_border_arrow_ans(
+pub(super) fn decode_border_arrow_ans(
     r: &mut FileReader,
     b: &mut Board,
     d: &mut Diagnostics,
@@ -687,7 +687,7 @@ fn decode_border_arrow_ans(
 
 /// `encodeBorderArrowAns`: `-1-line` for a line plus cross, the line itself
 /// otherwise, then the `u`/`d`/`l`/`r` aux mark; `0` when all are empty.
-fn encode_border_arrow_ans(w: &mut FileWriter, b: &Board) {
+pub(super) fn encode_border_arrow_ans(w: &mut FileWriter, b: &Board) {
     w.encode_border(b, |border| {
         let mut ca = String::new();
         if border.qsub == 2 {

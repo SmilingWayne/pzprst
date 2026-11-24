@@ -15,6 +15,8 @@ pub struct Obj {
     pub qnum2: i32,
     pub qnum3: i32,
     pub qnum4: i32,
+    /// Multiple question numbers, in their stored order.
+    pub qnums: Vec<i32>,
     pub ques: i32,
     pub qdir: i32,
     pub anum: i32,
@@ -33,6 +35,7 @@ impl Default for Obj {
             qnum2: -1,
             qnum3: -1,
             qnum4: -1,
+            qnums: Vec::new(),
             ques: 0,
             qdir: 0,
             anum: -1,
@@ -46,8 +49,8 @@ impl Default for Obj {
 }
 
 impl Obj {
-    /// Puzzle-definition properties (what URLs encode and what pzpr-trace
-    /// state matching compares): every `qnum*` slot, `ques` and `qdir`.
+    /// Scalar puzzle-definition properties: `qnum` through `qnum4`, `ques`,
+    /// and `qdir`. Compare `qnums` separately when checking full question identity.
     pub fn question(&self) -> (i32, i32, i32, i32, i32, i32) {
         (
             self.qnum, self.qnum2, self.qnum3, self.qnum4, self.ques, self.qdir,
@@ -369,6 +372,14 @@ impl Default for Options {
     }
 }
 
+/// An ordered line segment on doubled board coordinates.
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+pub struct Segment {
+    pub start: (i32, i32),
+    pub end: (i32, i32),
+    pub origin: Option<(i32, i32)>,
+}
+
 /// A static pzpr board: puzzle definition plus an optional answer snapshot.
 #[derive(Clone)]
 pub struct Board {
@@ -380,6 +391,9 @@ pub struct Board {
     pub(crate) borders: Vec<Obj>,
     pub(crate) crosses: Vec<Obj>,
     pub(crate) excells: Vec<Obj>,
+    pub segments: Vec<Segment>,
+    /// Genre-specific clue count for puzzles with a board indicator.
+    pub indicator: Option<i32>,
     pub(crate) diagnostics: Diagnostics,
 }
 
@@ -406,6 +420,8 @@ impl PartialEq for Board {
             && self.borders == other.borders
             && self.crosses == other.crosses
             && self.excells == other.excells
+            && self.segments == other.segments
+            && self.indicator == other.indicator
     }
 }
 
@@ -444,6 +460,8 @@ impl Board {
             borders: vec![Obj::default(); geom.border_count()],
             crosses: vec![Obj::default(); geom.cross_count()],
             excells: vec![Obj::default(); geom.excell_count()],
+            segments: Vec::new(),
+            indicator: None,
             diagnostics: Diagnostics::default(),
         };
         genre.init_board(&mut board);
@@ -493,7 +511,13 @@ impl Board {
         for (flag, key) in genre.rule_flags() {
             board.rules.insert(key, parts.pflag.contains(*flag));
         }
-        let rest = genre.decode_url_with_flags(&mut board, &parts.body, &parts.pflag, diags);
+        let rest = genre.decode_url_with_format(
+            &mut board,
+            &parts.body,
+            &parts.pflag,
+            parts.legacy_pzprapp,
+            diags,
+        );
         if !rest.is_empty() {
             diags.push(
                 DiagnosticCode::TrailingData,
@@ -565,13 +589,14 @@ impl Board {
     /// This is the canonical URL; any answer snapshot is not part of it.
     pub fn to_url(&self) -> Result<String> {
         let body = self.genre.encode_url(self)?;
-        let pflag: String = self
+        let flags: String = self
             .genre
             .rule_flags()
             .iter()
             .filter(|(_, key)| self.rules.get(key).copied().unwrap_or(false))
             .map(|(f, _)| *f)
             .collect();
+        let pflag = format!("{}{}", self.genre.output_flags(), flags);
         let urlid = variety::urlid(self.pid()).unwrap_or(self.pid());
         Ok(url::generate(
             urlid,
@@ -704,6 +729,11 @@ impl Board {
             ..self.geom
         };
         let map = |bx: i32, by: i32| t.map_point(bx, by, c as i32, r as i32, nc as i32, nr as i32);
+        for segment in &mut out.segments {
+            segment.start = map(segment.start.0, segment.start.1);
+            segment.end = map(segment.end.0, segment.end.1);
+            segment.origin = segment.origin.map(|(x, y)| map(x, y));
+        }
         for (i, obj) in src_cells.iter().enumerate() {
             let (bx, by) = self.geom.cell_pos(i);
             let (x, y) = map(bx, by);
@@ -729,6 +759,48 @@ impl Board {
         out.geom.excell_cols = out.genre.excell_cols(nc, nr);
         self.genre.adjust_board_data(t, &mut out);
         out
+    }
+
+    /// Apply a symmetry with pzprjs-compatible failure and segment behavior.
+    /// Unlike geometric `transform`, this reproduces the pinned reference's
+    /// rectangular-board segment turn behavior, including its exceptions.
+    pub fn try_transform(&self, t: Transform) -> Result<Board> {
+        let mut out = self.transform(t);
+        if !matches!(self.pid(), "kouchoku" | "angleloop") || self.segments.is_empty() {
+            return Ok(out);
+        }
+        let mut segments = self.segments.clone();
+        let (mut cols, mut rows) = (self.cols() as i32, self.rows() as i32);
+        for &op in Geometry::op_sequence(t) {
+            let (nc, nr) = if op.swaps_axes() {
+                (rows, cols)
+            } else {
+                (cols, rows)
+            };
+            let map = |(x, y): (i32, i32)| match op {
+                Transform::Rot90 => (2 * cols - y, x),
+                Transform::Rot270 => (y, 2 * rows - x),
+                Transform::FlipX => (2 * cols - x, y),
+                Transform::FlipY => (x, 2 * rows - y),
+                _ => (x, y),
+            };
+            for segment in &mut segments {
+                segment.start = map(segment.start);
+                segment.end = map(segment.end);
+                segment.origin = segment.origin.map(map);
+                if [segment.start, segment.end].iter().any(|&(x, y)| {
+                    x < 0 || y < 0 || x > 2 * nc || y > 2 * nr || x % 2 != 0 || y % 2 != 0
+                }) {
+                    return Err(Error::InvalidTransform(
+                        "Cannot read properties of undefined (reading 'length')".into(),
+                    ));
+                }
+            }
+            cols = nc;
+            rows = nr;
+        }
+        out.segments = segments;
+        Ok(out)
     }
 
     /// Symmetry-aware duplicate key over the genre's allowed transforms.
@@ -858,22 +930,25 @@ impl Board {
     /// Whether any answer-side property is set.
     pub fn has_snapshot(&self) -> bool {
         let d = Obj::default();
-        self.cells
-            .iter()
-            .chain(&self.borders)
-            .chain(&self.crosses)
-            .chain(&self.excells)
-            .any(|o| {
-                o.anum != d.anum
-                    || o.qans != d.qans
-                    || o.qsub != d.qsub
-                    || o.qcmp != d.qcmp
-                    || o.line != d.line
-                    || !o.snum.is_empty()
-            })
+        !self.segments.is_empty()
+            || self
+                .cells
+                .iter()
+                .chain(&self.borders)
+                .chain(&self.crosses)
+                .chain(&self.excells)
+                .any(|o| {
+                    o.anum != d.anum
+                        || o.qans != d.qans
+                        || o.qsub != d.qsub
+                        || o.qcmp != d.qcmp
+                        || o.line != d.line
+                        || !o.snum.is_empty()
+                })
     }
 
     pub fn clear_snapshot(&mut self) {
+        self.segments.clear();
         self.cells
             .iter_mut()
             .chain(self.borders.iter_mut())

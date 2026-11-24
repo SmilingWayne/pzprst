@@ -107,7 +107,7 @@ impl Genre for Yajikazu {
 /// digit a direction (`dir` 0–4) and number 0–15, `5`–`9` plus two hex digits
 /// directions 0–4 with numbers 16–255, `-` plus one hex direction and three hex
 /// digits numbers 256–4095, and `a`–`z` blank runs that skip `digit - 10` cells.
-fn decode_arrow_number16(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
+pub(super) fn decode_arrow_number16(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> String {
     let chars: Vec<char> = bstr.chars().collect();
     let n = b.cells.len();
     let (mut c, mut i) = (0usize, 0usize);
@@ -185,7 +185,7 @@ fn decode_arrow_number16(b: &mut Board, bstr: &str, d: &mut Diagnostics) -> Stri
 }
 
 /// `encodeArrowNumber16`: the inverse of [`decode_arrow_number16`].
-fn encode_arrow_number16(b: &Board) -> String {
+pub(super) fn encode_arrow_number16(b: &Board) -> String {
     let mut cm = String::new();
     let mut count = 0u32;
     for cell in &b.cells {
@@ -230,7 +230,7 @@ fn encode_arrow_number16(b: &Board) -> String {
 
 /// `decodeCellDirecQnum`: `#` is a cell with an arrow but no number, otherwise
 /// `dir,qnum` with `-` for `?`.
-fn decode_cell_direc_qnum(
+pub(super) fn decode_cell_direc_qnum(
     r: &mut FileReader,
     b: &mut Board,
     d: &mut Diagnostics,
@@ -261,7 +261,7 @@ fn decode_cell_direc_qnum(
 }
 
 /// `encodeCellDirecQnum`: `#` / `.` / `dir,qnum` per cell.
-fn encode_cell_direc_qnum(w: &mut FileWriter, b: &Board) {
+pub(super) fn encode_cell_direc_qnum(w: &mut FileWriter, b: &Board) {
     w.encode_cell(b, |cell| {
         if cell.qnum == -3 {
             "# ".into()
@@ -323,12 +323,29 @@ fn turn_ops(t: Transform) -> &'static [Turn] {
 
 /// `adjustCellArrowField(key, d, "qdir")`: each board operation turns the
 /// arrow directions before the coordinates move.
-fn adjust_cell_qdirs(b: &mut Board, t: Transform) {
+pub(super) fn adjust_cell_qdirs(b: &mut Board, t: Transform) {
     for op in turn_ops(t) {
         for cell in &mut b.cells {
             if let Some(dir) = translate_dir(*op, cell.qdir) {
                 cell.qdir = dir;
             }
+        }
+    }
+}
+
+pub(super) fn adjust_cell_numbers(b: &mut Board, t: Transform) {
+    for op in turn_ops(t) {
+        for cell in &mut b.cells {
+            if let Some(dir) = translate_dir(*op, cell.qnum) { cell.qnum = dir; }
+            if let Some(dir) = translate_dir(*op, cell.anum) { cell.anum = dir; }
+        }
+    }
+}
+
+pub(super) fn adjust_border_qdirs(b: &mut Board, t: Transform) {
+    for op in turn_ops(t) {
+        for edge in &mut b.borders {
+            if let Some(dir) = translate_dir(*op, edge.qdir) { edge.qdir = dir; }
         }
     }
 }

@@ -105,6 +105,35 @@ unset slots. They move with their cells, participate in snapshot equality, and
 are cleared by `clear_snapshot`. Other genre-specific uses of subnumbers still
 need separate ports. `Obj` is cloneable, rather than `Copy`, because these
 arrays may have more than four entries in a FileIO input.
+`Obj.qnums` stores ordered multiple-number clues; unlike pencil marks it is
+question data, participates in trace state identity, and survives answer clearing.
+Nurimaze's start and goal addresses are represented by cell `qnum2` and `qnum3`
+markers respectively, including when both addresses occupy the same cell; both
+markers move with their cells during transforms.
+Icebarn and Icelom use border `qnum2`/`qnum3` markers for their entrance and
+exit, with `qdir` for the reference arrow. Icelom's `a` URL flag selects the
+all-white variant; old URLs without it and FileIO marked `skipwhite` resolve to
+Icelom2. Icebarn also accepts the legacy pzpr applet URL formats, including the
+`c` variant, and emits canonical pzprv3 URLs.
+`Board.indicator` stores a puzzle-wide numeric clue such as Easy as ABC's letter
+count. It is question data and participates in trace state identity.
+`Board.segments` stores ordered answer segments and optional origins in doubled
+coordinates; `clear_snapshot` removes them. `Board::transform` applies the D4
+geometry and preserves the existing infallible API. For pzprjs-compatible
+operations use `Board::try_transform`: on rectangular segment boards it mirrors
+the pinned reference's segment-coordinate behavior and returns an error when the
+reference fails. The CLI uses the fallible method. The two methods therefore
+intentionally differ for these reference edge cases.
+Railpool, Makaro and Dosufuwa room-ID FileIO cannot preserve question-border
+bits adjacent to their blocked cells: importing reconstructs those bits from room
+IDs. They are ignored in trace identity, matching pzprjs's FileIO-based state
+comparison. Railpool URL output preserves the original border bits until a
+FileIO/state round trip; Makaro and Dosufuwa encode implicit walls around black
+cells immediately, matching their `isBorder` implementation.
+Legacy Bonsan URLs without the `c` format flag are inspected for room walls; as
+in pzprjs, nonzero wall data selects Heyabon. Bonsan's canonical URL always emits
+the `c` format flag. Legacy Bonsan FileIO containing question walls likewise
+selects Heyabon.
 
 Rejected alternatives: (a) typed per-genre grids only — convenient but every
 codec and transform would be a re-derivation, which is how PuzzleKit drifted;

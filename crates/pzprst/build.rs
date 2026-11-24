@@ -21,18 +21,22 @@ fn main() {
     for pid in &pids {
         assert!(
             pid.chars()
-                .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit()),
+                .all(|c| c.is_ascii_lowercase() || c.is_ascii_digit() || c == '-'),
             "genre file name must be a pzprjs pid: {pid}.rs"
         );
         let path = dir.join(format!("{pid}.rs"));
+        let module = pid.replace('-', "_");
         writeln!(
             out,
-            "#[path = {:?}]\nmod g_{pid};",
+            "#[path = {:?}]\nmod g_{module};",
             path.display().to_string()
         )
         .unwrap();
     }
-    let list: Vec<String> = pids.iter().map(|p| format!("g_{p}::GENRE")).collect();
+    let list: Vec<String> = pids
+        .iter()
+        .map(|p| format!("g_{}::GENRE", p.replace('-', "_")))
+        .collect();
     writeln!(
         out,
         "static GENRES: &[&dyn Genre] = &[{}];",

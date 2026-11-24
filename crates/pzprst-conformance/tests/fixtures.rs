@@ -4,7 +4,7 @@
 
 use std::path::{Path, PathBuf};
 
-use pzprst::{supported, Board, Options, Transform, PZPRJS_COMMIT};
+use pzprst::{supported, Board, Group, Options, Transform, PZPRJS_COMMIT};
 use serde_json::Value;
 
 struct Record {
@@ -107,7 +107,41 @@ fn parity(pid: &str) {
         );
         for t in Transform::ALL {
             let want = &r.value["transforms"][t.name()];
-            let tb = b.transform(t);
+            let direct_want = &r.value["direct_transforms"][t.name()];
+            let direct = b.try_transform(t);
+            if let Some(error) = direct_want["error"].as_str() {
+                assert!(
+                    direct
+                        .as_ref()
+                        .is_err_and(|e| e.to_string().contains(error)),
+                    "{} {t} direct expected reference error {error:?}, got {direct:?}",
+                    r.id
+                );
+            } else {
+                let direct = direct.unwrap();
+                check(
+                    &r.id,
+                    format!("{t} direct url"),
+                    direct.to_url().unwrap(),
+                    &direct_want["url"],
+                );
+                check(
+                    &r.id,
+                    format!("{t} direct fileio"),
+                    direct.to_fileio().unwrap(),
+                    &direct_want["fileio"],
+                );
+            }
+            let tb = imported.try_transform(t);
+            if let Some(error) = want["error"].as_str() {
+                assert!(
+                    tb.as_ref().is_err_and(|e| e.to_string().contains(error)),
+                    "{} {t} expected reference error {error:?}, got {tb:?}",
+                    r.id
+                );
+                continue;
+            }
+            let tb = tb.unwrap();
             check(
                 &r.id,
                 format!("{t} url"),
@@ -180,18 +214,30 @@ fn properties(pid: &str) {
     for r in load(pid) {
         let b = open(&r);
         // FileIO and state round-trip the whole board.
-        assert_eq!(
-            Board::from_fileio(&b.to_fileio().unwrap(), &opts).unwrap(),
-            b,
-            "{} fileio",
-            r.id
-        );
-        assert_eq!(
-            Board::from_state(&b.to_state().unwrap(), &opts).unwrap(),
-            b,
-            "{} state",
-            r.id
-        );
+        let file_board = Board::from_fileio(&b.to_fileio().unwrap(), &opts).unwrap();
+        let state_board = Board::from_state(&b.to_state().unwrap(), &opts).unwrap();
+        let mut comparable = b.clone();
+        if matches!(pid, "railpool" | "makaro" | "dosufuwa") {
+            // A room-id grid cannot retain wall bits adjoining a blocked cell.
+            // Preserve and compare every other object and property exactly.
+            for y in 0..b.rows() {
+                for x in 0..b.cols() {
+                    for (nx, ny) in [(x + 1, y), (x, y + 1)] {
+                        if nx >= b.cols() || ny >= b.rows() {
+                            continue;
+                        }
+                        let blocked = if pid == "railpool" { 7 } else { 1 };
+                        if b.cell(y, x).ques == blocked || b.cell(ny, nx).ques == blocked {
+                            let (bx, by) = ((x + nx + 1) as i32, (y + ny + 1) as i32);
+                            comparable.obj_mut(Group::Border, bx, by).unwrap().ques =
+                                file_board.obj(Group::Border, bx, by).unwrap().ques;
+                        }
+                    }
+                }
+            }
+        }
+        assert_eq!(file_board, comparable, "{} fileio", r.id);
+        assert_eq!(state_board, comparable, "{} state", r.id);
         // Canonical URLs are fixed points.
         let canon = b.to_url().unwrap();
         assert_eq!(

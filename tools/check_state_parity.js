@@ -4,7 +4,7 @@
 "use strict";
 const fs = require("fs");
 const path = require("path");
-const { execFileSync } = require("child_process");
+const { execFileSync, spawnSync } = require("child_process");
 const root = path.resolve(__dirname, "..");
 const args = process.argv.slice(2);
 const i = args.indexOf("--pzprjs");
@@ -24,14 +24,24 @@ const bin = path.join(metadata.target_directory, "release", "pzprst");
 const transforms = { identity: [], rot90: ["turnr"], rot180: ["turnr", "turnr"], rot270: ["turnl"], flipx: ["flipx"], flipy: ["flipy"], transpose: ["turnl", "flipy"], antitranspose: ["turnr", "flipy"] };
 
 (async () => {
-	let checks = 0;
+	let checks = 0, rejected = 0;
 	for (const pid of args) {
 		const records = fs.readFileSync(path.join(root, "fixtures", pid + ".jsonl"), "utf8").trim().split("\n").slice(1).map(JSON.parse).filter(r => r.kind === "fileio").slice(-4);
 		if (!records.length) throw Error(pid + ": no FileIO records");
 		for (const { input } of records) for (const [name, ops] of Object.entries(transforms)) {
 			const puzzle = new pzpr.Puzzle();
 			puzzle.open(input);
-			ops.forEach(op => puzzle.board.operate(op));
+			let referenceError = null;
+			try { ops.forEach(op => puzzle.board.operate(op)); }
+			catch (error) { referenceError = String((error && error.message) || error); }
+			if (referenceError !== null) {
+				const result = spawnSync(bin, ["--transform", name, "state", input], { encoding: "utf8" });
+				if (result.error || result.status === 0 || !result.stderr.includes(referenceError)) {
+					throw Error(pid + " " + name + ": expected reference transform error " + referenceError);
+				}
+				checks++; rejected++;
+				continue;
+			}
 			const expected = state.exportText(puzzle);
 			const encoded = execFileSync(bin, ["--transform", name, "state", input], { encoding: "utf8" }).trim();
 			const decoded = await state.decode(encoded, false);
@@ -41,7 +51,7 @@ const transforms = { identity: [], rot90: ["turnr"], rot180: ["turnr", "turnr"],
 			state.target(target, decoded);
 			checks++;
 		}
-		console.log(pid + ": " + records.length + " states × 8 transforms accepted");
+		console.log(pid + ": " + records.length + " states × 8 transforms checked");
 	}
-	console.log(checks + " state checks passed");
+	console.log(checks + " state checks passed (" + rejected + " reference transform errors matched)");
 })().catch(error => { console.error(error); process.exit(1); });

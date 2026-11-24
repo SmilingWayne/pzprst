@@ -1,0 +1,70 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"tapaloop","generator":"tools/gen_fixtures.js"}}
+{"id":"tapaloop-0","kind":"url","input":"https://puzz.link/p?tapaloop/11/11/tadhakhaisajs+46jaksarj4sarsadhakhadt"}
+{"id":"tapaloop-1","kind":"url","input":"https://puzz.link/p?tapaloop/6/6/1ga0h2ta0+10n2j2"}
+{"id":"tapaloop-2","kind":"url","input":"https://puzz.link/p?tapaloop/10/10/2m3kasx+5qh+5qj+5jvasj+5khatx+5qk3m2"}
+{"id":"tapaloop-3","kind":"url","input":"tapaloop/1/1/0"}
+{"id":"tapaloop-4","kind":"url","input":"tapaloop/1/1/."}
+{"id":"tapaloop-5","kind":"url","input":"tapaloop/4/4/a0a1az+10-10"}
+{"id":"tapaloop-6","kind":"url","input":"tapaloop/4/4/"}
+{"id":"tapaloop-7","kind":"url","input":"tapaloop/1/5/12345"}
+{"id":"tapaloop-8","kind":"fileio","input":"pzprv3/tapaloop/2/3/1,2 -,- 1,1,1,1 /. . . /0 0 /0 0 /0 0 0 /0 1 0 /1 0 1 /"}
+{"id":"tapaloop-9","kind":"fileio","input":"pzprv3\ntapaloop\n5\n1\n-,1,1,- \n1,2 \n8 \n- \n1,-,- \n\n\n\n\n\n0 \n0 \n0 \n0 \n0 \n0 \n1 \n1 \n1 \n"}
+{"id":"tapaloop-10","kind":"url","input":"tapaloop/1/5/-26aa8.+2d"}
+{"id":"tapaloop-11","kind":"fileio","input":"pzprv3\ntapaloop\n4\n2\n1,-,- . \n. 1,2 \n. . \n1 . \n0 \n-1 \n0 \n1 \n-1 0 \n1 0 \n0 0 \n0 0 \n1 0 \n0 0 \n0 0 \n"}
+{"id":"tapaloop-12","kind":"url","input":"tapaloop/2/4/+2dhaah1g"}
+{"id":"tapaloop-13","kind":"fileio","input":"pzprv3\ntapaloop\n4\n6\n1,-,- . - 0 -,1,1,- . \n. 1,-,- 1,-,- 1,1,2 1,1,1,1 - \n1,1,2 -,1,1,- 8 -,1,1,- . 8 \n1 . -,5 . . 1 \n1 0 0 0 0 \n0 0 0 1 0 \n0 -1 1 0 0 \n0 1 0 0 0 \n0 0 0 0 0 -1 \n0 0 0 -1 1 0 \n0 0 0 0 0 0 \n0 0 1 1 0 0 \n0 0 0 0 0 0 \n0 0 0 1 0 0 \n0 0 0 0 0 1 \n"}
+{"id":"tapaloop-14","kind":"url","input":"tapaloop/6/4/+2dg.0-26h+2d+2d+2m-87.+2m-268-26g81ga5h1"}
+{"id":"tapaloop-15","kind":"fileio","input":"pzprv3\ntapaloop\n1\n2\n1,2 . \n-1 \n0 0 \n"}
+{"id":"tapaloop-16","kind":"url","input":"tapaloop/2/1/aag"}
+{"id":"tapaloop-17","kind":"fileio","input":"pzprv3\ntapaloop\n4\n3\n. 1,2 . \n1,2 . . \n-,5 -,1,1,- 1,2 \n0 0 1,1,1,1 \n0 1 \n0 0 \n0 0 \n0 -1 \n0 0 0 \n0 0 0 \n0 1 1 \n0 0 1 \n0 0 0 \n0 1 0 \n0 0 0 \n"}
+{"id":"tapaloop-18","kind":"url","input":"tapaloop/3/4/gaagaaha5-26aa00-87"}
+{"id":"tapaloop-19","kind":"fileio","input":"pzprv3\ntapaloop\n5\n1\n0 \n. \n-,1,1,- \n. \n1 \n\n\n\n\n\n0 \n0 \n0 \n0 \n0 \n0 \n0 \n1 \n0 \n"}
+{"id":"tapaloop-20","kind":"url","input":"tapaloop/1/5/0g-26g1"}
+{"id":"tapaloop-21","kind":"fileio","input":"pzprv3\ntapaloop\n5\n2\n1 1,1,1,1 \n. . \n. -,5 \n-,1,1,- 1,1,1,1 \n. . \n0 \n0 \n0 \n0 \n0 \n0 0 \n0 0 \n-1 0 \n1 0 \n0 0 \n0 0 \n0 0 \n0 1 \n1 0 \n"}
+{"id":"tapaloop-22","kind":"url","input":"tapaloop/2/5/1-87ia5-26-87h"}
+{"id":"tapaloop-23","kind":"fileio","input":"pzprv3\ntapaloop\n2\n6\n. . . -,5 1,1,2 1,1,2 \n1,-,- . -,5 1 1 -,5 \n1 1 1 0 0 \n0 1 0 1 0 \n0 1 -1 0 0 0 \n1 1 1 0 1 0 \n0 0 0 0 0 0 \n"}
+{"id":"tapaloop-24","kind":"url","input":"tapaloop/6/2/ia5+2m+2m+2dga511a5"}
+{"id":"tapaloop-25","kind":"fileio","input":"pzprv3\ntapaloop\n5\n4\n0 1,1,1,1 1,-,- . \n. 1 . . \n-,1,1,- 1,2 -,5 0 \n8 0 1 -,1,1,- \n. 0 -,5 . \n0 0 0 \n0 1 0 \n0 1 0 \n-1 0 0 \n0 0 0 \n0 0 0 0 \n0 1 1 0 \n0 0 0 0 \n-1 0 1 0 \n0 0 0 0 \n0 1 0 0 \n0 0 1 0 \n0 0 0 1 \n0 0 0 0 \n"}
+{"id":"tapaloop-26","kind":"url","input":"tapaloop/4/5/0-87+2dh1h-26aaa50801-26g0a5g"}
+{"id":"tapaloop-27","kind":"fileio","input":"pzprv3\ntapaloop\n4\n6\n1,1,1,1 -,5 . 1,-,- . 1,1,1,1 \n-,1,1,- . . - . -,5 \n. . - . . 1,2 \n. 1 . 1,-,- . 1,2 \n0 0 0 0 0 \n0 -1 0 0 0 \n0 0 0 -1 0 \n0 0 0 -1 0 \n0 0 1 0 0 0 \n0 1 0 1 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n1 0 0 0 0 0 \n0 0 0 0 0 1 \n1 0 0 0 0 0 \n"}
+{"id":"tapaloop-28","kind":"url","input":"tapaloop/6/4/-87a5g+2dg-87-26h.ga5h.haag1g+2dgaa"}
+{"id":"tapaloop-29","kind":"fileio","input":"pzprv3\ntapaloop\n1\n1\n1,1,2 \n\n0 \n"}
+{"id":"tapaloop-30","kind":"url","input":"tapaloop/1/1/+2m"}
+{"id":"tapaloop-31","kind":"fileio","input":"pzprv3\ntapaloop\n2\n1\n1,2 \n. \n\n\n0 \n0 \n0 \n"}
+{"id":"tapaloop-32","kind":"url","input":"tapaloop/1/2/aag"}
+{"id":"tapaloop-33","kind":"fileio","input":"pzprv3\ntapaloop\n1\n5\n1,2 -,5 -,1,1,- 1,2 8 \n0 0 0 0 \n1 0 0 1 0 \n"}
+{"id":"tapaloop-34","kind":"url","input":"tapaloop/5/1/aaa5-26aa8"}
+{"id":"tapaloop-35","kind":"fileio","input":"pzprv3\ntapaloop\n2\n6\n8 1,2 0 -,1,1,- 1,1,1,1 . \n-,1,1,- 1,1,2 -,5 - -,5 1,1,1,1 \n0 0 0 0 0 \n0 0 0 0 0 \n0 1 0 1 0 0 \n0 0 0 0 0 0 \n0 1 0 1 1 0 \n"}
+{"id":"tapaloop-36","kind":"url","input":"tapaloop/6/2/8aa0-26-87g-26+2ma5.a5-87"}
+{"id":"tapaloop-37","kind":"fileio","input":"pzprv3\ntapaloop\n3\n4\n- . 1,1,2 1,1,1,1 \n- 1,2 8 . \n. 1,1,2 . - \n0 1 0 \n0 0 1 \n0 -1 0 \n0 -1 1 1 \n0 1 1 0 \n1 1 0 0 \n0 0 0 0 \n0 0 0 1 \n"}
+{"id":"tapaloop-38","kind":"url","input":"tapaloop/4/3/.g+2m-87.aa8h+2mg./"}
+{"id":"tapaloop-39","kind":"fileio","input":"pzprv3\ntapaloop\n3\n4\n1,1,1,1 . - . \n- 1 -,1,1,- 1,-,- \n. 1,1,1,1 1,1,1,1 -,1,1,- \n1 0 0 \n0 0 0 \n0 0 0 \n-1 0 1 1 \n0 0 1 -1 \n0 0 0 0 \n1 1 0 0 \n0 0 0 1 \n"}
+{"id":"tapaloop-40","kind":"url","input":"tapaloop/4/3/-87g.g.1-26+2dg-87-87-26"}
+{"id":"tapaloop-41","kind":"fileio","input":"pzprv3\ntapaloop\n4\n4\n. . 1,-,- 1,2 \n. 1 . 1 \n. 1,-,- -,1,1,- 1,1,1,1 \n. 1,1,2 1,-,- 0 \n0 0 0 \n1 1 0 \n0 0 0 \n0 1 0 \n1 0 1 1 \n-1 0 0 0 \n0 0 0 1 \n0 0 1 0 \n0 0 0 0 \n0 0 0 0 \n0 0 1 0 \n"}
+{"id":"tapaloop-42","kind":"url","input":"tapaloop/4/4/h+2daag1g1g+2d-26-87g+2m+2d0"}
+{"id":"tapaloop-43","kind":"fileio","input":"pzprv3\ntapaloop\n3\n2\n- . \n-,5 . \n1,1,1,1 1,1,1,1 \n0 \n1 \n0 \n0 0 \n0 -1 \n0 1 \n0 0 \n0 0 \n"}
+{"id":"tapaloop-44","kind":"url","input":"tapaloop/2/3/.ga5g-87-87"}
+{"id":"tapaloop-45","kind":"fileio","input":"pzprv3\ntapaloop\n5\n3\n. 0 . \n1,1,1,1 1,2 -,5 \n1,1,2 1,2 1 \n. -,1,1,- 1,1,1,1 \n-,1,1,- . 1,1,2 \n0 -1 \n0 0 \n0 0 \n0 0 \n-1 0 \n0 0 0 \n0 0 0 \n-1 0 0 \n0 1 -1 \n0 0 0 \n0 0 1 \n0 0 1 \n0 0 0 \n0 0 0 \n"}
+{"id":"tapaloop-46","kind":"url","input":"tapaloop/3/5/g0g-87aaa5+2maa1g-26-87-26g+2m"}
+{"id":"tapaloop-47","kind":"fileio","input":"pzprv3\ntapaloop\n3\n4\n. -,5 . . \n1 - . 1,1,1,1 \n0 . 0 -,5 \n0 -1 0 \n0 0 0 \n0 0 0 \n0 0 1 0 \n0 0 -1 0 \n0 0 0 0 \n0 1 1 1 \n0 0 0 0 \n"}
+{"id":"tapaloop-48","kind":"url","input":"tapaloop/4/3/ga5h1.g-870g0a5"}
+{"id":"tapaloop-49","kind":"fileio","input":"pzprv3\ntapaloop\n1\n2\n. 1 \n0 \n0 1 \n"}
+{"id":"tapaloop-50","kind":"url","input":"tapaloop/2/1/g1"}
+{"id":"tapaloop-51","kind":"fileio","input":"pzprv3\ntapaloop\n2\n3\n1,1,2 - 1,2 \n-,1,1,- -,5 - \n0 0 \n1 0 \n-1 1 0 \n1 1 1 \n0 0 1 \n"}
+{"id":"tapaloop-52","kind":"url","input":"tapaloop/3/2/+2m.aa-26a5./"}
+{"id":"tapaloop-53","kind":"fileio","input":"pzprv3\ntapaloop\n3\n4\n1,1,1,1 . - 1,1,1,1 \n1,1,1,1 1,2 . 8 \n. 1 - 1 \n0 0 0 \n0 0 0 \n1 0 0 \n0 0 0 0 \n-1 1 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n"}
+{"id":"tapaloop-54","kind":"url","input":"tapaloop/4/3/-87g.-87-87aag8g1.1"}
+{"id":"tapaloop-55","kind":"fileio","input":"pzprv3\ntapaloop\n3\n3\n8 1,1,2 - \n. 1 -,5 \n1,2 1,-,- -,5 \n0 1 \n0 0 \n1 0 \n0 0 0 \n-1 0 1 \n0 1 0 \n0 0 0 \n1 0 1 \n"}
+{"id":"tapaloop-56","kind":"url","input":"tapaloop/3/3/8+2m.g1a5aa+2da5"}
+{"id":"tapaloop-57","kind":"fileio","input":"pzprv3\ntapaloop\n1\n5\n-,1,1,- 1,1,2 . 1,1,2 1 \n1 0 0 0 \n0 0 0 0 0 \n"}
+{"id":"tapaloop-58","kind":"url","input":"tapaloop/5/1/-26+2mg+2m1"}
+{"id":"tapaloop-59","kind":"fileio","input":"pzprv3\ntapaloop\n4\n2\n1,1,1,1 . \n-,5 0 \n-,1,1,- 1,-,- \n-,5 1,1,1,1 \n0 \n0 \n0 \n1 \n0 1 \n0 1 \n0 1 \n1 0 \n0 0 \n0 0 \n1 1 \n"}
+{"id":"tapaloop-60","kind":"url","input":"tapaloop/2/4/-87ga50-26+2da5-87"}
+{"id":"tapaloop-61","kind":"fileio","input":"pzprv3\ntapaloop\n3\n6\n. -,5 1,1,2 1,1,1,1 0 . \n-,5 - - -,5 -,5 . \n. - 1,1,2 0 8 . \n-1 0 -1 1 0 \n0 0 0 0 0 \n0 1 0 0 1 \n1 0 0 -1 -1 0 \n0 0 0 0 0 0 \n0 1 0 0 0 0 \n0 0 0 0 1 0 \n0 1 1 0 0 0 \n"}
+{"id":"tapaloop-62","kind":"url","input":"tapaloop/6/3/ga5+2m-870ga5..a5a5h.+2m08g"}
+{"id":"tapaloop-63","kind":"fileio","input":"pzprv3\ntapaloop\n2\n4\n- 1,2 0 0 \n0 - -,5 1,2 \n-1 0 0 \n-1 0 0 \n0 0 0 1 \n0 0 0 0 \n0 0 0 0 \n"}
+{"id":"tapaloop-64","kind":"url","input":"tapaloop/4/2/.aa000.a5aa"}
+{"id":"tapaloop-65","kind":"fileio","input":"pzprv3\ntapaloop\n5\n5\n. 1 -,1,1,- 1,1,1,1 - \n1 -,1,1,- -,1,1,- 1 1,-,- \n0 0 1,2 1,-,- -,1,1,- \n8 - 1 - . \n8 1,2 1,1,2 1,1,2 1 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 1 \n0 1 0 0 0 \n0 0 0 0 0 \n0 1 1 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n1 1 0 0 0 \n1 0 0 0 0 \n0 1 1 0 0 \n"}
+{"id":"tapaloop-66","kind":"url","input":"tapaloop/5/5/g1-26-87.1-26-261+2d00aa+2d-268.1.g8aa+2m+2m1"}
+{"id":"tapaloop-67","kind":"fileio","input":"pzprv3\ntapaloop\n3\n4\n1,-,- 1,1,2 . . \n- -,5 1,2 1,1,1,1 \n8 . 1,1,2 1,1,1,1 \n1 0 -1 \n0 1 0 \n0 1 0 \n0 0 -1 0 \n0 1 0 0 \n0 1 1 0 \n1 0 0 1 \n0 1 0 0 \n"}
+{"id":"tapaloop-68","kind":"url","input":"tapaloop/4/3/+2d+2mh.a5aa-878g+2m-87"}

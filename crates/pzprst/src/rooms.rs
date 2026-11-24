@@ -10,7 +10,7 @@ pub(crate) fn components(b: &Board) -> Vec<Vec<usize>> {
     let mut seen = vec![false; cols * rows];
     let mut rooms = Vec::new();
     for start in 0..seen.len() {
-        if seen[start] || b.cells[start].ques == 7 {
+        if seen[start] || b.genre.room_cell_excluded(&b.cells[start]) {
             continue;
         }
         let mut room = Vec::new();
@@ -30,7 +30,7 @@ pub(crate) fn components(b: &Board) -> Vec<Vec<usize>> {
                     continue;
                 }
                 let next = ny * cols + nx;
-                if seen[next] || b.cells[next].ques == 7 {
+                if seen[next] || b.genre.room_cell_excluded(&b.cells[next]) {
                     continue;
                 }
                 let bx = (x + nx + 1) as i32;

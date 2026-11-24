@@ -69,7 +69,7 @@ fn run(args: &Args, input: &str) -> pzprst::Result<String> {
             eprintln!("DIAG {d}");
         }
     }
-    let board = board.transform(args.transform);
+    let board = board.try_transform(args.transform)?;
     match args.cmd.as_str() {
         "canon" => board.to_url(),
         "dedupe" => {

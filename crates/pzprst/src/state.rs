@@ -45,8 +45,11 @@ pub(crate) fn check_match(puzzle: &Board, state: &Board) -> Result<()> {
     if puzzle.rules != state.rules {
         return mismatch(format!("rules {:?} vs {:?}", puzzle.rules, state.rules));
     }
+    if puzzle.indicator != state.indicator {
+        return mismatch("board indicator differs".into());
+    }
     for (i, (a, b)) in puzzle.cells.iter().zip(&state.cells).enumerate() {
-        if a.question() != b.question() {
+        if a.question() != b.question() || a.qnums != b.qnums {
             return mismatch(format!(
                 "clue at row {}, column {}",
                 i / puzzle.cols(),
@@ -55,19 +58,40 @@ pub(crate) fn check_match(puzzle: &Board, state: &Board) -> Result<()> {
         }
     }
     for (i, (a, b)) in puzzle.crosses.iter().zip(&state.crosses).enumerate() {
-        if a.question() != b.question() {
+        if a.question() != b.question() || a.qnums != b.qnums {
             let (bx, by) = puzzle.geom.cross_pos(i).unwrap_or((0, 0));
             return mismatch(format!("cross at ({bx}, {by})"));
         }
     }
     for (i, (a, b)) in puzzle.excells.iter().zip(&state.excells).enumerate() {
-        if a.question() != b.question() {
+        if a.question() != b.question() || a.qnums != b.qnums {
             let (bx, by) = puzzle.geom.excell_pos(i).unwrap_or((0, 0));
             return mismatch(format!("excell at ({bx}, {by})"));
         }
     }
     for (i, (a, b)) in puzzle.borders.iter().zip(&state.borders).enumerate() {
-        if a.question() != b.question() {
+        if matches!(puzzle.pid(), "railpool" | "makaro" | "dosufuwa") {
+            let (bx, by) = puzzle.geom.border_pos(i);
+            let cells = if bx % 2 == 0 {
+                [(bx - 1, by), (bx + 1, by)]
+            } else {
+                [(bx, by - 1), (bx, by + 1)]
+            };
+            let blocked = if puzzle.pid() == "railpool" { 7 } else { 1 };
+            if cells.iter().any(|&(x, y)| {
+                puzzle
+                    .obj(crate::Group::Cell, x, y)
+                    .is_some_and(|c| c.ques == blocked)
+            }) {
+                let mut normalized = a.clone();
+                normalized.ques = b.ques;
+                if normalized.question() != b.question() || normalized.qnums != b.qnums {
+                    return mismatch(format!("border at ({bx}, {by})"));
+                }
+                continue;
+            }
+        }
+        if a.question() != b.question() || a.qnums != b.qnums {
             let (bx, by) = puzzle.geom.border_pos(i);
             return mismatch(format!("border at ({bx}, {by})"));
         }

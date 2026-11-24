@@ -18,6 +18,8 @@ pub struct UrlParts {
     pub cols: usize,
     pub rows: usize,
     pub body: String,
+    /// Legacy pzpr applet format (currently supported for Icebarn).
+    pub legacy_pzprapp: bool,
     /// `key=value` query parameters preceding the puzzle data, in order.
     pub params: Vec<(String, String)>,
 }
@@ -34,6 +36,16 @@ impl UrlParts {
 pub fn parse(url: &str, diags: &mut Diagnostics) -> Result<UrlParts> {
     let url: String = url.chars().filter(|c| *c != '\r' && *c != '\n').collect();
     let url = url.trim();
+    if url.contains("indi.s58.xrea.com/icebarn/sa/")
+        || url.contains("indi.s58.xrea.com/icebarn/sc/")
+    {
+        let query = url.split_once('?').map(|(_, q)| q).unwrap_or("");
+        let (flag, data) = query.split_once('/').unwrap_or((query, ""));
+        let flag = if flag.contains('c') { "c" } else { "x" };
+        let mut parsed = parse(&format!("icebarn/{flag}/{data}"), diags)?;
+        parsed.legacy_pzprapp = true;
+        return Ok(parsed);
+    }
     if url.contains("kanpen.net") || url.contains("geocities") || url.contains("indi.s58.xrea.com")
     {
         return Err(Error::UnsupportedUrlType(url.into()));
@@ -94,7 +106,7 @@ pub fn parse(url: &str, diags: &mut Diagnostics) -> Result<UrlParts> {
     if name.is_empty() {
         return Err(Error::InvalidUrl(format!("no puzzle id in {url:?}")));
     }
-    let pid = variety::to_pid(name).ok_or_else(|| Error::UnknownPuzzle(name.into()))?;
+    let mut pid = variety::to_pid(name).ok_or_else(|| Error::UnknownPuzzle(name.into()))?;
 
     let mut inp: Vec<&str> = qdata.split('/').collect();
     let mut variant = None;
@@ -114,6 +126,16 @@ pub fn parse(url: &str, diags: &mut Diagnostics) -> Result<UrlParts> {
     if inp.last().is_some_and(|s| s.is_empty()) {
         inp.pop();
     }
+    let body = inp.join("/");
+    if pid == "bonsan" && !body.is_empty() && !pflag.contains('c') {
+        let len = ((cols - 1) * rows + 4) / 5 + (cols * (rows - 1) + 4) / 5;
+        if body.chars().take(len).any(|ch| ch != '0') {
+            pid = "heyabon";
+        }
+    }
+    if pid == "icelom" && !body.is_empty() && !pflag.contains('a') {
+        pid = "icelom2";
+    }
     Ok(UrlParts {
         pid,
         mode,
@@ -121,7 +143,8 @@ pub fn parse(url: &str, diags: &mut Diagnostics) -> Result<UrlParts> {
         pflag,
         cols,
         rows,
-        body: inp.join("/"),
+        body,
+        legacy_pzprapp: false,
         params,
     })
 }

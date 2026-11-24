@@ -35,12 +35,20 @@ pub(crate) trait Genre: Sync {
     fn input_flags(&self) -> &'static str {
         ""
     }
+    /// Format flags always emitted by pzprjs, independent of rule settings.
+    fn output_flags(&self) -> &'static str {
+        ""
+    }
     fn subnumbers(&self) -> bool {
         false
     }
     /// pzprjs room graph stores one number at each room's top cell.
     fn room_clues(&self) -> bool {
         false
+    }
+    /// Whether a cell is excluded from the room graph.
+    fn room_cell_excluded(&self, cell: &crate::Obj) -> bool {
+        cell.ques == 7
     }
     /// Initialize puzzle-specific default board objects after allocation.
     fn init_board(&self, _b: &mut Board) {}
@@ -54,6 +62,16 @@ pub(crate) trait Genre: Sync {
         d: &mut Diagnostics,
     ) -> String {
         self.decode_url(b, body, d)
+    }
+    fn decode_url_with_format(
+        &self,
+        b: &mut Board,
+        body: &str,
+        flags: &str,
+        _legacy: bool,
+        d: &mut Diagnostics,
+    ) -> String {
+        self.decode_url_with_flags(b, body, flags, d)
     }
     /// `encodePzpr` body (flags are written by the caller).
     fn encode_url(&self, b: &Board) -> Result<String>;

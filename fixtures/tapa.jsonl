@@ -1,0 +1,71 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"tapa","generator":"tools/gen_fixtures.js"}}
+{"id":"tapa-0","kind":"url","input":"https://puzz.link/p?tapa/10/10/qalibmhaliaezh3halibluagga9rafia9r"}
+{"id":"tapa-1","kind":"url","input":"https://puzz.link/p?tapa/10/10/ga9ibls2hafs2kaeraehafta7l2malq"}
+{"id":"tapa-2","kind":"url","input":"https://puzz.link/p?tapa/10/10/qalibqhagiaezja7h2ibqta9pa7i6h3r"}
+{"id":"tapa-3","kind":"url","input":"tapa/1/1/0"}
+{"id":"tapa-4","kind":"url","input":"tapa/1/1/."}
+{"id":"tapa-5","kind":"url","input":"tapa/1/1/9"}
+{"id":"tapa-6","kind":"url","input":"tapa/4/4/a0a1azb0c0d0"}
+{"id":"tapa-7","kind":"url","input":"tapa/4/4/"}
+{"id":"tapa-8","kind":"url","input":"tapa/1/5/12345"}
+{"id":"tapa-9","kind":"fileio","input":"pzprv3/tapa/2/3/1,2 -,- 1,1,1,1 /# + . /0 0 /0 0 /0 0 0 /"}
+{"id":"tapa-10","kind":"fileio","input":"pzprv3\ntapa\n5\n6\n-,1,1,- 8 -,1,1,- . -,1,1,- 0 \n1 . -,1,1,- 1,2 0 1,1,1,1 \n8 1,-,- 1,2 - 0 1,2 \n+ 1,1,1,1 -,1,1,- -,1,1,- -,1,1,- 1,1,2 \n+ 8 1,-,- 1 -,5 -,1,1,- \n1 0 0 0 0 \n0 1 0 0 0 \n0 -1 -1 0 -1 \n1 0 1 0 0 \n0 -1 -1 0 0 \n-1 0 0 -1 0 0 \n0 1 1 0 0 0 \n0 0 0 1 1 0 \n0 -1 -1 0 1 1 \n"}
+{"id":"tapa-11","kind":"url","input":"tapa/6/5/cy8cygcy01gcya8098bga8.0a8g9cycycybmg8bg1a5cy"}
+{"id":"tapa-12","kind":"fileio","input":"pzprv3\ntapa\n4\n5\n. . -,5 -,1,1,- 1 \n0 1,2 1,-,- 1 - \n1 -,5 1,1,1,1 1,1,2 1,2 \n0 - 8 8 -,1,1,- \n0 0 0 0 \n0 0 1 0 \n-1 1 0 0 \n0 0 0 0 \n1 0 0 1 0 \n0 1 -1 0 0 \n0 -1 0 1 0 \n"}
+{"id":"tapa-13","kind":"url","input":"tapa/5/4/ha5cy10a8bg1.1a59bma80.88cy"}
+{"id":"tapa-14","kind":"fileio","input":"pzprv3\ntapa\n2\n5\n+ 1,1,1,1 1,1,2 1,1,2 1 \n1 1,1,1,1 1 # 0 \n0 0 0 0 \n0 0 -1 0 \n0 0 0 0 0 \n"}
+{"id":"tapa-15","kind":"url","input":"tapa/5/2/g9bmbm1191g0"}
+{"id":"tapa-16","kind":"fileio","input":"pzprv3\ntapa\n4\n6\n- 1,-,- # -,1,1,- 1 1,-,- \n- -,5 -,1,1,- -,5 0 1,1,2 \n-,1,1,- - - 1,-,- 1 - \n# 1,1,2 1,2 - 8 # \n0 0 0 0 0 \n1 0 0 0 0 \n0 0 0 1 0 \n1 0 0 0 0 \n1 0 0 0 0 0 \n0 1 0 0 0 0 \n0 1 0 0 0 0 \n"}
+{"id":"tapa-17","kind":"url","input":"tapa/6/4/.bggcy1bg.a5cya50bmcy..bg1.gbma8.8g"}
+{"id":"tapa-18","kind":"fileio","input":"pzprv3\ntapa\n2\n4\n0 -,5 1 # \n1,2 . - 0 \n0 0 0 \n1 0 0 \n0 0 0 0 \n"}
+{"id":"tapa-19","kind":"url","input":"tapa/4/2/0a51ga8g.0"}
+{"id":"tapa-20","kind":"fileio","input":"pzprv3\ntapa\n2\n2\n1,2 . \n8 + \n"}
+{"id":"tapa-21","kind":"url","input":"tapa/2/2/a8g8g"}
+{"id":"tapa-22","kind":"fileio","input":"pzprv3\ntapa\n4\n2\n1 1,2 \n1,1,2 -,5 \n8 1,1,1,1 \n. - \n1 \n0 \n0 \n0 \n-1 0 \n0 0 \n0 0 \n"}
+{"id":"tapa-23","kind":"url","input":"tapa/2/4/1a8bma589g./"}
+{"id":"tapa-24","kind":"fileio","input":"pzprv3\ntapa\n4\n4\n-,1,1,- -,5 -,5 -,1,1,- \n# 1 . 1,1,2 \n1,2 - 1 # \n-,1,1,- -,1,1,- . 1,-,- \n0 0 0 \n1 0 0 \n0 0 0 \n0 0 0 \n0 1 0 -1 \n0 0 0 0 \n1 0 1 0 \n"}
+{"id":"tapa-25","kind":"url","input":"tapa/4/4/cya5a5cyg1gbma8.1gcycygbg"}
+{"id":"tapa-26","kind":"fileio","input":"pzprv3\ntapa\n5\n5\n# 1 - - 8 \n+ 0 1 1,-,- -,1,1,- \n-,5 1,2 -,1,1,- # . \n-,5 -,1,1,- + 0 # \n1,-,- 1,2 . 0 1,1,2 \n0 -1 0 0 \n0 0 0 0 \n0 0 0 0 \n-1 0 -1 0 \n0 0 0 0 \n0 0 -1 0 -1 \n0 0 0 0 1 \n0 0 0 -1 0 \n0 0 -1 0 0 \n"}
+{"id":"tapa-27","kind":"url","input":"tapa/5/5/g1..8g01bgcya5a8cyha5cyg0gbga8g0bm"}
+{"id":"tapa-28","kind":"fileio","input":"pzprv3\ntapa\n5\n6\n1 8 1,1,1,1 1,1,1,1 - 8 \n. -,5 . 1,-,- . 0 \n8 . 1,-,- -,1,1,- 1,1,1,1 1,-,- \n1 . 1,2 1 . . \n-,1,1,- 0 -,1,1,- 1,1,2 1,-,- + \n1 0 0 0 0 \n0 0 0 0 0 \n0 -1 0 1 1 \n0 0 0 1 0 \n0 0 1 -1 0 \n0 0 0 -1 0 0 \n-1 0 0 0 0 0 \n0 0 0 0 0 1 \n-1 0 -1 0 0 0 \n"}
+{"id":"tapa-29","kind":"url","input":"tapa/6/5/1899.8ga5gbgg08gbgcy9bg1ga81hcy0cybmbgg"}
+{"id":"tapa-30","kind":"fileio","input":"pzprv3\ntapa\n4\n3\n. . -,1,1,- \n. 1,1,2 1,1,1,1 \n1,-,- 1 . \n1,-,- 1,1,1,1 . \n-1 0 \n0 0 \n-1 -1 \n-1 0 \n0 0 0 \n0 0 0 \n0 0 1 \n"}
+{"id":"tapa-31","kind":"url","input":"tapa/3/4/hcygbm9bg1gbg9g"}
+{"id":"tapa-32","kind":"fileio","input":"pzprv3\ntapa\n3\n3\n8 1,-,- 1,-,- \n8 1,1,1,1 1,-,- \n0 -,1,1,- 1,1,2 \n1 0 \n-1 0 \n-1 0 \n1 -1 0 \n1 0 1 \n"}
+{"id":"tapa-33","kind":"url","input":"tapa/3/3/8bgbg89bg0cybm"}
+{"id":"tapa-34","kind":"fileio","input":"pzprv3\ntapa\n1\n6\n1,2 1,2 1,-,- 1,2 - 1,1,2 \n0 -1 0 0 0 \n"}
+{"id":"tapa-35","kind":"url","input":"tapa/6/1/a8a8bga8.bm"}
+{"id":"tapa-36","kind":"fileio","input":"pzprv3\ntapa\n2\n2\n# . \n0 -,5 \n0 \n1 \n0 -1 \n"}
+{"id":"tapa-37","kind":"url","input":"tapa/2/2/h0a5"}
+{"id":"tapa-38","kind":"fileio","input":"pzprv3\ntapa\n4\n6\n1,2 - . 1,2 1 8 \n-,1,1,- 1,2 -,5 . 8 8 \n. - . . 0 -,1,1,- \n1,2 . -,5 -,1,1,- 1,1,1,1 1,1,2 \n0 0 -1 0 0 \n1 0 0 1 0 \n0 0 0 0 0 \n1 0 0 -1 0 \n0 0 0 1 0 0 \n0 0 0 0 0 1 \n1 0 0 0 0 0 \n"}
+{"id":"tapa-39","kind":"url","input":"tapa/6/4/a8.ga818cya8a5g88g.h0cya8ga5cy9bm"}
+{"id":"tapa-40","kind":"fileio","input":"pzprv3\ntapa\n5\n1\n1 \n8 \n-,5 \n# \n# \n\n\n\n\n\n1 \n0 \n0 \n1 \n"}
+{"id":"tapa-41","kind":"url","input":"tapa/1/5/18a5h"}
+{"id":"tapa-42","kind":"fileio","input":"pzprv3\ntapa\n2\n6\n1,1,2 1,1,1,1 1,1,2 # 1,2 1 \n-,1,1,- 0 0 . -,1,1,- -,5 \n0 0 0 0 0 \n-1 0 0 1 0 \n0 1 -1 0 0 0 \n"}
+{"id":"tapa-43","kind":"url","input":"tapa/6/2/bm9bmga81cy00gcya5"}
+{"id":"tapa-44","kind":"fileio","input":"pzprv3\ntapa\n3\n6\n# # -,1,1,- # 1,-,- -,5 \n. 1,1,2 1,1,1,1 1,-,- 1 0 \n-,5 - 8 . . -,1,1,- \n0 0 1 0 0 \n0 0 1 0 -1 \n1 0 1 0 1 \n0 1 0 0 1 0 \n1 0 0 -1 1 0 \n"}
+{"id":"tapa-45","kind":"url","input":"tapa/6/3/hcygbga5gbm9bg10a5.8hcy"}
+{"id":"tapa-46","kind":"fileio","input":"pzprv3\ntapa\n4\n1\n. \n0 \n. \n1 \n"}
+{"id":"tapa-47","kind":"url","input":"tapa/1/4/g0g1"}
+{"id":"tapa-48","kind":"fileio","input":"pzprv3\ntapa\n5\n6\n1,1,1,1 + + 0 - 1,1,2 \n0 1,2 . . 8 1,2 \n1,-,- . 1,-,- 1,1,2 + . \n0 . 1,-,- 1,1,2 1,-,- 0 \n0 # 1,2 1,1,1,1 # + \n0 0 0 1 0 \n1 0 0 1 0 \n0 0 0 0 1 \n0 0 -1 0 0 \n0 0 0 1 0 \n1 0 0 1 0 0 \n0 0 0 -1 0 -1 \n1 0 0 0 0 0 \n0 0 0 -1 -1 0 \n"}
+{"id":"tapa-49","kind":"url","input":"tapa/6/5/9h0.bm0a8h8a8bggbgbmh0gbgbmbg00ga89h"}
+{"id":"tapa-50","kind":"fileio","input":"pzprv3\ntapa\n1\n5\n. 1,-,- 1,2 1,-,- 0 \n0 1 0 0 \n"}
+{"id":"tapa-51","kind":"url","input":"tapa/5/1/gbga8bg0"}
+{"id":"tapa-52","kind":"fileio","input":"pzprv3\ntapa\n5\n2\n- . \n-,1,1,- . \n. -,1,1,- \n-,1,1,- 1,1,2 \n. + \n0 \n0 \n0 \n-1 \n0 \n0 0 \n-1 0 \n0 1 \n0 0 \n"}
+{"id":"tapa-53","kind":"url","input":"tapa/2/5/.gcyhcycybmh"}
+{"id":"tapa-54","kind":"fileio","input":"pzprv3\ntapa\n4\n2\n1 - \n1,-,- . \n1,1,2 1,2 \n. . \n0 \n0 \n0 \n0 \n0 0 \n0 0 \n0 1 \n"}
+{"id":"tapa-55","kind":"url","input":"tapa/2/4/1.bggbma8h"}
+{"id":"tapa-56","kind":"fileio","input":"pzprv3\ntapa\n5\n4\n1,2 1,-,- 1,2 -,1,1,- \n1,-,- -,1,1,- -,1,1,- -,1,1,- \n1,2 0 -,5 1,1,1,1 \n1,-,- 1,1,1,1 1,-,- # \n-,5 1 1,1,1,1 -,1,1,- \n0 0 -1 \n-1 0 0 \n0 0 0 \n0 0 1 \n0 0 1 \n0 0 0 0 \n0 0 1 -1 \n1 0 -1 0 \n0 0 0 0 \n"}
+{"id":"tapa-57","kind":"url","input":"tapa/4/5/a8bga8cybgcycycya80a59bg9bgga519cy"}
+{"id":"tapa-58","kind":"fileio","input":"pzprv3\ntapa\n2\n1\n1,1,2 \n1,2 \n"}
+{"id":"tapa-59","kind":"url","input":"tapa/1/2/bma8"}
+{"id":"tapa-60","kind":"fileio","input":"pzprv3\ntapa\n3\n6\n. 1,-,- 1,1,2 # . # \n1,1,2 1 - 1,1,2 . -,1,1,- \n1 -,5 1,1,1,1 . -,1,1,- 8 \n0 0 0 -1 0 \n0 0 0 0 1 \n-1 0 -1 0 1 \n0 0 -1 1 -1 0 \n0 1 0 0 0 0 \n"}
+{"id":"tapa-61","kind":"url","input":"tapa/6/3/gbgbmibm1.bmgcy1a59gcy8"}
+{"id":"tapa-62","kind":"fileio","input":"pzprv3\ntapa\n4\n5\n1,-,- -,1,1,- - 1,-,- # \n- 1,-,- . 1,-,- - \n- 1,-,- -,1,1,- . 1,1,2 \n. 1,-,- 1,1,2 . 1 \n0 0 0 0 \n0 -1 0 0 \n1 0 0 0 \n1 0 1 0 \n0 0 0 0 0 \n0 0 1 -1 0 \n0 1 0 0 0 \n"}
+{"id":"tapa-63","kind":"url","input":"tapa/5/4/bgcy.bgg.bggbg..bgcygbmgbgbmg1"}
+{"id":"tapa-64","kind":"fileio","input":"pzprv3\ntapa\n3\n4\n-,1,1,- 8 - 1,2 \n# # 8 -,1,1,- \n. . # 1 \n1 0 1 \n0 0 0 \n-1 0 0 \n0 -1 0 0 \n0 0 0 0 \n"}
+{"id":"tapa-65","kind":"url","input":"tapa/4/3/cy8.a8h8cyi1"}
+{"id":"tapa-66","kind":"fileio","input":"pzprv3\ntapa\n4\n2\n- . \n1,1,2 -,1,1,- \n1,2 -,1,1,- \n8 1 \n"}
+{"id":"tapa-67","kind":"url","input":"tapa/2/4/.gbmcya8cy81"}
+{"id":"tapa-68","kind":"fileio","input":"pzprv3\ntapa\n4\n6\n-,5 - 1 1,1,2 # 1 \n1 1 0 -,1,1,- 8 1,-,- \n- 0 . . 1 1,1,1,1 \n1,1,2 - # 1 1,1,1,1 1,1,2 \n0 0 1 1 0 \n1 1 0 -1 0 \n0 1 0 0 0 \n-1 0 1 0 -1 \n0 0 0 0 0 0 \n0 0 -1 -1 0 0 \n0 0 -1 0 0 1 \n"}
+{"id":"tapa-69","kind":"url","input":"tapa/6/4/a5.1bmg1110cy8bg.0h19bm.g19bm"}

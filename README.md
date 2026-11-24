@@ -18,6 +18,10 @@ let fileio = board.to_fileio()?;
 
 The CLI has `canon`, `dedupe`, `fileio`, and `state` commands:
 
+`Board::try_transform` and the CLI reproduce pzprjs transform errors and its
+rectangular segment behavior. `Board::transform` remains an infallible geometric
+D4 transform for callers that need its group properties.
+
 ```sh
 cargo run -q -p pzprst-cli -- --transform rot90 fileio 'slither/3/2/h17d'
 ```

@@ -64,7 +64,12 @@ function rustSources() {
 }
 const RUST = rustSources();
 const PORTED = new Set([...RUST.matchAll(/^\s*\/\/\/ `(\w+)`/gm)].map((m) => m[1]));
-const REGISTERED = new Set([...RUST.matchAll(/fn pid\(&self\) -> &'static str \{\s*"(\w+)"/g)].map((m) => m[1]));
+// build.rs registers genre files, including hyphenated pids and modules that
+// share a parameterized Genre implementation. This reports registration only;
+// it does not establish that conformance tests passed.
+const REGISTERED = new Set(fs.readdirSync(path.join(ROOT, "crates/pzprst/src/genres"))
+	.filter((name) => name.endsWith(".rs") && name !== "mod.rs")
+	.map((name) => name.slice(0, -3)));
 
 function puzzlekitPids() {
 	const dir = path.join(PUZZLEKIT, "src/puzzlekit/puzzles");
@@ -164,12 +169,15 @@ function triage(pid) {
 		verdict = "READY";
 	}
 	const cell = b.cell[0];
+	let cellRange = null;
+	try { if (cell) cellRange = [cell.getminnum(), cell.getmaxnum()]; }
+	catch (_) { /* Some reference cells require an initialized room graph. */ }
 	return {
 		pid,
 		verdict,
 		source: path.relative(ROOT, sourceFile(pid)),
 		board: { hasborder: b.hasborder, hascross: b.hascross, hasexcell: b.hasexcell },
-		cellRange: cell ? [cell.getminnum(), cell.getmaxnum()] : null,
+		cellRange,
 		decodePzpr: p.klass.Encode.prototype.decodePzpr.toString().replace(/\s+/g, " "),
 		encodePzpr: p.klass.Encode.prototype.encodePzpr.toString().replace(/\s+/g, " "),
 		decodeData: p.klass.FileIO.prototype.decodeData.toString().replace(/\s+/g, " "),
@@ -185,6 +193,7 @@ function report(t) {
 	const lines = [
 		"pid:         " + t.pid,
 		"verdict:     " + t.verdict,
+		...(t.verdict === "PORTED" ? ["registration only; conformance must be checked separately"] : []),
 		"source:      " + t.source + "  (look for sections Encode / FileIO / Board / Cell, incl. \"…@" + t.pid + "\")",
 		"board:       hasborder=" + t.board.hasborder + " hascross=" + t.board.hascross + " hasexcell=" + t.board.hasexcell,
 		"cell range:  " + (t.cellRange ? "minnum " + t.cellRange[0] + ", maxnum " + t.cellRange[1] + " (on a 4x4 board)" : "-"),

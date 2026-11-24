@@ -62,7 +62,7 @@ impl FileReader {
     }
 
     /// `getItemList`: read `rows` lines, split on spaces, flatten.
-    fn item_list(&mut self, rows: i32) -> Vec<String> {
+    pub(crate) fn item_list(&mut self, rows: i32) -> Vec<String> {
         let mut items = Vec::new();
         for _ in 0..rows.max(0) {
             match self.read_line() {
@@ -456,8 +456,7 @@ pub(crate) fn decode(text: &str, d: &mut Diagnostics) -> Result<Board> {
         .map(|s| s.parse::<u32>().unwrap_or(u32::MAX))
         .unwrap_or(0);
     let pid_name = lines.pop_front().unwrap_or("");
-    let pid = variety::to_pid(pid_name).ok_or_else(|| Error::UnknownPuzzle(pid_name.into()))?;
-    let genre = genres::get(pid).ok_or_else(|| Error::UnsupportedPuzzle(pid.into()))?;
+    let mut pid = variety::to_pid(pid_name).ok_or_else(|| Error::UnknownPuzzle(pid_name.into()))?;
     let dim = |s: Option<&str>| match s.and_then(jsnum::integer) {
         Some(n) if n >= 1 && n as usize <= MAX_DIM => Ok(n as usize),
         _ => Err(Error::InvalidSize(format!(
@@ -471,6 +470,19 @@ pub(crate) fn decode(text: &str, d: &mut Diagnostics) -> Result<Board> {
     } else {
         dim(lines.pop_front())?
     };
+    if pid == "bonsan"
+        && lines
+            .iter()
+            .skip(2 * rows)
+            .take(2 * rows - 1)
+            .any(|s| s.contains('1'))
+    {
+        pid = "heyabon";
+    }
+    if pid == "icelom" && lines.get(2).is_some_and(|line| *line == "skipwhite") {
+        pid = "icelom2";
+    }
+    let genre = genres::get(pid).ok_or_else(|| Error::UnsupportedPuzzle(pid.into()))?;
 
     let mut body = Vec::new();
     for line in lines.iter() {
@@ -676,7 +688,10 @@ pub(crate) fn encode_border_ques(w: &mut FileWriter, b: &Board) {
 }
 
 /// `setCellSnum`: parse bracketed pencil marks.
-fn set_cell_snum<'a>(cell: &mut crate::Obj, ca: &'a str) -> std::result::Result<&'a str, String> {
+pub(crate) fn set_cell_snum<'a>(
+    cell: &mut crate::Obj,
+    ca: &'a str,
+) -> std::result::Result<&'a str, String> {
     if let Some((head, rest)) = ca.split_once('[') {
         let values = rest.split(']').next().unwrap_or(rest);
         let mut nums = vec![-1; 4];
@@ -697,7 +712,7 @@ fn set_cell_snum<'a>(cell: &mut crate::Obj, ca: &'a str) -> std::result::Result<
     }
 }
 
-fn get_cell_snum(cell: &crate::Obj) -> String {
+pub(crate) fn get_cell_snum(cell: &crate::Obj) -> String {
     if cell.snum.is_empty() {
         return String::new();
     }

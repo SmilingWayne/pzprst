@@ -22,6 +22,119 @@ fn sudoku_box_geometry_and_file_header() {
     assert_eq!((restored.cols(), restored.rows()), (6, 6));
 }
 
+#[test]
+fn tapa_multiple_clues_are_part_of_state_identity() {
+    let a = Board::from_url("tapa/1/1/a8", &opts()).unwrap();
+    let b = Board::from_url("tapa/1/1/a9", &opts()).unwrap();
+    assert_ne!(a.cell(0, 0).qnums, b.cell(0, 0).qnums);
+    let trace = format!(
+        "https://pzpr-trace.net/p?state={}&{}",
+        a.to_state().unwrap(),
+        b.to_url().unwrap()
+    );
+    assert!(matches!(
+        Board::from_trace_url(&trace, &opts()),
+        Err(Error::StateMismatch(_))
+    ));
+}
+
+#[test]
+fn easyasabc_indicator_is_part_of_state_identity() {
+    let a = Board::from_url("easyasabc/2/2/2/z", &opts()).unwrap();
+    let b = Board::from_url("easyasabc/2/2/3/z", &opts()).unwrap();
+    let trace = format!(
+        "https://pzpr-trace.net/p?state={}&{}",
+        a.to_state().unwrap(),
+        b.to_url().unwrap()
+    );
+    assert!(matches!(
+        Board::from_trace_url(&trace, &opts()),
+        Err(Error::StateMismatch(_))
+    ));
+}
+
+#[test]
+fn bonsan_legacy_room_borders_select_heyabon() {
+    assert_eq!(
+        Board::from_url("bonsan/2/2/100", &opts()).unwrap().pid(),
+        "heyabon"
+    );
+    assert_eq!(
+        Board::from_url("bonsan/2/2/001", &opts()).unwrap().pid(),
+        "bonsan"
+    );
+    assert!(Board::from_url("bonsan/2/2/001", &opts())
+        .unwrap()
+        .to_url()
+        .unwrap()
+        .starts_with("bonsan/c/"));
+}
+
+#[test]
+fn railpool_trace_accepts_reconstructed_blocked_cell_boundaries() {
+    let b = Board::from_url(
+        "railpool/6/6/00k10n00zq02l0o0/po003jgk005100008g00",
+        &opts(),
+    )
+    .unwrap();
+    let state = b.to_state().unwrap();
+    let trace = format!(
+        "https://pzpr-trace.net/p?state={state}&{}",
+        b.to_url().unwrap()
+    );
+    let restored = Board::from_trace_url(&trace, &opts()).unwrap();
+    assert_eq!(restored.to_fileio().unwrap(), b.to_fileio().unwrap());
+}
+
+#[test]
+fn segment_state_and_reference_transform_errors() {
+    let mut b = Board::new("kouchoku", 1, 5).unwrap();
+    b.segments.push(pzprst::Segment {
+        start: (2, 2),
+        end: (2, 4),
+        origin: None,
+    });
+    assert!(b.has_snapshot());
+    assert!(matches!(
+        b.try_transform(Transform::Rot90),
+        Err(Error::InvalidTransform(_))
+    ));
+    assert_eq!(
+        b.transform(Transform::Rot90).transform(Transform::Rot270),
+        b
+    );
+    assert_eq!(
+        Board::from_state(&b.to_state().unwrap(), &opts()).unwrap(),
+        b
+    );
+    b.clear_snapshot();
+    assert!(!b.has_snapshot());
+}
+
+#[test]
+fn icebarn_legacy_applets_and_icelom_variant() {
+    assert_eq!(
+        canonical_url(
+            "http://indi.s58.xrea.com/icebarn/sa/?/2/2/0/////0/1",
+            &opts()
+        )
+        .unwrap(),
+        "icebarn/2/2/044/0/1"
+    );
+    assert_eq!(
+        canonical_url("http://indi.s58.xrea.com/icebarn/sa/?c/2/2/0/1/0", &opts()).unwrap(),
+        "icebarn/2/2/0123/2/0"
+    );
+    assert_eq!(
+        Board::from_url("icelom/4/4/0", &opts()).unwrap().pid(),
+        "icelom2"
+    );
+    assert_eq!(
+        Board::from_url("icelom/a/4/4/0", &opts()).unwrap().pid(),
+        "icelom"
+    );
+}
+
 fn strict() -> Options {
     Options {
         strict: true,
@@ -108,7 +221,7 @@ fn intentional_divergences() {
         Err(Error::UnsupportedUrlType(_))
     ));
     assert!(matches!(
-        Board::from_url("tapa/3/3/a", &opts()),
+        Board::from_url("curvedata/3/3/a", &opts()),
         Err(Error::UnsupportedPuzzle(_))
     ));
     assert!(matches!(

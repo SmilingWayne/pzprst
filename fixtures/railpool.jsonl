@@ -1,0 +1,69 @@
+{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"railpool","generator":"tools/gen_fixtures.js"}}
+{"id":"railpool-0","kind":"url","input":"https://puzz.link/p?railpool/11/11/zm23p2t1l3t4w23w4t3l1t2p23zn000660f0601g0c0u0cc00002111o0s0500k0703ggg800000000800000000000000000"}
+{"id":"railpool-1","kind":"url","input":"https://puzz.link/p?railpool/10/10/q13n6zzm2zzx13r0d4304gf9i614304m0e460604e4cec06064e"}
+{"id":"railpool-2","kind":"url","input":"https://puzz.link/p?railpool/6/6/00k10n00zq02l0o0/po003jgk005100008g00"}
+{"id":"railpool-3","kind":"url","input":"railpool/4/4/"}
+{"id":"railpool-4","kind":"url","input":"railpool/1/1/"}
+{"id":"railpool-5","kind":"url","input":"railpool/1/5/"}
+{"id":"railpool-6","kind":"url","input":"railpool/5/1/"}
+{"id":"railpool-7","kind":"fileio","input":"pzprv3/railpool/2/2/1,2 - /. 3 /. * /. . /1/0 . /0 0 /1 /0 /-1 1 /"}
+{"id":"railpool-8","kind":"fileio","input":"pzprv3\nrailpool\n5\n1\n. \n. \n. \n- \n. \n. \n. \n. \n. \n. \n1\n0 \n0 \n0 \n0 \n0 \n\n\n\n\n\n0 \n0 \n0 \n0 \n"}
+{"id":"railpool-9","kind":"url","input":"railpool/1/5/m0l0"}
+{"id":"railpool-10","kind":"fileio","input":"pzprv3\nrailpool\n4\n1\n. \n. \n. \n- \n* \n* \n. \n. \n1\n. \n. \n0 \n0 \n\n\n\n\n0 \n1 \n0 \n"}
+{"id":"railpool-11","kind":"url","input":"railpool/1/4/m0/8o"}
+{"id":"railpool-12","kind":"fileio","input":"pzprv3\nrailpool\n2\n6\n. 2,3 . . . 1 \n2,3 . 1,2,4 . 2,3 1,2,4 \n. . * . * . \n. . . * . . \n4\n0 0 . 1 . 2 \n0 0 0 . 3 3 \n0 0 0 0 1 \n-1 0 0 0 0 \n0 1 0 0 0 -1 \n"}
+{"id":"railpool-13","kind":"url","input":"railpool/6/2/k23n1k23l124l23k124/f67g510"}
+{"id":"railpool-14","kind":"fileio","input":"pzprv3\nrailpool\n1\n6\n1,2,4 2,3 2,3 . 2,3 . \n. . . * . * \n3\n0 1 1 . 2 . \n1 0 0 0 1 \n"}
+{"id":"railpool-15","kind":"url","input":"railpool/6/1/124k23k23l23ln2g"}
+{"id":"railpool-16","kind":"fileio","input":"pzprv3\nrailpool\n3\n6\n. 1 . . 1 . \n. . - . . 1 \n. . . 1,2,4 2,3 . \n. . . * . * \n. * . . . . \n. . . . . . \n3\n0 0 0 . 0 . \n1 . 0 0 0 0 \n1 2 0 0 0 0 \n0 0 0 0 0 \n0 0 1 1 1 \n0 0 0 -1 0 \n0 0 1 1 0 0 \n0 0 0 0 0 0 \n"}
+{"id":"railpool-17","kind":"url","input":"railpool/6/3/k1m1n0m1n124k23l7ooqk02k00"}
+{"id":"railpool-18","kind":"fileio","input":"pzprv3\nrailpool\n5\n3\n1 - . \n. 1,2,4 . \n. . . \n. . . \n. 1,2,4 1 \n. . . \n. . . \n* * * \n* * . \n. . . \n2\n0 0 0 \n0 0 0 \n. . . \n. . 1 \n1 1 1 \n1 0 \n0 0 \n0 0 \n0 0 \n0 0 \n1 1 1 \n0 0 0 \n1 0 1 \n0 0 1 \n"}
+{"id":"railpool-19","kind":"url","input":"railpool/3/5/1k0m124s124k1/043jg0fg"}
+{"id":"railpool-20","kind":"fileio","input":"pzprv3\nrailpool\n2\n2\n1,2,4 1 \n1 . \n. . \n. * \n1\n0 0 \n0 . \n0 \n1 \n0 0 \n"}
+{"id":"railpool-21","kind":"url","input":"railpool/2/2/124k1k1l882"}
+{"id":"railpool-22","kind":"fileio","input":"pzprv3\nrailpool\n1\n1\n. \n. \n1\n0 \n\n"}
+{"id":"railpool-23","kind":"url","input":"railpool/1/1///"}
+{"id":"railpool-24","kind":"fileio","input":"pzprv3\nrailpool\n5\n3\n2,3 . . \n1,2,4 . . \n2,3 - 1 \n1 1 . \n. . - \n. . . \n. * . \n. . . \n. . * \n* . . \n1\n0 0 0 \n0 . 0 \n0 0 0 \n0 0 . \n. 0 0 \n0 -1 \n0 1 \n0 0 \n0 0 \n0 0 \n0 -1 0 \n0 0 1 \n0 0 0 \n0 1 -1 \n"}
+{"id":"railpool-25","kind":"url","input":"railpool/3/5/23m124m23k0k1k1k1n0/6693810c"}
+{"id":"railpool-26","kind":"fileio","input":"pzprv3\nrailpool\n1\n5\n1 . . . . \n. . . . . \n3\n0 0 1 1 2 \n0 1 0 0 \n"}
+{"id":"railpool-27","kind":"url","input":"railpool/5/1/1oa"}
+{"id":"railpool-28","kind":"fileio","input":"pzprv3\nrailpool\n1\n1\n. \n* \n0\n. \n\n"}
+{"id":"railpool-29","kind":"url","input":"railpool/1/1//g"}
+{"id":"railpool-30","kind":"fileio","input":"pzprv3\nrailpool\n2\n3\n. 2,3 2,3 \n1,2,4 . 1,2,4 \n* . . \n. * . \n2\n. 0 0 \n1 . 0 \n0 0 \n0 0 \n-1 0 0 \n"}
+{"id":"railpool-31","kind":"url","input":"railpool/3/2/k23k23k124l124/moh0"}
+{"id":"railpool-32","kind":"fileio","input":"pzprv3\nrailpool\n5\n5\n. 1 - 2,3 - \n2,3 1 - 2,3 2,3 \n. 1,2,4 2,3 . 1,2,4 \n. . . 1 - \n- 2,3 1 . . \n* . . . . \n. . . . . \n* . . * . \n* * . . . \n. . . . . \n4\n. 0 0 0 0 \n1 0 0 0 0 \n. 0 0 . 2 \n. . 3 3 3 \n3 3 3 3 3 \n0 1 0 0 \n0 0 0 -1 \n1 1 0 0 \n0 0 0 0 \n0 0 0 0 \n1 0 -1 0 0 \n0 -1 0 0 -1 \n0 1 0 0 0 \n1 0 -1 0 0 \n"}
+{"id":"railpool-33","kind":"url","input":"railpool/5/5/k1k0k23k0k23k1k0k23k23l124k23l124n1k0k0k23k1mh2q0gjfog0io0"}
+{"id":"railpool-34","kind":"fileio","input":"pzprv3\nrailpool\n1\n2\n. . \n. * \n1\n0 . \n0 \n"}
+{"id":"railpool-35","kind":"url","input":"railpool/2/1/lg8"}
+{"id":"railpool-36","kind":"fileio","input":"pzprv3\nrailpool\n3\n4\n1,2,4 1,2,4 1,2,4 . \n. 2,3 - 1,2,4 \n2,3 . . . \n. . . * \n* . . . \n. * . * \n3\n0 0 0 . \n. 0 0 1 \n2 . 0 . \n0 0 1 \n-1 0 0 \n1 0 1 \n0 0 1 0 \n0 -1 0 0 \n"}
+{"id":"railpool-37","kind":"url","input":"railpool/4/3/124k124k124m23k0k124k23n6ujk318"}
+{"id":"railpool-38","kind":"fileio","input":"pzprv3\nrailpool\n1\n5\n2,3 1,2,4 1,2,4 . 2,3 \n. . . . . \n3\n0 0 0 1 2 \n0 0 -1 0 \n"}
+{"id":"railpool-39","kind":"url","input":"railpool/5/1/23k124k124l23/6"}
+{"id":"railpool-40","kind":"fileio","input":"pzprv3\nrailpool\n2\n2\n1,2,4 2,3 \n. . \n. . \n. . \n2\n0 0 \n1 1 \n0 \n1 \n1 -1 \n"}
+{"id":"railpool-41","kind":"url","input":"railpool/2/2/124k23m0o"}
+{"id":"railpool-42","kind":"fileio","input":"pzprv3\nrailpool\n3\n3\n. 1,2,4 1,2,4 \n. . 1 \n1,2,4 . 1,2,4 \n. . . \n* . . \n. * . \n2\n0 0 0 \n. 0 0 \n1 . 0 \n-1 0 \n0 -1 \n1 0 \n0 0 0 \n0 0 1 \n"}
+{"id":"railpool-43","kind":"url","input":"railpool/3/3/k124k124m1k124l124/5gj024"}
+{"id":"railpool-44","kind":"fileio","input":"pzprv3\nrailpool\n4\n5\n. 1 . . - \n. 1 . . - \n. . . . . \n2,3 . - 1 2,3 \n. . . * . \n* . . . . \n. * * * . \n. * . . . \n2\n0 0 0 . 0 \n. 0 0 0 0 \n1 . . . 0 \n1 . 0 0 0 \n-1 0 0 0 \n0 0 0 0 \n0 0 1 0 \n0 0 -1 0 \n-1 1 1 0 0 \n1 0 0 -1 0 \n1 0 -1 0 1 \n"}
+{"id":"railpool-45","kind":"url","input":"railpool/5/4/k1m0l1m0p23l0k1k23/72e0iu62ge8"}
+{"id":"railpool-46","kind":"fileio","input":"pzprv3\nrailpool\n4\n6\n1,2,4 1 . 1 1,2,4 1 \n. . . - 1,2,4 . \n1,2,4 . - 2,3 1 . \n2,3 . . - . 1 \n. . . . . . \n* * . . . . \n. * . . . * \n. . . . * . \n5\n0 0 0 0 1 1 \n. . 0 0 1 2 \n3 . 0 0 0 . \n3 0 0 0 . 4 \n0 0 -1 0 1 \n0 1 0 0 0 \n0 1 0 0 0 \n0 0 1 0 0 \n0 -1 0 0 1 1 \n-1 0 0 0 0 0 \n0 0 0 0 1 0 \n"}
+{"id":"railpool-47","kind":"url","input":"railpool/6/4/124k1l1k124k1n0k124l124l0k23k1l23m0l1/2bpjooqc0c244"}
+{"id":"railpool-48","kind":"fileio","input":"pzprv3\nrailpool\n3\n1\n. \n. \n. \n* \n. \n. \n1\n. \n0 \n0 \n\n\n\n0 \n1 \n"}
+{"id":"railpool-49","kind":"url","input":"railpool/1/3/mgg"}
+{"id":"railpool-50","kind":"fileio","input":"pzprv3\nrailpool\n3\n6\n. . 1,2,4 1,2,4 . . \n. . 1 1 2,3 . \n- . . 1,2,4 . . \n* . . . * . \n. * . . . . \n. * * . * * \n4\n. 0 0 0 . 0 \n1 . 0 0 0 0 \n2 . . 3 . . \n0 0 0 0 0 \n0 0 0 -1 -1 \n0 0 0 0 0 \n0 0 0 0 0 -1 \n0 0 0 0 -1 0 \n"}
+{"id":"railpool-51","kind":"url","input":"railpool/6/3/l124k124o1k1k23l0m124mjompboh43c"}
+{"id":"railpool-52","kind":"fileio","input":"pzprv3\nrailpool\n1\n3\n1 . 1,2,4 \n. . . \n1\n0 0 0 \n1 0 \n"}
+{"id":"railpool-53","kind":"url","input":"railpool/3/1/1l124/0"}
+{"id":"railpool-54","kind":"fileio","input":"pzprv3\nrailpool\n5\n3\n1 - . \n2,3 1 . \n. 1 1 \n. . 1 \n. 1 2,3 \n. . . \n. . * \n. . . \n* . . \n. . . \n1\n0 0 0 \n0 0 . \n0 0 0 \n. 0 0 \n0 0 0 \n0 0 \n0 0 \n0 0 \n0 0 \n0 0 \n0 0 0 \n0 0 1 \n0 1 0 \n0 0 0 \n"}
+{"id":"railpool-55","kind":"url","input":"railpool/3/5/1k0l23k1m1k1m1l1k23/284p00h0"}
+{"id":"railpool-56","kind":"fileio","input":"pzprv3\nrailpool\n3\n5\n. - 2,3 . . \n. . 1 2,3 . \n. . 2,3 . 2,3 \n. . . . . \n* * . . * \n. . . * . \n4\n0 0 0 0 1 \n. . 0 0 . \n2 2 2 . 3 \n0 -1 0 0 \n1 0 0 0 \n0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n"}
+{"id":"railpool-57","kind":"url","input":"railpool/5/3/k0k23o1k23n23l23/2kopv0p2"}
+{"id":"railpool-58","kind":"fileio","input":"pzprv3\nrailpool\n2\n5\n2,3 1 . 1,2,4 1,2,4 \n1 - . . 1,2,4 \n. . * . . \n. . . . . \n1\n0 0 . 0 0 \n0 0 0 0 0 \n0 0 0 0 \n0 1 0 0 \n0 0 -1 0 0 \n"}
+{"id":"railpool-59","kind":"url","input":"railpool/5/2/23k1l124k124k1k0m124/c0440"}
+{"id":"railpool-60","kind":"fileio","input":"pzprv3\nrailpool\n2\n1\n. \n- \n* \n. \n1\n. \n0 \n\n\n0 \n"}
+{"id":"railpool-61","kind":"url","input":"railpool/1/2/k0/gg"}
+{"id":"railpool-62","kind":"fileio","input":"pzprv3\nrailpool\n4\n6\n2,3 1 2,3 1,2,4 . . \n- . - . . . \n1,2,4 . . . . . \n. - . . . 2,3 \n. . . . * * \n. * . . * . \n. * * . * * \n. . * * * . \n5\n0 0 0 1 . . \n0 . 0 1 . 2 \n0 . . 3 . . \n0 0 . . . 4 \n0 -1 0 0 0 \n0 1 0 0 0 \n0 0 1 0 -1 \n0 1 0 -1 1 \n1 0 0 0 0 -1 \n0 0 0 0 0 1 \n0 -1 1 1 1 0 \n"}
+{"id":"railpool-63","kind":"url","input":"railpool/6/4/23k1k23k124m0l0n124q0n23/6vm98jak1kjcs"}
+{"id":"railpool-64","kind":"fileio","input":"pzprv3\nrailpool\n2\n5\n1,2,4 . . . - \n. 1 . 1 . \n. . . * . \n. . * . * \n4\n0 0 1 . 2 \n0 0 . 3 . \n0 0 0 0 \n-1 1 0 0 \n-1 0 0 0 0 \n"}
+{"id":"railpool-65","kind":"url","input":"railpool/5/2/124n0l1l1les725"}
+{"id":"railpool-66","kind":"fileio","input":"pzprv3\nrailpool\n2\n2\n. 1,2,4 \n1 2,3 \n. . \n. . \n2\n0 0 \n0 1 \n1 \n0 \n0 1 \n"}
+{"id":"railpool-67","kind":"url","input":"railpool/2/2/k124k1k23/88"}
