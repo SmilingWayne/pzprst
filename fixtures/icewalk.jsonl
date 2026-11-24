@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"icewalk","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"icewalk","generator":"tools/gen_fixtures.js"}}
 {"id":"icewalk-0","kind":"url","input":"icewalk/3/3/1g1"}
 {"id":"icewalk-1","kind":"url","input":"https://puzz.link/p?icewalk/3/3/1g1"}
 {"id":"icewalk-2","kind":"url","input":"http://pzv.jp/p.html?type=player&icewalk/3/3/1g1"}

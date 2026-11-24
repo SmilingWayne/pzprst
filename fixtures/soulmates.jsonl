@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"soulmates","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"soulmates","generator":"tools/gen_fixtures.js"}}
 {"id":"soulmates-0","kind":"url","input":"soulmates/5/5/12345"}
 {"id":"soulmates-1","kind":"url","input":"https://puzz.link/p?soulmates/5/5/12345"}
 {"id":"soulmates-2","kind":"url","input":"http://pzv.jp/p.html?type=player&soulmates/5/5/12345"}

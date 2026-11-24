@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"lither","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"lither","generator":"tools/gen_fixtures.js"}}
 {"id":"lither-0","kind":"url","input":"lither/4/4/8a638d6c"}
 {"id":"lither-1","kind":"url","input":"https://puzz.link/p?lither/4/4/8a638d6c"}
 {"id":"lither-2","kind":"url","input":"https://puzz.link/p?lither_edit/4/4/8a638d6c"}

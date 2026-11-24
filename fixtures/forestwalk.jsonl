@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"forestwalk","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"forestwalk","generator":"tools/gen_fixtures.js"}}
 {"id":"forestwalk-0","kind":"url","input":"forestwalk/3/3/1g1"}
 {"id":"forestwalk-1","kind":"url","input":"https://puzz.link/p?forestwalk/3/3/1g1"}
 {"id":"forestwalk-2","kind":"url","input":"http://pzv.jp/p.html?type=player&forestwalk/3/3/1g1"}

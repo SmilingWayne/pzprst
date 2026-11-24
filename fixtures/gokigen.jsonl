@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"gokigen","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"gokigen","generator":"tools/gen_fixtures.js"}}
 {"id":"gokigen-0","kind":"url","input":"gokigen/4/4"}
 {"id":"gokigen-1","kind":"url","input":"gokigen/1/1"}
 {"id":"gokigen-2","kind":"url","input":"gokigen/1/4"}

@@ -22,21 +22,23 @@ fn load(pid: &str) -> Vec<Record> {
         committed.exists(),
         "{pid} is registered but has no fixtures; add tools/genres/{pid}.js and run node tools/gen_fixtures.js {pid}"
     );
-    let mut records = read(&committed);
+    let mut records = read(&committed, pid);
     let full = dir.join("full").join(&file);
     if full.exists() {
-        records.extend(read(&full));
+        records.extend(read(&full, pid));
     }
     records
 }
 
-fn read(path: &Path) -> Vec<Record> {
+fn read(path: &Path, pid: &str) -> Vec<Record> {
     let text = std::fs::read_to_string(path).unwrap_or_else(|e| panic!("{}: {e}", path.display()));
     let mut lines = text.lines();
     let header: Value = serde_json::from_str(lines.next().unwrap()).unwrap();
     assert_eq!(
-        header["header"]["pzprjs_commit"], PZPRJS_COMMIT,
-        "fixtures and variety table use different pzprjs commits"
+        header["header"]["pid"],
+        pid,
+        "fixture header does not match {}",
+        path.display()
     );
     lines
         .map(|l| {
@@ -62,14 +64,19 @@ fn open(r: &Record) -> Board {
 }
 
 fn parity(pid: &str) {
+    assert_eq!(
+        std::env::var("PZPRST_REFERENCE_COMMIT").as_deref(),
+        Ok(PZPRJS_COMMIT),
+        "run `node tools/check_parity.js` with the pinned pzprjs-trace"
+    );
     let dir = std::env::var_os("PZPRST_REFERENCE_DIR")
         .map(PathBuf::from)
         .expect("run `node tools/check_parity.js` to generate pzprjs-trace reference outputs");
     let file = format!("{pid}.jsonl");
-    let mut records = read(&dir.join(&file));
+    let mut records = read(&dir.join(&file), pid);
     let full = dir.join("full").join(&file);
     if full.exists() {
-        records.extend(read(&full));
+        records.extend(read(&full, pid));
     }
     assert!(!records.is_empty(), "{pid}: reference contains no records");
     let mut failures = Vec::new();

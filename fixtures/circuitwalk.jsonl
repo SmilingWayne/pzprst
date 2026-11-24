@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"circuitwalk","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"circuitwalk","generator":"tools/gen_fixtures.js"}}
 {"id":"circuitwalk-0","kind":"url","input":"circuitwalk/3/3/1g1"}
 {"id":"circuitwalk-1","kind":"url","input":"https://puzz.link/p?circuitwalk/3/3/1g1"}
 {"id":"circuitwalk-2","kind":"url","input":"http://pzv.jp/p.html?type=player&circuitwalk/3/3/1g1"}

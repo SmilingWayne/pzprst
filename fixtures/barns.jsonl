@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"barns","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"barns","generator":"tools/gen_fixtures.js"}}
 {"id":"barns-0","kind":"url","input":"barns/4/4/gg0gh308a8"}
 {"id":"barns-1","kind":"url","input":"barns/2/2/00g"}
 {"id":"barns-2","kind":"url","input":"https://puzz.link/p?barns/4/4/gg0gh308a8"}

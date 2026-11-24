@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"ripple","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"ripple","generator":"tools/gen_fixtures.js"}}
 {"id":"ripple-0","kind":"url","input":"ripple/12/12/00cmjmtcqvneo5k3t1aosmlig00f73ak5e2ag562g0r09416hlqffg.............j..i....h..k...h.i.h...h.h..h...k.......k.......h.i......h..i.....h...i...j.k............."}
 {"id":"ripple-1","kind":"url","input":"ripple/10/10/t6vot8saj4i52rj7sf9asmufduve3hufdhbizs7h6zl4h5zs"}
 {"id":"ripple-2","kind":"url","input":"ripple/10/10/4jbqthrl79i9g7a6knfeigcrv0pt7fv6vg7lzzzzz"}

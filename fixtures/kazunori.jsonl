@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"kazunori","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"kazunori","generator":"tools/gen_fixtures.js"}}
 {"id":"kazunori-0","kind":"url","input":"kazunori/3/3"}
 {"id":"kazunori-1","kind":"url","input":"kazunori/3/3/"}
 {"id":"kazunori-2","kind":"url","input":"kazunori/4/4"}

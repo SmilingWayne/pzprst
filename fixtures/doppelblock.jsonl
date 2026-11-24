@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"doppelblock","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"doppelblock","generator":"tools/gen_fixtures.js"}}
 {"id":"doppelblock-0","kind":"url","input":"doppelblock/5/5/1h1416g32k3g3k2h1m2"}
 {"id":"doppelblock-1","kind":"url","input":"doppelblock/6/6/g94i6g88gat0i0j2g0m101"}
 {"id":"doppelblock-2","kind":"url","input":"doppelblock/3/3/012345"}

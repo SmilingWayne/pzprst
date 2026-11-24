@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"slither","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"slither","generator":"tools/gen_fixtures.js"}}
 {"id":"slither-0","kind":"url","input":"slither/3/2/h12g3"}
 {"id":"slither-1","kind":"url","input":"slither/3/2/h17d"}
 {"id":"slither-2","kind":"url","input":"slitherlink/3/2/h17d"}

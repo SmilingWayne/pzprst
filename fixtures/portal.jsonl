@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"portal","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"portal","generator":"tools/gen_fixtures.js"}}
 {"id":"portal-0","kind":"url","input":"portal/6/6/g1h2m1j3g2h4o43h"}
 {"id":"portal-1","kind":"url","input":"https://puzz.link/p?portal/6/6/g1h2m1j3g2h4o43h"}
 {"id":"portal-2","kind":"url","input":"http://pzv.jp/p.html?type=player&portal/6/6/g1h2m1j3g2h4o43h"}

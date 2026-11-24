@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"lring","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"lring","generator":"tools/gen_fixtures.js"}}
 {"id":"lring-0","kind":"url","input":"lring/3/3/123401234"}
 {"id":"lring-1","kind":"url","input":"lring/3/3/12340123e"}
 {"id":"lring-2","kind":"url","input":"https://puzz.link/p?lring/3/3/123401234"}

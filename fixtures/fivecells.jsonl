@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"fivecells","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"fivecells","generator":"tools/gen_fixtures.js"}}
 {"id":"fivecells-0","kind":"url","input":"fivecells/10/10/2c2g3a3a1e3c3e2a23e0f0c22b2j1d1a1f2e23k"}
 {"id":"fivecells-1","kind":"url","input":"fivecells/10/10/a1a22g2f2f1a1a1a22d1m11a2a2a2a2b2c2c22a1a22b2k2c2a2"}
 {"id":"fivecells-2","kind":"url","input":"fivecells/10/10/c2d2c2h3b11e2e0d0b1b2n22c1h2d3i2c2c"}

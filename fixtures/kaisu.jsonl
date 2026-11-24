@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"kaisu","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"kaisu","generator":"tools/gen_fixtures.js"}}
 {"id":"kaisu-0","kind":"url","input":"kaisu/4/4"}
 {"id":"kaisu-1","kind":"url","input":"kaisu/4/4/"}
 {"id":"kaisu-2","kind":"url","input":"kaisu/4/4/1141"}

@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"uturns","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"uturns","generator":"tools/gen_fixtures.js"}}
 {"id":"uturns-0","kind":"url","input":"uturns/9/9/..3.1..2..1.3..2..1..3..2..1..3..2..1..3..2..1..3..2..1..3..2..1..3..2..1..3..2..1"}
 {"id":"uturns-1","kind":"url","input":"https://puzz.link/p?uturns/9/9/..3.1..2..1.3..2..1..3..2..1..3..2..1..3..2..1..3..2..1..3..2..1..3..2..1..3..2..1"}
 {"id":"uturns-2","kind":"url","input":"uturns/4/4/1..3.2..1.3..2..1..3..2..1"}

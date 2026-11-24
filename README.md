@@ -36,6 +36,8 @@ cargo clippy --workspace --all-targets -q
 ```
 
 `fixtures/<pid>.jsonl` contains compact test inputs, not stored pzprjs outputs.
+Fixture inputs do not record the reference commit; the generator checks the
+reference checkout against `PZPRJS_COMMIT` when producing comparison results.
 The property tests check FileIO/state round trips, canonicalization, symmetries,
 and deduplication for every registered genre; set `PZPRST_GENRE=slither` to run
 only that genre. These tests do not require Node. The full pzprjs-trace comparison
@@ -52,7 +54,7 @@ the pinned commit. With the repositories as siblings:
 
 ```sh
 git clone https://github.com/SmilingWayne/pzprjs-trace.git ../pzprjs
-git -C ../pzprjs checkout d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42
+# Check out the commit in crates/pzprst/src/variety_table.rs (PZPRJS_COMMIT).
 cd ../pzprjs
 npm ci
 npm run build

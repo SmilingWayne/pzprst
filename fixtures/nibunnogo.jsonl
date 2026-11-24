@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"nibunnogo","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"nibunnogo","generator":"tools/gen_fixtures.js"}}
 {"id":"nibunnogo-0","kind":"url","input":"nibunnogo/4/4"}
 {"id":"nibunnogo-1","kind":"url","input":"nibunnogo/1/1"}
 {"id":"nibunnogo-2","kind":"url","input":"nibunnogo/1/4"}

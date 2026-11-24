@@ -35,6 +35,12 @@ function run(command, args, env) {
 try {
 	run(process.execPath, [path.join(__dirname, "gen_fixtures.js"), "--reference", "--output", temp, ...generatorArgs, ...pids], process.env);
 	const env = { ...process.env, PZPRST_REFERENCE_DIR: temp };
+	// The generator checks the reference checkout against this pin before
+	// creating the temporary results. Pass it in memory, not in every JSONL.
+	const table = fs.readFileSync(path.join(root, "crates/pzprst/src/variety_table.rs"), "utf8");
+	const pin = table.match(/PZPRJS_COMMIT:\s*&str\s*=\s*"([0-9a-f]+)"/);
+	if (!pin) throw Error("missing pzprjs-trace pin in variety_table.rs");
+	env.PZPRST_REFERENCE_COMMIT = pin[1];
 	if (pids.length) env.PZPRST_GENRE = pids.join(",");
 	else delete env.PZPRST_GENRE;
 	run("cargo", ["test", "-q", "-p", "pzprst-conformance", "--test", "fixtures", "every_genre_matches_pzprjs", "--", "--ignored"], env);

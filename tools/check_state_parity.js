@@ -16,6 +16,9 @@ const pinned = table.match(/PZPRJS_COMMIT:\s*&str\s*=\s*"([0-9a-f]+)"/)[1];
 const commit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: reference, encoding: "utf8" }).trim();
 const changed = execFileSync("git", ["status", "--porcelain", "--untracked-files=no", "--", "src", "src-ui"], { cwd: reference, encoding: "utf8" });
 if (commit !== pinned || changed.trim()) throw Error("reference must be clean and at " + pinned);
+// pzprjs player puzzles access the browser UI when initializing their timer.
+// Its own Node test harness likewise supplies a global ui object.
+global.ui = {};
 const pzpr = require(path.join(reference, "dist/js/pzpr.js"));
 const state = require(path.join(reference, "src-ui/state.js"));
 execFileSync("cargo", ["build", "-q", "--release", "-p", "pzprst-cli"], { cwd: root, stdio: "inherit" });

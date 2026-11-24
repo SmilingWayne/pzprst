@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"energywalk","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"energywalk","generator":"tools/gen_fixtures.js"}}
 {"id":"energywalk-0","kind":"url","input":"energywalk/3/3/1g1"}
 {"id":"energywalk-1","kind":"url","input":"https://puzz.link/p?energywalk/3/3/1g1"}
 {"id":"energywalk-2","kind":"url","input":"http://pzv.jp/p.html?type=player&energywalk/3/3/1g1"}

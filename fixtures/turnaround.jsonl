@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"turnaround","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"turnaround","generator":"tools/gen_fixtures.js"}}
 {"id":"turnaround-0","kind":"url","input":"turnaround/4/4/1234"}
 {"id":"turnaround-1","kind":"url","input":"https://puzz.link/p?turnaround/7/7/1g2g2g1m2g1g2g2m3g1g2g2m2g2g1g1"}
 {"id":"turnaround-2","kind":"url","input":"https://puzz.link/p?turnaround/10/10/j3h2j3h1j1h1j1h0j3h2j3h1j2h0j2h1j2h1j2h1j3h2j3h2j"}

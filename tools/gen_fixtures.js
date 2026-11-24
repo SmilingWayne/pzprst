@@ -132,7 +132,7 @@ function datasetUrls(dir, limit) {
 
 function write(dir, pid, lines) {
 	fs.mkdirSync(dir, { recursive: true });
-	const header = { pzprjs_commit: COMMIT, pid, generator: "tools/gen_fixtures.js" };
+	const header = { pid, generator: "tools/gen_fixtures.js" };
 	const text = [JSON.stringify({ header })].concat(lines.map((l) => JSON.stringify(l))).join("\n") + "\n";
 	const file = path.join(dir, pid + ".jsonl");
 	fs.writeFileSync(file, text);
@@ -161,8 +161,8 @@ for (const pid of pids) {
 				throw Error(`missing test inputs: ${inputFile}`);
 			}
 			const inputLines = fs.readFileSync(inputFile, "utf8").trimEnd().split("\n").map(JSON.parse);
-			if (inputLines.shift().header.pzprjs_commit !== COMMIT) {
-				throw Error(`test inputs do not match the pinned pzprjs-trace: ${inputFile}`);
+			if (inputLines.shift().header?.pid !== pid) {
+				throw Error(`test input header does not match ${pid}: ${inputFile}`);
 			}
 			const records = inputLines.map(({ id, kind, input }) => record(id, kind, input));
 			failures += write(path.join(path.resolve(output), subdir), pid, records);

@@ -24,8 +24,9 @@ board".
 > Transforms are byte-identical to pzprjs `board.operate("flipx" | "flipy" | "turnl" | "turnr")`
 > followed by the same encoders.
 
-Reference: `SmilingWayne/pzprjs-trace` @ `d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42`
-(local checkout `../pzprjs`). Each fixture records this commit.
+Reference: `SmilingWayne/pzprjs-trace` (local checkout `../pzprjs`). The pin is
+kept in `variety_table.rs`, not in the input fixtures; the reference generator
+verifies its checkout against it.
 
 Where pzprjs's behaviour is an obvious accident (e.g. `cols=0` silently becoming a
 10×10 board), pzprst returns an error and the divergence is listed in §9.
@@ -517,6 +518,5 @@ introspected. Ready and codec-only genres are dispatched in waves (`--plan`, see
 `.agents/skills/pzprst-port-genre/dispatch.md`); infrastructure features are
 maintainer work and unblock the rest by feature.
 
-The current registry has 265 pids. Use `pzprst::supported()` for the actual
-list: the historical counts and infrastructure classifications above predate
-the room and pencil-mark ports.
+Use `pzprst::supported()` for the current implemented list: the historical
+counts and infrastructure classifications above predate later ports.

@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"tetrominous","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"tetrominous","generator":"tools/gen_fixtures.js"}}
 {"id":"tetrominous-0","kind":"url","input":"tetrominous/4/4/0123.456789abcde"}
 {"id":"tetrominous-1","kind":"url","input":"https://puzz.link/p?tetrominous/4/4/0123.456789abcde"}
 {"id":"tetrominous-2","kind":"url","input":"http://pzv.jp/p.html?type=player&tetrominous/4/4/0123.456789abcde"}

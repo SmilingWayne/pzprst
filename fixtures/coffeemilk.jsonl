@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"coffeemilk","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"coffeemilk","generator":"tools/gen_fixtures.js"}}
 {"id":"coffeemilk-0","kind":"url","input":"coffeemilk/4/4/p"}
 {"id":"coffeemilk-1","kind":"url","input":"coffeemilk/4/4/12"}
 {"id":"coffeemilk-2","kind":"url","input":"coffeemilk/4/4/1"}

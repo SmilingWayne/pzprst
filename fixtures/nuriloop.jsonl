@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"nuriloop","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"nuriloop","generator":"tools/gen_fixtures.js"}}
 {"id":"nuriloop-0","kind":"url","input":"nuriloop/2/2/12"}
 {"id":"nuriloop-1","kind":"url","input":"https://puzz.link/p?nuriloop/4/4/1234"}
 {"id":"nuriloop-2","kind":"url","input":"nuriloop_edit/3/3/12."}

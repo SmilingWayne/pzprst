@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"renban","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"renban","generator":"tools/gen_fixtures.js"}}
 {"id":"renban-0","kind":"url","input":"renban/4/4/vmok3g1p5g2h"}
 {"id":"renban-1","kind":"url","input":"https://puzz.link/p?renban/4/4/vmok3g1p5g2h"}
 {"id":"renban-2","kind":"url","input":"http://pzv.jp/p.html?type=player&renban/4/4/vmok3g1p5g2h"}

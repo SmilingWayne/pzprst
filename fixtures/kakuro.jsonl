@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"kakuro","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"kakuro","generator":"tools/gen_fixtures.js"}}
 {"id":"kakuro-0","kind":"url","input":"kakuro/1/1/12"}
 {"id":"kakuro-1","kind":"url","input":"kakuro/1/1/00"}
 {"id":"kakuro-2","kind":"url","input":"kakuro/1/1/ZZ"}

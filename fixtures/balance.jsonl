@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"balance","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"balance","generator":"tools/gen_fixtures.js"}}
 {"id":"balance-0","kind":"url","input":"balance/6/6/h7m7h7l7h7g7h7l7"}
 {"id":"balance-1","kind":"url","input":"balance/13/13/x-109cnbkdx8mbj7m8xch0h1m-11i8l7g0i7g0v1g9g1gfg1gft"}
 {"id":"balance-2","kind":"url","input":"balance/6/6/i1g9m1g1j1g8m8g0i"}

@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"hamlepaths","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"hamlepaths","generator":"tools/gen_fixtures.js"}}
 {"id":"hamlepaths-0","kind":"url","input":"hamlepaths/4/4/1u"}
 {"id":"hamlepaths-1","kind":"url","input":"https://puzz.link/p?hamlepaths/4/4/1u"}
 {"id":"hamlepaths-2","kind":"url","input":"http://pzv.jp/p.html?type=player&hamlepaths/4/4/1u"}

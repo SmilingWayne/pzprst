@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"armyants","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"armyants","generator":"tools/gen_fixtures.js"}}
 {"id":"armyants-0","kind":"url","input":"armyants/4/4/0000001234r"}
 {"id":"armyants-1","kind":"url","input":"armyants/4/4/0000001234"}
 {"id":"armyants-2","kind":"url","input":"https://puzz.link/p?armyants/4/4/0000001234"}

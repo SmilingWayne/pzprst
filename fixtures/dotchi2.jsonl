@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"dotchi2","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"dotchi2","generator":"tools/gen_fixtures.js"}}
 {"id":"dotchi2-0","kind":"url","input":"dotchi2/4/4/"}
 {"id":"dotchi2-1","kind":"url","input":"dotchi2/1/1/"}
 {"id":"dotchi2-2","kind":"url","input":"dotchi2/1/5/"}

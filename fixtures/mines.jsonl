@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"mines","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"mines","generator":"tools/gen_fixtures.js"}}
 {"id":"mines-0","kind":"url","input":"mines/6/6/2g1g2n1g1g3j2g3h1j3g3g"}
 {"id":"mines-1","kind":"url","input":"mines/7/7/2k0h4g3i4i3j3j1i5i5g2h1k1"}
 {"id":"mines-2","kind":"url","input":"mines/13/12/g2g2h2h2g2g2g3g2g3g3g3g2s2g111g2g3g3g3h101g3n101i222g22g111i202n3g202h2g4g3g4g222g3s3g4g3g4g4g2g2g2g1h2h2g2g"}

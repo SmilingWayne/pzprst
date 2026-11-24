@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"mrokmrno","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"mrokmrno","generator":"tools/gen_fixtures.js"}}
 {"id":"mrokmrno-0","kind":"url","input":"mrokmrno/4/4/123456.i"}
 {"id":"mrokmrno-1","kind":"url","input":"mrokmrno/2/2/a.b"}
 {"id":"mrokmrno-2","kind":"url","input":"mrokmrno/1/1/6"}

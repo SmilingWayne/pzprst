@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"triplace","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"triplace","generator":"tools/gen_fixtures.js"}}
 {"id":"triplace-0","kind":"url","input":"triplace/3/3/_n123456"}
 {"id":"triplace-1","kind":"url","input":"triplace/3/3/12h34k123456"}
 {"id":"triplace-2","kind":"url","input":"triplace/2/2/12"}

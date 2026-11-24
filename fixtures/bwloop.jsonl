@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"bwloop","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"bwloop","generator":"tools/gen_fixtures.js"}}
 {"id":"bwloop-0","kind":"url","input":"bwloop/4/4/f00000"}
 {"id":"bwloop-1","kind":"url","input":"bwloop/4/4/100000"}
 {"id":"bwloop-2","kind":"url","input":"https://puzz.link/p?bwloop/4/4/f00000"}

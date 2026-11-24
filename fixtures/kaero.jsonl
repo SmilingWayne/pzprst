@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"kaero","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"kaero","generator":"tools/gen_fixtures.js"}}
 {"id":"kaero-0","kind":"url","input":"kaero/4/4/000000.1Z0-7k"}
 {"id":"kaero-1","kind":"url","input":"kaero/4/4/000000.1Z0-7"}
 {"id":"kaero-2","kind":"url","input":"https://puzz.link/p?kaero/4/4/000000p"}

@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"castle","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"castle","generator":"tools/gen_fixtures.js"}}
 {"id":"castle-0","kind":"url","input":"castle/12/12/224j234e122125g124f131r222b231e121h131b144h112e241b212r145f114g132142e244j214"}
 {"id":"castle-1","kind":"url","input":"castle/11/11/023a042l023a04.a024c042l021a032a041p043g012n00.a013a042d044m00.a014a00.b043a012h"}
 {"id":"castle-2","kind":"url","input":"castle/7/7/022j122c242h022h13.c212j012"}

@@ -1,4 +1,4 @@
-{"header":{"pzprjs_commit":"d40aeab0b12e723a9ea10ebeece28fc2f6a7fe42","pid":"topo","generator":"tools/gen_fixtures.js"}}
+{"header":{"pid":"topo","generator":"tools/gen_fixtures.js"}}
 {"id":"topo-0","kind":"url","input":"topo/5/5/2h5i8jczmg3k9k-11p-63"}
 {"id":"topo-1","kind":"url","input":"https://puzz.link/p?topo/5/5/2h5i8jczmg3k9k-11p-63"}
 {"id":"topo-2","kind":"url","input":"topo/5/5/zz0zi0"}
