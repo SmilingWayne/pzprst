@@ -1,0 +1,68 @@
+{"header":{"pid":"starbattle","generator":"tools/gen_fixtures.js"}}
+{"id":"starbattle-0","kind":"url","input":"https://puzz.link/p?starbattle/10/10/2/08296a9mskbeq48910v47i0cve8h1q26f21s"}
+{"id":"starbattle-1","kind":"url","input":"https://puzz.link/p?starbattle/10/10/2/549hl3d7ikr7kgh78g0kog0c1gmm2gfd08ck"}
+{"id":"starbattle-2","kind":"url","input":"https://puzz.link/p?starbattle/10/10/2/80kgpl6olqfgn5c2g81o47fi38f41q0o70g9"}
+{"id":"starbattle-3","kind":"url","input":"starbattle/4/4/"}
+{"id":"starbattle-4","kind":"url","input":"starbattle/1/1/"}
+{"id":"starbattle-5","kind":"url","input":"starbattle/1/5/"}
+{"id":"starbattle-6","kind":"url","input":"starbattle/5/1/"}
+{"id":"starbattle-7","kind":"fileio","input":"pzprv3\nstarbattle\n1\n6\n2\n3\n0 0 1 1 1 2 \n. . # + . . \n"}
+{"id":"starbattle-8","kind":"url","input":"starbattle/6/1/2/9"}
+{"id":"starbattle-9","kind":"fileio","input":"pzprv3\nstarbattle\n4\n5\n3\n3\n0 0 0 0 1 \n0 2 0 0 1 \n0 0 0 0 0 \n0 0 0 0 0 \n. . # . . \n. # # # . \n. + . # . \n# . # . . \n"}
+{"id":"starbattle-10","kind":"url","input":"starbattle/5/4/3/3k00890"}
+{"id":"starbattle-11","kind":"fileio","input":"pzprv3\nstarbattle\n3\n4\n2\n2\n0 0 0 0 \n0 0 0 0 \n1 0 0 0 \n. . . + \n. . . . \n# . . + \n"}
+{"id":"starbattle-12","kind":"url","input":"starbattle/4/3/2/0810"}
+{"id":"starbattle-13","kind":"fileio","input":"pzprv3\nstarbattle\n4\n4\n1\n1\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n. # . + \n. . + . \n# . . . \n. . . # \n"}
+{"id":"starbattle-14","kind":"url","input":"starbattle/4/4/1/000000"}
+{"id":"starbattle-15","kind":"fileio","input":"pzprv3\nstarbattle\n4\n1\n2\n2\n0 \n0 \n1 \n1 \n. \n. \n. \n. \n"}
+{"id":"starbattle-16","kind":"url","input":"starbattle/1/4/2/8"}
+{"id":"starbattle-17","kind":"fileio","input":"pzprv3\nstarbattle\n5\n1\n1\n3\n0 \n0 \n1 \n1 \n2 \n. \n# \n+ \n. \n. \n"}
+{"id":"starbattle-18","kind":"url","input":"starbattle/1/5/1/a"}
+{"id":"starbattle-19","kind":"fileio","input":"pzprv3\nstarbattle\n1\n3\n1\n1\n0 0 0 \n# + . \n"}
+{"id":"starbattle-20","kind":"url","input":"starbattle/3/1/1/0"}
+{"id":"starbattle-21","kind":"fileio","input":"pzprv3\nstarbattle\n1\n4\n2\n3\n0 1 2 2 \n. . . . \n"}
+{"id":"starbattle-22","kind":"url","input":"starbattle/4/1/2/o"}
+{"id":"starbattle-23","kind":"fileio","input":"pzprv3\nstarbattle\n1\n1\n3\n1\n0 \n. \n"}
+{"id":"starbattle-24","kind":"url","input":"starbattle/1/1/3//"}
+{"id":"starbattle-25","kind":"fileio","input":"pzprv3\nstarbattle\n5\n4\n2\n2\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 1 0 0 \n. + . . \n+ . # . \n. # . . \n+ . . . \n# + . . \n"}
+{"id":"starbattle-26","kind":"url","input":"starbattle/4/5/2/0060020"}
+{"id":"starbattle-27","kind":"fileio","input":"pzprv3\nstarbattle\n1\n6\n1\n2\n0 0 0 1 1 1 \n# . . . # . \n"}
+{"id":"starbattle-28","kind":"url","input":"starbattle/6/1/1/4"}
+{"id":"starbattle-29","kind":"fileio","input":"pzprv3\nstarbattle\n1\n3\n3\n2\n0 1 1 \n# . + \n"}
+{"id":"starbattle-30","kind":"url","input":"starbattle/3/1/3/g"}
+{"id":"starbattle-31","kind":"fileio","input":"pzprv3\nstarbattle\n5\n3\n2\n4\n0 0 0 \n0 0 0 \n0 0 0 \n1 2 2 \n1 2 3 \n# # . \n. + . \n. # + \n+ . . \n. . . \n"}
+{"id":"starbattle-32","kind":"url","input":"starbattle/3/5/2/0b0e8"}
+{"id":"starbattle-33","kind":"fileio","input":"pzprv3\nstarbattle\n5\n5\n1\n3\n0 1 1 1 1 \n0 1 1 1 1 \n1 1 1 1 1 \n1 1 1 1 1 \n1 1 2 1 1 \n. . . . + \n. . . . . \n. . . . . \n. . + . . \n# . . . . \n"}
+{"id":"starbattle-34","kind":"url","input":"starbattle/5/5/1/h0060g04"}
+{"id":"starbattle-35","kind":"fileio","input":"pzprv3\nstarbattle\n4\n6\n3\n3\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 1 \n0 0 0 0 0 2 \n. . . . . . \n# # + . . . \n+ . . + . . \n# + + + . . \n"}
+{"id":"starbattle-36","kind":"url","input":"starbattle/6/4/3/00110084"}
+{"id":"starbattle-37","kind":"fileio","input":"pzprv3\nstarbattle\n4\n1\n1\n1\n0 \n0 \n0 \n0 \n. \n. \n# \n# \n"}
+{"id":"starbattle-38","kind":"url","input":"starbattle/1/4/1/0"}
+{"id":"starbattle-39","kind":"fileio","input":"pzprv3\nstarbattle\n3\n6\n3\n1\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n. . # . + . \n# . . . . # \n. . . . . . \n"}
+{"id":"starbattle-40","kind":"url","input":"starbattle/6/3/3/000000"}
+{"id":"starbattle-41","kind":"fileio","input":"pzprv3\nstarbattle\n3\n5\n2\n1\n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n. + . . # \n. # . # + \n# # . + . \n"}
+{"id":"starbattle-42","kind":"url","input":"starbattle/5/3/2/00000"}
+{"id":"starbattle-43","kind":"fileio","input":"pzprv3\nstarbattle\n1\n4\n2\n2\n0 0 0 1 \n. # . . \n"}
+{"id":"starbattle-44","kind":"url","input":"starbattle/4/1/2/4"}
+{"id":"starbattle-45","kind":"fileio","input":"pzprv3\nstarbattle\n5\n4\n2\n4\n0 1 2 2 \n2 2 2 2 \n2 2 3 2 \n2 2 2 2 \n2 2 2 2 \n. # # + \n. # . . \n# . . # \n. + . . \n. . . . \n"}
+{"id":"starbattle-46","kind":"url","input":"starbattle/4/5/2/o60o8g0"}
+{"id":"starbattle-47","kind":"fileio","input":"pzprv3\nstarbattle\n4\n4\n2\n2\n0 0 1 1 \n0 0 1 1 \n1 1 1 1 \n1 1 1 1 \n# . # . \n+ . + + \n# . . . \n. # . . \n"}
+{"id":"starbattle-48","kind":"url","input":"starbattle/4/4/2/9001g0"}
+{"id":"starbattle-49","kind":"fileio","input":"pzprv3\nstarbattle\n3\n4\n3\n3\n0 1 2 2 \n0 2 2 2 \n2 2 2 2 \n. . . + \n. . . # \n. . # . \n"}
+{"id":"starbattle-50","kind":"url","input":"starbattle/4/3/3/q090"}
+{"id":"starbattle-51","kind":"fileio","input":"pzprv3\nstarbattle\n1\n3\n1\n2\n0 0 1 \n. . . \n"}
+{"id":"starbattle-52","kind":"url","input":"starbattle/3/1/1/8"}
+{"id":"starbattle-53","kind":"fileio","input":"pzprv3\nstarbattle\n3\n5\n1\n5\n0 0 1 1 2 \n0 0 0 3 2 \n0 0 3 3 4 \n. . . . . \n# . + + . \n. . # . + \n"}
+{"id":"starbattle-54","kind":"url","input":"starbattle/5/3/1/ad865"}
+{"id":"starbattle-55","kind":"fileio","input":"pzprv3\nstarbattle\n1\n1\n3\n1\n0 \n+ \n"}
+{"id":"starbattle-56","kind":"url","input":"starbattle/1/1/3//"}
+{"id":"starbattle-57","kind":"fileio","input":"pzprv3\nstarbattle\n2\n2\n2\n2\n0 1 \n0 1 \n. + \n. + \n"}
+{"id":"starbattle-58","kind":"url","input":"starbattle/2/2/2/o0"}
+{"id":"starbattle-59","kind":"fileio","input":"pzprv3\nstarbattle\n1\n6\n3\n4\n0 1 2 3 3 3 \n. . # . . + \n"}
+{"id":"starbattle-60","kind":"url","input":"starbattle/6/1/3/s"}
+{"id":"starbattle-61","kind":"fileio","input":"pzprv3\nstarbattle\n5\n3\n3\n2\n0 0 0 \n0 0 0 \n0 0 0 \n1 0 0 \n0 0 0 \n# . + \n+ . # \n+ # . \n. . . \n. . . \n"}
+{"id":"starbattle-62","kind":"url","input":"starbattle/3/5/3/08090"}
+{"id":"starbattle-63","kind":"fileio","input":"pzprv3\nstarbattle\n5\n6\n1\n6\n0 0 0 0 1 2 \n0 0 0 1 1 1 \n0 0 0 1 1 1 \n0 3 4 1 1 1 \n5 5 5 1 1 1 \n# # + # # . \n. # . + . + \n. . . . + + \n# . . + . + \n. . + . . # \n"}
+{"id":"starbattle-64","kind":"url","input":"starbattle/6/5/1/344s42g33g"}
+{"id":"starbattle-65","kind":"fileio","input":"pzprv3\nstarbattle\n1\n5\n2\n2\n0 1 1 1 1 \n. . . . . \n"}
+{"id":"starbattle-66","kind":"url","input":"starbattle/5/1/2/g"}

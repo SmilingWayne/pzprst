@@ -118,6 +118,11 @@ Icelom2. Icebarn also accepts the legacy pzpr applet URL formats, including the
 `c` variant, and emits canonical pzprv3 URLs.
 `Board.indicator` stores a puzzle-wide numeric clue such as Easy as ABC's letter
 count. It is question data and participates in trace state identity.
+Star Battle uses the same indicator for its star count. Tile City, Martini,
+Hinge, Mannequin, One Room and Toichika 2 reuse the existing room and cell
+codecs; Roma and Arrow Flow share their numeric directional-submark FileIO,
+while NEWS also preserves its `tren_new` rule flag and subnumbers. These genres
+use the existing eight rectangular-board symmetries.
 `Board.segments` stores ordered answer segments and optional origins in doubled
 coordinates; `clear_snapshot` removes them. `Board::transform` applies the D4
 geometry and preserves the existing infallible API. For pzprjs-compatible

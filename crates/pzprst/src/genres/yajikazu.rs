@@ -342,6 +342,17 @@ pub(super) fn adjust_cell_numbers(b: &mut Board, t: Transform) {
     }
 }
 
+/// `adjustCellArrowField(key, d, "anum")`: rotate answer arrows only.
+pub(super) fn adjust_cell_answer_numbers(b: &mut Board, t: Transform) {
+    for op in turn_ops(t) {
+        for cell in &mut b.cells {
+            if let Some(dir) = translate_dir(*op, cell.anum) {
+                cell.anum = dir;
+            }
+        }
+    }
+}
+
 pub(super) fn adjust_border_qdirs(b: &mut Board, t: Transform) {
     for op in turn_ops(t) {
         for edge in &mut b.borders {

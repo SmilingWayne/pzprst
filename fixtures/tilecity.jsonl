@@ -1,0 +1,67 @@
+{"header":{"pid":"tilecity","generator":"tools/gen_fixtures.js"}}
+{"id":"tilecity-0","kind":"url","input":"https://puzz.link/p?tilecity/8/8/nvuvrfdvnvugdjd6tvrmbcr0d2k4zd3k1d"}
+{"id":"tilecity-1","kind":"url","input":"https://puzz.link/p?tilecity/10/10/fjlvv5eftn7v7fvnsqveavlvuu5vrvmqju7r4h4zzzb4h4"}
+{"id":"tilecity-2","kind":"url","input":"tilecity/4/4/"}
+{"id":"tilecity-3","kind":"url","input":"tilecity/1/1/"}
+{"id":"tilecity-4","kind":"url","input":"tilecity/1/5/"}
+{"id":"tilecity-5","kind":"url","input":"tilecity/5/1/"}
+{"id":"tilecity-6","kind":"fileio","input":"pzprv3\ntilecity\n5\n1\n1\n0 \n0 \n0 \n0 \n0 \n0 \n. \n. \n. \n2 \n# \n. \n+ \n. \n+ \n"}
+{"id":"tilecity-7","kind":"url","input":"tilecity/1/5/00c2"}
+{"id":"tilecity-8","kind":"fileio","input":"pzprv3\ntilecity\n4\n2\n3\n0 0 \n1 1 \n1 2 \n2 2 \n. 2 \n- 1 \n. - \n3 . \n. # \n# . \n# . \n. . \n"}
+{"id":"tilecity-9","kind":"url","input":"tilecity/2/4/4r0a2.1a.3a"}
+{"id":"tilecity-10","kind":"fileio","input":"pzprv3\ntilecity\n4\n6\n2\n0 0 0 0 0 1 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n. . 1 1 . 3 \n. . - . . - \n. 3 - 1 1 1 \n. - 1 . . . \n. . # . . . \n. . . . . # \n. . . # # . \n. . + . . . \n"}
+{"id":"tilecity-11","kind":"url","input":"tilecity/6/4/10000g00b11a3b.b.a3.111a.1c"}
+{"id":"tilecity-12","kind":"fileio","input":"pzprv3\ntilecity\n1\n2\n1\n0 0 \n2 . \n. # \n"}
+{"id":"tilecity-13","kind":"url","input":"tilecity/2/1/02a"}
+{"id":"tilecity-14","kind":"fileio","input":"pzprv3\ntilecity\n4\n3\n2\n0 1 1 \n1 1 1 \n1 1 1 \n1 1 1 \n. . 1 \n- . 2 \n. 1 . \n. 3 0 \n. . + \n. . . \n. + . \n. # # \n"}
+{"id":"tilecity-15","kind":"url","input":"tilecity/3/4/g0g0b1.a2a1b30"}
+{"id":"tilecity-16","kind":"fileio","input":"pzprv3\ntilecity\n5\n1\n3\n0 \n1 \n1 \n2 \n2 \n3 \n1 \n. \n. \n- \n+ \n. \n. \n. \n. \n"}
+{"id":"tilecity-17","kind":"url","input":"tilecity/1/5/k31b./"}
+{"id":"tilecity-18","kind":"fileio","input":"pzprv3\ntilecity\n5\n2\n3\n0 0 \n0 0 \n1 1 \n1 1 \n2 1 \n2 3 \n. . \n. . \n0 2 \n1 - \n. . \n. . \n. . \n# . \n# . \n"}
+{"id":"tilecity-19","kind":"url","input":"tilecity/2/5/16823d021./"}
+{"id":"tilecity-20","kind":"fileio","input":"pzprv3\ntilecity\n2\n6\n5\n0 1 1 2 3 4 \n0 1 1 2 2 4 \n1 2 - . - - \n1 2 . . . 3 \n+ . # . # . \n+ # + . . + \n"}
+{"id":"tilecity-21","kind":"url","input":"tilecity/6/2/nl1012.a..12c3"}
+{"id":"tilecity-22","kind":"fileio","input":"pzprv3\ntilecity\n5\n4\n2\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n1 0 0 0 \n. . 3 - \n2 1 1 . \n0 1 2 . \n0 . 0 3 \n. - . 2 \n. . . . \n. . . . \n. # # . \n+ . . + \n# . # + \n"}
+{"id":"tilecity-23","kind":"url","input":"tilecity/4/5/0040040b3.211a012a0a03a.a2"}
+{"id":"tilecity-24","kind":"fileio","input":"pzprv3\ntilecity\n4\n6\n4\n0 0 0 0 0 1 \n0 0 0 0 1 1 \n0 0 0 0 2 1 \n0 0 0 0 3 3 \n- . . 2 2 2 \n. 0 0 . . 2 \n3 1 2 2 . - \n3 - 2 0 3 . \n. . . . + . \n. . # . . . \n+ # + # . . \n. + . . . . \n"}
+{"id":"tilecity-25","kind":"url","input":"tilecity/6/4/123210gc.b222a00b23122a.3.203a"}
+{"id":"tilecity-26","kind":"fileio","input":"pzprv3\ntilecity\n1\n1\n1\n0 \n1 \n. \n"}
+{"id":"tilecity-27","kind":"url","input":"tilecity/1/1/1"}
+{"id":"tilecity-28","kind":"fileio","input":"pzprv3\ntilecity\n2\n1\n1\n0 \n0 \n0 \n. \n+ \n. \n"}
+{"id":"tilecity-29","kind":"url","input":"tilecity/1/2/00a"}
+{"id":"tilecity-30","kind":"fileio","input":"pzprv3\ntilecity\n1\n5\n2\n0 0 1 1 1 \n3 - 0 . 0 \n. + . . . \n"}
+{"id":"tilecity-31","kind":"url","input":"tilecity/5/1/83.0a0"}
+{"id":"tilecity-32","kind":"fileio","input":"pzprv3\ntilecity\n2\n6\n2\n0 0 0 0 0 1 \n0 0 0 0 0 0 \n1 2 . . 1 . \n3 0 2 - 2 - \n+ . . . . + \n. # . # . + \n"}
+{"id":"tilecity-33","kind":"url","input":"tilecity/6/2/100g12b1a302.2./"}
+{"id":"tilecity-34","kind":"fileio","input":"pzprv3\ntilecity\n3\n4\n3\n0 1 1 1 \n0 1 1 1 \n0 0 1 2 \n. 1 - . \n0 . . . \n. 2 2 3 \n# + + + \n. + # # \n. # # . \n"}
+{"id":"tilecity-35","kind":"url","input":"tilecity/4/3/i60ka1.a0d223"}
+{"id":"tilecity-36","kind":"fileio","input":"pzprv3\ntilecity\n3\n4\n3\n0 0 0 1 \n0 0 0 1 \n0 0 0 2 \n. 3 0 2 \n0 3 . . \n. 2 0 - \n. . . . \n+ + # # \n. . # + \n"}
+{"id":"tilecity-37","kind":"url","input":"tilecity/4/3/4i04a30203c20./"}
+{"id":"tilecity-38","kind":"fileio","input":"pzprv3\ntilecity\n4\n4\n3\n0 1 1 2 \n1 1 1 1 \n1 1 1 1 \n1 1 1 1 \n. 0 1 - \n2 . . . \n. . 1 . \n. - 3 3 \n. . # . \n# . # # \n+ . . . \n. . . # \n"}
+{"id":"tilecity-39","kind":"url","input":"tilecity/4/4/k00i00a01.2e1b.33"}
+{"id":"tilecity-40","kind":"fileio","input":"pzprv3\ntilecity\n3\n2\n3\n0 1 \n1 1 \n1 2 \n1 3 \n1 3 \n. 1 \n# . \n. . \n. + \n"}
+{"id":"tilecity-41","kind":"url","input":"tilecity/2/3/ki1313a1"}
+{"id":"tilecity-42","kind":"fileio","input":"pzprv3\ntilecity\n5\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n3 3 3 \n3 . . \n1 . . \n. . - \n3 . 1 \n. # . \n. . . \n. . . \n# . . \n. # + \n"}
+{"id":"tilecity-43","kind":"url","input":"tilecity/3/5/000003333b1d.3a1"}
+{"id":"tilecity-44","kind":"fileio","input":"pzprv3\ntilecity\n3\n4\n5\n0 1 1 1 \n0 0 2 2 \n3 0 4 4 \n2 . 3 . \n2 1 3 2 \n. . 1 0 \n. . . + \n. . # . \n. . # . \n"}
+{"id":"tilecity-45","kind":"url","input":"tilecity/4/3/hcfc2a3a2132b10"}
+{"id":"tilecity-46","kind":"fileio","input":"pzprv3\ntilecity\n1\n2\n2\n0 1 \n. - \n# . \n"}
+{"id":"tilecity-47","kind":"url","input":"tilecity/2/1/ga./"}
+{"id":"tilecity-48","kind":"fileio","input":"pzprv3\ntilecity\n2\n3\n3\n0 0 1 \n0 2 1 \n1 1 3 \n. . 1 \n+ # . \n# # . \n"}
+{"id":"tilecity-49","kind":"url","input":"tilecity/3/2/e8113b1"}
+{"id":"tilecity-50","kind":"fileio","input":"pzprv3\ntilecity\n3\n4\n2\n0 0 0 1 \n0 0 0 0 \n0 0 0 0 \n. - - . \n2 - - 2 \n0 3 . 0 \n. # . . \n. . . . \n# # . + \n"}
+{"id":"tilecity-51","kind":"url","input":"tilecity/4/3/4020a..a2..203a0"}
+{"id":"tilecity-52","kind":"fileio","input":"pzprv3\ntilecity\n3\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n0 . 2 \n1 1 . \n. . 1 \n. # . \n. + . \n+ . # \n"}
+{"id":"tilecity-53","kind":"url","input":"tilecity/3/3/00000a211c1"}
+{"id":"tilecity-54","kind":"fileio","input":"pzprv3\ntilecity\n1\n5\n1\n0 0 0 0 0 \n. . 1 . - \n. # . . + \n"}
+{"id":"tilecity-55","kind":"url","input":"tilecity/5/1/0b1a./"}
+{"id":"tilecity-56","kind":"fileio","input":"pzprv3\ntilecity\n4\n2\n2\n0 0 \n0 1 \n0 1 \n0 1 \n2 0 \n1 . \n3 . \n- . \n. # \n. # \n. # \n. # \n"}
+{"id":"tilecity-57","kind":"url","input":"tilecity/2/4/e80201a3a.a"}
+{"id":"tilecity-58","kind":"fileio","input":"pzprv3\ntilecity\n3\n6\n4\n0 0 0 0 1 1 \n0 0 0 0 1 1 \n2 0 0 0 1 3 \n. 2 . - 3 - \n3 . - . 2 . \n. 1 0 3 0 0 \n. . # . . # \n# . . + + . \n. . . + . . \n"}
+{"id":"tilecity-59","kind":"url","input":"tilecity/6/3/22j088a2a.3.3a.a2b10300"}
+{"id":"tilecity-60","kind":"fileio","input":"pzprv3\ntilecity\n2\n4\n2\n0 1 1 1 \n1 1 1 1 \n. . 0 . \n0 3 . 2 \n. # . . \n. . . # \n"}
+{"id":"tilecity-61","kind":"url","input":"tilecity/4/2/g0gb0a03a2"}
+{"id":"tilecity-62","kind":"fileio","input":"pzprv3\ntilecity\n5\n5\n1\n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 . 0 . 2 \n. 1 0 - . \n0 1 2 2 . \n2 . 2 - 0 \n0 1 0 3 . \n+ . + . # \n. # . . . \n. . . . . \n. # # . + \n. . . . . \n"}
+{"id":"tilecity-63","kind":"url","input":"tilecity/5/5/000000000a0a2a10.a0122a2a2.00103a"}
+{"id":"tilecity-64","kind":"fileio","input":"pzprv3\ntilecity\n3\n4\n2\n0 0 0 0 \n1 0 0 0 \n1 0 0 0 \n. . . 1 \n0 2 2 . \n3 . - . \n. . # . \n. + # . \n. # . . \n"}
+{"id":"tilecity-65","kind":"url","input":"tilecity/4/3/28g0c1022a3a.a"}

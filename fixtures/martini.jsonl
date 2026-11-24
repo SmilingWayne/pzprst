@@ -1,0 +1,68 @@
+{"header":{"pid":"martini","generator":"tools/gen_fixtures.js"}}
+{"id":"martini-0","kind":"url","input":"https://puzz.link/p?martini/10/10/000000000000000000vvvvvvvvvvvvvvvvvv0m0l.j3l.q5g.l.t.i4n.i.p.l.g"}
+{"id":"martini-1","kind":"url","input":"https://puzz.link/p?martini/10/10/47774uftc6nuf4sss4fs6e09n6c6cti0ec7u3h0i0g0i2j.i3l0m.i0v.i.m0l.i2j0i0g0i.h3"}
+{"id":"martini-2","kind":"url","input":"https://puzz.link/p?martini/6/6/aakkaa0fo3vgl.g0g0.r0300n"}
+{"id":"martini-3","kind":"url","input":"martini/4/4/"}
+{"id":"martini-4","kind":"url","input":"martini/1/1/"}
+{"id":"martini-5","kind":"url","input":"martini/1/5/"}
+{"id":"martini-6","kind":"url","input":"martini/5/1/"}
+{"id":"martini-7","kind":"fileio","input":"pzprv3.1\nmartini\n2\n5\n0 1 0 0 \n0 0 0 0 \n0 0 1 1 1 \n2 1 . 3 1 \n. 1 . . - \n. . . + + \n. + . . . \n"}
+{"id":"martini-8","kind":"url","input":"martini/5/2/80721g31g1h./"}
+{"id":"martini-9","kind":"fileio","input":"pzprv3.1\nmartini\n3\n5\n0 0 0 1 \n0 0 0 1 \n1 0 0 0 \n0 0 0 1 0 \n1 0 1 0 1 \n1 3 . 1 3 \n0 . . 1 . \n- . 1 3 . \n# . + # # \n+ . . . . \n. + . . # \n"}
+{"id":"martini-10","kind":"url","input":"martini/5/3/2602l13g130h1g.g13g"}
+{"id":"martini-11","kind":"fileio","input":"pzprv3.1\nmartini\n4\n5\n1 0 0 1 \n0 1 1 0 \n1 0 1 1 \n0 0 1 0 \n0 0 1 0 1 \n1 0 0 0 1 \n0 0 0 1 0 \n3 0 . 2 3 \n. 3 - . 2 \n3 - 3 - 0 \n. - - 2 . \n# + # . # \n. . # + # \n. . + . + \n+ . . + . \n"}
+{"id":"martini-12","kind":"url","input":"martini/5/4/iqp05h230g23g3.g23.3.0g..2g"}
+{"id":"martini-13","kind":"fileio","input":"pzprv3.1\nmartini\n3\n2\n0 \n1 \n0 \n0 1 \n0 0 \n. 3 \n. . \n0 - \n. # \n+ . \n. . \n"}
+{"id":"martini-14","kind":"url","input":"martini/2/3/88g3h0./"}
+{"id":"martini-15","kind":"fileio","input":"pzprv3.1\nmartini\n4\n4\n0 1 0 \n0 1 1 \n0 0 1 \n1 1 1 \n0 1 1 1 \n0 1 1 0 \n0 0 0 0 \n1 2 . 2 \n. . 3 . \n. . 3 - \n- 3 0 0 \n. . + # \n+ # # . \n. . . . \n+ . . # \n"}
+{"id":"martini-16","kind":"url","input":"martini/4/4/9joeo012g2h3i3..300"}
+{"id":"martini-17","kind":"fileio","input":"pzprv3.1\nmartini\n2\n1\n\n\n1 \n. \n. \n+ \n# \n"}
+{"id":"martini-18","kind":"url","input":"martini/1/2/gh"}
+{"id":"martini-19","kind":"fileio","input":"pzprv3.1\nmartini\n4\n4\n0 1 0 \n1 0 0 \n0 0 0 \n0 1 0 \n1 1 1 0 \n1 1 0 1 \n0 0 1 1 \n0 . . . \n. 3 2 3 \n- 1 . . \n. 0 . . \n. # . + \n. . . . \n. + # . \n. . . . \n"}
+{"id":"martini-20","kind":"url","input":"martini/4/4/a0gtko0j323.1i0h"}
+{"id":"martini-21","kind":"fileio","input":"pzprv3.1\nmartini\n2\n1\n\n\n1 \n1 \n0 \n# \n. \n"}
+{"id":"martini-22","kind":"url","input":"martini/1/2/g10"}
+{"id":"martini-23","kind":"fileio","input":"pzprv3.1\nmartini\n1\n4\n1 0 1 \n. 3 . 3 \n. . + # \n"}
+{"id":"martini-24","kind":"url","input":"martini/4/1/kg3g3"}
+{"id":"martini-25","kind":"fileio","input":"pzprv3.1\nmartini\n4\n4\n0 1 0 \n0 0 0 \n0 0 0 \n0 1 1 \n0 0 0 0 \n1 0 0 1 \n0 1 0 1 \n2 . 0 - \n- 0 0 3 \n3 2 - . \n0 . . . \n# # . . \n. . . . \n. # . . \n. . . + \n"}
+{"id":"martini-26","kind":"url","input":"martini/4/4/80o1582g0..00332.g0i"}
+{"id":"martini-27","kind":"fileio","input":"pzprv3.1\nmartini\n5\n4\n0 0 0 \n0 0 1 \n0 1 0 \n1 0 0 \n0 0 0 \n0 1 0 0 \n0 0 0 1 \n1 1 0 1 \n0 0 0 0 \n. . 2 - \n. . . 3 \n. 2 2 . \n- . - 0 \n. - - 3 \n. . . . \n# + . . \n. . . # \n. . . . \n. . # . \n"}
+{"id":"martini-28","kind":"url","input":"martini/4/5/0l08780h2.i3g22g.g.0g..3"}
+{"id":"martini-29","kind":"fileio","input":"pzprv3.1\nmartini\n1\n6\n0 0 0 0 0 \n3 . 0 2 - 1 \n. . . . . . \n"}
+{"id":"martini-30","kind":"url","input":"martini/6/1/03g02.1"}
+{"id":"martini-31","kind":"fileio","input":"pzprv3.1\nmartini\n3\n1\n\n\n\n1 \n0 \n2 \n2 \n. \n. \n. \n. \n"}
+{"id":"martini-32","kind":"url","input":"martini/1/3/g22g"}
+{"id":"martini-33","kind":"fileio","input":"pzprv3.1\nmartini\n3\n5\n0 1 1 0 \n1 1 0 1 \n0 0 0 0 \n0 1 0 0 0 \n0 0 1 0 0 \n. 3 2 3 . \n2 1 . . 1 \n- . . 0 3 \n+ + . . + \n# # + + . \n. # . # # \n"}
+{"id":"martini-34","kind":"url","input":"martini/5/3/dk084g323g21h1.h03"}
+{"id":"martini-35","kind":"fileio","input":"pzprv3.1\nmartini\n5\n1\n\n\n\n\n\n0 \n0 \n0 \n0 \n2 \n2 \n1 \n1 \n. \n. \n. \n# \n. \n. \n"}
+{"id":"martini-36","kind":"url","input":"martini/1/5/02211g"}
+{"id":"martini-37","kind":"fileio","input":"pzprv3.1\nmartini\n1\n3\n1 0 \n. . . \n# + . \n"}
+{"id":"martini-38","kind":"url","input":"martini/3/1/gi"}
+{"id":"martini-39","kind":"fileio","input":"pzprv3.1\nmartini\n1\n6\n0 0 1 0 0 \n. 2 3 1 . 3 \n# . . + # . \n"}
+{"id":"martini-40","kind":"url","input":"martini/6/1/4g231g3"}
+{"id":"martini-41","kind":"fileio","input":"pzprv3.1\nmartini\n1\n2\n1 \n. . \n. + \n"}
+{"id":"martini-42","kind":"url","input":"martini/2/1/gh"}
+{"id":"martini-43","kind":"fileio","input":"pzprv3.1\nmartini\n1\n5\n0 0 0 1 \n1 - 1 . - \n+ . # . . \n"}
+{"id":"martini-44","kind":"url","input":"martini/5/1/21.1g./"}
+{"id":"martini-45","kind":"fileio","input":"pzprv3.1\nmartini\n5\n2\n1 \n0 \n0 \n0 \n1 \n0 0 \n0 1 \n0 1 \n0 1 \n2 2 \n3 . \n2 0 \n3 - \n2 . \n# . \n. . \n. # \n. . \n# + \n"}
+{"id":"martini-46","kind":"url","input":"martini/2/5/h2k223g203.2g"}
+{"id":"martini-47","kind":"fileio","input":"pzprv3.1\nmartini\n2\n1\n\n\n1 \n. \n. \n. \n# \n"}
+{"id":"martini-48","kind":"url","input":"martini/1/2/gh"}
+{"id":"martini-49","kind":"fileio","input":"pzprv3.1\nmartini\n1\n2\n1 \n1 0 \n. # \n"}
+{"id":"martini-50","kind":"url","input":"martini/2/1/g10"}
+{"id":"martini-51","kind":"fileio","input":"pzprv3.1\nmartini\n2\n3\n0 1 \n0 1 \n0 0 1 \n1 0 3 \n1 1 . \n. . . \n. # . \n"}
+{"id":"martini-52","kind":"url","input":"martini/3/2/a410311g"}
+{"id":"martini-53","kind":"fileio","input":"pzprv3.1\nmartini\n3\n1\n\n\n\n1 \n0 \n. \n- \n. \n# \n+ \n+ \n"}
+{"id":"martini-54","kind":"url","input":"martini/1/3/gg.g"}
+{"id":"martini-55","kind":"fileio","input":"pzprv3.1\nmartini\n2\n5\n0 1 0 1 \n1 0 0 0 \n0 1 1 0 1 \n. . 3 . 0 \n3 . 2 1 0 \n. . # . . \n. . . # . \n"}
+{"id":"martini-56","kind":"url","input":"martini/5/2/b0dh3g03g210"}
+{"id":"martini-57","kind":"fileio","input":"pzprv3.1\nmartini\n3\n4\n0 0 0 \n1 0 1 \n1 0 1 \n0 1 0 0 \n1 1 0 1 \n0 . . 1 \n3 3 . 0 \n3 3 0 1 \n# + # + \n. + . # \n. + . # \n"}
+{"id":"martini-58","kind":"url","input":"martini/4/3/2q9k0h133g03301"}
+{"id":"martini-59","kind":"fileio","input":"pzprv3.1\nmartini\n4\n3\n0 0 \n0 1 \n0 0 \n0 1 \n0 0 0 \n1 1 0 \n0 1 0 \n. 2 . \n1 1 0 \n3 1 2 \n1 1 . \n. . . \n. . # \n. . . \n. # . \n"}
+{"id":"martini-60","kind":"url","input":"martini/3/4/2434g2g11031211g"}
+{"id":"martini-61","kind":"fileio","input":"pzprv3.1\nmartini\n3\n3\n0 1 \n0 0 \n0 1 \n1 0 0 \n0 0 0 \n1 - 0 \n- . . \n0 1 - \n. + # \n+ . . \n. . . \n"}
+{"id":"martini-62","kind":"url","input":"martini/3/3/8gg01.0.h01./"}
+{"id":"martini-63","kind":"fileio","input":"pzprv3.1\nmartini\n3\n3\n0 1 \n0 1 \n0 0 \n0 0 0 \n0 0 0 \n3 . . \n0 3 . \n1 . . \n. . + \n# . . \n+ # . \n"}
+{"id":"martini-64","kind":"url","input":"martini/3/3/a0003h03g1h"}
+{"id":"martini-65","kind":"fileio","input":"pzprv3.1\nmartini\n5\n6\n1 1 0 1 1 \n0 1 1 1 1 \n0 0 0 1 1 \n0 0 0 1 0 \n1 0 0 0 0 \n0 1 0 0 1 0 \n1 1 0 0 0 0 \n1 1 1 0 0 1 \n1 0 1 0 0 0 \n2 2 1 3 - 0 \n. 0 3 3 3 . \n2 - 2 1 - . \n3 2 0 . 0 0 \n- - . . - 3 \n. . . . # # \n# . . . # + \n# . + + . . \n. . # # . # \n+ . . + # + \n"}
+{"id":"martini-66","kind":"url","input":"martini/6/5/rf32g9c76g2213.0g0333g2.21.g320g00..h.3"}

@@ -54,6 +54,32 @@ fn easyasabc_indicator_is_part_of_state_identity() {
 }
 
 #[test]
+fn starbattle_star_count_is_part_of_state_identity() {
+    let a = Board::from_url("starbattle/2/2/1/00", &opts()).unwrap();
+    let b = Board::from_url("starbattle/2/2/2/00", &opts()).unwrap();
+    let trace = format!(
+        "https://pzpr-trace.net/p?state={}&{}",
+        a.to_state().unwrap(),
+        b.to_url().unwrap()
+    );
+    assert!(matches!(
+        Board::from_trace_url(&trace, &opts()),
+        Err(Error::StateMismatch(_))
+    ));
+    let valid = a.to_trace_url("https://pzpr-trace.net/p?").unwrap();
+    assert_eq!(Board::from_trace_url(&valid, &opts()).unwrap(), a);
+}
+
+#[test]
+fn arrowflow_directional_submarks_survive_fileio_and_transforms() {
+    let text = "pzprv3\narrowflow\n1\n1\n. \n+3 \n";
+    let board = Board::from_fileio(text, &opts()).unwrap();
+    assert_eq!(board.cell(0, 0).qsub, 3);
+    assert_eq!(board.to_fileio().unwrap(), text);
+    assert_eq!(board.transform(Transform::Rot90).to_fileio().unwrap(), text);
+}
+
+#[test]
 fn bonsan_legacy_room_borders_select_heyabon() {
     assert_eq!(
         Board::from_url("bonsan/2/2/100", &opts()).unwrap().pid(),

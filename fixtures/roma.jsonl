@@ -1,0 +1,68 @@
+{"header":{"pid":"roma","generator":"tools/gen_fixtures.js"}}
+{"id":"roma-0","kind":"url","input":"https://puzz.link/p?roma/5/7/96fpi8femdeue4a2a1a4a1c5c1a3a2a2a3e"}
+{"id":"roma-1","kind":"url","input":"https://puzz.link/p?roma/6/6/6tja5pl53vlej3d3d4d4d5e"}
+{"id":"roma-2","kind":"url","input":"https://puzz.link/p?roma/6/6/4lrqbifbtn2ud2a1a3c5j2c1a2a4d"}
+{"id":"roma-3","kind":"url","input":"roma/4/4/"}
+{"id":"roma-4","kind":"url","input":"roma/1/1/"}
+{"id":"roma-5","kind":"url","input":"roma/1/5/"}
+{"id":"roma-6","kind":"url","input":"roma/5/1/"}
+{"id":"roma-7","kind":"fileio","input":"pzprv3\nroma\n5\n6\n2\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 1 0 0 \n0 0 0 0 0 0 \n. 4 . 2 3 . \n. . 4 4 . - \n1 . 3 7 3 . \n. 4 7 1 - - \n3 . . 2 3 . \n. . +1 . . 3 \n3 . . . . . \n. 2 . . . 4 \n1 . . . . . \n. 1 2 . . 4 \n"}
+{"id":"roma-8","kind":"url","input":"roma/6/5/00060000g8a4a23c44a.1a373b471..3b23a"}
+{"id":"roma-9","kind":"fileio","input":"pzprv3\nroma\n2\n3\n1\n0 0 0 \n0 0 0 \n1 2 7 \n2 4 2 \n. . . \n. . . \n"}
+{"id":"roma-10","kind":"url","input":"roma/3/2/00127242"}
+{"id":"roma-11","kind":"fileio","input":"pzprv3\nroma\n2\n6\n2\n0 0 0 0 1 0 \n0 0 0 0 0 0 \n- . . 4 2 1 \n. 3 . 2 3 - \n. . 4 . . . \n3 . 3 . . . \n"}
+{"id":"roma-12","kind":"url","input":"roma/6/2/3010.b421a3a23./"}
+{"id":"roma-13","kind":"fileio","input":"pzprv3\nroma\n3\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n- 2 5 \n4 - 1 \n5 4 . \n. . . \n. . . \n. . 3 \n"}
+{"id":"roma-14","kind":"url","input":"roma/3/3/0000.254.154a"}
+{"id":"roma-15","kind":"fileio","input":"pzprv3\nroma\n2\n1\n1\n0 \n0 \n1 \n5 \n. \n. \n"}
+{"id":"roma-16","kind":"url","input":"roma/1/2/015"}
+{"id":"roma-17","kind":"fileio","input":"pzprv3\nroma\n4\n2\n1\n0 0 \n0 0 \n0 0 \n0 0 \n. . \n3 2 \n. 2 \n. . \n2 3 \n. . \n2 . \n1 2 \n"}
+{"id":"roma-18","kind":"url","input":"roma/2/4/000b32a2b"}
+{"id":"roma-19","kind":"fileio","input":"pzprv3\nroma\n5\n1\n2\n0 \n0 \n0 \n0 \n1 \n7 \n- \n. \n- \n. \n. \n. \n1 \n. \n3 \n"}
+{"id":"roma-20","kind":"url","input":"roma/1/5/27.a.a"}
+{"id":"roma-21","kind":"fileio","input":"pzprv3\nroma\n5\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n- . . \n2 . 2 \n. - 3 \n. - . \n4 2 4 \n. 3 2 \n. 1 . \n. . . \n2 . . \n. . . \n"}
+{"id":"roma-22","kind":"url","input":"roma/3/5/00000.b2a2a.3a.a424"}
+{"id":"roma-23","kind":"fileio","input":"pzprv3\nroma\n1\n3\n2\n0 1 1 \n. - 1 \n. . . \n"}
+{"id":"roma-24","kind":"url","input":"roma/3/1/ga.1"}
+{"id":"roma-25","kind":"fileio","input":"pzprv3\nroma\n4\n3\n3\n0 0 0 \n0 0 0 \n1 0 0 \n2 0 0 \n2 4 7 \n3 3 7 \n. . - \n. 5 3 \n. . . \n. . . \n2 . . \n+1 . . \n"}
+{"id":"roma-26","kind":"url","input":"roma/3/4/1828247337b.a53"}
+{"id":"roma-27","kind":"fileio","input":"pzprv3\nroma\n5\n6\n2\n0 1 1 1 1 1 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n7 . . - . . \n4 2 . 2 - 4 \n. . 2 4 3 5 \n1 7 7 5 - - \n. 5 . 3 3 - \n. 3 3 . 2 1 \n. . . . . . \n. 1 . . . . \n. . . . . . \n3 . 4 . . . \n"}
+{"id":"roma-28","kind":"url","input":"roma/6/5/g0000g00007b.b42a2.4b24351775..a5a33./"}
+{"id":"roma-29","kind":"fileio","input":"pzprv3\nroma\n4\n1\n2\n0 \n0 \n0 \n1 \n5 \n2 \n2 \n. \n. \n. \n. \n1 \n"}
+{"id":"roma-30","kind":"url","input":"roma/1/4/4522a"}
+{"id":"roma-31","kind":"fileio","input":"pzprv3\nroma\n5\n3\n1\n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n0 0 0 \n4 1 . \n3 2 1 \n. 2 . \n2 7 - \n7 4 5 \n. . . \n. . . \n. . 1 \n. . . \n. . . \n"}
+{"id":"roma-32","kind":"url","input":"roma/3/5/0000041a321a2a27.745"}
+{"id":"roma-33","kind":"fileio","input":"pzprv3\nroma\n5\n4\n2\n0 0 0 1 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n0 0 0 0 \n4 - 2 1 \n3 2 . . \n- . 5 4 \n5 1 3 . \n2 . 1 7 \n. . . . \n. . . 3 \n. 4 . . \n. . . 4 \n. 1 . . \n"}
+{"id":"roma-34","kind":"url","input":"roma/4/5/40020004.2132b.a54513a2a17"}
+{"id":"roma-35","kind":"fileio","input":"pzprv3\nroma\n5\n1\n2\n0 \n0 \n0 \n1 \n1 \n. \n. \n7 \n4 \n. \n+1 \n3 \n. \n. \n4 \n"}
+{"id":"roma-36","kind":"url","input":"roma/1/5/4b74a"}
+{"id":"roma-37","kind":"fileio","input":"pzprv3\nroma\n5\n6\n4\n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 1 \n0 0 2 2 0 3 \n3 3 . - . 7 \n3 2 - . 1 2 \n1 1 7 3 3 . \n3 2 2 . 7 . \n. 7 . 1 - 7 \n. . 2 . . . \n. . . 2 . . \n. . . . . 4 \n. . . 4 . 3 \n3 . 4 . . . \n"}
+{"id":"roma-38","kind":"url","input":"roma/6/5/0001b0004q33a.a732.a1211733a322a7b7a1.7"}
+{"id":"roma-39","kind":"fileio","input":"pzprv3\nroma\n3\n2\n1\n0 0 \n0 0 \n0 0 \n2 . \n4 2 \n. 7 \n. 3 \n. . \n. . \n"}
+{"id":"roma-40","kind":"url","input":"roma/2/3/002a42a7"}
+{"id":"roma-41","kind":"fileio","input":"pzprv3\nroma\n2\n6\n2\n0 0 1 1 1 1 \n1 1 1 1 1 1 \n. 7 1 1 3 . \n. . . . 4 2 \n. . . . . 1 \n3 4 3 +1 . . \n"}
+{"id":"roma-42","kind":"url","input":"roma/6/2/80o0a7113e42"}
+{"id":"roma-43","kind":"fileio","input":"pzprv3\nroma\n2\n4\n1\n0 0 0 0 \n0 0 0 0 \n4 - . 3 \n5 . 1 5 \n. . . . \n. 1 . . \n"}
+{"id":"roma-44","kind":"url","input":"roma/4/2/0004.a35a15"}
+{"id":"roma-45","kind":"fileio","input":"pzprv3\nroma\n2\n5\n4\n0 0 0 1 2 \n3 0 0 0 2 \n4 7 4 1 - \n3 - 2 . 5 \n. . . . . \n. . . . . \n"}
+{"id":"roma-46","kind":"url","input":"roma/5/2/74i4741.3.2a5"}
+{"id":"roma-47","kind":"fileio","input":"pzprv3\nroma\n5\n6\n4\n0 0 1 2 2 2 \n0 1 1 1 2 2 \n1 1 1 1 2 2 \n1 1 1 1 3 3 \n1 1 1 1 3 3 \n. 1 . 1 1 2 \n4 . 5 4 4 . \n. . 1 - . 5 \n5 4 4 - - . \n. 2 7 . . . \n. . 3 . . . \n. 2 . . . . \n. 3 . . . . \n. . . . . 3 \n3 . . 1 3 . \n"}
+{"id":"roma-48","kind":"url","input":"roma/6/5/ci222a80c0a1a1124a544c1.a5544..b27c"}
+{"id":"roma-49","kind":"fileio","input":"pzprv3\nroma\n1\n3\n1\n0 0 0 \n. 5 . \n. . . \n"}
+{"id":"roma-50","kind":"url","input":"roma/3/1/0a5a"}
+{"id":"roma-51","kind":"fileio","input":"pzprv3\nroma\n1\n3\n1\n0 0 0 \n2 - 5 \n. . . \n"}
+{"id":"roma-52","kind":"url","input":"roma/3/1/02.5"}
+{"id":"roma-53","kind":"fileio","input":"pzprv3\nroma\n3\n2\n1\n0 0 \n0 0 \n0 0 \n- 5 \n1 . \n. 4 \n. . \n. 3 \n. . \n"}
+{"id":"roma-54","kind":"url","input":"roma/2/3/00.51b4"}
+{"id":"roma-55","kind":"fileio","input":"pzprv3\nroma\n5\n5\n2\n0 0 0 0 0 \n1 0 0 0 0 \n1 1 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n. 5 . 2 4 \n3 . 1 . 4 \n4 4 5 4 - \n- 7 5 4 . \n2 5 2 5 2 \n4 . 3 . . \n. 4 . 4 . \n. . . . . \n. . . . 4 \n. . . . . \n"}
+{"id":"roma-56","kind":"url","input":"roma/5/5/1100g8o0a5a243a1a44454..754a25252"}
+{"id":"roma-57","kind":"fileio","input":"pzprv3\nroma\n2\n4\n1\n0 0 0 0 \n0 0 0 0 \n7 4 5 . \n. 1 - 3 \n. . . 1 \n1 . . . \n"}
+{"id":"roma-58","kind":"url","input":"roma/4/2/000745b1.3"}
+{"id":"roma-59","kind":"fileio","input":"pzprv3\nroma\n3\n6\n4\n0 1 1 1 2 3 \n1 1 1 1 1 1 \n1 1 1 1 1 1 \n. 4 5 4 . . \n. 5 . . 3 1 \n. 4 . 2 7 1 \n2 . . . 4 . \n4 . 1 . . . \n4 . . . . . \n"}
+{"id":"roma-60","kind":"url","input":"roma/6/3/j00hg0a454c5b31a4a271"}
+{"id":"roma-61","kind":"fileio","input":"pzprv3\nroma\n2\n4\n2\n0 0 0 1 \n0 0 0 1 \n. . . 4 \n2 . - 3 \n2 4 3 . \n. 2 . . \n"}
+{"id":"roma-62","kind":"url","input":"roma/4/2/4g0c42a.3"}
+{"id":"roma-63","kind":"fileio","input":"pzprv3\nroma\n5\n6\n4\n0 1 1 2 0 0 \n0 0 0 0 0 0 \n3 0 0 0 0 0 \n0 0 0 0 0 0 \n0 0 0 0 0 0 \n4 . 2 3 . 3 \n2 7 2 - 3 . \n. . . 1 7 . \n3 . 1 . . 1 \n. 5 . 2 4 5 \n. . . . 3 . \n. . . . . 3 \n. 4 1 . . 1 \n. 1 . 1 . . \n+1 . 4 . . . \n"}
+{"id":"roma-64","kind":"url","input":"roma/6/5/m0g00e84004a23a3272.3d17a3a1b1a5a245"}
+{"id":"roma-65","kind":"fileio","input":"pzprv3\nroma\n5\n5\n2\n0 0 0 0 0 \n1 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n0 0 0 0 0 \n. 1 5 4 1 \n7 . . 2 . \n. 5 . . 1 \n. - 3 2 . \n2 . 2 . 1 \n3 . . . . \n. 4 3 . 2 \n2 . 1 2 . \n+1 . . . 1 \n. . . 1 . \n"}
+{"id":"roma-66","kind":"url","input":"roma/5/5/1000gg00a15417b2b5b1a.32a2a2a1"}

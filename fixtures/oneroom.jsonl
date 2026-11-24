@@ -1,0 +1,68 @@
+{"header":{"pid":"oneroom","generator":"tools/gen_fixtures.js"}}
+{"id":"oneroom-0","kind":"url","input":"https://puzz.link/p?oneroom/10/10/58agl080g10204080gs000vv000000000000g2232cc"}
+{"id":"oneroom-1","kind":"url","input":"https://puzz.link/p?oneroom/6/6/hd28mhkihh95g10g3g0g"}
+{"id":"oneroom-2","kind":"url","input":"https://puzz.link/p?oneroom/6/6/hd28mhkihh95050g2g01"}
+{"id":"oneroom-3","kind":"url","input":"oneroom/4/4/"}
+{"id":"oneroom-4","kind":"url","input":"oneroom/1/1/"}
+{"id":"oneroom-5","kind":"url","input":"oneroom/1/5/"}
+{"id":"oneroom-6","kind":"url","input":"oneroom/5/1/"}
+{"id":"oneroom-7","kind":"fileio","input":"pzprv3.1\noneroom\n2\n5\n0 1 0 0 \n0 0 0 0 \n0 0 1 1 1 \n2 . 0 . . \n. . . . . \n# . . # . \n+ # . . . \n"}
+{"id":"oneroom-8","kind":"url","input":"oneroom/5/2/80720"}
+{"id":"oneroom-9","kind":"fileio","input":"pzprv3.1\noneroom\n2\n5\n1 0 1 0 \n0 0 0 0 \n0 0 0 1 0 \n1 . . . . \n. . . . . \n. # + . . \n. . . . # \n"}
+{"id":"oneroom-10","kind":"url","input":"oneroom/5/2/k021"}
+{"id":"oneroom-11","kind":"fileio","input":"pzprv3.1\noneroom\n2\n3\n0 1 \n0 1 \n0 0 1 \n1 . 2 \n. . 0 \n# # . \n# . + \n"}
+{"id":"oneroom-12","kind":"url","input":"oneroom/3/2/a4120"}
+{"id":"oneroom-13","kind":"fileio","input":"pzprv3.1\noneroom\n5\n5\n1 1 0 1 \n1 1 1 0 \n0 0 0 0 \n1 0 0 1 \n0 0 1 0 \n0 1 0 1 1 \n0 1 0 1 1 \n0 0 1 0 0 \n0 1 0 1 1 \n0 0 . . - \n. . . - . \n. . . . . \n. . . . . \n. . . 0 . \n. # . . . \n+ . . # . \n. # . . . \n. . . + . \n. . + # + \n"}
+{"id":"oneroom-14","kind":"url","input":"oneroom/5/5/ro4ibb4b00.g.0"}
+{"id":"oneroom-15","kind":"fileio","input":"pzprv3.1\noneroom\n3\n2\n1 \n0 \n0 \n1 1 \n1 0 \n2 . \n0 . \n. . \n+ + \n. . \n+ . \n"}
+{"id":"oneroom-16","kind":"url","input":"oneroom/2/3/gs2g0"}
+{"id":"oneroom-17","kind":"fileio","input":"pzprv3.1\noneroom\n3\n2\n0 \n1 \n0 \n0 1 \n0 0 \n- . \n. . \n. . \n. + \n# . \n. . \n"}
+{"id":"oneroom-18","kind":"url","input":"oneroom/2/3/88./"}
+{"id":"oneroom-19","kind":"fileio","input":"pzprv3.1\noneroom\n2\n1\n\n\n0 \n1 \n. \n. \n. \n"}
+{"id":"oneroom-20","kind":"url","input":"oneroom/1/2/01"}
+{"id":"oneroom-21","kind":"fileio","input":"pzprv3.1\noneroom\n5\n5\n1 0 0 1 \n1 0 0 1 \n1 1 1 0 \n1 1 1 0 \n1 1 0 0 \n0 0 0 0 0 \n1 0 1 1 0 \n1 1 1 0 0 \n0 0 0 0 0 \n2 . . . . \n. . . . . \n. . . . . \n. - . . . \n. . . . . \n. . . . + \n. . # # + \n+ # # + # \n. . . # . \n# . . . . \n"}
+{"id":"oneroom-22","kind":"url","input":"oneroom/5/5/j7nc0ms02k./"}
+{"id":"oneroom-23","kind":"fileio","input":"pzprv3.1\noneroom\n4\n6\n1 0 1 1 1 \n0 1 1 0 1 \n0 0 1 1 0 \n1 1 1 1 0 \n0 0 0 0 1 1 \n1 0 1 1 0 1 \n0 1 0 0 0 0 \n2 . . - . 2 \n. . . . . 2 \n. . . - . . \n. - . . . . \n. # . # . . \n# . . # # . \n# # . + . . \n. + # . . . \n"}
+{"id":"oneroom-24","kind":"url","input":"oneroom/6/4/nd6u1ra02.g22../"}
+{"id":"oneroom-25","kind":"fileio","input":"pzprv3.1\noneroom\n4\n2\n0 \n0 \n0 \n0 \n0 0 \n0 1 \n1 0 \n0 . \n. . \n. . \n. . \n. . \n# . \n. # \n. # \n"}
+{"id":"oneroom-26","kind":"url","input":"oneroom/2/4/0300"}
+{"id":"oneroom-27","kind":"fileio","input":"pzprv3.1\noneroom\n1\n4\n0 1 0 \n- . - . \n. . . . \n"}
+{"id":"oneroom-28","kind":"url","input":"oneroom/4/1/8../"}
+{"id":"oneroom-29","kind":"fileio","input":"pzprv3.1\noneroom\n3\n5\n1 0 1 1 \n1 1 1 0 \n0 0 0 0 \n0 0 1 0 0 \n0 0 0 1 0 \n2 . . . . \n. . . . . \n. . . . . \n. . . . . \n# . # . + \n. . . . . \n"}
+{"id":"oneroom-30","kind":"url","input":"oneroom/5/3/no0422"}
+{"id":"oneroom-31","kind":"fileio","input":"pzprv3.1\noneroom\n1\n5\n0 0 0 0 \n1 . . . . \n# + # . # \n"}
+{"id":"oneroom-32","kind":"url","input":"oneroom/5/1/01"}
+{"id":"oneroom-33","kind":"fileio","input":"pzprv3.1\noneroom\n4\n5\n0 0 1 0 \n0 0 1 1 \n1 0 1 0 \n0 1 0 1 \n0 0 1 0 0 \n0 0 0 0 0 \n1 1 0 0 0 \n0 . . . . \n. . . . . \n. . . . . \n0 . . . . \n# . . . . \n. . # . . \n# . . . . \n. . # . . \n"}
+{"id":"oneroom-34","kind":"url","input":"oneroom/5/4/4eig40o00"}
+{"id":"oneroom-35","kind":"fileio","input":"pzprv3.1\noneroom\n4\n3\n0 0 \n0 0 \n0 0 \n1 0 \n1 0 0 \n0 1 0 \n0 0 0 \n0 . . \n. . . \n. . . \n. . . \n. + # \n. # + \n. + . \n. . . \n"}
+{"id":"oneroom-36","kind":"url","input":"oneroom/3/4/08h00"}
+{"id":"oneroom-37","kind":"fileio","input":"pzprv3.1\noneroom\n2\n6\n0 0 0 0 0 \n1 0 0 1 0 \n0 0 1 0 0 1 \n. . . . . . \n. . . . . . \n. . + # . . \n+ + . . + # \n"}
+{"id":"oneroom-38","kind":"url","input":"oneroom/6/2/0i4gg"}
+{"id":"oneroom-39","kind":"fileio","input":"pzprv3.1\noneroom\n2\n1\n\n\n1 \n0 \n1 \n# \n. \n"}
+{"id":"oneroom-40","kind":"url","input":"oneroom/1/2/g01"}
+{"id":"oneroom-41","kind":"fileio","input":"pzprv3.1\noneroom\n1\n1\n\n. \n. \n"}
+{"id":"oneroom-42","kind":"url","input":"oneroom/1/1/g"}
+{"id":"oneroom-43","kind":"fileio","input":"pzprv3.1\noneroom\n5\n5\n0 0 0 0 \n0 0 1 0 \n0 1 0 0 \n0 1 1 0 \n1 1 1 1 \n1 0 0 1 0 \n0 1 0 0 1 \n0 0 0 1 0 \n1 0 0 1 1 \n0 . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n# + . + . \n# . . . # \n. . . + . \n+ . # . . \n+ . + . . \n"}
+{"id":"oneroom-44","kind":"url","input":"oneroom/5/5/093fi92j0i"}
+{"id":"oneroom-45","kind":"fileio","input":"pzprv3.1\noneroom\n1\n4\n0 0 0 \n. . . . \n. + . # \n"}
+{"id":"oneroom-46","kind":"url","input":"oneroom/4/1/0g"}
+{"id":"oneroom-47","kind":"fileio","input":"pzprv3.1\noneroom\n5\n5\n0 1 0 0 \n0 0 0 1 \n1 0 0 0 \n0 1 0 0 \n1 1 1 0 \n1 1 1 0 1 \n1 1 1 0 0 \n0 1 0 0 0 \n1 0 1 0 0 \n. . . . . \n0 . . . . \n0 . . . . \n. . . . . \n2 . 1 . . \n. # . . . \n. # . # . \n+ . # . # \n# + + . + \n. + . + # \n"}
+{"id":"oneroom-48","kind":"url","input":"oneroom/5/5/862ets8kg0021"}
+{"id":"oneroom-49","kind":"fileio","input":"pzprv3.1\noneroom\n4\n6\n0 0 1 1 0 \n1 1 1 0 1 \n0 0 1 0 0 \n0 0 0 1 0 \n0 0 0 0 1 0 \n0 0 0 0 0 1 \n0 1 1 0 1 0 \n. . . . 1 . \n. . . . . . \n. . . . . . \n. . . . . . \n. # # . # . \n+ + . . . . \n. . . . . # \n+ # + . + . \n"}
+{"id":"oneroom-50","kind":"url","input":"oneroom/6/4/6t4210b8g1"}
+{"id":"oneroom-51","kind":"fileio","input":"pzprv3.1\noneroom\n3\n1\n\n\n\n1 \n0 \n. \n- \n. \n. \n. \n. \n"}
+{"id":"oneroom-52","kind":"url","input":"oneroom/1/3/gg./"}
+{"id":"oneroom-53","kind":"fileio","input":"pzprv3.1\noneroom\n2\n5\n0 0 0 1 \n0 0 0 1 \n1 0 0 1 0 \n. . . . 1 \n. . . . . \n+ . . . . \n. . . . + \n"}
+{"id":"oneroom-54","kind":"url","input":"oneroom/5/2/24ig1"}
+{"id":"oneroom-55","kind":"fileio","input":"pzprv3.1\noneroom\n5\n6\n0 0 0 1 0 \n0 0 0 1 0 \n0 0 0 1 0 \n0 0 1 1 0 \n0 0 0 0 0 \n0 0 0 1 0 0 \n0 0 0 1 1 1 \n0 0 0 0 0 0 \n0 0 1 0 1 0 \n2 . . . - . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n# + . . + . \n+ # . . + # \n. . + # . . \n. + # . # + \n"}
+{"id":"oneroom-56","kind":"url","input":"oneroom/6/5/2226021o0k2./"}
+{"id":"oneroom-57","kind":"fileio","input":"pzprv3.1\noneroom\n1\n6\n1 1 1 0 0 \n0 . . 2 . . \n. . # . + . \n"}
+{"id":"oneroom-58","kind":"url","input":"oneroom/6/1/s0h2"}
+{"id":"oneroom-59","kind":"fileio","input":"pzprv3.1\noneroom\n4\n6\n0 0 1 0 0 \n1 0 1 1 0 \n0 0 0 1 1 \n1 0 0 1 1 \n0 1 0 0 0 0 \n0 0 0 0 0 1 \n0 0 0 0 1 0 \n- . . . . . \n. . . . . . \n. . . . . 1 \n. . . . 1 . \n. # . . . . \n. . . . # # \n. . . . . . \n# # # . . . \n"}
+{"id":"oneroom-60","kind":"url","input":"oneroom/6/4/4m3j8088.11"}
+{"id":"oneroom-61","kind":"fileio","input":"pzprv3.1\noneroom\n2\n1\n\n\n1 \n0 \n. \n+ \n. \n"}
+{"id":"oneroom-62","kind":"url","input":"oneroom/1/2/g0g"}
+{"id":"oneroom-63","kind":"fileio","input":"pzprv3.1\noneroom\n4\n5\n0 1 1 0 \n1 1 0 0 \n1 1 1 0 \n1 0 0 0 \n0 0 0 0 0 \n1 1 0 0 1 \n0 0 0 0 0 \n1 . . . . \n. . . . . \n. - . . . \n. . . . . \n# # # . . \n. . . . . \n. + # . . \n+ + + . + \n"}
+{"id":"oneroom-64","kind":"url","input":"oneroom/5/4/djk00p01.g"}
+{"id":"oneroom-65","kind":"fileio","input":"pzprv3.1\noneroom\n2\n6\n0 0 0 0 0 \n1 1 0 0 0 \n0 1 0 0 0 0 \n2 . . . . . \n. 2 . . . . \n+ # + . . . \n+ # . + . . \n"}
+{"id":"oneroom-66","kind":"url","input":"oneroom/6/2/0o8022"}

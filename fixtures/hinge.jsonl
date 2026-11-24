@@ -1,0 +1,68 @@
+{"header":{"pid":"hinge","generator":"tools/gen_fixtures.js"}}
+{"id":"hinge-0","kind":"url","input":"https://puzz.link/p?hinge/12/12/4i292994kkaa552ih994ki4i290007vu003u00co0pg03u003vv000g2g23434g3a3g42321g1g"}
+{"id":"hinge-1","kind":"url","input":"https://puzz.link/p?hinge/8/8/9295af5a949003u169687s00g1g23241g5g"}
+{"id":"hinge-2","kind":"url","input":"https://puzz.link/p?hinge/11/11/4i4i82c6eeeeeec682949400fv0vc71g001gs6v0vu004g222a8g6424g20"}
+{"id":"hinge-3","kind":"url","input":"hinge/4/4/"}
+{"id":"hinge-4","kind":"url","input":"hinge/1/1/"}
+{"id":"hinge-5","kind":"url","input":"hinge/1/5/"}
+{"id":"hinge-6","kind":"url","input":"hinge/5/1/"}
+{"id":"hinge-7","kind":"fileio","input":"pzprv3.1\nhinge\n2\n1\n\n\n0 \n1 \n. \n. \n. \n"}
+{"id":"hinge-8","kind":"url","input":"hinge/1/2/01"}
+{"id":"hinge-9","kind":"fileio","input":"pzprv3.1\nhinge\n1\n2\n0 \n. . \n. . \n"}
+{"id":"hinge-10","kind":"url","input":"hinge/2/1/0g"}
+{"id":"hinge-11","kind":"fileio","input":"pzprv3.1\nhinge\n1\n5\n1 1 1 1 \n2 1 . . . \n# . + . . \n"}
+{"id":"hinge-12","kind":"url","input":"hinge/5/1/u21i"}
+{"id":"hinge-13","kind":"fileio","input":"pzprv3.1\nhinge\n3\n2\n0 \n1 \n1 \n1 1 \n0 1 \n. . \n- - \n. 2 \n. + \n. . \n. . \n"}
+{"id":"hinge-14","kind":"url","input":"hinge/2/3/cqg..2"}
+{"id":"hinge-15","kind":"fileio","input":"pzprv3.1\nhinge\n1\n1\n\n- \n. \n"}
+{"id":"hinge-16","kind":"url","input":"hinge/1/1/./"}
+{"id":"hinge-17","kind":"fileio","input":"pzprv3.1\nhinge\n5\n5\n1 0 0 0 \n0 0 1 1 \n0 1 1 0 \n0 1 0 1 \n0 0 0 0 \n0 0 1 0 0 \n1 0 0 1 0 \n1 0 1 0 1 \n0 0 1 0 1 \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n. . . . . \n# # . + . \n# . . + + \n. . # . + \n+ . + # . \n. # + + # \n"}
+{"id":"hinge-18","kind":"url","input":"hinge/5/5/gdig4il5h"}
+{"id":"hinge-19","kind":"fileio","input":"pzprv3.1\nhinge\n4\n1\n\n\n\n\n0 \n1 \n0 \n2 \n. \n. \n. \n+ \n+ \n+ \n. \n"}
+{"id":"hinge-20","kind":"url","input":"hinge/1/4/82g"}
+{"id":"hinge-21","kind":"fileio","input":"pzprv3.1\nhinge\n2\n5\n0 0 0 0 \n0 0 0 0 \n0 0 0 0 1 \n. . . . . \n. . . . . \n. . # . # \n# . . . . \n"}
+{"id":"hinge-22","kind":"url","input":"hinge/5/2/001g"}
+{"id":"hinge-23","kind":"fileio","input":"pzprv3.1\nhinge\n4\n2\n0 \n1 \n0 \n1 \n1 1 \n1 1 \n0 0 \n. . \n1 2 \n2 . \n. . \n# . \n. . \n+ . \n. + \n"}
+{"id":"hinge-24","kind":"url","input":"hinge/2/4/au0g122"}
+{"id":"hinge-25","kind":"fileio","input":"pzprv3.1\nhinge\n4\n3\n1 0 \n0 0 \n0 1 \n0 0 \n1 0 0 \n0 0 0 \n1 1 0 \n2 . . \n- . . \n. . . \n. . . \n+ # . \n. . . \n. # . \n+ . . \n"}
+{"id":"hinge-26","kind":"url","input":"hinge/3/4/gggc2./"}
+{"id":"hinge-27","kind":"fileio","input":"pzprv3.1\nhinge\n2\n3\n0 0 \n1 0 \n1 0 1 \n2 . . \n- . . \n+ . . \n. . . \n"}
+{"id":"hinge-28","kind":"url","input":"hinge/3/2/4k2./"}
+{"id":"hinge-29","kind":"fileio","input":"pzprv3.1\nhinge\n3\n2\n1 \n0 \n0 \n1 0 \n1 0 \n. . \n2 . \n. . \n. . \n. . \n. . \n"}
+{"id":"hinge-30","kind":"url","input":"hinge/2/3/gkg2"}
+{"id":"hinge-31","kind":"fileio","input":"pzprv3.1\nhinge\n3\n6\n1 1 1 1 1 \n0 0 0 0 0 \n1 0 0 0 0 \n0 0 1 0 0 1 \n0 1 0 0 0 0 \n0 . . . . 0 \n. . . . . . \n. . . . . . \n. + . # . . \n# # . # . . \n. + . . . . \n"}
+{"id":"hinge-32","kind":"url","input":"hinge/6/3/v0g4k00g0"}
+{"id":"hinge-33","kind":"fileio","input":"pzprv3.1\nhinge\n5\n6\n0 0 0 1 1 \n1 1 1 1 1 \n1 0 1 0 1 \n0 0 0 1 1 \n0 1 0 0 0 \n0 0 0 0 0 1 \n1 0 0 0 0 0 \n1 1 0 0 0 0 \n1 0 0 0 0 1 \n1 . . . . . \n. . . . . 1 \n. . . . . . \n. . . . . . \n. . . . . . \n. + . . . . \n# # + . . . \n. + . # + # \n# # + . . + \n# . . + + . \n"}
+{"id":"hinge-34","kind":"url","input":"hinge/6/5/3vl380o6221g1g"}
+{"id":"hinge-35","kind":"fileio","input":"pzprv3.1\nhinge\n5\n4\n1 0 0 \n1 0 1 \n0 0 0 \n1 0 0 \n1 1 0 \n1 1 0 1 \n0 1 1 0 \n0 0 1 1 \n0 0 1 1 \n2 . . . \n2 . . . \n. . . . \n. . . . \n. . . . \n. . + . \n. + . . \n. . + . \n# + + + \n# . + . \n"}
+{"id":"hinge-36","kind":"url","input":"hinge/4/5/ih6qopg2g2g"}
+{"id":"hinge-37","kind":"fileio","input":"pzprv3.1\nhinge\n1\n1\n\n. \n# \n"}
+{"id":"hinge-38","kind":"url","input":"hinge/1/1/g"}
+{"id":"hinge-39","kind":"fileio","input":"pzprv3.1\nhinge\n4\n5\n0 0 0 1 \n0 0 0 0 \n1 0 0 1 \n0 0 0 1 \n1 0 1 1 0 \n0 1 0 0 0 \n0 0 0 0 0 \n2 . . . . \n. . . . . \n. . . . . \n. . . . . \n. . # . # \n+ + + . . \n+ . . . . \n. . + # . \n"}
+{"id":"hinge-40","kind":"url","input":"hinge/5/4/228gm802"}
+{"id":"hinge-41","kind":"fileio","input":"pzprv3.1\nhinge\n3\n2\n0 \n1 \n1 \n0 0 \n0 0 \n. . \n. . \n. . \n. . \n. . \n. . \n"}
+{"id":"hinge-42","kind":"url","input":"hinge/2/3/c0g"}
+{"id":"hinge-43","kind":"fileio","input":"pzprv3.1\nhinge\n2\n3\n1 1 \n1 1 \n1 0 1 \n2 2 . \n. . . \n. . . \n. . # \n"}
+{"id":"hinge-44","kind":"url","input":"hinge/3/2/uk22i"}
+{"id":"hinge-45","kind":"fileio","input":"pzprv3.1\nhinge\n2\n1\n\n\n0 \n0 \n. \n. \n# \n"}
+{"id":"hinge-46","kind":"url","input":"hinge/1/2/00"}
+{"id":"hinge-47","kind":"fileio","input":"pzprv3.1\nhinge\n1\n6\n0 0 1 0 0 \n. . . 1 . . \n. # . . . . \n"}
+{"id":"hinge-48","kind":"url","input":"hinge/6/1/4g1"}
+{"id":"hinge-49","kind":"fileio","input":"pzprv3.1\nhinge\n2\n3\n0 0 \n0 1 \n0 0 1 \n0 . . \n. . 1 \n. . . \n# . . \n"}
+{"id":"hinge-50","kind":"url","input":"hinge/3/2/2401"}
+{"id":"hinge-51","kind":"fileio","input":"pzprv3.1\nhinge\n4\n1\n\n\n\n\n0 \n0 \n0 \n1 \n. \n. \n. \n. \n. \n# \n. \n"}
+{"id":"hinge-52","kind":"url","input":"hinge/1/4/01"}
+{"id":"hinge-53","kind":"fileio","input":"pzprv3.1\nhinge\n4\n5\n0 1 0 0 \n0 0 1 1 \n1 0 0 1 \n0 0 0 1 \n0 0 0 0 0 \n0 0 1 0 1 \n1 1 1 0 1 \n- . . . . \n. . . . . \n. . . . 0 \n. . . . . \n. # . . . \n. . + . # \n. + . . . \n. + . # + \n"}
+{"id":"hinge-54","kind":"url","input":"hinge/5/4/8e8g05t.0g"}
+{"id":"hinge-55","kind":"fileio","input":"pzprv3.1\nhinge\n1\n5\n0 1 1 0 \n1 . 1 . . \n# # . + # \n"}
+{"id":"hinge-56","kind":"url","input":"hinge/5/1/c11g"}
+{"id":"hinge-57","kind":"fileio","input":"pzprv3.1\nhinge\n2\n5\n0 1 0 0 \n0 0 0 0 \n1 0 1 0 0 \n. . . . . \n. . . . . \n. . . . # \n+ . . # . \n"}
+{"id":"hinge-58","kind":"url","input":"hinge/5/2/80kg"}
+{"id":"hinge-59","kind":"fileio","input":"pzprv3.1\nhinge\n3\n6\n0 0 0 0 0 \n0 1 1 1 0 \n1 0 0 1 0 \n0 0 0 1 0 1 \n0 1 0 0 0 1 \n- . . . . . \n. . . . . . \n. . . . . . \n# . . . . # \n. + + . . . \n. . . . # . \n"}
+{"id":"hinge-60","kind":"url","input":"hinge/6/3/0ei2k8./"}
+{"id":"hinge-61","kind":"fileio","input":"pzprv3.1\nhinge\n1\n3\n0 1 \n- . 0 \n. . . \n"}
+{"id":"hinge-62","kind":"url","input":"hinge/3/1/8.0"}
+{"id":"hinge-63","kind":"fileio","input":"pzprv3.1\nhinge\n2\n4\n1 0 1 \n0 0 0 \n0 0 0 0 \n0 . . . \n. . . . \n# + . . \n# . . . \n"}
+{"id":"hinge-64","kind":"url","input":"hinge/4/2/k000"}
+{"id":"hinge-65","kind":"fileio","input":"pzprv3.1\nhinge\n4\n1\n\n\n\n\n0 \n1 \n1 \n0 \n. \n. \n- \n# \n. \n# \n. \n"}
+{"id":"hinge-66","kind":"url","input":"hinge/1/4/c0g./"}
