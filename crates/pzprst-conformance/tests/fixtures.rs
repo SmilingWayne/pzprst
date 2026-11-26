@@ -110,7 +110,7 @@ fn parity(pid: &str) {
             &r.id,
             "reference state".into(),
             imported.to_fileio().unwrap(),
-            &r.value["fileio"],
+            &r.value["state_fileio"],
         );
         for t in Transform::ALL {
             let want = &r.value["transforms"][t.name()];
@@ -170,7 +170,7 @@ fn parity(pid: &str) {
                 &r.id,
                 format!("{t} reference state"),
                 imported.to_fileio().unwrap(),
-                &want["fileio"],
+                &want["state_fileio"],
             );
         }
     }
@@ -224,6 +224,20 @@ fn properties(pid: &str) {
         let file_board = Board::from_fileio(&b.to_fileio().unwrap(), &opts).unwrap();
         let state_board = Board::from_state(&b.to_state().unwrap(), &opts).unwrap();
         let mut comparable = b.clone();
+        if pid == "bosanowa" {
+            // FileIO uses `0` for an empty clue, even when a URL supplies qnum 0.
+            // Compare every other property against the exact reference round trip.
+            for y in 0..b.rows() {
+                for x in 0..b.cols() {
+                    if comparable.cell(y, x).qnum == 0 {
+                        comparable.cell_mut(y, x).qnum = -1;
+                    }
+                }
+            }
+            // h/t are display settings, which pzpr FileIO does not store.
+            comparable.set_rule("bosanowa_hex", false).unwrap();
+            comparable.set_rule("bosanowa_ten", false).unwrap();
+        }
         if matches!(pid, "railpool" | "makaro" | "dosufuwa") {
             // A room-id grid cannot retain wall bits adjoining a blocked cell.
             // Preserve and compare every other object and property exactly.
@@ -265,22 +279,8 @@ fn properties(pid: &str) {
             "{} canonical is strict-clean",
             r.id
         );
-        // Dedupe key is invariant and its transform reaches the representative.
-        let key = b.dedupe_key().unwrap();
-        assert_eq!(
-            b.transform(key.transform).to_url().unwrap(),
-            key.representative,
-            "{} representative",
-            r.id
-        );
         for t in Transform::ALL {
             let tb = b.transform(t);
-            assert_eq!(
-                tb.dedupe_key().unwrap().key,
-                key.key,
-                "{} dedupe under {t}",
-                r.id
-            );
             assert_eq!(tb.transform(t.inverse()), b, "{} inverse of {t}", r.id);
             for u in Transform::ALL {
                 assert_eq!(

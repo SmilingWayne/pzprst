@@ -12,7 +12,6 @@ in FileIO become `\\n`); errors are written as `ERR <kind>: <message>`.
 
 commands:
   canon     canonical URL body
-  dedupe    d4v1 key, a tab, then the transform reaching it
   fileio    pzpr FileIO text
   state     pzpr-trace state
 
@@ -50,7 +49,7 @@ fn parse_args() -> Result<Args, String> {
         return Err(String::new());
     }
     let cmd = rest.remove(0);
-    if !matches!(cmd.as_str(), "canon" | "dedupe" | "fileio" | "state") {
+    if !matches!(cmd.as_str(), "canon" | "fileio" | "state") {
         return Err(format!("unknown command {cmd:?}"));
     }
     Ok(Args {
@@ -72,10 +71,6 @@ fn run(args: &Args, input: &str) -> pzprst::Result<String> {
     let board = board.try_transform(args.transform)?;
     match args.cmd.as_str() {
         "canon" => board.to_url(),
-        "dedupe" => {
-            let k = board.dedupe_key()?;
-            Ok(format!("{}\t{}", k.key, k.transform))
-        }
         "fileio" => board.to_fileio(),
         _ => board.to_state(),
     }

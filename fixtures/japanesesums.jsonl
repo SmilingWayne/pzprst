@@ -1,0 +1,71 @@
+{"header":{"pid":"japanesesums","generator":"tools/gen_fixtures.js"}}
+{"id":"japanesesums-0","kind":"url","input":"japanesesums/6/5/4/...ah5.j.1g.4g352...4.j.8go4z"}
+{"id":"japanesesums-1","kind":"url","input":"japanesesums/6/5/4/...ah5.j.1g.4g352...4.j.8g"}
+{"id":"japanesesums-2","kind":"url","input":"japanesesums/2/3/4/m"}
+{"id":"japanesesums-3","kind":"url","input":"japanesesums/4/4/4/"}
+{"id":"japanesesums-4","kind":"url","input":"japanesesums/1/1/4/00"}
+{"id":"japanesesums-5","kind":"url","input":"japanesesums/1/5/3/"}
+{"id":"japanesesums-6","kind":"url","input":"japanesesums/5/1/3/"}
+{"id":"japanesesums-7","kind":"fileio","input":"pzprv3\njapanesesums\n5\n6\n4\n. . . -2 . . . . . \n. . . -2 . -2 . 1 4 \n. . . -2 10 5 . -2 -2 \n2 5 3 2 - 4 1 - 3 \n-2 -2 -2 - 3 - q4 - 1 \n. -2 4 4 2 - 3 1 - \n. . . - 1 2 - - 4 \n. 8 -2 1 4 3 - 2 - \n"}
+{"id":"japanesesums-8","kind":"fileio","input":"pzprv3\njapanesesums\n5\n6\n4\n. . . -2 . . . . . \n. . . -2 . -2 . 1 4 \n. . . -2 10 5 . -2 -2 \n2 5 3 2 - . . - 3 \n-2 -2 -2 - 3 - . - 1 \n. -2 4 4 2 - 3 1 - \n. . . - 1 2 - - 4 \n. 8 -2 1 4 3 - 2 - \n"}
+{"id":"japanesesums-9","kind":"fileio","input":"pzprv3\njapanesesums\n3\n2\n4\n. . . \n. . . \n. . . \n. . . \n. . . \n"}
+{"id":"japanesesums-10","kind":"fileio","input":"pzprv3\njapanesesums\n2\n4\n4\n. . 2 . . . \n. 3 . q1 + . \n. 3 - . q2 q2 \n"}
+{"id":"japanesesums-11","kind":"url","input":"japanesesums/4/2/4/2i3g3gg1j22"}
+{"id":"japanesesums-12","kind":"fileio","input":"pzprv3\njapanesesums\n1\n3\n2\n. . . 1 1 \n1 . q1 q1 q2 \n"}
+{"id":"japanesesums-13","kind":"url","input":"japanesesums/3/1/2/g111g112"}
+{"id":"japanesesums-14","kind":"fileio","input":"pzprv3\njapanesesums\n3\n5\n2\n. . . -2 . . . . \n. . . . 3 -2 3 . \n. 3 . . q1 . . q2 \n1 . 1 q2 q2 . 2 q2 \n. 3 . 2 2 .[1,,2,] q1 q2 \n"}
+{"id":"japanesesums-15","kind":"url","input":"japanesesums/5/3/2/.g3g.g3i3h11g3hg1h222h2i12"}
+{"id":"japanesesums-16","kind":"fileio","input":"pzprv3\njapanesesums\n3\n4\n5\n. . 1 . . 3 \n. . . -2 -2 . \n-2 . . . q1 q2 \n3 2 q2 q1 . - \n-2 3 . .[1,,2,] q1 . \n"}
+{"id":"japanesesums-17","kind":"url","input":"japanesesums/4/3/5/1g.g.g3g.g233.h1221j1g"}
+{"id":"japanesesums-18","kind":"fileio","input":"pzprv3\njapanesesums\n4\n2\n5\n. . -2 \n. . -2 \n-2 2 . \n. . . \n. q1 - \n. q2 q2 \n"}
+{"id":"japanesesums-19","kind":"url","input":"japanesesums/2/4/5/h...ij1g22"}
+{"id":"japanesesums-20","kind":"fileio","input":"pzprv3\njapanesesums\n2\n3\n2\n. . 2 -2 . \n. 2 q2 . . \n2 . q1 q2 . \n"}
+{"id":"japanesesums-21","kind":"url","input":"japanesesums/3/2/2/2.g2g2g2h12g"}
+{"id":"japanesesums-22","kind":"fileio","input":"pzprv3\njapanesesums\n3\n6\n2\n. . . 3 . 2 2 . -2 \n. . . 1 . . 3 . -2 \n3 . 2 q1 2 . . q1 . \n3 . . q2 q1 . q1 .[1,,2,] . \n. . -2 2 .[1,,2,] 2 q2 . . \n"}
+{"id":"japanesesums-23","kind":"url","input":"japanesesums/6/3/2/13h2g32h..23g3h.h1i1g21g1k2h"}
+{"id":"japanesesums-24","kind":"fileio","input":"pzprv3\njapanesesums\n4\n5\n4\n. . . . . . 3 3 \n. . . 2 3 . 2 . \n3 3 -2 2 . .[1,,2,] q1 q2 \n2 3 . q2 q2 q2 - q2 \n2 -2 1 q2 . q1 - 2 \n. . 2 2 q2 + q1 . \n"}
+{"id":"japanesesums-25","kind":"url","input":"japanesesums/5/4/4/2g3i233g.3332g1.22hi12222g22g1i2g1g"}
+{"id":"japanesesums-26","kind":"fileio","input":"pzprv3\njapanesesums\n3\n6\n5\n. . . 3 2 . . -2 . \n. . . . . 1 1 . -2 \n1 1 . . 2 . q1 q1 q1 \n. . . . . . . . . \n. -2 3 q2 q2 . .[1,,2,] q2 . \n"}
+{"id":"japanesesums-27","kind":"url","input":"japanesesums/6/3/5/3g2g1g1g.g.g11j3.gi111l22h2g"}
+{"id":"japanesesums-28","kind":"fileio","input":"pzprv3\njapanesesums\n3\n3\n4\n. . 2 . 2 \n. . . -2 . \n. . q1 . . \n2 -2 q2 2 q1 \n. . . q1 2 \n"}
+{"id":"japanesesums-29","kind":"url","input":"japanesesums/3/3/4/2g.g2i.2h1h2g1g1g"}
+{"id":"japanesesums-30","kind":"fileio","input":"pzprv3\njapanesesums\n3\n2\n4\n. . 1 \n. 3 . \n. q1 q2 \n. 2 . \n. . .[1,,2,] \n"}
+{"id":"japanesesums-31","kind":"url","input":"japanesesums/2/3/4/3g1j12j"}
+{"id":"japanesesums-32","kind":"fileio","input":"pzprv3\njapanesesums\n4\n4\n4\n. . 1 . 2 2 \n. . . 1 . . \n. . . . . q2 \n2 . . 2 + q2 \n2 3 . q1 q1 . \n. . q1 q1 q1 q1 \n"}
+{"id":"japanesesums-33","kind":"url","input":"japanesesums/4/4/4/1g1g2g2i2g32hi2i2g11g1111"}
+{"id":"japanesesums-34","kind":"fileio","input":"pzprv3\njapanesesums\n4\n3\n4\n. . -2 3 -2 \n. . -2 3 . \n. . . q2 . \n. . . q1 . \n-2 . 2 . q2 \n-2 2 . - .[1,,2,] \n"}
+{"id":"japanesesums-35","kind":"url","input":"japanesesums/3/4/4/..33.k.g2.g2h1i2i"}
+{"id":"japanesesums-36","kind":"fileio","input":"pzprv3\njapanesesums\n5\n5\n5\n. . . -2 . . 3 3 \n. . . 3 . -2 2 3 \n. . . 2 2 -2 . . \n. -2 1 + q1 . + . \n. . 2 q2 . . . q1 \n-2 . . q1 q1 .[1,,2,] . 2 \n2 2 -2 . + q2 q2 . \n. -2 . . q1 q2 q2 . \n"}
+{"id":"japanesesums-37","kind":"url","input":"japanesesums/5/5/5/23.2h..g23g33g1.g2h.h.22.hg1i2i111k22h122g"}
+{"id":"japanesesums-38","kind":"fileio","input":"pzprv3\njapanesesums\n5\n2\n2\n. . 2 \n. 2 . \n. 1 . \n3 q1 q2 \n. 2 2 \n. q2 - \n. q1 q1 \n. 2 . \n"}
+{"id":"japanesesums-39","kind":"url","input":"japanesesums/2/5/2/12g2h3j12h2g11h"}
+{"id":"japanesesums-40","kind":"fileio","input":"pzprv3\njapanesesums\n4\n5\n2\n. . . -2 1 2 . 3 \n. . . . 2 2 . 1 \n3 3 1 . q1 . . . \n-2 . 2 . . . q1 .[1,,2,] \n. . . q1 . . q1 q2 \n. . 1 q2 q2 q2 - . \n"}
+{"id":"japanesesums-41","kind":"url","input":"japanesesums/5/4/2/.g2122h131332.j1hg1l1g1h12222h"}
+{"id":"japanesesums-42","kind":"fileio","input":"pzprv3\njapanesesums\n3\n6\n4\n. . . 1 3 -2 . -2 1 \n. . . . -2 . . . 1 \n1 3 . q1 .[1,,2,] q1 q2 .[1,,2,] . \n2 . . - q2 q2 q1 2 q1 \n. 2 . q2 + . 2 q2 q1 \n"}
+{"id":"japanesesums-43","kind":"url","input":"japanesesums/6/3/4/1g.3.i.g1131g2h2h1g12i221g12i21"}
+{"id":"japanesesums-44","kind":"fileio","input":"pzprv3\njapanesesums\n4\n1\n5\n. 1 \n. 3 \n. q1 \n1 - \n1 . \n-2 . \n"}
+{"id":"japanesesums-45","kind":"url","input":"japanesesums/1/4/5/31g11.1i"}
+{"id":"japanesesums-46","kind":"fileio","input":"pzprv3\njapanesesums\n4\n6\n2\n. . . 2 1 -2 . 1 -2 \n. . . . -2 . -2 1 . \n1 1 1 q1 q1 + .[1,,2,] q1 . \n1 3 . . q2 . + q1 . \n-2 . 2 + . q1 q2 2 . \n. 2 3 . q2 q2 . . - \n"}
+{"id":"japanesesums-47","kind":"url","input":"japanesesums/6/4/2/2g.1.g.g11.g11131g2.g32g11h1h2h1i12i22i"}
+{"id":"japanesesums-48","kind":"fileio","input":"pzprv3\njapanesesums\n1\n5\n5\n. . . 3 3 3 2 . \n. 2 . q1 . .[1,,2,] q2 q1 \n"}
+{"id":"japanesesums-49","kind":"url","input":"japanesesums/5/1/5/3332g2h1h21"}
+{"id":"japanesesums-50","kind":"fileio","input":"pzprv3\njapanesesums\n4\n6\n2\n. . . . . 3 2 3 1 \n. . . 1 . 2 2 . 3 \n2 3 . - q2 q1 .[1,,2,] q1 2 \n3 3 . q1 q2 . q1 + . \n. -2 2 2 q1 q1 . . q1 \n3 . 3 q1 q1 - . . q1 \n"}
+{"id":"japanesesums-51","kind":"url","input":"japanesesums/6/4/2/1i23223g3132g33g2.g33gg21g1g12g1i11h111i1"}
+{"id":"japanesesums-52","kind":"fileio","input":"pzprv3\njapanesesums\n1\n6\n5\n. . . 1 -2 3 2 . . \n3 3 2 q1 . . q2 . . \n"}
+{"id":"japanesesums-53","kind":"url","input":"japanesesums/6/1/5/1.32h2331h2h"}
+{"id":"japanesesums-54","kind":"fileio","input":"pzprv3\njapanesesums\n2\n3\n4\n. . -2 . . \n-2 1 2 2 q2 \n. . 2 q1 - \n"}
+{"id":"japanesesums-55","kind":"url","input":"japanesesums/3/2/4/.h1.hh2g1g"}
+{"id":"japanesesums-56","kind":"fileio","input":"pzprv3\njapanesesums\n3\n2\n2\n. 3 2 \n. . . \n. 2 .[1,,2,] \n1 . . \n1 q1 q2 \n"}
+{"id":"japanesesums-57","kind":"url","input":"japanesesums/2/3/2/3g2h11j12"}
+{"id":"japanesesums-58","kind":"fileio","input":"pzprv3\njapanesesums\n5\n2\n5\n. 3 3 \n. -2 3 \n. -2 2 \n2 q2 q1 \n. . q2 \n. . q1 \n2 . q2 \n. q1 . \n"}
+{"id":"japanesesums-59","kind":"url","input":"japanesesums/2/5/5/..32332h2g21g2g1g21g"}
+{"id":"japanesesums-60","kind":"fileio","input":"pzprv3\njapanesesums\n4\n4\n4\n. . . . 2 -2 \n. . -2 . . . \n3 . .[1,,2,] q2 q2 . \n1 -2 q2 q2 q1 . \n-2 . q2 . . + \n. . . q1 q1 q1 \n"}
+{"id":"japanesesums-61","kind":"url","input":"japanesesums/4/4/4/.i2g.g3g.1.ig22g221g2j111"}
+{"id":"japanesesums-62","kind":"fileio","input":"pzprv3\njapanesesums\n4\n6\n5\n. . . 2 1 . 2 -2 . \n. . . 3 -2 2 -2 1 2 \n. 1 3 q2 q2 . . 2 q2 \n1 . . .[1,,2,] q1 q1 q1 . . \n2 1 3 q2 q2 q1 . 2 . \n2 1 1 q1 . q2 q1 . q1 \n"}
+{"id":"japanesesums-63","kind":"url","input":"japanesesums/6/4/5/32.12g.21.2g31g1h31211222i2g111h221i1g21g1"}
+{"id":"japanesesums-64","kind":"fileio","input":"pzprv3\njapanesesums\n1\n1\n2\n. 2 \n. .[1,,2,] \n"}
+{"id":"japanesesums-65","kind":"url","input":"japanesesums/1/1/2/2g"}
+{"id":"japanesesums-66","kind":"fileio","input":"pzprv3\njapanesesums\n1\n4\n2\n. . 2 . 2 -2 \n. 3 q1 q2 q1 q2 \n"}
+{"id":"japanesesums-67","kind":"url","input":"japanesesums/4/1/2/2g2.3g1212"}
+{"id":"japanesesums-68","kind":"fileio","input":"pzprv3\njapanesesums\n4\n6\n5\n. . . . 2 -2 2 2 1 \n. . . . . 1 . 2 . \n2 3 1 q1 . . . 2 q2 \n. -2 . q1 . .[1,,2,] . q1 2 \n2 . 2 q1 .[1,,2,] 2 . q2 . \n-2 . 2 q1 2 q1 q2 q2 + \n"}
+{"id":"japanesesums-69","kind":"url","input":"japanesesums/6/4/5/h2g1.2g221g132.h22g2.g1j21i1g1i2g1g122g"}

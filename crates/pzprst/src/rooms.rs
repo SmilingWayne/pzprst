@@ -36,7 +36,7 @@ pub(crate) fn components(b: &Board) -> Vec<Vec<usize>> {
                 let bx = (x + nx + 1) as i32;
                 let by = (y + ny + 1) as i32;
                 if b.obj(Group::Border, bx, by)
-                    .is_some_and(|edge| edge.ques == 1 || edge.qans == 1)
+                    .is_some_and(|edge| b.genre.room_border_is_wall(edge))
                 {
                     continue;
                 }

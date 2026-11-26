@@ -1,0 +1,69 @@
+{"header":{"pid":"isowatari","generator":"tools/gen_fixtures.js"}}
+{"id":"isowatari-0","kind":"url","input":"isowatari/3/3/1/90640"}
+{"id":"isowatari-1","kind":"url","input":"isowatari/3/3/1/906"}
+{"id":"isowatari-2","kind":"url","input":"isowatari/4/4/2/000000"}
+{"id":"isowatari-3","kind":"url","input":"isowatari/1/1/1/0"}
+{"id":"isowatari-4","kind":"url","input":"isowatari/1/5/3/00"}
+{"id":"isowatari-5","kind":"url","input":"isowatari/5/1/2/00"}
+{"id":"isowatari-6","kind":"fileio","input":"pzprv3\nisowatari\n3\n3\n1\n1 . * \n. . . \n. 2 . \n1 . . \n. . . \n. 2 . \n+ . . \n+ + + \n+ . + \n+ # . \n+ + + \n+ # + \n"}
+{"id":"isowatari-7","kind":"fileio","input":"pzprv3\nisowatari\n3\n3\n1\n1 . . \n. . . \n. 2 . \n1 . . \n. . . \n. 2 . \n+ . + \n+ + + \n+ . + \n+ # + \n+ + + \n+ # + \n"}
+{"id":"isowatari-8","kind":"fileio","input":"pzprv3\nisowatari\n5\n5\n3\n2 . . . 2 \n2 2 2 . 1 \n* . 2 2 * \n. . 1 * . \n. 1 . 1 . \n2 . . . 2 \n2 2 2 . 1 \n. . 2 2 . \n. . 1 . . \n. 1 . 1 . \n. . . . . \n. . . . . \n+ + . . . \n. . . . . \n. . . + . \n. . . . . \n. . . . . \n+ + . . . \n. . . . . \n. . # + . \n"}
+{"id":"isowatari-9","kind":"url","input":"isowatari/5/5/3/i8o9o10a000h20"}
+{"id":"isowatari-10","kind":"fileio","input":"pzprv3\nisowatari\n4\n4\n2\n* . . . \n. . . 1 \n1 . 1 . \n. 2 2 1 \n. . . . \n. . . 1 \n1 . 1 . \n. 2 2 1 \n+ . . . \n+ . . + \n. . . . \n+ . . . \n+ . # . \n+ . . + \n. . . . \n+ . . # \n"}
+{"id":"isowatari-11","kind":"url","input":"isowatari/4/4/2/004389g000"}
+{"id":"isowatari-12","kind":"fileio","input":"pzprv3\nisowatari\n1\n3\n2\n1 . . \n1 . . \n. . + \n. # + \n"}
+{"id":"isowatari-13","kind":"url","input":"isowatari/3/1/2/9"}
+{"id":"isowatari-14","kind":"fileio","input":"pzprv3\nisowatari\n1\n1\n1\n2 \n2 \n. \n. \n"}
+{"id":"isowatari-15","kind":"url","input":"isowatari/1/1/1/i"}
+{"id":"isowatari-16","kind":"fileio","input":"pzprv3\nisowatari\n2\n2\n2\n2 1 \n2 . \n2 1 \n2 . \n. . \n. . \n. # \n. . \n"}
+{"id":"isowatari-17","kind":"url","input":"isowatari/2/2/2/n0"}
+{"id":"isowatari-18","kind":"fileio","input":"pzprv3\nisowatari\n1\n1\n3\n. \n. \n. \n. \n"}
+{"id":"isowatari-19","kind":"url","input":"isowatari/1/1/3/0"}
+{"id":"isowatari-20","kind":"fileio","input":"pzprv3\nisowatari\n4\n6\n2\n. 2 . 1 . . \n. * 2 . 1 . \n. . 1 1 . . \n1 . 2 2 2 . \n. 2 . 1 . . \n. . 2 . 1 . \n. . 1 1 . . \n1 . 2 2 2 . \n+ . . . . . \n. . . . . . \n. . . . . . \n. . . + . . \n+ . . . . . \n. . . . . # \n# . . . . . \n# . . + # . \n"}
+{"id":"isowatari-21","kind":"url","input":"isowatari/6/4/2/692319bo04000"}
+{"id":"isowatari-22","kind":"fileio","input":"pzprv3\nisowatari\n4\n4\n2\n. . 2 * \n2 1 . . \n. * * 2 \n2 . . 2 \n. . 2 . \n2 1 . . \n. . . 2 \n2 . . 2 \n+ + . . \n. . . . \n. . . . \n. + . + \n+ + . . \n. . . . \n. . . # \n. + # + \n"}
+{"id":"isowatari-23","kind":"url","input":"isowatari/4/4/2/2702ii21g0"}
+{"id":"isowatari-24","kind":"fileio","input":"pzprv3\nisowatari\n5\n6\n4\n1 1 . . . 1 \n* . 1 . . 2 \n* 1 2 . . 2 \n2 . . . * . \n2 . 1 . * . \n1 1 . . . 1 \n. . 1 . . 2 \n. 1 2 . . 2 \n2 . . . . . \n2 . 1 . . . \n. . . . . . \n+ . + . . . \n. . . . . . \n. . . + . . \n. . . . . . \n. . . . . # \n+ . + . . . \n. . . # # . \n. . . + . . \n# . . . . . \n"}
+{"id":"isowatari-25","kind":"url","input":"isowatari/6/5/4/c11252i0j0084042"}
+{"id":"isowatari-26","kind":"fileio","input":"pzprv3\nisowatari\n5\n4\n3\n. 2 . 2 \n2 1 . . \n1 . 1 2 \n. 1 1 1 \n1 1 * . \n. 2 . 2 \n2 1 . . \n1 . 1 2 \n. 1 1 1 \n1 1 . . \n+ . . . \n. . . . \n. . + . \n+ . . . \n. . . . \n+ # . # \n. . . . \n. . + . \n+ . . . \n. . . . \n"}
+{"id":"isowatari-27","kind":"url","input":"isowatari/4/5/3/6p154d00002"}
+{"id":"isowatari-28","kind":"fileio","input":"pzprv3\nisowatari\n2\n6\n3\n2 . . 2 . 1 \n. . . . 2 . \n2 . . 2 . 1 \n. . . . 2 . \n. . . . . . \n. . . . . . \n# . # . . . \n. . . . . . \n"}
+{"id":"isowatari-29","kind":"url","input":"isowatari/6/2/3/ij06"}
+{"id":"isowatari-30","kind":"fileio","input":"pzprv3\nisowatari\n4\n1\n4\n. \n2 \n1 \n. \n. \n2 \n1 \n. \n. \n. \n. \n. \n# \n. \n. \n# \n"}
+{"id":"isowatari-31","kind":"url","input":"isowatari/1/4/4/70"}
+{"id":"isowatari-32","kind":"fileio","input":"pzprv3\nisowatari\n5\n3\n2\n* 1 2 \n1 1 1 \n. 1 1 \n. * 2 \n. . . \n. 1 2 \n1 1 1 \n. 1 1 \n. . 2 \n. . . \n. . . \n. . + \n+ . . \n. . . \n. . . \n. . . \n# . + \n+ . . \n. . . \n. . . \n"}
+{"id":"isowatari-33","kind":"url","input":"isowatari/3/5/2/5d420g0g"}
+{"id":"isowatari-34","kind":"fileio","input":"pzprv3\nisowatari\n5\n2\n3\n. . \n2 . \n. 2 \n. 1 \n* . \n. . \n2 . \n. 2 \n. 1 \n. . \n+ . \n. . \n+ . \n. . \n. . \n+ . \n. . \n+ # \n. . \n. # \n"}
+{"id":"isowatari-35","kind":"url","input":"isowatari/2/5/3/223002"}
+{"id":"isowatari-36","kind":"fileio","input":"pzprv3\nisowatari\n5\n2\n4\n. 2 \n. . \n1 2 \n* . \n1 . \n. 2 \n. . \n1 2 \n. . \n1 . \n. . \n. . \n. . \n. . \n+ . \n. . \n. . \n. . \n# . \n+ . \n"}
+{"id":"isowatari-37","kind":"url","input":"isowatari/2/5/4/651008"}
+{"id":"isowatari-38","kind":"fileio","input":"pzprv3\nisowatari\n3\n6\n3\n1 . . 1 1 1 \n. 2 . . . 2 \n1 . . * . . \n1 . . 1 1 1 \n. 2 . . . 2 \n1 . . . . . \n. . . . . . \n. . . . . . \n. . . . . + \n. . # . . # \n# . . # # # \n. # . . . + \n"}
+{"id":"isowatari-39","kind":"url","input":"isowatari/6/3/3/9d6290000g"}
+{"id":"isowatari-40","kind":"fileio","input":"pzprv3\nisowatari\n4\n2\n1\n1 . \n1 . \n. * \n2 1 \n1 . \n1 . \n. . \n2 1 \n. . \n. . \n. . \n. . \n# . \n. . \n. . \n. . \n"}
+{"id":"isowatari-41","kind":"url","input":"isowatari/2/4/1/a0l0g"}
+{"id":"isowatari-42","kind":"fileio","input":"pzprv3\nisowatari\n3\n1\n2\n2 \n2 \n2 \n2 \n2 \n2 \n. \n. \n. \n. \n# \n. \n"}
+{"id":"isowatari-43","kind":"url","input":"isowatari/1/3/2/q"}
+{"id":"isowatari-44","kind":"fileio","input":"pzprv3\nisowatari\n4\n6\n2\n2 1 2 . 1 2 \n1 1 . 1 . 2 \n1 1 2 * 2 1 \n. . 2 . . . \n2 1 2 . 1 2 \n1 1 . 1 . 2 \n1 1 2 . 2 1 \n. . 2 . . . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . + \n. . . # . . \n. # # . . # \n. . . # . . \n# . . # . + \n"}
+{"id":"isowatari-45","kind":"url","input":"isowatari/6/4/2/n5cbe720000g0"}
+{"id":"isowatari-46","kind":"fileio","input":"pzprv3\nisowatari\n4\n3\n4\n. 2 * \n* 2 . \n1 2 2 \n2 1 1 \n. 2 . \n. 2 . \n1 2 2 \n2 1 1 \n. . . \n. . . \n. . + \n. . . \n. . . \n. . # \n. # + \n. . . \n"}
+{"id":"isowatari-47","kind":"url","input":"isowatari/3/4/4/66hm600"}
+{"id":"isowatari-48","kind":"fileio","input":"pzprv3\nisowatari\n3\n4\n1\n1 . 2 . \n1 . 1 . \n. . 1 2 \n1 . 2 . \n1 . 1 . \n. . 1 2 \n. . . . \n. . . . \n. . . . \n. . . . \n# . . . \n. . # # \n"}
+{"id":"isowatari-49","kind":"url","input":"isowatari/4/3/1/b395"}
+{"id":"isowatari-50","kind":"fileio","input":"pzprv3\nisowatari\n3\n3\n4\n. . . \n1 . . \n1 2 2 \n. . . \n1 . . \n1 2 2 \n. . . \n. . . \n. . . \n. . . \n. . . \n. . # \n"}
+{"id":"isowatari-51","kind":"url","input":"isowatari/3/3/4/09h"}
+{"id":"isowatari-52","kind":"fileio","input":"pzprv3\nisowatari\n4\n1\n1\n. \n1 \n2 \n1 \n. \n1 \n2 \n1 \n. \n. \n. \n. \n. \n. \n. \n# \n"}
+{"id":"isowatari-53","kind":"url","input":"isowatari/1/4/1/59"}
+{"id":"isowatari-54","kind":"fileio","input":"pzprv3\nisowatari\n3\n5\n2\n. . 1 2 . \n. 2 1 2 1 \n2 1 * 2 2 \n. . 1 2 . \n. 2 1 2 1 \n2 1 . 2 2 \n. . + . . \n. . . . . \n. . . . . \n. . + . . \n# # # . . \n# . . . . \n"}
+{"id":"isowatari-55","kind":"url","input":"isowatari/5/3/2/1ing8004"}
+{"id":"isowatari-56","kind":"fileio","input":"pzprv3\nisowatari\n3\n4\n1\n2 2 1 2 \n. * . . \n. . . . \n2 2 1 2 \n. . . . \n. . . . \n. . . . \n. . . . \n. . . . \n. # . . \n. . . . \n# . # # \n"}
+{"id":"isowatari-57","kind":"url","input":"isowatari/4/3/1/pi000g0"}
+{"id":"isowatari-58","kind":"fileio","input":"pzprv3\nisowatari\n2\n3\n3\n. . 1 \n. 1 1 \n. . 1 \n. 1 1 \n+ . . \n. . . \n+ . . \n. # . \n"}
+{"id":"isowatari-59","kind":"url","input":"isowatari/3/2/3/14"}
+{"id":"isowatari-60","kind":"fileio","input":"pzprv3\nisowatari\n3\n2\n1\n. . \n. 2 \n1 1 \n. . \n. 2 \n1 1 \n. . \n. . \n. . \n. . \n. . \n# . \n"}
+{"id":"isowatari-61","kind":"url","input":"isowatari/2/3/1/0m"}
+{"id":"isowatari-62","kind":"fileio","input":"pzprv3\nisowatari\n5\n2\n3\n* . \n2 1 \n2 1 \n* 2 \n2 1 \n. . \n2 1 \n2 1 \n. 2 \n2 1 \n. . \n. . \n+ . \n. + \n. . \n. # \n. . \n+ . \n# + \n. . \n"}
+{"id":"isowatari-63","kind":"url","input":"isowatari/2/5/3/2g89g8"}
+{"id":"isowatari-64","kind":"fileio","input":"pzprv3\nisowatari\n2\n5\n4\n1 . 2 . 2 \n2 . 2 2 . \n1 . 2 . 2 \n2 . 2 2 . \n. + . . . \n. . . + . \n. + # . . \n. . # + . \n"}
+{"id":"isowatari-65","kind":"url","input":"isowatari/5/2/4/b880"}
+{"id":"isowatari-66","kind":"fileio","input":"pzprv3\nisowatari\n2\n2\n4\n2 . \n1 * \n2 . \n1 . \n. . \n. . \n. # \n# # \n"}
+{"id":"isowatari-67","kind":"url","input":"isowatari/2/2/4/j02"}

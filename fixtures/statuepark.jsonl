@@ -1,0 +1,73 @@
+{"header":{"pid":"statuepark","generator":"tools/gen_fixtures.js"}}
+{"id":"statuepark-0","kind":"url","input":"statuepark/6/7/k06000k0600000//t"}
+{"id":"statuepark-1","kind":"url","input":"statuepark/7/7/20000qg005n900060//t"}
+{"id":"statuepark-2","kind":"url","input":"statuepark/4/4/000000//p"}
+{"id":"statuepark-3","kind":"url","input":"statuepark/1/1/0//z"}
+{"id":"statuepark-4","kind":"url","input":"statuepark/2/2/00//t"}
+{"id":"statuepark-5","kind":"url","input":"statuepark/2/2/00//p"}
+{"id":"statuepark-6","kind":"url","input":"statuepark/2/2/00//d"}
+{"id":"statuepark-7","kind":"url","input":"statuepark/2/2/00/2/23bg/22u"}
+{"id":"statuepark-8","kind":"url","input":"statuepark/3/2/00//d"}
+{"id":"statuepark-9","kind":"fileio","input":"pzprv3\nstatuepark\n7\n6\nt\n2 . 2 . . . \n. 2 . . . . \n. . . . . . \n2 . 2 . . . \n. 2 . . . . \n. . . . . . \n. . . . . . \n# # # + # # \n+ # + + # # \n+ + + + + + \n# + # # + # \n# # + # + # \n+ # + # + # \n+ + + + + # \n0 0 0 0 0 \n"}
+{"id":"statuepark-10","kind":"fileio","input":"pzprv3\nstatuepark\n7\n7\nt\n. . 2 . . . . \n. . . . . . . \n. 2 2 2 1 2 1 \n. . . . . . . \n1 2 2 1 2 1 . \n. . . . . . . \n. . . . 2 . . \n# # # # + + # \n+ + + + + # # \n+ # # # + # + \n+ + + # + + + \n+ # # + # + + \n+ # # + # # + \n+ + + + # + + \n0 0 0 0 0 \n"}
+{"id":"statuepark-11","kind":"fileio","input":"pzprv3/statuepark/2/2/2/23bg/22u/1 . /. 2 /# + /x X /1 0 /"}
+{"id":"statuepark-12","kind":"fileio","input":"pzprv3\nstatuepark\n1\n6\n2\n23bg\n22u\n1 . . . 2 1 \n# . # . . . \n1 0 \n"}
+{"id":"statuepark-13","kind":"url","input":"statuepark/6/1/97/2/23bg/22u"}
+{"id":"statuepark-14","kind":"fileio","input":"pzprv3\nstatuepark\n3\n1\nt\n2 \n. \n1 \n+ \n. \n. \n1 1 0 1 0 \n"}
+{"id":"statuepark-15","kind":"url","input":"statuepark/1/3/j//t"}
+{"id":"statuepark-16","kind":"fileio","input":"pzprv3\nstatuepark\n2\n5\nt\n2 . . 2 1 \n2 2 2 . 2 \n. . # . . \n# . # # . \n0 1 0 0 1 \n"}
+{"id":"statuepark-17","kind":"url","input":"statuepark/5/2/inoi//t"}
+{"id":"statuepark-18","kind":"fileio","input":"pzprv3\nstatuepark\n3\n2\nt\n2 1 \n2 . \n1 2 \n. . \n. + \n+ . \n0 1 0 1 0 \n"}
+{"id":"statuepark-19","kind":"url","input":"statuepark/2/3/n5//t"}
+{"id":"statuepark-20","kind":"fileio","input":"pzprv3\nstatuepark\n3\n6\nz\n1 1 1 2 . 2 \n1 . . 1 1 2 \n. . 1 1 1 2 \n+ + . . + . \n. . + . . . \n. # . . + # \n\n"}
+{"id":"statuepark-21","kind":"url","input":"statuepark/6/3/dk9e1e//z"}
+{"id":"statuepark-22","kind":"fileio","input":"pzprv3\nstatuepark\n1\n5\n2\n23bg\n22u\n. 2 . 2 2 \n+ # # + . \n1 0 \n"}
+{"id":"statuepark-23","kind":"url","input":"statuepark/5/1/6o/2/23bg/22u"}
+{"id":"statuepark-24","kind":"fileio","input":"pzprv3\nstatuepark\n3\n2\nt\n. . \n1 1 \n1 2 \n# . \n# . \n. . \n0 0 0 0 0 \n"}
+{"id":"statuepark-25","kind":"url","input":"statuepark/2/3/1e//t"}
+{"id":"statuepark-26","kind":"fileio","input":"pzprv3\nstatuepark\n5\n1\nz\n. \n. \n2 \n. \n2 \n. \n+ \n# \n. \n+ \n\n"}
+{"id":"statuepark-27","kind":"url","input":"statuepark/1/5/26//z"}
+{"id":"statuepark-28","kind":"fileio","input":"pzprv3\nstatuepark\n3\n2\nz\n. . \n1 . \n. 1 \n# . \n# # \n. . \n\n"}
+{"id":"statuepark-29","kind":"url","input":"statuepark/2/3/11//z"}
+{"id":"statuepark-30","kind":"fileio","input":"pzprv3\nstatuepark\n5\n4\nt\n2 . 1 . \n1 . . . \n. . . . \n1 1 . 1 \n. 1 . . \n+ . . . \n. . + . \n. + # . \n+ . . . \n+ . . . \n1 0 0 0 0 \n"}
+{"id":"statuepark-31","kind":"url","input":"statuepark/4/5/j300ca0//t"}
+{"id":"statuepark-32","kind":"fileio","input":"pzprv3\nstatuepark\n1\n4\n2\n23bg\n22u\n1 1 . 1 \n. # . . \n0 1 \n"}
+{"id":"statuepark-33","kind":"url","input":"statuepark/4/1/c9/2/23bg/22u"}
+{"id":"statuepark-34","kind":"fileio","input":"pzprv3\nstatuepark\n4\n1\n2\n23bg\n22u\n2 \n. \n2 \n. \n# \n. \n. \n. \n1 0 \n"}
+{"id":"statuepark-35","kind":"url","input":"statuepark/1/4/k0/2/23bg/22u"}
+{"id":"statuepark-36","kind":"fileio","input":"pzprv3\nstatuepark\n1\n3\nt\n. 2 2 \n. . # \n0 0 1 0 1 \n"}
+{"id":"statuepark-37","kind":"url","input":"statuepark/3/1/8//t"}
+{"id":"statuepark-38","kind":"fileio","input":"pzprv3\nstatuepark\n3\n4\nt\n2 1 . . \n. . . 2 \n1 . . 2 \n# . # . \n# # . + \n. + . . \n0 1 1 0 0 \n"}
+{"id":"statuepark-39","kind":"url","input":"statuepark/4/3/l072//t"}
+{"id":"statuepark-40","kind":"fileio","input":"pzprv3\nstatuepark\n3\n3\nz\n2 2 . \n. 2 . \n. . . \n+ # # \n. . . \n. . . \n\n"}
+{"id":"statuepark-41","kind":"url","input":"statuepark/3/3/o60//z"}
+{"id":"statuepark-42","kind":"fileio","input":"pzprv3\nstatuepark\n2\n1\nz\n1 \n. \n. \n. \n\n"}
+{"id":"statuepark-43","kind":"url","input":"statuepark/1/2/9//z"}
+{"id":"statuepark-44","kind":"fileio","input":"pzprv3\nstatuepark\n1\n4\n2\n23bg\n22u\n2 . . 1 \n+ + + . \n1 0 \n"}
+{"id":"statuepark-45","kind":"url","input":"statuepark/4/1/i9/2/23bg/22u"}
+{"id":"statuepark-46","kind":"fileio","input":"pzprv3\nstatuepark\n3\n1\nz\n. \n. \n1 \n. \n. \n+ \n\n"}
+{"id":"statuepark-47","kind":"url","input":"statuepark/1/3/1//z"}
+{"id":"statuepark-48","kind":"fileio","input":"pzprv3\nstatuepark\n3\n5\nz\n1 1 2 2 1 \n2 . . 2 2 \n. 2 . 1 1 \n. . . . + \n+ . . . . \n. . + . . \n\n"}
+{"id":"statuepark-49","kind":"url","input":"statuepark/5/3/en2k4//z"}
+{"id":"statuepark-50","kind":"fileio","input":"pzprv3\nstatuepark\n4\n2\nt\n. 2 \n. 1 \n1 1 \n. 1 \n. . \n. + \n+ . \n. + \n1 0 0 0 0 \n"}
+{"id":"statuepark-51","kind":"url","input":"statuepark/2/4/6d3//t"}
+{"id":"statuepark-52","kind":"fileio","input":"pzprv3\nstatuepark\n5\n6\n2\n23bg\n22u\n. . 1 . . 1 \n1 . . . . 1 \n1 1 . 1 . . \n. . 2 . . . \n. 2 2 1 1 2 \n. . # + . + \n. . # + . # \n. . . # . . \n. + . . . . \n. + . + . # \n0 0 \n"}
+{"id":"statuepark-53","kind":"url","input":"statuepark/6/5/1191c9208e/2/23bg/22u"}
+{"id":"statuepark-54","kind":"fileio","input":"pzprv3\nstatuepark\n3\n5\nz\n. . . . 1 \n1 2 2 2 1 \n. 2 2 1 . \n. . + . . \n# . . . . \n. . . # . \n\n"}
+{"id":"statuepark-55","kind":"url","input":"statuepark/5/3/04qbl//z"}
+{"id":"statuepark-56","kind":"fileio","input":"pzprv3\nstatuepark\n2\n3\nt\n. 1 . \n. 1 2 \n. . . \n. # # \n0 0 0 0 0 \n"}
+{"id":"statuepark-57","kind":"url","input":"statuepark/3/2/35//t"}
+{"id":"statuepark-58","kind":"fileio","input":"pzprv3\nstatuepark\n1\n6\nt\n1 . . . 2 1 \n# . . # . . \n1 1 0 1 0 \n"}
+{"id":"statuepark-59","kind":"url","input":"statuepark/6/1/97//t"}
+{"id":"statuepark-60","kind":"fileio","input":"pzprv3\nstatuepark\n1\n1\n2\n23bg\n22u\n1 \n. \n0 0 \n"}
+{"id":"statuepark-61","kind":"url","input":"statuepark/1/1/9/2/23bg/22u"}
+{"id":"statuepark-62","kind":"fileio","input":"pzprv3\nstatuepark\n1\n2\nt\n. 1 \n# . \n0 0 0 0 0 \n"}
+{"id":"statuepark-63","kind":"url","input":"statuepark/2/1/3//t"}
+{"id":"statuepark-64","kind":"fileio","input":"pzprv3\nstatuepark\n4\n3\nt\n1 . 1 \n. . . \n1 1 . \n. 2 2 \n. # . \n# . . \n# . . \n. . . \n0 0 0 1 1 \n"}
+{"id":"statuepark-65","kind":"url","input":"statuepark/3/4/a0c8//t"}
+{"id":"statuepark-66","kind":"fileio","input":"pzprv3\nstatuepark\n3\n4\n2\n23bg\n22u\n2 . 2 . \n. 1 . . \n2 1 . . \n. . . . \n+ + # + \n+ . . # \n0 1 \n"}
+{"id":"statuepark-67","kind":"url","input":"statuepark/4/3/k129/2/23bg/22u"}
+{"id":"statuepark-68","kind":"fileio","input":"pzprv3\nstatuepark\n1\n5\nz\n. . . . 1 \n. + . . # \n\n"}
+{"id":"statuepark-69","kind":"url","input":"statuepark/5/1/03//z"}
+{"id":"statuepark-70","kind":"fileio","input":"pzprv3\nstatuepark\n4\n4\n2\n23bg\n22u\n. . 1 1 \n2 1 . . \n2 . . . \n. 2 2 . \n# . . + \n+ . . . \n. . . + \n. # . . \n0 1 \n"}
+{"id":"statuepark-71","kind":"url","input":"statuepark/4/4/1g2080/2/23bg/22u"}

@@ -52,7 +52,7 @@ module.exports = {
 		// A 1x1 board has nowhere else to put the goal. On larger boards the
 		// two markers must differ: pzprjs resets an equal pair after every
 		// board operation, which makes the URL orbit of such a board strictly
-		// larger than the orbit of its transforms (dedupe-key invariant).
+		// larger than the orbit of its transforms.
 		let goal;
 		do {
 			goal = [pos(bd.cols), pos(bd.rows)];

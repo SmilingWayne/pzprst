@@ -1,7 +1,7 @@
 # AGENTS.md — pzprst
 
 Rust port of pzprjs board, URL, FileIO and pzpr-trace state handling, plus D4
-transforms and dedupe keys. Spec: [`docs/SPEC.md`](docs/SPEC.md). Byte parity
+and transforms. Spec: [`docs/SPEC.md`](docs/SPEC.md). Byte parity
 with the pinned pzprjs (`../pzprjs`, commit in `variety_table.rs`) is the
 acceptance criterion for everything.
 
@@ -11,7 +11,7 @@ acceptance criterion for everything.
 crates/pzprst/src/        library; genres/<pid>.rs is one genre (auto-registered by build.rs)
 crates/pzprst/tests/      standalone crate behavior tests
 crates/pzprst-conformance/ repository-only corpus properties and reference parity
-crates/pzprst-cli/        `pzprst canon|dedupe|fileio|state` for scripts and parity runs
+crates/pzprst-cli/        `pzprst canon|fileio|state` for scripts and parity runs
 tools/genres/<pid>.js     fixture inputs per genre
 tools/gen_fixtures.js     writes compact fixtures/<pid>.jsonl (never edit fixtures by hand)
 tools/check_parity.js     generates temporary outputs and compares with pinned pzprjs-trace

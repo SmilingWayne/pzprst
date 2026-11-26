@@ -78,14 +78,14 @@ function record(id, kind, input) {
 	try {
 		const p = open(input);
 		const fileio = p.getFileData();
-		const out = { id, kind, input, canonical: body(p), fileio, state: state(fileio), transforms: {}, direct_transforms: {} };
+		const out = { id, kind, input, canonical: body(p), fileio, state: state(fileio), state_fileio: open(fileio).getFileData(), transforms: {}, direct_transforms: {} };
 		for (const [name, ops] of Object.entries(TRANSFORMS)) {
 			function transform(source) {
 				try {
 					const q = open(source);
 					for (const op of ops) q.board.operate(op);
 					const transformedFileio = q.getFileData();
-					return { url: body(q), fileio: transformedFileio, state: state(transformedFileio) };
+					return { url: body(q), fileio: transformedFileio, state: state(transformedFileio), state_fileio: open(transformedFileio).getFileData() };
 				} catch (e) {
 					return { error: String((e && e.message) || e) };
 				}

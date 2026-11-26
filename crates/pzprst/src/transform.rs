@@ -24,7 +24,7 @@ pub enum Transform {
 }
 
 impl Transform {
-    /// Table order; also the tie-break order for dedupe representatives.
+    /// All eight geometric transformations.
     pub const ALL: [Transform; 8] = [
         Self::Identity,
         Self::Rot90,

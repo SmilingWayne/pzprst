@@ -165,6 +165,20 @@ impl FileReader {
         Ok(())
     }
 
+    /// `decodeBorder(..., 1)`: only inner borders, even on framed boards.
+    pub fn decode_inner_border(
+        &mut self,
+        b: &mut Board,
+        d: &mut Diagnostics,
+        mut func: impl FnMut(&mut crate::Obj, &str) -> std::result::Result<(), String>,
+    ) -> Result<()> {
+        let (c, r) = (b.cols() as i32, b.rows() as i32);
+        for range in [(2, 1, 2 * c - 2, 2 * r - 1), (1, 2, 2 * c - 1, 2 * r - 2)] {
+            self.decode_obj(b, Group::Border, range, d, &mut func)?;
+        }
+        Ok(())
+    }
+
     /// `decodeConfigFlag`: consume the line only if it equals `flag`.
     pub fn decode_config_flag(&mut self, b: &mut Board, flag: &str, key: &'static str) {
         let on = self.peek_line() == Some(flag);
@@ -246,6 +260,14 @@ impl FileWriter {
     /// `encodeBorder`.
     pub fn encode_border(&mut self, b: &Board, mut func: impl FnMut(&crate::Obj) -> String) {
         for range in border_ranges(b) {
+            self.encode_obj(b, Group::Border, range, &mut func);
+        }
+    }
+
+    /// `encodeBorder(..., 1)`: only inner borders, even on framed boards.
+    pub fn encode_inner_border(&mut self, b: &Board, mut func: impl FnMut(&crate::Obj) -> String) {
+        let (c, r) = (b.cols() as i32, b.rows() as i32);
+        for range in [(2, 1, 2 * c - 2, 2 * r - 1), (1, 2, 2 * c - 1, 2 * r - 2)] {
             self.encode_obj(b, Group::Border, range, &mut func);
         }
     }

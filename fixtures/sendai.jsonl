@@ -1,0 +1,69 @@
+{"header":{"pid":"sendai","generator":"tools/gen_fixtures.js"}}
+{"id":"sendai-0","kind":"url","input":"sendai/5/5/dj7ej83g14i2g"}
+{"id":"sendai-1","kind":"url","input":"sendai/5/5/dj7ej83g14i.g"}
+{"id":"sendai-2","kind":"url","input":"sendai/4/4/"}
+{"id":"sendai-3","kind":"url","input":"sendai/1/1/"}
+{"id":"sendai-4","kind":"url","input":"sendai/1/5/"}
+{"id":"sendai-5","kind":"url","input":"sendai/5/1/"}
+{"id":"sendai-6","kind":"fileio","input":"pzprv3\nsendai\n5\n5\n1 . 4 . . \n. . . . . \n. . . . . \n. . . 2 . \n. . . . . \n4 1 1 2 \n1 1 4 2 \n1 1 2 2 \n1 1 1 2 \n1 1 1 2 \n1 4 2 1 1 \n2 1 2 4 4 \n2 4 4 1 1 \n1 4 4 4 4 \n"}
+{"id":"sendai-7","kind":"fileio","input":"pzprv3\nsendai\n5\n5\n1 . 4 . . \n. . . . . \n. . . . . \n. . . - . \n. . . . . \n4 1 1 2 \n1 1 4 2 \n1 1 2 2 \n1 1 1 2 \n1 1 1 2 \n1 4 2 1 1 \n2 1 2 4 4 \n2 4 4 1 1 \n1 4 4 0 4 \n"}
+{"id":"sendai-8","kind":"fileio","input":"pzprv3\nsendai\n3\n6\n. . . . . . \n. . . . . . \n. . . . . . \n0 4 2 0 0 \n4 4 0 0 2 \n1 1 0 0 4 \n0 0 2 2 1 0 \n2 0 1 2 0 0 \n"}
+{"id":"sendai-9","kind":"url","input":"sendai/6/3/00o120g"}
+{"id":"sendai-10","kind":"fileio","input":"pzprv3\nsendai\n5\n2\n1 . \n. . \n. . \n. . \n. . \n0 \n1 \n0 \n1 \n1 \n0 2 \n2 1 \n0 2 \n0 0 \n"}
+{"id":"sendai-11","kind":"url","input":"sendai/2/5/b201"}
+{"id":"sendai-12","kind":"fileio","input":"pzprv3\nsendai\n1\n6\n. . . . . . \n5 0 2 0 1 \n"}
+{"id":"sendai-13","kind":"url","input":"sendai/6/1/hi"}
+{"id":"sendai-14","kind":"fileio","input":"pzprv3\nsendai\n2\n1\n. \n. \n\n\n0 \n"}
+{"id":"sendai-15","kind":"url","input":"sendai/1/2/0g"}
+{"id":"sendai-16","kind":"fileio","input":"pzprv3\nsendai\n4\n4\n1 . . . \n. . . . \n. . . . \n1 . - . \n0 2 4 \n4 2 2 \n4 0 1 \n1 1 2 \n0 0 4 0 \n4 0 2 0 \n1 2 1 1 \n"}
+{"id":"sendai-17","kind":"url","input":"sendai/4/4/03g02o11./"}
+{"id":"sendai-18","kind":"fileio","input":"pzprv3\nsendai\n4\n4\n1 . . . \n. . . . \n. . . . \n. . - . \n0 0 1 \n1 0 1 \n0 0 1 \n1 1 0 \n1 1 2 5 \n0 2 1 4 \n0 0 1 0 \n"}
+{"id":"sendai-19","kind":"url","input":"sendai/4/4/6jgq8g1g./"}
+{"id":"sendai-20","kind":"fileio","input":"pzprv3\nsendai\n1\n1\n. \n\n"}
+{"id":"sendai-21","kind":"url","input":"sendai/1/1/g"}
+{"id":"sendai-22","kind":"fileio","input":"pzprv3\nsendai\n2\n3\n1 . . \n. . . \n0 0 \n2 1 \n0 4 4 \n"}
+{"id":"sendai-23","kind":"url","input":"sendai/3/2/201"}
+{"id":"sendai-24","kind":"fileio","input":"pzprv3\nsendai\n1\n1\n. \n\n"}
+{"id":"sendai-25","kind":"url","input":"sendai/1/1/g"}
+{"id":"sendai-26","kind":"fileio","input":"pzprv3\nsendai\n3\n3\n. . . \n. . . \n. . . \n0 2 \n0 0 \n0 0 \n5 5 0 \n0 2 0 \n"}
+{"id":"sendai-27","kind":"url","input":"sendai/3/3/00o0g"}
+{"id":"sendai-28","kind":"fileio","input":"pzprv3\nsendai\n3\n4\n- . . . \n. . . . \n. . . . \n0 0 0 \n1 0 0 \n1 0 0 \n2 0 1 0 \n1 1 1 0 \n"}
+{"id":"sendai-29","kind":"url","input":"sendai/4/3/285o.g"}
+{"id":"sendai-30","kind":"fileio","input":"pzprv3\nsendai\n3\n6\n. . . . . . \n. 1 . . . . \n. . . . . . \n0 4 0 1 1 \n5 1 0 0 2 \n1 1 0 0 0 \n0 1 0 0 0 0 \n0 0 0 0 1 0 \n"}
+{"id":"sendai-31","kind":"url","input":"sendai/6/3/3oo80gg1"}
+{"id":"sendai-32","kind":"fileio","input":"pzprv3\nsendai\n2\n5\n. . . . . \n. . . . . \n4 2 0 5 \n0 0 5 4 \n0 0 1 2 0 \n"}
+{"id":"sendai-33","kind":"url","input":"sendai/5/2/284g"}
+{"id":"sendai-34","kind":"fileio","input":"pzprv3\nsendai\n3\n2\n. . \n. . \n2 . \n0 \n4 \n2 \n2 4 \n5 1 \n"}
+{"id":"sendai-35","kind":"url","input":"sendai/2/3/06g2"}
+{"id":"sendai-36","kind":"fileio","input":"pzprv3\nsendai\n5\n3\n1 . . \n2 . . \n. . . \n. . . \n. . . \n1 1 \n0 4 \n2 0 \n5 0 \n0 2 \n1 4 0 \n2 1 2 \n0 2 4 \n0 0 4 \n"}
+{"id":"sendai-37","kind":"url","input":"sendai/3/5/o8h0012"}
+{"id":"sendai-38","kind":"fileio","input":"pzprv3\nsendai\n1\n6\n. . . . 2 . \n2 2 0 1 0 \n"}
+{"id":"sendai-39","kind":"url","input":"sendai/6/1/2g2"}
+{"id":"sendai-40","kind":"fileio","input":"pzprv3\nsendai\n2\n6\n- . . . . . \n. . . . . . \n0 0 4 0 2 \n2 0 4 2 0 \n0 1 1 2 1 0 \n"}
+{"id":"sendai-41","kind":"url","input":"sendai/6/2/00d0./"}
+{"id":"sendai-42","kind":"fileio","input":"pzprv3\nsendai\n3\n4\n- . . . \n. . . . \n. . . . \n0 1 1 \n1 4 0 \n5 1 2 \n2 4 0 0 \n0 0 1 1 \n"}
+{"id":"sendai-43","kind":"url","input":"sendai/4/3/ec0c.g"}
+{"id":"sendai-44","kind":"fileio","input":"pzprv3\nsendai\n3\n4\n1 . . . \n. . . 2 \n. . . . \n0 0 4 \n1 0 1 \n0 5 4 \n0 4 1 1 \n1 0 2 1 \n"}
+{"id":"sendai-45","kind":"url","input":"sendai/4/3/2k7412"}
+{"id":"sendai-46","kind":"fileio","input":"pzprv3\nsendai\n1\n4\n1 . . . \n1 1 1 \n"}
+{"id":"sendai-47","kind":"url","input":"sendai/4/1/s1i"}
+{"id":"sendai-48","kind":"fileio","input":"pzprv3\nsendai\n4\n5\n1 . . . . \n. . . . . \n. . . . . \n. . . . . \n5 0 0 2 \n1 2 0 0 \n0 1 0 0 \n0 4 2 0 \n0 1 4 0 0 \n0 1 0 0 2 \n2 2 0 2 0 \n"}
+{"id":"sendai-49","kind":"url","input":"sendai/5/4/h1008801"}
+{"id":"sendai-50","kind":"fileio","input":"pzprv3\nsendai\n3\n6\n2 . . . . - \n. . . . . . \n. . . . . . \n2 1 4 4 1 \n2 5 1 4 1 \n0 0 1 2 0 \n0 0 2 1 1 1 \n2 1 0 4 1 0 \n"}
+{"id":"sendai-51","kind":"url","input":"sendai/6/3/9d43kg2.g"}
+{"id":"sendai-52","kind":"fileio","input":"pzprv3\nsendai\n1\n6\n2 . . 1 . . \n0 0 1 5 0 \n"}
+{"id":"sendai-53","kind":"url","input":"sendai/6/1/621g"}
+{"id":"sendai-54","kind":"fileio","input":"pzprv3\nsendai\n3\n5\n. . . . . \n. . . . . \n. . . . . \n1 0 1 2 \n1 2 1 1 \n0 0 2 1 \n2 0 0 0 0 \n4 5 4 1 0 \n"}
+{"id":"sendai-55","kind":"url","input":"sendai/5/3/lc80ah"}
+{"id":"sendai-56","kind":"fileio","input":"pzprv3\nsendai\n1\n6\n. . . . . . \n4 0 2 1 1 \n"}
+{"id":"sendai-57","kind":"url","input":"sendai/6/1/3i"}
+{"id":"sendai-58","kind":"fileio","input":"pzprv3\nsendai\n1\n2\n2 . \n4 \n"}
+{"id":"sendai-59","kind":"url","input":"sendai/2/1/02"}
+{"id":"sendai-60","kind":"fileio","input":"pzprv3\nsendai\n2\n2\n. . \n. . \n0 \n0 \n2 1 \n"}
+{"id":"sendai-61","kind":"url","input":"sendai/2/2/08g"}
+{"id":"sendai-62","kind":"fileio","input":"pzprv3\nsendai\n2\n1\n- \n. \n\n\n0 \n"}
+{"id":"sendai-63","kind":"url","input":"sendai/1/2/0./"}
+{"id":"sendai-64","kind":"fileio","input":"pzprv3\nsendai\n5\n4\n. . . . \n. . . . \n. . . . \n. . . . \n. . . . \n1 2 0 \n1 1 0 \n1 0 0 \n0 1 1 \n4 0 0 \n5 4 1 4 \n1 1 4 0 \n5 0 1 1 \n1 1 0 0 \n"}
+{"id":"sendai-65","kind":"url","input":"sendai/4/5/j8oliu0k"}
+{"id":"sendai-66","kind":"fileio","input":"pzprv3\nsendai\n1\n3\n1 . 1 \n0 5 \n"}
+{"id":"sendai-67","kind":"url","input":"sendai/3/1/811"}

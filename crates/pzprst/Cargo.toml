@@ -1,6 +1,6 @@
 [package]
 name = "pzprst"
-description = "pzprjs-compatible static puzzle boards: URL, FileIO and state codecs, symmetries and canonical keys"
+description = "pzprjs-compatible static puzzle boards: URL, FileIO and state codecs and board symmetries"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

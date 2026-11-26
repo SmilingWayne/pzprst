@@ -394,6 +394,8 @@ pub struct Board {
     pub segments: Vec<Segment>,
     /// Genre-specific clue count for puzzles with a board indicator.
     pub indicator: Option<i32>,
+    /// Ordered puzzle pieces and their optional player completion marks.
+    pub bank: Option<crate::PieceBank>,
     pub(crate) diagnostics: Diagnostics,
 }
 
@@ -422,6 +424,7 @@ impl PartialEq for Board {
             && self.excells == other.excells
             && self.segments == other.segments
             && self.indicator == other.indicator
+            && self.bank == other.bank
     }
 }
 
@@ -462,6 +465,7 @@ impl Board {
             excells: vec![Obj::default(); geom.excell_count()],
             segments: Vec::new(),
             indicator: None,
+            bank: None,
             diagnostics: Diagnostics::default(),
         };
         genre.init_board(&mut board);
@@ -560,6 +564,10 @@ impl Board {
         let mut board = fileio::decode(&text, &mut diags)?;
         board.genre.validate(&board, &mut diags);
         state::check_match(&puzzle, &board)?;
+        // Bosanowa's h/t flags are presentation settings omitted from FileIO.
+        if puzzle.pid() == "bosanowa" {
+            board.rules = puzzle.rules.clone();
+        }
         board.variant = puzzle.variant.clone();
         board.diagnostics = diags.check_strict(opts.strict)?;
         Ok(board)
@@ -598,12 +606,13 @@ impl Board {
             .collect();
         let pflag = format!("{}{}", self.genre.output_flags(), flags);
         let urlid = variety::urlid(self.pid()).unwrap_or(self.pid());
+        let (cols, rows) = self.genre.url_dimensions(self)?;
         Ok(url::generate(
             urlid,
             self.variant.as_deref(),
             &pflag,
-            self.geom.cols,
-            self.geom.rows,
+            cols,
+            rows,
             &body,
         ))
     }
@@ -620,6 +629,13 @@ impl Board {
 
     /// `https://pzpr-trace.net/p?state=…&<url>`.
     pub fn to_trace_url(&self, prefix: &str) -> Result<String> {
+        if self.pid() == "bosanowa" {
+            // Its URL crops empty margins and may discard clues, while the
+            // state retains the FileIO board. Do not emit a mismatched link.
+            let puzzle = Self::from_url(&self.to_url()?, &Options::default())?;
+            let snapshot = Self::from_fileio(&self.to_fileio()?, &Options::default())?;
+            state::check_match(&puzzle, &snapshot)?;
+        }
         Ok(format!(
             "{prefix}state={}&{}",
             self.to_state()?,
@@ -803,26 +819,6 @@ impl Board {
         Ok(out)
     }
 
-    /// Symmetry-aware duplicate key over the genre's allowed transforms.
-    pub fn dedupe_key(&self) -> Result<DedupeKey> {
-        let mut best: Option<(String, Transform)> = None;
-        for &t in self.genre.symmetries() {
-            let u = self.transform(t).to_url()?;
-            if best
-                .as_ref()
-                .map_or(true, |(b, _)| u.as_bytes() < b.as_bytes())
-            {
-                best = Some((u, t));
-            }
-        }
-        let (representative, transform) = best.expect("identity is always allowed");
-        Ok(DedupeKey {
-            key: format!("{DEDUPE_POLICY}:{representative}"),
-            representative,
-            transform,
-        })
-    }
-
     // ----- accessors -----------------------------------------------------
 
     pub fn pid(&self) -> &'static str {
@@ -932,9 +928,12 @@ impl Board {
         let d = Obj::default();
         !self.segments.is_empty()
             || self
+                .bank
+                .as_ref()
+                .is_some_and(|bank| bank.pieces.iter().any(|piece| piece.qcmp != 0))
+            || self
                 .cells
                 .iter()
-                .chain(&self.borders)
                 .chain(&self.crosses)
                 .chain(&self.excells)
                 .any(|o| {
@@ -945,29 +944,36 @@ impl Board {
                         || o.line != d.line
                         || !o.snum.is_empty()
                 })
+            || self.borders.iter().any(|o| {
+                let default_sub = if self.pid() == "bosanowa" { -1 } else { 0 };
+                o.anum != d.anum
+                    || o.qans != d.qans
+                    || o.qsub != default_sub
+                    || o.qcmp != d.qcmp
+                    || o.line != d.line
+                    || !o.snum.is_empty()
+            })
     }
 
     pub fn clear_snapshot(&mut self) {
         self.segments.clear();
+        if let Some(bank) = &mut self.bank {
+            for piece in &mut bank.pieces {
+                piece.qcmp = 0;
+            }
+        }
         self.cells
             .iter_mut()
             .chain(self.borders.iter_mut())
             .chain(self.crosses.iter_mut())
             .chain(self.excells.iter_mut())
             .for_each(Obj::clear_answer);
+        if self.pid() == "bosanowa" {
+            for border in &mut self.borders {
+                border.qsub = -1;
+            }
+        }
     }
-}
-
-pub const DEDUPE_POLICY: &str = "d4v1";
-
-#[derive(Debug, Clone, PartialEq, Eq)]
-pub struct DedupeKey {
-    /// `d4v1:<representative>`.
-    pub key: String,
-    /// Smallest canonical URL over the allowed symmetries.
-    pub representative: String,
-    /// The transform with `board.transform(t).to_url() == representative`.
-    pub transform: Transform,
 }
 
 #[cfg(test)]

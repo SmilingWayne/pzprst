@@ -42,14 +42,25 @@ pub(crate) fn check_match(puzzle: &Board, state: &Board) -> Result<()> {
             state.rows()
         ));
     }
-    if puzzle.rules != state.rules {
+    if puzzle.pid() != "bosanowa" && puzzle.rules != state.rules {
         return mismatch(format!("rules {:?} vs {:?}", puzzle.rules, state.rules));
     }
     if puzzle.indicator != state.indicator {
         return mismatch("board indicator differs".into());
     }
+    match (&puzzle.bank, &state.bank) {
+        (None, None) => {}
+        (Some(a), Some(b)) if a.same_question(b) => {}
+        _ => return mismatch("piece bank differs".into()),
+    }
     for (i, (a, b)) in puzzle.cells.iter().zip(&state.cells).enumerate() {
-        if a.question() != b.question() || a.qnums != b.qnums {
+        let mut question = a.question();
+        // pzpr-trace compares FileIO-normalized questions. Bosanowa's
+        // FileIO writes qnum 0 as the empty-clue token.
+        if puzzle.pid() == "bosanowa" && question.0 == 0 {
+            question.0 = -1;
+        }
+        if question != b.question() || a.qnums != b.qnums {
             return mismatch(format!(
                 "clue at row {}, column {}",
                 i / puzzle.cols(),

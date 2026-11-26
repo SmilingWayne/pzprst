@@ -1,9 +1,106 @@
 //! Spec examples, diagnostics, intentional divergences, states and trace URLs.
 
-use pzprst::{canonical_url, Board, DiagnosticCode, Error, Group, Options, Transform};
+use pzprst::{
+    canonical_url, BankPiece, Board, DiagnosticCode, Error, Group, Options, PieceBank, Transform,
+};
 
 fn opts() -> Options {
     Options::default()
+}
+
+#[test]
+fn piece_bank_roundtrip_and_state_identity() {
+    let raw = BankPiece::from_serialized("2:110111").unwrap();
+    assert_eq!(
+        BankPiece::from_serialized(&raw.serialize().unwrap()).unwrap(),
+        raw
+    );
+    let mut board = Board::from_url("statuepark/2/2/00/2/23bg/22u", &opts()).unwrap();
+    assert!(!board.has_snapshot());
+    board.bank.as_mut().unwrap().pieces[0].qcmp = 1;
+    assert!(board.has_snapshot());
+    let trace = board.to_trace_url("https://pzpr-trace.net/p?").unwrap();
+    assert_eq!(Board::from_trace_url(&trace, &opts()).unwrap(), board);
+    let mut changed = board.clone();
+    changed.bank = Some(PieceBank::from_serialized(["23bg"]).unwrap());
+    let mismatch = format!(
+        "https://pzpr-trace.net/p?state={}&{}",
+        board.to_state().unwrap(),
+        changed.to_url().unwrap()
+    );
+    assert!(matches!(
+        Board::from_trace_url(&mismatch, &opts()),
+        Err(Error::StateMismatch(_))
+    ));
+    board.clear_snapshot();
+    assert!(!board.has_snapshot());
+    assert_eq!(board.bank.as_ref().unwrap().pieces[0].qcmp, 0);
+    board.bank = None;
+    assert!(matches!(board.to_url(), Err(Error::ValueOutOfRange(_))));
+    assert!(matches!(board.to_fileio(), Err(Error::ValueOutOfRange(_))));
+}
+
+#[test]
+fn bosanowa_crop_and_unrepresentable_clues_are_reported() {
+    let mut board = Board::new("bosanowa", 5, 4).unwrap();
+    assert!(!board.has_snapshot());
+    for y in 0..board.rows() {
+        for x in 0..board.cols() {
+            board.cell_mut(y, x).ques = 7;
+        }
+    }
+    board.cell_mut(1, 1).ques = 0;
+    board.cell_mut(1, 2).ques = 0;
+    board.cell_mut(1, 1).qnum = 2;
+    assert_eq!(board.to_url().unwrap(), "bosanowa/2/1/02g");
+    assert!(matches!(
+        board.to_trace_url("https://pzpr-trace.net/p?"),
+        Err(Error::StateMismatch(_))
+    ));
+    let restored = Board::from_fileio(&board.to_fileio().unwrap(), &opts()).unwrap();
+    assert!(restored
+        .diagnostics()
+        .iter()
+        .any(|d| d.code == DiagnosticCode::LossyUrl));
+    assert_eq!((restored.cols(), restored.rows()), (5, 4));
+    board.obj_mut(Group::Border, 2, 1).unwrap().qsub = 1;
+    assert!(board.has_snapshot());
+    board.clear_snapshot();
+    assert!(!board.has_snapshot());
+    let mut large = Board::new("bosanowa", 1, 1).unwrap();
+    large.cell_mut(0, 0).qnum = 256;
+    let reread = Board::from_fileio(&large.to_fileio().unwrap(), &opts()).unwrap();
+    assert!(reread
+        .diagnostics()
+        .iter()
+        .any(|d| d.code == DiagnosticCode::LossyUrl));
+    assert!(matches!(
+        large.to_trace_url("https://pzpr-trace.net/p?"),
+        Err(Error::StateMismatch(_))
+    ));
+    let large_url = Board::from_url("bosanowa/1/1/0+100", &opts()).unwrap();
+    assert!(large_url
+        .diagnostics()
+        .iter()
+        .any(|d| d.code == DiagnosticCode::LossyUrl));
+    assert!(Board::from_url(
+        "bosanowa/1/1/0+100",
+        &Options {
+            strict: true,
+            ..opts()
+        }
+    )
+    .is_err());
+    // Reference state matching normalizes question data through FileIO, where
+    // a zero clue becomes empty; h is an unstored display setting.
+    let zero = Board::from_url("bosanowa/h/1/1/00", &opts()).unwrap();
+    let trace = zero.to_trace_url("https://pzpr-trace.net/p?").unwrap();
+    let decoded = Board::from_trace_url(&trace, &opts()).unwrap();
+    assert_eq!(decoded.cell(0, 0).qnum, -1);
+    assert!(decoded.to_url().unwrap().starts_with("bosanowa/h/"));
+    let mut empty = Board::new("bosanowa", 1, 1).unwrap();
+    empty.cell_mut(0, 0).ques = 7;
+    assert!(matches!(empty.to_url(), Err(Error::InvalidSize(_))));
 }
 
 #[test]

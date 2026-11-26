@@ -1,7 +1,7 @@
 # pzprst
 
 A Rust library and CLI for pzprjs-compatible puzzle URLs, FileIO, pzpr-trace
-states, board symmetries, and deduplication. It implements static puzzle boards;
+states and board symmetries. It implements static puzzle boards;
 it does not solve puzzles. `pzprst::supported()` lists implemented pzprjs pids.
 The reference is **[SmilingWayne/pzprjs-trace](https://github.com/SmilingWayne/pzprjs-trace)**,
 not the upstream pzprjs repository; its pinned commit is `PZPRJS_COMMIT`.
@@ -16,7 +16,20 @@ let fileio = board.to_fileio()?;
 # Ok::<(), pzprst::Error>(())
 ```
 
-The CLI has `canon`, `dedupe`, `fileio`, and `state` commands:
+Piece-bank puzzles expose an ordered `PieceBank`. A bank piece contains a
+rectangular bitmap and an optional player completion mark:
+
+```rust
+use pzprst::{Board, PieceBank};
+
+let mut board = Board::new("statuepark", 6, 6)?;
+board.bank = Some(PieceBank::from_serialized(["23bg", "22u"])?);
+board.bank.as_mut().unwrap().pieces[0].qcmp = 1;
+let state = board.to_state()?;
+# Ok::<(), pzprst::Error>(())
+```
+
+The CLI has `canon`, `fileio`, and `state` commands:
 
 `Board::try_transform` and the CLI reproduce pzprjs transform errors and its
 rectangular segment behavior. `Board::transform` remains an infallible geometric
@@ -38,9 +51,9 @@ cargo clippy --workspace --all-targets -q
 `fixtures/<pid>.jsonl` contains compact test inputs, not stored pzprjs outputs.
 Fixture inputs do not record the reference commit; the generator checks the
 reference checkout against `PZPRJS_COMMIT` when producing comparison results.
-The property tests check FileIO/state round trips, canonicalization, symmetries,
-and deduplication for every registered genre; set `PZPRST_GENRE=slither` to run
-only that genre. These tests do not require Node. The full pzprjs-trace comparison
+The property tests check FileIO/state round trips, canonicalization and
+symmetries for every registered genre; set `PZPRST_GENRE=slither` to run only
+that genre. These tests do not require Node. The full pzprjs-trace comparison
 is intentionally reported as ignored by `cargo test` and must be run separately:
 
 ```sh

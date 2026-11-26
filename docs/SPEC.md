@@ -8,7 +8,7 @@ Pilot genres: Slitherlink (`slither`) and Masyu (`mashu`) — implemented, see �
 pzprst is a small Rust library that reproduces **pzprjs's static board model and
 its serialization contracts** — URL, FileIO, pzpr-trace state — and adds the
 operations the PuzzleKit ecosystem needs on top: canonicalization, board
-symmetries (rotate / flip) and symmetry-aware duplicate keys.
+symmetries (rotate / flip). Puzzle equivalence and deduplication policies belong to callers.
 
 It exists because PuzzleKit and puzzlekit-dataset currently each have their own
 partial, slightly different encoders. Example: PuzzleKit emits `slither/3/2/h12g3`
@@ -123,6 +123,23 @@ Hinge, Mannequin, One Room and Toichika 2 reuse the existing room and cell
 codecs; Roma and Arrow Flow share their numeric directional-submark FileIO,
 while NEWS also preserves its `tren_new` rule flag and subnumbers. These genres
 use the existing eight rectangular-board symmetries.
+`Board.bank` stores an optional `PieceBank` containing ordered `BankPiece`
+bitmaps and their player `qcmp` marks. The bitmaps are puzzle data; marks are
+snapshot data and are excluded from trace identity and cleared by
+`clear_snapshot`. Preset and custom Statue Park banks use the same model.
+
+Bosanowa URL output crops margins of empty cells and cannot encode clues above
+255. FileIO preserves those dimensions and clues; `LossyUrl` reports the
+difference. FileIO represents clue zero as empty. Bosanowa `h`/`t` display
+flags are retained for URL output but omitted by pzprjs FileIO. A trace URL is
+rejected if its cropped or lossy puzzle URL would not match its FileIO state.
+An all-hole board returns `InvalidSize` instead of the negative URL dimensions
+produced by the reference.
+
+Sendai question rooms are split only by question borders, not answer borders.
+Japanese Sums reuses the ordered top/left clue transformation logic. Isowatari
+stores its cluster size in `Board.indicator`.
+
 `Board.segments` stores ordered answer segments and optional origins in doubled
 coordinates; `clear_snapshot` removes them. `Board::transform` applies the D4
 geometry and preserves the existing infallible API. For pzprjs-compatible
@@ -167,7 +184,7 @@ pzprst/
 │   │   ├── src/genres/        mod.rs (trait) + one <pid>.rs per genre
 │   │   ├── build.rs           registers every src/genres/<pid>.rs (no shared list to edit)
 │   │   └── tests/             corpus properties + opt-in pzprjs parity, behaviour.rs
-│   └── pzprst-cli/            `pzprst [--strict] [--diag] [--transform T] canon|dedupe|fileio|state`
+│   └── pzprst-cli/            `pzprst [--strict] [--diag] [--transform T] canon|fileio|state`
 ├── fixtures/                  committed compact input JSONL; full/ is local (gitignored)
 ├── tools/
 │   ├── genres/<pid>.js        fixture inputs per genre (edge-case URLs, FileIOs, randomizer)
@@ -197,7 +214,6 @@ pub(crate) trait Genre {
     fn decode_fileio(&self, r: &mut FileReader, b: &mut Board, d: &mut Diagnostics) -> Result<()>;
     fn encode_fileio(&self, b: &Board, w: &mut FileWriter) -> Result<()>;
     fn validate(&self, b: &Board, d: &mut Diagnostics);            // ranges, URL-representability
-    fn symmetries(&self) -> &'static [Transform] { &Transform::ALL }
     fn adjust_board_data(&self, _t: Transform, _b: &mut Board) {}  // directional content
 }
 ```
@@ -220,7 +236,7 @@ Board::parse picks one of the above: FileIO text, trace URL (non-empty state=),
 
 Board ──encode_url──► canonical body (callers add a host prefix)
 Board ──encode_fileio──► FileIO text ──deflate-raw → base64url──► state
-Board ──transform(t)──► Board          Board ──dedupe_key──► (key, representative, transform)
+Board ──transform(t)──► Board
 ```
 
 ## 5. Formats
@@ -341,19 +357,11 @@ Applied to every object group and to the snapshot, then
 `genre.adjust_board_data(t)` (directional content; no-op for the pilot). `compose`,
 `inverse` are provided; group laws are property-tested.
 
-### 7.2 Canonical URL vs dedupe key
+### 7.2 Canonical URL and transformations
 
-- `canonical_url(board)` = pzprjs encoding of the board in its **current**
-  orientation. Normalizes encodings and aliases, never orientation.
-- `dedupe_key(board)` = `"d4v1:" + min_bytes{ canonical_url(t(board)) | t ∈ D4 }`
-  plus the element `t*` attaining it (first in table order on ties) so callers can
-  map an answer between orientations. Snapshot is ignored. Rules and variant are
-  part of the URL, so different rules never collide.
-- The policy is versioned by the key prefix (`DEDUPE_POLICY = "d4v1"`).
-  Changing the representative choice requires a new policy string.
-
-Genres may restrict the group (`Genre::symmetries`); both pilot genres allow
-full D4 (clues are orientation-free).
+`canonical_url(board)` returns pzprjs encoding in the current orientation;
+rotations and reflections are explicit operations. The library does not decide
+whether transformed boards are equivalent or choose a deduplication policy.
 
 ## 8. Errors and diagnostics
 
@@ -398,27 +406,19 @@ crate themselves, exposing just what they need.
 ### 10.1 Rust
 
 ```rust
-use pzprst::{canonical_url, dedupe_key, Board, Options, Transform};
+use pzprst::{canonical_url, Board, Options, Transform};
 let opts = Options::default();                    // strict, ignore_trace, max_state_bytes
 canonical_url("masyu/6/6/00016f769000", &opts)?;  // "mashu/6/6/00016f769000"
 let b = Board::parse(input, &opts)?;              // URL, trace URL, state or FileIO
 b.diagnostics();                                  // read-time repairs
 b.transform(Transform::Rot90).to_url()?;          // new Board, canonical URL body
-b.dedupe_key()?;                                  // DedupeKey { key, representative, transform }
 b.to_fileio()?; b.to_state()?; b.to_trace_url("https://pzpr-trace.net/p?")?;
 ```
 
 ### 10.2 Python, via PuzzleKit
 
-PuzzleKit's Rust extension (`puzzlekit._cspuz`) depends on the `pzprst` crate and
-exports `pzpr_canonical_url`, `pzpr_transform_url`, `pzpr_dedupe_key`,
-`pzpr_supported`, `PZPR_TRANSFORMS` and `PZPRJS_COMMIT`. The public wrapper is
-`puzzlekit.pzpr` (`canonical_url`, `transform_url`, `dedupe_key`,
-`supported_puzzles`); URL results carry the `https://puzz.link/p?` prefix and
-errors are `ValueError("<Error::kind>: <message>")`. `puzzlekit.solve` uses it for
-`normalized_url` of supported genres, so `to_trace_url()` is canonical too.
-puzzlekit-dataset uses the same module. Until pzprst is published, PuzzleKit
-refers to it by a workspace path; switch to a pinned git rev before release.
+PuzzleKit may wrap this crate in its Rust extension. Its integration and
+release process are maintained in the PuzzleKit repository.
 
 ### 10.3 TypeScript / WASM (when needed)
 
@@ -427,7 +427,7 @@ The core crate builds for `wasm32-unknown-unknown` unchanged. A host-side crate
 
 ### 10.4 CLI
 
-`pzprst [--strict] [--diag] [--transform NAME] canon|dedupe|fileio|state [input…]`.
+`pzprst [--strict] [--diag] [--transform NAME] canon|fileio|state [input…]`.
 Any input form is accepted (`Board::parse`); with no input it reads one input per
 line from stdin and prints one result per line (`ERR <kind>: <message>` on
 failure). Used for shell batches and by `tools/parity.js`.
@@ -446,8 +446,8 @@ failure). Used for shell batches and by `tools/parity.js`.
    gitignored `fixtures/full/` (120 larger random boards and up to 60 dataset
    URLs); `node tools/check_parity.js --full <pid>` includes these inputs.
 2. **Property tests** (`cargo test`, no Node): decode∘encode = id on input boards; transform group laws
-   (`t ∘ t⁻¹ = id`, `rot90⁴ = id`, `flipx² = id`); `dedupe_key(t(b)) == dedupe_key(b)`
-   for all t; `canonical(canonical(u)) == canonical(u)`.
+   (`t ∘ t⁻¹ = id`, `rot90⁴ = id`, `flipx² = id`);
+   `canonical(canonical(u)) == canonical(u)`.
 3. **Full-dataset parity** (dev-only, `tools/parity.js` + `pzprst-cli`): every
    Slitherlink/Masyu `puzzlink_url` in puzzlekit-dataset canonicalized by both
    implementations; report must show 0 differences.
@@ -461,7 +461,7 @@ failure). Used for shell batches and by `tools/parity.js`.
 URL wrapper, Board/geometry, transforms, error model.
 
 **Phase 1 — Pilot `slither` + `mashu` (this change).** URL, FileIO, state, trace
-URL matching, transforms, canonical + dedupe, CLI, fixture + property +
+URL matching, transforms, canonicalization, CLI, fixture + property +
 dataset-parity tests. PuzzleKit links the crate and uses it for `normalized_url`.
 
 **Phase 2 — Model stress test.** Genres that exercise the remaining object kinds
@@ -471,8 +471,7 @@ and transforms: `yajilin` (directional clues → `adjust_board_data`), `easyasab
 
 **Phase 3 — Integration.**
 - Publish pzprst and pin PuzzleKit to a git rev.
-- puzzlekit-dataset: replace the Node `pzprcodec` canonicalize/dedupe path with
-  `puzzlekit.pzpr` for supported genres (dry-run report first; key = `dedupe_key`).
+- puzzlekit-dataset: use canonicalization where appropriate; dataset policy determines how to identify duplicates.
 - PuzzleKit: cross-check adapter FileIO/state output against pzprst before
   deciding whether adapters should build pzprst Boards.
 
@@ -481,10 +480,10 @@ a capability row; a WASM host crate if puzzlekit-web needs it.
 
 Capability matrix (pilot):
 
-| pid | URL dec/enc | FileIO r/w | state r/w | transforms | dedupe | snapshot marks |
-|---|---|---|---|---|---|---|
-| slither | ✓ | ✓ (v0 read, v1) | ✓ | D4 | d4v1 | lines, crosses, cell bg |
-| mashu | ✓ | ✓ | ✓ | D4 | d4v1 | lines, crosses |
+| pid | URL dec/enc | FileIO r/w | state r/w | transforms | snapshot marks |
+|---|---|---|---|---|---|
+| slither | ✓ | ✓ (v0 read, v1) | ✓ | D4 | lines, crosses, cell bg |
+| mashu | ✓ | ✓ | ✓ | D4 | lines, crosses |
 
 ## 13. Implementation status (pilot, 2026-11-22)
 
@@ -496,10 +495,9 @@ Historical pilot verification (the test layout has since changed; see §11):
 |---|---|
 | Fixture parity (173 committed + 600 full records × {canonical, FileIO} × 8 transforms) | identical |
 | Full dataset (`tools/parity.js`): 4830 Slitherlink + 3175 Masyu `puzzlink_url`, canonical + 7 transforms | 64 040 / 64 040 identical; 1284 + 858 sources were not canonical |
-| Property tests: FileIO/state round-trip, idempotence, group laws, dedupe invariance | pass |
+| Property tests: FileIO/state round-trip, idempotence, group laws | pass |
 | PuzzleKit with pzprst linked: full pytest incl. pzpr-trace state import | 442 passed |
 | PuzzleKit 0.4.0 `to_trace_url()` (2 slither, 1 mashu) read in strict mode | match, lossless |
-| Dataset D4 duplicates (same records) | 3 Slitherlink, 5 Masyu groups found only by symmetry |
 
 Commands:
 

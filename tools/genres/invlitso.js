@@ -1,0 +1,4 @@
+"use strict";
+module.exports = {pid:"invlitso",dataset:null,urls:["invlitso/7/7/4bkj33apgir8sjhs8g", "invlitso/3/2/00", "invlitso/4/4/", "invlitso/1/1/", "invlitso/1/5/", "invlitso/5/1/", "invlitso/d/3/2/aabacc"],fileios:["pzprv3.1\ninvlitso\n7\n7\n0 0 1 0 0 0 \n1 0 1 1 1 0 \n1 0 0 1 0 0 \n1 1 0 0 0 1 \n1 0 0 0 1 1 \n0 1 0 1 0 1 \n1 0 0 1 1 0 \n1 0 0 1 0 1 1 \n0 1 1 0 1 0 0 \n0 1 1 1 0 0 1 \n0 0 1 1 1 0 0 \n0 1 1 1 1 0 0 \n0 1 0 0 0 1 0 \n# + + + + + + \n# + + + # + + \n# + + + # + + \n# # # # # # # \n+ + + + + # + \n+ + + + # # + \n+ + + # # + + \n", "pzprv3.1\ninvlitso\n2\n3\n0 0 \n0 0 \n0 0 0 \n. . . \n. . . \n"],
+ randomize(p,r) {p.board.border.each(e=>e.setQues(r.rnd()<0.35?1:0));p.board.cell.each(c=>{const n=r.rnd();c.qans=n<0.2?1:0;c.qsub=n>=0.2&&n<0.35?1:0;});p.board.border.each(e=>{const n=r.rnd();e.line=n<0.2?1:0;e.qsub=n>=0.2&&n<0.35?2:0;});}
+};

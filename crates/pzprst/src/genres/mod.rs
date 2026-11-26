@@ -50,6 +50,10 @@ pub(crate) trait Genre: Sync {
     fn room_cell_excluded(&self, cell: &crate::Obj) -> bool {
         cell.ques == 7
     }
+    /// Whether a border separates question rooms.
+    fn room_border_is_wall(&self, border: &crate::Obj) -> bool {
+        border.ques == 1 || border.qans == 1
+    }
     /// Initialize puzzle-specific default board objects after allocation.
     fn init_board(&self, _b: &mut Board) {}
     /// `decodePzpr`; returns the unconsumed body.
@@ -75,16 +79,16 @@ pub(crate) trait Genre: Sync {
     }
     /// `encodePzpr` body (flags are written by the caller).
     fn encode_url(&self, b: &Board) -> Result<String>;
+    /// Some formats encode only a bounding box of the board.
+    fn url_dimensions(&self, b: &Board) -> Result<(usize, usize)> {
+        Ok((b.cols(), b.rows()))
+    }
     /// `FileIO.decodeData`.
     fn decode_fileio(&self, r: &mut FileReader, b: &mut Board, d: &mut Diagnostics) -> Result<()>;
     /// `FileIO.encodeData`; sets `w.filever`.
     fn encode_fileio(&self, b: &Board, w: &mut FileWriter) -> Result<()>;
     /// Value-range and URL-representability checks for data that did not come from a URL.
     fn validate(&self, b: &Board, d: &mut Diagnostics);
-    /// Symmetries that preserve puzzle meaning.
-    fn symmetries(&self) -> &'static [Transform] {
-        &Transform::ALL
-    }
     /// pzprjs `BoardExec.adjustBoardData`: directional content adjusted
     /// **before** the coordinates move (pzprjs calls it once per board
     /// operation, so a composed transform must apply the operations in

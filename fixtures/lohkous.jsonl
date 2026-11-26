@@ -1,0 +1,71 @@
+{"header":{"pid":"lohkous","generator":"tools/gen_fixtures.js"}}
+{"id":"lohkous-0","kind":"url","input":"lohkous/6/6/12k2a23b2k13d13a10b14d"}
+{"id":"lohkous-1","kind":"url","input":"lohkous/5/5/23d0h0h0d23"}
+{"id":"lohkous-2","kind":"url","input":"lohkous/5/5/12b12c13e14e13i15"}
+{"id":"lohkous-3","kind":"url","input":"lohkous/4/4/"}
+{"id":"lohkous-4","kind":"url","input":"lohkous/1/1/"}
+{"id":"lohkous-5","kind":"url","input":"lohkous/1/5/"}
+{"id":"lohkous-6","kind":"url","input":"lohkous/5/1/"}
+{"id":"lohkous-7","kind":"fileio","input":"pzprv3\nlohkous\n6\n6\n1,2 . . . . . \n. . . . . 2 \n2,3 . 2 . . . \n. . . . . . \n. 1,3 . . . 1,3 \n1,- . 1,4 . . . \n-1 1 -1 1 -1 \n1 -1 -1 1 -1 \n-1 1 -1 1 1 \n-1 1 -1 1 1 \n1 -1 -1 1 1 \n-1 1 -1 -1 -1 \n-1 1 -1 -1 -1 -1 \n1 -1 1 1 1 1 \n-1 -1 -1 -1 -1 -1 \n1 1 1 1 -1 -1 \n-1 1 1 1 -1 1 \n"}
+{"id":"lohkous-8","kind":"fileio","input":"pzprv3\nlohkous\n5\n5\n2,3 . . . - \n. . . . . \n. . - . . \n. . . . . \n- . . . 2,3 \n-1 -1 1 -1 \n-1 -1 1 -1 \n-1 1 1 -1 \n-1 1 -1 -1 \n-1 1 -1 -1 \n-1 -1 -1 -1 -1 \n-1 -1 1 1 1 \n1 1 1 -1 -1 \n-1 -1 -1 -1 -1 \n"}
+{"id":"lohkous-9","kind":"fileio","input":"pzprv3\nlohkous\n5\n5\n1,2 . 1,2 . . \n1,3 . . . . \n1,4 . . . . \n1,3 . . . . \n. . . . 1,5 \n-1 1 -1 1 \n-1 -1 1 1 \n-1 -1 -1 1 \n-1 -1 1 1 \n-1 -1 -1 1 \n1 1 1 1 -1 \n1 1 1 -1 -1 \n1 1 1 -1 -1 \n1 1 1 -1 -1 \n"}
+{"id":"lohkous-10","kind":"fileio","input":"pzprv3\nlohkous\n2\n5\n2,3 . -,1,3 1 . \n. 2,3 2,3 2,3 -,1,3 \n1 1 -1 0 \n0 1 0 0 \n1 0 -1 1 0 \n"}
+{"id":"lohkous-11","kind":"url","input":"lohkous/5/2/23b013a1c23a23a23a013"}
+{"id":"lohkous-12","kind":"fileio","input":"pzprv3\nlohkous\n2\n5\n-,1,3 . . -,1,3 . \n-,1,3 2,3 2,3 2,3 1 \n0 0 0 1 \n0 0 0 1 \n-1 0 -1 -1 0 \n"}
+{"id":"lohkous-13","kind":"url","input":"lohkous/5/2/013c013b013a23a23a23a1"}
+{"id":"lohkous-14","kind":"fileio","input":"pzprv3\nlohkous\n4\n5\n. 1 . 2,3 . \n-,1,3 . 2,3 -,1,3 . \n2,3 -,1,3 2,3 . . \n2,3 . 1 . 2,3 \n0 -1 1 0 \n-1 1 1 -1 \n0 0 0 0 \n0 -1 0 0 \n1 0 0 1 0 \n-1 -1 0 -1 1 \n0 1 -1 1 1 \n"}
+{"id":"lohkous-15","kind":"url","input":"lohkous/5/4/a1b23b013b23a013b23a013a23c23b1b23"}
+{"id":"lohkous-16","kind":"fileio","input":"pzprv3\nlohkous\n3\n6\n. 2,3 1 -,1,3 . 1 \n. . 2,3 1 1 . \n1 2,3 1 . 1 -,1,3 \n0 -1 0 0 1 \n0 -1 1 0 0 \n0 0 -1 0 -1 \n0 0 0 -1 1 -1 \n1 0 1 -1 0 1 \n"}
+{"id":"lohkous-17","kind":"url","input":"lohkous/6/3/a23a1a013b1c23a1a1b1a23a1b1a013"}
+{"id":"lohkous-18","kind":"fileio","input":"pzprv3\nlohkous\n1\n2\n-,1,3 -,1,3 \n-1 \n"}
+{"id":"lohkous-19","kind":"url","input":"lohkous/2/1/013a013"}
+{"id":"lohkous-20","kind":"fileio","input":"pzprv3\nlohkous\n2\n4\n. 2,3 2,3 . \n-,1,3 . 1 -,1,3 \n1 0 0 \n1 0 0 \n-1 0 -1 1 \n"}
+{"id":"lohkous-21","kind":"url","input":"lohkous/4/2/a23a23b013b1a013"}
+{"id":"lohkous-22","kind":"fileio","input":"pzprv3\nlohkous\n3\n4\n2,3 . . 2,3 \n2,3 -,1,3 1 2,3 \n-,1,3 . -,1,3 1 \n-1 1 0 \n0 1 -1 \n1 -1 0 \n1 -1 -1 0 \n1 -1 0 0 \n"}
+{"id":"lohkous-23","kind":"url","input":"lohkous/4/3/23c23a23a013a1a23a013b013a1"}
+{"id":"lohkous-24","kind":"fileio","input":"pzprv3\nlohkous\n4\n4\n-,1,3 2,3 2,3 . \n2,3 . . -,1,3 \n. . . -,1,3 \n1 1 -,1,3 1 \n0 0 0 \n-1 1 -1 \n1 1 0 \n0 0 0 \n0 -1 0 0 \n1 1 -1 -1 \n1 1 -1 1 \n"}
+{"id":"lohkous-25","kind":"url","input":"lohkous/4/4/013a23a23b23c013d013a1a1a013a1"}
+{"id":"lohkous-26","kind":"fileio","input":"pzprv3\nlohkous\n4\n4\n1 . -,1,3 . \n2,3 2,3 1 -,1,3 \n-,1,3 2,3 . -,1,3 \n. . . 2,3 \n1 1 0 \n-1 0 0 \n1 -1 0 \n1 1 1 \n-1 0 0 0 \n0 0 1 1 \n1 0 1 1 \n"}
+{"id":"lohkous-27","kind":"url","input":"lohkous/4/4/1b013b23a23a1a013a013a23b013d23"}
+{"id":"lohkous-28","kind":"fileio","input":"pzprv3\nlohkous\n1\n5\n-,1,3 . -,1,3 2,3 1 \n-1 0 -1 1 \n"}
+{"id":"lohkous-29","kind":"url","input":"lohkous/5/1/013b013a23a1"}
+{"id":"lohkous-30","kind":"fileio","input":"pzprv3\nlohkous\n5\n6\n1 1 -,1,3 . . . \n2,3 1 . 1 1 . \n. 1 . . -,1,3 . \n-,1,3 1 1 . . 1 \n2,3 2,3 . 2,3 1 1 \n0 0 0 0 0 \n1 -1 0 0 0 \n0 1 -1 0 1 \n0 1 0 1 0 \n1 0 0 0 0 \n0 0 0 0 0 1 \n0 1 1 1 1 1 \n0 0 0 0 0 0 \n-1 1 0 0 0 0 \n"}
+{"id":"lohkous-31","kind":"url","input":"lohkous/6/5/1a1a013d23a1b1a1c1c013b013a1a1c1a23a23b23a1a1"}
+{"id":"lohkous-32","kind":"fileio","input":"pzprv3\nlohkous\n2\n4\n1 -,1,3 2,3 -,1,3 \n2,3 1 -,1,3 . \n0 1 0 \n-1 0 0 \n0 0 -1 0 \n"}
+{"id":"lohkous-33","kind":"url","input":"lohkous/4/2/1a013a23a013a23a1a013b"}
+{"id":"lohkous-34","kind":"fileio","input":"pzprv3\nlohkous\n4\n1\n2,3 \n. \n2,3 \n2,3 \n\n\n\n\n1 \n-1 \n1 \n"}
+{"id":"lohkous-35","kind":"url","input":"lohkous/1/4/23b23a23"}
+{"id":"lohkous-36","kind":"fileio","input":"pzprv3\nlohkous\n1\n3\n2,3 2,3 -,1,3 \n0 1 \n"}
+{"id":"lohkous-37","kind":"url","input":"lohkous/3/1/23a23a013"}
+{"id":"lohkous-38","kind":"fileio","input":"pzprv3\nlohkous\n5\n3\n. . . \n. -,1,3 . \n-,1,3 -,1,3 . \n1 . 1 \n2,3 . 1 \n-1 0 \n0 0 \n0 0 \n1 -1 \n0 0 \n0 0 0 \n1 0 0 \n0 0 0 \n0 1 0 \n"}
+{"id":"lohkous-39","kind":"url","input":"lohkous/3/5/d013b013a013b1b1a23b1"}
+{"id":"lohkous-40","kind":"fileio","input":"pzprv3\nlohkous\n1\n6\n-,1,3 -,1,3 1 2,3 2,3 -,1,3 \n1 0 0 0 0 \n"}
+{"id":"lohkous-41","kind":"url","input":"lohkous/6/1/013a013a1a23a23a013"}
+{"id":"lohkous-42","kind":"fileio","input":"pzprv3\nlohkous\n3\n3\n-,1,3 1 -,1,3 \n-,1,3 . 1 \n. -,1,3 -,1,3 \n0 1 \n0 0 \n0 0 \n0 0 -1 \n1 0 1 \n"}
+{"id":"lohkous-43","kind":"url","input":"lohkous/3/3/013a1a013a013b1b013a013"}
+{"id":"lohkous-44","kind":"fileio","input":"pzprv3\nlohkous\n4\n2\n. 1 \n. 1 \n-,1,3 -,1,3 \n. 1 \n0 \n0 \n0 \n-1 \n1 0 \n0 1 \n0 0 \n"}
+{"id":"lohkous-45","kind":"url","input":"lohkous/2/4/a1b1a013a013b1"}
+{"id":"lohkous-46","kind":"fileio","input":"pzprv3\nlohkous\n1\n6\n2,3 2,3 . . 2,3 1 \n-1 1 0 0 -1 \n"}
+{"id":"lohkous-47","kind":"url","input":"lohkous/6/1/23a23c23a1"}
+{"id":"lohkous-48","kind":"fileio","input":"pzprv3\nlohkous\n3\n2\n-,1,3 . \n. . \n. . \n0 \n0 \n1 \n0 1 \n1 1 \n"}
+{"id":"lohkous-49","kind":"url","input":"lohkous/2/3/013f"}
+{"id":"lohkous-50","kind":"fileio","input":"pzprv3\nlohkous\n5\n6\n-,1,3 -,1,3 . -,1,3 -,1,3 2,3 \n2,3 . 1 1 . -,1,3 \n1 1 . . 1 . \n. . . . . -,1,3 \n. 1 1 . -,1,3 1 \n1 0 0 0 -1 \n0 1 0 0 -1 \n1 0 -1 1 -1 \n1 -1 0 -1 0 \n1 0 0 0 1 \n0 -1 0 -1 0 -1 \n-1 1 0 0 -1 0 \n-1 0 0 0 1 -1 \n0 0 1 0 -1 0 \n"}
+{"id":"lohkous-51","kind":"url","input":"lohkous/6/5/013a013b013a013a23a23b1a1b013a1a1c1g013b1a1b013a1"}
+{"id":"lohkous-52","kind":"fileio","input":"pzprv3\nlohkous\n5\n1\n-,1,3 \n-,1,3 \n. \n-,1,3 \n1 \n\n\n\n\n\n0 \n0 \n0 \n-1 \n"}
+{"id":"lohkous-53","kind":"url","input":"lohkous/1/5/013a013b013a1"}
+{"id":"lohkous-54","kind":"fileio","input":"pzprv3\nlohkous\n4\n1\n1 \n. \n. \n. \n\n\n\n\n0 \n0 \n1 \n"}
+{"id":"lohkous-55","kind":"url","input":"lohkous/1/4/1d"}
+{"id":"lohkous-56","kind":"fileio","input":"pzprv3\nlohkous\n1\n2\n. . \n-1 \n"}
+{"id":"lohkous-57","kind":"url","input":"lohkous/2/1/b"}
+{"id":"lohkous-58","kind":"fileio","input":"pzprv3\nlohkous\n3\n2\n. . \n. . \n2,3 2,3 \n0 \n1 \n0 \n-1 0 \n1 0 \n"}
+{"id":"lohkous-59","kind":"url","input":"lohkous/2/3/d23a23"}
+{"id":"lohkous-60","kind":"fileio","input":"pzprv3\nlohkous\n5\n1\n-,1,3 \n. \n2,3 \n2,3 \n-,1,3 \n\n\n\n\n\n0 \n0 \n1 \n0 \n"}
+{"id":"lohkous-61","kind":"url","input":"lohkous/1/5/013b23a23a013"}
+{"id":"lohkous-62","kind":"fileio","input":"pzprv3\nlohkous\n5\n6\n-,1,3 . 2,3 . 1 . \n2,3 . 1 . . . \n. 2,3 . 1 . -,1,3 \n. . -,1,3 2,3 1 -,1,3 \n. . . . . . \n0 -1 0 0 1 \n0 0 0 0 0 \n1 0 0 0 0 \n0 1 0 0 0 \n0 0 0 -1 0 \n-1 1 0 -1 0 1 \n0 0 1 1 0 1 \n0 -1 -1 0 0 0 \n-1 0 0 0 0 0 \n"}
+{"id":"lohkous-63","kind":"url","input":"lohkous/6/5/013b23b1b23b1e23b1b013c013a23a1a013g"}
+{"id":"lohkous-64","kind":"fileio","input":"pzprv3\nlohkous\n2\n1\n. \n. \n\n\n0 \n"}
+{"id":"lohkous-65","kind":"url","input":"lohkous/1/2/b"}
+{"id":"lohkous-66","kind":"fileio","input":"pzprv3\nlohkous\n4\n2\n. 1 \n. 2,3 \n. 1 \n2,3 2,3 \n0 \n0 \n-1 \n0 \n0 0 \n-1 0 \n0 0 \n"}
+{"id":"lohkous-67","kind":"url","input":"lohkous/2/4/a1b23b1a23a23"}
+{"id":"lohkous-68","kind":"fileio","input":"pzprv3\nlohkous\n1\n2\n-,1,3 2,3 \n1 \n"}
+{"id":"lohkous-69","kind":"url","input":"lohkous/2/1/013a23"}
